@@ -69,7 +69,7 @@ def torturi_inghetata(request):
     torturi_list = Torturi_Inghetata.objects.all()
     response = "<br>".join([
         f"<br>Tort: {tort.nume_tort}, "
-        f"<br.Info: {tort.info.descriere}, Specificatii: {tort.info.specificatii}, "
+        f"<br>Info: {tort.info.descriere}, Specificatii: {tort.info.specificatii}, "
         f"<br>Pret: {tort.info.pret}"
         for tort in torturi_list
     ])
@@ -133,7 +133,7 @@ def informatii(request):
 
 
 
-from .models import Inghetata, Bauturi, Biscuite, Prajituri, Torturi_Inghetata
+from .models import Inghetata, Bauturi, Biscuite, Prajituri, Torturi_Inghetata, Meniu, Sponsor
 
 def display_items(request):
     # Fetching data from the models
@@ -142,6 +142,7 @@ def display_items(request):
     biscuiti_items = Biscuite.objects.all()
     prajituri_items = Prajituri.objects.all()
     torturi_items = Torturi_Inghetata.objects.all()
+    meniu_items = Meniu.objects.all()
     sponsors = Sponsor.objects.all()
 
     # Passing the data to the template
@@ -151,6 +152,7 @@ def display_items(request):
         'biscuiti_items': biscuiti_items,
         'prajituri_items': prajituri_items,
         'torturi_items': torturi_items,
+        'meniu_items': meniu_items,
         'sponsors': sponsors,
     }
 

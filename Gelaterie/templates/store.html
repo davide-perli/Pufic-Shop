@@ -20,6 +20,7 @@
             <li><button onclick="toggleDetails('biscuiti')">Biscuiți</button></li>
             <li><button onclick="toggleDetails('prajituri')">Prăjituri</button></li>
             <li><button onclick="toggleDetails('torturi')">Torturi Înghețată</button></li>
+            <li><button onclick="toggleDetails('meniu')">Meniu recomandat</button></li>
         </ul>
     </nav>
 
@@ -28,6 +29,8 @@
     </section>
 
     <main class="product-details">
+
+        
         <!-- Inghetata Details -->
         <div class="details-panel" id="inghetata" style="display:none;">
             <h2>Înghețată</h2>
@@ -98,6 +101,24 @@
             </div>
             {% endfor %}
         </div>
+
+        <!-- Meniu Details -->
+        <div class="details-panel" id="meniu" style="display:none;">
+            <h2>Meniu</h2>
+            {% for item in meniu_items %}
+            <div class="product-item">
+                <h3>Category: 
+                    {% if item.inghetata %}Înghețată{% elif item.biscuiti %}Biscuiți{% elif item.bauturi %}Băuturi{% elif item.prajituri %}Prăjituri{% elif item.torturi_inghetata %}Torturi Înghețată{% endif %}
+                </h3>
+                {% if item.inghetata %}<p>Flavor: {{ item.inghetata.aroma }}</p>{% endif %}
+                {% if item.biscuiti %}<p>Type: {{ item.biscuiti.tip_biscuite }}</p>{% endif %}
+                {% if item.bauturi %}<p>Drink: {{ item.bauturi.bautura }}</p>{% endif %}
+                {% if item.prajituri %}<p>Pastry: {{ item.prajituri.nume_prajitura }}</p>{% endif %}
+                {% if item.torturi_inghetata %}<p>Cake: {{ item.torturi_inghetata.nume_tort }}</p>{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
     </main>
 
     <footer>

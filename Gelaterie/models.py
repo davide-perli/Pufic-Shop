@@ -28,7 +28,8 @@ class Alergeni(models.Model):
     optiuni_alergeni = (
         ("LACTOZA", "lactoza"),
         ("GLUETEN", "gluten"),
-        ("NONE", "none")
+        ("ALUNE", "alune"),
+        ("NONE", "none"),
     )
     nume_alergeni = models.CharField(choices = optiuni_alergeni, default = "NONE")
 
@@ -94,20 +95,46 @@ class Bauturi(models.Model):
         ("CAMEREI", "camerei"),
         ("CALDA", "calda")
     )
-    bautura = models.CharField(max_length = 30)
+    optiuni_bauturi = (
+        ("CAFEA", "cafea"),
+        ("CEAI", "ceai"),
+        ("LAPTE", "lapte"),
+        ("MILKSHAKE", "milkshake"),
+        ("COCA-COLA", "coca-cola"),
+        ("PEPSI", "pepsi"),
+        ("FANTA", "fanta"),
+        ("LIPTON", "lipton"),
+    )
+    bautura = models.CharField(choices = optiuni_bauturi, default = "CAFEA")
     info = models.OneToOneField(Informatii, on_delete = models.CASCADE, null = True, blank = True) # Relatie one to one
     temperatura = models.CharField(choices = optiuni_temperatura, default = "CAMEREI")
     magazin = models.ManyToManyField(Magazine)
 
 #9
 class Prajituri(models.Model):
-    nume_prajitura = models.CharField(max_length = 30)
+    optiuni_prajituri = (
+        ("MOUSSE", "mousse"),
+        ("LAVACAKE", "lavacke"),
+        ("PROFITEROL", "profiterol"),
+        ("TARTE FRUCTE", "tarte fructe"),
+        ("CREME BRULEE", "creme brulee"),
+        ("ECLAIR", "eclair"),
+        ("MACAROONS", "macaroons"),
+        ("RED VELVET", "red velvet"),
+    )
+    nume_prajitura = models.CharField(choices = optiuni_prajituri, default = "MOUSSE")
     info = models.OneToOneField(Informatii, on_delete = models.CASCADE, null = True, blank = True) # Relatie one to one
     magazin = models.ManyToManyField(Magazine)
 
 #10
 class Torturi_Inghetata(models.Model):
-    nume_tort = models.CharField(max_length = 40)
+    optiuni_torturi = (
+        ("MOUSSE", "mousse"),
+        ("SACHER", "sacher"),
+        ("RED VELVET", "red velvet"),
+        ("BLACK FOREST", "black forest"),
+    )
+    nume_tort = models.CharField(choices = optiuni_torturi, default = "MOUSSE")
     info = models.OneToOneField(Informatii, on_delete = models.CASCADE, null = True, blank = True) # Relatie one to one
     magazin = models.ManyToManyField(Magazine)
 
@@ -118,6 +145,7 @@ class Meniu(models.Model):
     bauturi = models.ForeignKey(Bauturi, on_delete = models.CASCADE, null = True)                     # Relatie many to one
     prajituri = models.ForeignKey(Prajituri, on_delete = models.CASCADE, null = True)                 # Relatie many to one
     torturi_inghetata = models.ForeignKey(Torturi_Inghetata, on_delete = models.CASCADE, null = True) # Relatie many to one
+    
     
 #12
 class Comanda(models.Model):
