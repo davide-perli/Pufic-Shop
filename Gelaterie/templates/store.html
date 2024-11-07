@@ -3,51 +3,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gelaterie - Online Store</title>
+    <title>Gelaterie - Your Online Shop</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}"></script>
 </head>
 <body>
     <header>
         <h1>Welcome to Gelaterie</h1>
-        <nav>
-            <ul>
-                <li><a href="{% url 'afiseaza_alergeni' %}">Alergeni</a></li>
-                <li><a href="{% url 'bauturi' %}">Băuturi</a></li>
-                <li><a href="{% url 'inghetata' %}">Înghețată</a></li>
-                <li><a href="{% url 'magazine' %}">Magazine</a></li>
-                <li><a href="{% url 'biscuiti' %}">Biscuiți</a></li>
-                <li><a href="{% url 'prajituri' %}">Prăjituri</a></li>
-                <li><a href="{% url 'torturi_inghetata' %}">Torturi Înghețată</a></li>
-                <li><a href="{% url 'meniu' %}">Meniu</a></li>
-                <li><a href="{% url 'comenzi' %}">Comandă</a></li>
-                <li><a href="{% url 'sponsori' %}">Sponsori</a></li>
-                <li><a href="{% url 'adresa' %}">Adrese</a></li>
-                <li><a href="{% url 'informatii' %}">Informații</a></li>
-            </ul>
-        </nav>
+        <p>Experience delicious gelato, pastries, and more!</p>
     </header>
 
-    <main>
-        <section class="item-section">
-            <h2>Available Items</h2>
-            {% for item in items %}
-            <div class="item">
-                <h3>{{ item.title }}</h3>
-                <p><strong>Price:</strong> {{ item.price }}</p>
-                <p><strong>Description:</strong> {{ item.description }}</p>
-                <p><strong>Specifications:</strong> {{ item.specifications }}</p>
-                {% if item.allergens %}
-                <p><strong>Allergens:</strong> {{ item.allergens|join:", " }}</p>
-                {% endif %}
+    <nav class="product-menu">
+        <ul>
+            <li><button onclick="toggleDetails('inghetata')">Înghețată</button></li>
+            <li><button onclick="toggleDetails('bauturi')">Băuturi</button></li>
+            <li><button onclick="toggleDetails('biscuiti')">Biscuiți</button></li>
+            <li><button onclick="toggleDetails('prajituri')">Prăjituri</button></li>
+            <li><button onclick="toggleDetails('torturi')">Torturi Înghețată</button></li>
+        </ul>
+    </nav>
+
+    <section id="shop-description">
+        <p>Discover a variety of delightful treats crafted with passion. Our shop offers something for everyone!</p>
+    </section>
+
+    <main class="product-details">
+        <!-- Inghetata Details -->
+        <div class="details-panel" id="inghetata" style="display:none;">
+            <h2>Înghețată</h2>
+            <p>Our unique gelato flavors and options!</p>
+            {% for item in inghetata_items %}
+            <div class="product-item">
+                <h3>{{ item.aroma }}</h3>
+                <p><strong>Price:</strong> {{ item.info.pret }}</p>
+                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
             </div>
-            {% empty %}
-            <p>No items available.</p>
             {% endfor %}
-        </section>
+        </div>
+
+        <!-- Bauturi Details -->
+        <div class="details-panel" id="bauturi" style="display:none;">
+            <h2>Băuturi</h2>
+            <p>Refreshing drinks to complement your treats!</p>
+            {% for item in bauturi_items %}
+            <div class="product-item">
+                <h3>{{ item.bautura }}</h3>
+                <p><strong>Price:</strong> {{ item.info.pret }}</p>
+                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Temperature:</strong> {{ item.temperatura }}</p>
+                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Biscuiti Details -->
+        <div class="details-panel" id="biscuiti" style="display:none;">
+            <h2>Biscuiți</h2>
+            <p>Our selection of biscuits to pair with your desserts!</p>
+            {% for item in biscuiti_items %}
+            <div class="product-item">
+                <h3>{{ item.tip_biscuite }}</h3>
+                <p><strong>Price:</strong> {{ item.info.pret }}</p>
+                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Prajituri Details -->
+        <div class="details-panel" id="prajituri" style="display:none;">
+            <h2>Prăjituri</h2>
+            <p>Delicious pastries to satisfy your sweet cravings!</p>
+            {% for item in prajituri_items %}
+            <div class="product-item">
+                <h3>{{ item.nume_prajitura }}</h3>
+                <p><strong>Price:</strong> {{ item.info.pret }}</p>
+                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Torturi Inghetata Details -->
+        <div class="details-panel" id="torturi" style="display:none;">
+            <h2>Torturi Înghețată</h2>
+            <p>Special ice cream cakes for every occasion!</p>
+            {% for item in torturi_items %}
+            <div class="product-item">
+                <h3>{{ item.nume_tort }}</h3>
+                <p><strong>Price:</strong> {{ item.info.pret }}</p>
+                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+            </div>
+            {% endfor %}
+        </div>
     </main>
 
     <footer>
-        <p>&copy; Salut:))</p>
+        <p>&copy; 2024 Gelaterie</p>
+        <!-- View Sponsors button -->
+        <button class="view-sponsors-btn" onclick="toggleSponsors()">View Sponsors</button>
+        
+        <!-- Sponsors details inside the footer -->
+        <div class="details-panel" id="footer-sponsors" style="display:none;">
+            <h2>Sponsors</h2>
+            {% for sponsor in sponsors %}
+            <div class="product-item">
+                <h3>{{ sponsor.nume_sponsor }}</h3>
+                <p><strong>Email:</strong> {{ sponsor.email_sponsor }}</p>
+                <p><strong>Phone:</strong> {{ sponsor.numar_telefon_sponsor }}</p>
+            </div>
+            {% endfor %}
+        </div>
     </footer>
+
 </body>
 </html>

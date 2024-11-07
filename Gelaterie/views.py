@@ -25,9 +25,9 @@ def bauturi(request):
     bauturi_list = Bauturi.objects.all()
     response = "<br>".join([
         f"<br>Băutură: {bautura.bautura}, "
-        f"<br>Pret: {bautura.info.pret}, "
+        f"<br>Pret: {bautura.info.pret if bautura.info else 'N/A'}, "
         f"<br>Temperatura: {bautura.temperatura}, "
-        f"<br>Informatii: {bautura.info.descriere}, Specificatii: {bautura.info.specificatii}"
+        f"<br>Informatii: {bautura.info.descriere if bautura.info else 'N/A'}, Specificatii: {bautura.info.specificatii if bautura.info else 'N/A'}"
         for bautura in bauturi_list
     ])
     return HttpResponse(f"Băuturi disponibile:<ul>{response}</ul>")
@@ -38,8 +38,8 @@ def inghetata(request):
         f"<br>Tip inghetata: {inghetate.inghetata}, "
         f"<br>Aroma: {inghetate.aroma}, "
         f"<br>Mod servire: {inghetate.mod_servire}, "
-        f"<br>Info: {inghetate.info.descriere}, Specificatii: {inghetate.info.specificatii}, "
-        f"<br>Pret: {inghetate.info.pret}"
+        f"<br>Info: {inghetate.info.descriere if inghetate.info else 'N/A'}, Specificatii: {inghetate.info.specificatii if inghetate.info else 'N/A'}, "
+        f"<br>Pret: {inghetate.info.pret if inghetate.info else 'N/A'}"
         for inghetate in inghetata_list
     ])
     return HttpResponse(f"Inghetate disponibile:<ul>{response}</ul>")
@@ -48,8 +48,8 @@ def biscuiti(request):
     biscuiti_list = Biscuite.objects.all()
     response = "<br>".join([
         f"<br>Tip biscuite: {biscuite.tip_biscuite}, "
-        f"<br>Info: {biscuite.info.descriere}, Specificatii: {biscuite.info.specificatii}, "
-        f"<br>Pret: {biscuite.info.pret}"
+        f"<br>Info: {biscuite.info.descriere if biscuite.info else 'N/A'}, Specificatii: {biscuite.info.specificatii if biscuite.info else 'N/A'}, "
+        f"<br>Pret: {biscuite.info.pret if biscuite.info else 'N/A'}"
         for biscuite in biscuiti_list
     ])
     return HttpResponse(f"Biscuiti disponibili:<ul>{response}</ul>")
@@ -58,11 +58,12 @@ def prajituri(request):
     prajituri_list = Prajituri.objects.all()
     response = "<br>".join([
         f"<br>Prajitura: {prajitura.nume_prajitura}, "
-        f"<br>Info: {prajitura.info.descriere}, Specificatii: {prajitura.info.specificatii}, "
-        f"<br>Pret: {prajitura.info.pret}"
+        f"<br>Info: {prajitura.info.descriere if prajitura.info else 'N/A'}, Specificatii: {prajitura.info.specificatii if prajitura.info else 'N/A'}, "
+        f"<br>Pret: {prajitura.info.pret if prajitura.info else 'N/A'}"
         for prajitura in prajituri_list
     ])
     return HttpResponse(f"Prajituri disponibile:<ul>{response}</ul>")
+
 
 def torturi_inghetata(request):
     torturi_list = Torturi_Inghetata.objects.all()
@@ -132,5 +133,25 @@ def informatii(request):
 
 
 
+from .models import Inghetata, Bauturi, Biscuite, Prajituri, Torturi_Inghetata
+
 def display_items(request):
-    return render(request, 'store.html')
+    # Fetching data from the models
+    inghetata_items = Inghetata.objects.all()
+    bauturi_items = Bauturi.objects.all()
+    biscuiti_items = Biscuite.objects.all()
+    prajituri_items = Prajituri.objects.all()
+    torturi_items = Torturi_Inghetata.objects.all()
+    sponsors = Sponsor.objects.all()
+
+    # Passing the data to the template
+    context = {
+        'inghetata_items': inghetata_items,
+        'bauturi_items': bauturi_items,
+        'biscuiti_items': biscuiti_items,
+        'prajituri_items': prajituri_items,
+        'torturi_items': torturi_items,
+        'sponsors': sponsors,
+    }
+
+    return render(request, 'store.html', context)
