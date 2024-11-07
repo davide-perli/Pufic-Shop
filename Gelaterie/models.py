@@ -114,7 +114,7 @@ class Bauturi(models.Model):
 class Prajituri(models.Model):
     optiuni_prajituri = (
         ("MOUSSE", "mousse"),
-        ("LAVACAKE", "lavacke"),
+        ("LAVACAKE", "lavacake"),
         ("PROFITEROL", "profiterol"),
         ("TARTE FRUCTE", "tarte fructe"),
         ("CREME BRULEE", "creme brulee"),
