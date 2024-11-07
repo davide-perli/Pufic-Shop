@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gelaterie - Online Store</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Gelaterie</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'afiseaza_alergeni' %}">Alergeni</a></li>
+                <li><a href="{% url 'bauturi' %}">Băuturi</a></li>
+                <li><a href="{% url 'inghetata' %}">Înghețată</a></li>
+                <li><a href="{% url 'magazine' %}">Magazine</a></li>
+                <li><a href="{% url 'biscuiti' %}">Biscuiți</a></li>
+                <li><a href="{% url 'prajituri' %}">Prăjituri</a></li>
+                <li><a href="{% url 'torturi_inghetata' %}">Torturi Înghețată</a></li>
+                <li><a href="{% url 'meniu' %}">Meniu</a></li>
+                <li><a href="{% url 'comenzi' %}">Comandă</a></li>
+                <li><a href="{% url 'sponsori' %}">Sponsori</a></li>
+                <li><a href="{% url 'adresa' %}">Adrese</a></li>
+                <li><a href="{% url 'informatii' %}">Informații</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="item-section">
+            <h2>Available Items</h2>
+            {% for item in items %}
+            <div class="item">
+                <h3>{{ item.title }}</h3>
+                <p><strong>Price:</strong> {{ item.price }}</p>
+                <p><strong>Description:</strong> {{ item.description }}</p>
+                <p><strong>Specifications:</strong> {{ item.specifications }}</p>
+                {% if item.allergens %}
+                <p><strong>Allergens:</strong> {{ item.allergens|join:", " }}</p>
+                {% endif %}
+            </div>
+            {% empty %}
+            <p>No items available.</p>
+            {% endfor %}
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Salut:))</p>
+    </footer>
+</body>
+</html>
