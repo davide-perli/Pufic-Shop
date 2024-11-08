@@ -27,7 +27,7 @@ class Adresa(models.Model):
 class Alergeni(models.Model):
     optiuni_alergeni = (
         ("LACTOZA", "lactoza"),
-        ("GLUETEN", "gluten"),
+        ("GLUTEN", "gluten"),
         ("ALUNE", "alune"),
         ("NONE", "none"),
     )
