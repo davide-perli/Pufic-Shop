@@ -140,7 +140,7 @@ def display_items(request):
     inghetata_items = Inghetata.objects.all()
     bauturi_items = Bauturi.objects.all()
     biscuiti_items = Biscuite.objects.all()
-    prajituri_items = Prajituri.objects.all()
+    prajituri_items = Prajituri.objects.all().order_by('info__pret') #Schimbati ordinea afisarii campurilor pentru minim unul dintre modele
     torturi_items = Torturi_Inghetata.objects.all()
     meniu_items = Meniu.objects.all()
     sponsors = Sponsor.objects.all()
