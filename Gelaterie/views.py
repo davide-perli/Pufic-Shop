@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from Gelaterie.models import Adresa, Alergeni, Bauturi, Inghetata, Biscuite, Prajituri, Torturi_Inghetata, Meniu, Comanda, Informatii, Sponsor, Magazine
+from django.core.paginator import Paginator
 from django.shortcuts import render
 
 def home(request):
@@ -132,11 +133,8 @@ def informatii(request):
     return HttpResponse(f"Informatii disponibile:<ul>{response}</ul>")
 
 
-
-from .models import Inghetata, Bauturi, Biscuite, Prajituri, Torturi_Inghetata, Meniu, Sponsor
-
 def display_items(request):
-    # Fetching data from the models
+
     inghetata_items = Inghetata.objects.all()
     bauturi_items = Bauturi.objects.all()
     biscuiti_items = Biscuite.objects.all()
@@ -145,7 +143,6 @@ def display_items(request):
     meniu_items = Meniu.objects.all()
     sponsors = Sponsor.objects.all()
 
-    # Passing the data to the template
     context = {
         'inghetata_items': inghetata_items,
         'bauturi_items': bauturi_items,
@@ -157,3 +154,31 @@ def display_items(request):
     }
 
     return render(request, 'store.html', context)
+
+def display_products(request):
+    # Preluam query parameters pentru filtre din URL
+    nume = request.GET.get('nume') 
+    pret_min = request.GET.get('pret_min')
+    pret_max = request.GET.get('pret_max') 
+    
+    # Construim queryset-ul pentru Prajituri, aplicand filtrele specificate
+    prajituri = Prajituri.objects.all()
+    if nume:
+        prajituri = prajituri.filter(nume_prajitura__icontains=nume)  # Cautare partiala dupa nume, fara problema de capitalizare
+    if pret_min:
+        prajituri = prajituri.filter(info__pret__gte=pret_min) # >=
+    if pret_max:
+        prajituri = prajituri.filter(info__pret__lte=pret_max) # <=
+
+    # Paginarea: 5 prajituri pe pagina
+    paginator = Paginator(prajituri, 5)  # 5 obiecte pe pagina
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number) # Preia pagina dorita din obiectul paginator si returneaza obiectul de tip page page_obj
+
+    context = {
+        'page_obj': page_obj,
+        'nume': nume,
+        'pret_min': pret_min,
+        'pret_max': pret_max,
+    }
+    return render(request, 'display_products.html', context)

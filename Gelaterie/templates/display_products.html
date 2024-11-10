@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produse - Gelaterie</title>
+</head>
+<body>
+    <h1>Produse - Filtrare si Paginare</h1>
+    
+    <!-- Formul pentru filtre -->
+    <form method="get">
+        <label for="nume">Nume prajitura:</label>
+        <input type="text" id="nume" name="nume" value="{{ nume }}">
+        
+        <label for="pret_min">Pret minim:</label>
+        <input type="number" id="pret_min" name="pret_min" step="0.01" value="{{ pret_min }}">
+        
+        <label for="pret_max">Pret maxim:</label>
+        <input type="number" id="pret_max" name="pret_max" step="0.01" value="{{ pret_max }}">
+        
+        <button type="submit">Filtreaza</button>
+    </form>
+
+    <!-- Afișarea prăjiturilor -->
+    <ul>
+        {% for prajitura in page_obj %}
+            <li>
+                <h3>{{ prajitura.nume_prajitura }}</h3>
+                <p><strong>Pret:</strong> {{ prajitura.info.pret }}</p>
+                <p><strong>Descriere:</strong> {{ prajitura.info.descriere }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Paginare -->
+    <div class="pagination">
+        {% if page_obj.has_previous %}
+            <a href="?page=1{% if nume %}&nume={{ nume }}{% endif %}{% if pret_min %}&pret_min={{ pret_min }}{% endif %}{% if pret_max %}&pret_max={{ pret_max }}{% endif %}">Prima</a>
+            <a href="?page={{ page_obj.previous_page_number }}{% if nume %}&nume={{ nume }}{% endif %}{% if pret_min %}&pret_min={{ pret_min }}{% endif %}{% if pret_max %}&pret_max={{ pret_max }}{% endif %}">Inapoi</a>
+        {% endif %}
+
+        <span>Pagina {{ page_obj.number }} din {{ page_obj.paginator.num_pages }}</span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}{% if nume %}&nume={{ nume }}{% endif %}{% if pret_min %}&pret_min={{ pret_min }}{% endif %}{% if pret_max %}&pret_max={{ pret_max }}{% endif %}">Inainte</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}{% if nume %}&nume={{ nume }}{% endif %}{% if pret_min %}&pret_min={{ pret_min }}{% endif %}{% if pret_max %}&pret_max={{ pret_max }}{% endif %}">Ultima</a>
+        {% endif %}
+    </div>
+</body>
+</html>
