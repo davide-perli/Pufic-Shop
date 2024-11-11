@@ -14,7 +14,7 @@ class PrajituriAdmin(admin.ModelAdmin):
     search_fields = ['nume_prajitura']
     list_filter = ['nume_prajitura']  # Adaugati filtre laterale pentru minim un model
 
-# Impărtirea câmpurilor în secțiuni pentru Comanda
+# Impartirea campurilor in sectiuni pentru Comanda
 class ComandaAdmin(admin.ModelAdmin):
     search_fields = ['data_achizitie']
     list_filter = ['data_achizitie']

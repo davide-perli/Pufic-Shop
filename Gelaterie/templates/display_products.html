@@ -7,7 +7,7 @@
 <body>
     <h1>Produse - Filtrare si Paginare</h1>
     
-    <!-- Formul pentru filtre -->
+    <!-- Formular pentru filtre -->
     <form method="get">
         <label for="nume">Nume prajitura:</label>
         <input type="text" id="nume" name="nume" value="{{ nume }}">
@@ -21,7 +21,7 @@
         <button type="submit">Filtreaza</button>
     </form>
 
-    <!-- Afișarea prăjiturilor -->
+    <!-- Afisarea prajiturilor -->
     <ul>
         {% for prajitura in page_obj %}
             <li>

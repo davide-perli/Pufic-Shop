@@ -3,118 +3,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gelaterie - Your Online Shop</title>
+    <title>Gelaterie - Online Shop</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <script src="{% static 'script.js' %}"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Gelaterie</h1>
-        <p>Experience delicious gelato, pastries, and more!</p>
+        <h1>Bine ati venit la Gelateria online</h1>
+        <p>Gustati delicioasele nostre inghetate, prajituri, biscuiti si multe altele!</p>
     </header>
 
     <nav class="product-menu">
         <ul>
-            <li><button onclick="toggleDetails('inghetata')">Înghețată</button></li>
-            <li><button onclick="toggleDetails('bauturi')">Băuturi</button></li>
-            <li><button onclick="toggleDetails('biscuiti')">Biscuiți</button></li>
-            <li><button onclick="toggleDetails('prajituri')">Prăjituri</button></li>
-            <li><button onclick="toggleDetails('torturi')">Torturi Înghețată</button></li>
+            <li><button onclick="toggleDetails('inghetata')">Inghetata</button></li>
+            <li><button onclick="toggleDetails('bauturi')">Bauturi</button></li>
+            <li><button onclick="toggleDetails('biscuiti')">Biscuiti</button></li>
+            <li><button onclick="toggleDetails('prajituri')">Prajituri</button></li>
+            <li><button onclick="toggleDetails('torturi')">Torturi Inghetata</button></li>
             <li><button onclick="toggleDetails('meniu')">Meniu recomandat</button></li>
         </ul>
     </nav>
 
     <section id="shop-description">
-        <p>Discover a variety of delightful treats crafted with passion. Our shop offers something for everyone!</p>
+        <p>Descoperiti delicatesele disponibile la magazinul nostrul online sau in locatiile noastre fizice!</p>
+        <p>Toate produsele noastre sunt facute proaspat in fiecare dimineata!</p>
+        <p style="color : red">Nu folosim coloranti sau conservanti!</p>
+        <p style="color : green">Avem si optiuni vegane sau fara lactoza :)</p>
     </section>
 
     <main class="product-details">
 
         
-        <!-- Inghetata Details -->
+        <!-- Inghetata detalii -->
         <div class="details-panel" id="inghetata" style="display:none;">
-            <h2>Înghețată</h2>
-            <p>Our unique gelato flavors and options!</p>
+            <h2>Inghetata</h2>
+            <p>Aromele noastre unice!</p>
             {% for item in inghetata_items %}
             <div class="product-item">
                 <h3>{{ item.aroma }}</h3>
-                <p><strong>Price:</strong> {{ item.info.pret }}</p>
-                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
-                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+                <p><strong>Pret:</strong> {{ item.info.pret }}</p>
+                <p><strong>Detalii:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Alergeni:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
             </div>
             {% endfor %}
         </div>
 
-        <!-- Bauturi Details -->
+        <!-- Bauturi detalii -->
         <div class="details-panel" id="bauturi" style="display:none;">
-            <h2>Băuturi</h2>
-            <p>Refreshing drinks to complement your treats!</p>
+            <h2>Bauturi</h2>
+            <p>Bauturi  revigorante care sa complementeze deserturile!</p>
             {% for item in bauturi_items %}
             <div class="product-item">
                 <h3>{{ item.bautura }}</h3>
-                <p><strong>Price:</strong> {{ item.info.pret }}</p>
-                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
-                <p><strong>Temperature:</strong> {{ item.temperatura }}</p>
-                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+                <p><strong>Pret:</strong> {{ item.info.pret }}</p>
+                <p><strong>Detalii:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Temperatura servire:</strong> {{ item.temperatura }}</p>
+                <p><strong>Alergeni:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
             </div>
             {% endfor %}
         </div>
 
-        <!-- Biscuiti Details -->
+        <!-- Biscuiti detalii -->
         <div class="details-panel" id="biscuiti" style="display:none;">
-            <h2>Biscuiți</h2>
-            <p>Our selection of biscuits to pair with your desserts!</p>
+            <h2>Biscuiti</h2>
+            <p>Selectie de biscuiti care sa mearge cu orice inghetata, prajitura sau bautura!</p>
             {% for item in biscuiti_items %}
             <div class="product-item">
                 <h3>{{ item.tip_biscuite }}</h3>
-                <p><strong>Price:</strong> {{ item.info.pret }}</p>
-                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
-                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+                <p><strong>Pret:</strong> {{ item.info.pret }}</p>
+                <p><strong>Detalii:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Alergeni:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
             </div>
             {% endfor %}
         </div>
 
-        <!-- Prajituri Details -->
+        <!-- Prajituri detalii -->
         <div class="details-panel" id="prajituri" style="display:none;">
-            <h2>Prăjituri</h2>
-            <p>Delicious pastries to satisfy your sweet cravings!</p>
+            <h2>Prajituri</h2>
+            <p>Prajituri delicioase pentru orice pofticiosi!</p>
             {% for item in prajituri_items %}
             <div class="product-item">
                 <h3>{{ item.nume_prajitura }}</h3>
-                <p><strong>Price:</strong> {{ item.info.pret }}</p>
-                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
-                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+                <p><strong>Pret:</strong> {{ item.info.pret }}</p>
+                <p><strong>Detalii:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Alergeni:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
             </div>
             {% endfor %}
         </div>
 
-        <!-- Torturi Inghetata Details -->
+        <!-- Torturi Inghetata detalii -->
         <div class="details-panel" id="torturi" style="display:none;">
-            <h2>Torturi Înghețată</h2>
-            <p>Special ice cream cakes for every occasion!</p>
+            <h2>Torturi Inghetata</h2>
+            <p>Torturi de inghetata pentru orice ocazie!</p>
             {% for item in torturi_items %}
             <div class="product-item">
                 <h3>{{ item.nume_tort }}</h3>
-                <p><strong>Price:</strong> {{ item.info.pret }}</p>
-                <p><strong>Details:</strong> {{ item.info.descriere }}</p>
-                <p><strong>Allergens:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
+                <p><strong>Pret:</strong> {{ item.info.pret }}</p>
+                <p><strong>Detalii:</strong> {{ item.info.descriere }}</p>
+                <p><strong>Alergeni:</strong> {% for alergen in item.info.alergeni.all %} {{ alergen.nume_alergeni }} {% endfor %}</p>
             </div>
             {% endfor %}
         </div>
 
-        <!-- Meniu Details -->
+        <!-- Meniu detalii -->
         <div class="details-panel" id="meniu" style="display:none;">
             <h2>Meniu</h2>
             {% for item in meniu_items %}
             <div class="product-item">
-                <h3>Category: 
-                    {% if item.inghetata %}Înghețată{% elif item.biscuiti %}Biscuiți{% elif item.bauturi %}Băuturi{% elif item.prajituri %}Prăjituri{% elif item.torturi_inghetata %}Torturi Înghețată{% endif %}
-                </h3>
-                {% if item.inghetata %}<p>Flavor: {{ item.inghetata.aroma }}</p>{% endif %}
-                {% if item.biscuiti %}<p>Type: {{ item.biscuiti.tip_biscuite }}</p>{% endif %}
-                {% if item.bauturi %}<p>Drink: {{ item.bauturi.bautura }}</p>{% endif %}
-                {% if item.prajituri %}<p>Pastry: {{ item.prajituri.nume_prajitura }}</p>{% endif %}
-                {% if item.torturi_inghetata %}<p>Cake: {{ item.torturi_inghetata.nume_tort }}</p>{% endif %}
+                {% comment %} <h3>Categorie: 
+                    {% if item.inghetata %}Inghetata{% elif item.biscuiti %}Biscuiti{% elif item.bauturi %}Bauturi{% elif item.prajituri %}Prajituri{% elif item.torturi_inghetata %}Torturi Inghetata{% endif %}
+                </h3> {% endcomment %}
+                {% if item.inghetata %}<p>Aroma Inghetata: {{ item.inghetata.aroma }}</p>{% endif %}
+                {% if item.biscuiti %}<p>Biscuite: {{ item.biscuiti.tip_biscuite }}</p>{% endif %}
+                {% if item.bauturi %}<p>Bautura: {{ item.bauturi.bautura }}</p>{% endif %}
+                {% if item.prajituri %}<p>Prajitura: {{ item.prajituri.nume_prajitura }}</p>{% endif %}
+                {% if item.torturi_inghetata %}<p>Tort: {{ item.torturi_inghetata.nume_tort }}</p>{% endif %}
             </div>
             {% endfor %}
         </div>
@@ -123,17 +126,17 @@
 
     <footer>
         <p>&copy; 2024 Gelaterie</p>
-        <!-- View Sponsors button -->
-        <button class="view-sponsors-btn" onclick="toggleSponsors()">View Sponsors</button>
+        <!-- Sponsors buton -->
+        <button class="view-sponsors-btn" onclick="toggleSponsors()">Sponsori</button>
         
-        <!-- Sponsors details inside the footer -->
+        <!-- Sponsors detalii in footer -->
         <div class="details-panel" id="footer-sponsors" style="display:none;">
-            <h2>Sponsors</h2>
+            <h2>Sponsori</h2>
             {% for sponsor in sponsors %}
             <div class="product-item">
                 <h3>{{ sponsor.nume_sponsor }}</h3>
                 <p><strong>Email:</strong> {{ sponsor.email_sponsor }}</p>
-                <p><strong>Phone:</strong> {{ sponsor.numar_telefon_sponsor }}</p>
+                <p><strong>Numar telefon:</strong> {{ sponsor.numar_telefon_sponsor }}</p>
             </div>
             {% endfor %}
         </div>
