@@ -5,32 +5,45 @@
     <title>Produse - Gelaterie</title>
 </head>
 <body>
-    <h1>Produse - Filtrare si Paginare</h1>
-    
+    <header>
+        <h1>Produse - Filtrare și Paginare</h1>
+    </header>
+
     <!-- Formular pentru filtre -->
-    <form method="get">
-        <label for="nume">Nume prajitura:</label>
-        <input type="text" id="nume" name="nume" value="{{ nume }}">
-        
-        <label for="pret_min">Pret minim:</label>
-        <input type="number" id="pret_min" name="pret_min" step="0.01" value="{{ pret_min }}">
-        
-        <label for="pret_max">Pret maxim:</label>
-        <input type="number" id="pret_max" name="pret_max" step="0.01" value="{{ pret_max }}">
-        
-        <button type="submit">Filtreaza</button>
-    </form>
+    <section id="filtre-produs">
+        <h2>Filtrează produsele</h2>
+        <form method="get">
+            <div class="form-group">
+                <label for="nume">Nume prăjitură:</label>
+                <input type="text" id="nume" name="nume" value="{{ form.cleaned_data.nume }}"> <!-- Patrez valorile introduse in campul de filtrare (raman datele la refresh)-->
+            </div>
+            <div class="form-group">
+                <label for="pret_min">Preț minim:</label>
+                <input type="number" id="pret_min" name="pret_min" step="0.50" value="{{ form.cleaned_data.pret_min }}">
+            </div>
+            <div class="form-group">
+                <label for="pret_max">Preț maxim:</label>
+                <input type="number" id="pret_max" name="pret_max" step="0.50" value="{{ form.cleaned_data.pret_max }}">
+            </div>
+            <button type="submit">Filtrează</button>
+        </form>
+    </section>
 
     <!-- Afisarea prajiturilor -->
-    <ul>
-        {% for prajitura in page_obj %}
-            <li>
-                <h3>{{ prajitura.nume_prajitura }}</h3>
-                <p><strong>Pret:</strong> {{ prajitura.info.pret }}</p>
-                <p><strong>Descriere:</strong> {{ prajitura.info.descriere }}</p>
-            </li>
-        {% endfor %}
-    </ul>
+    <section id="lista-prajituri">
+        <h2>Lista de prăjituri</h2>
+        <ul>
+            {% for prajitura in page_obj %}
+                <li>
+                    <h3>{{ prajitura.nume_prajitura }}</h3>
+                    <p><strong>Preț:</strong> {{ prajitura.info.pret }}</p>
+                    <p><strong>Descriere:</strong> {{ prajitura.info.descriere }}</p>
+                </li>
+            {% empty %}
+                <p>Nu s-au găsit produse care să corespundă criteriilor de căutare.</p>
+            {% endfor %}
+        </ul>
+    </section>
 
     <!-- Paginare -->
     <div class="pagination">

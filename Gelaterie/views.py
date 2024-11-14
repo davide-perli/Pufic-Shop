@@ -1,7 +1,9 @@
 from django.http import HttpResponse
 from Gelaterie.models import Adresa, Alergeni, Bauturi, Inghetata, Biscuite, Prajituri, Torturi_Inghetata, Meniu, Comanda, Informatii, Sponsor, Magazine
 from django.core.paginator import Paginator
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import PrajituriFilterForm
+from  .forms import ContactForm
 
 def home(request):
     return HttpResponse("Salut")
@@ -156,13 +158,17 @@ def display_items(request):
     return render(request, 'store.html', context)
 
 def display_products(request):
+    #Initializare cu date din request
+    form = PrajituriFilterForm(request.GET)
+
     # Preluam query parameters pentru filtre din URL
-    nume = request.GET.get('nume') 
-    pret_min = request.GET.get('pret_min')
-    pret_max = request.GET.get('pret_max') 
-    
-    # Construim queryset-ul pentru Prajituri, aplicand filtrele specificate
     prajituri = Prajituri.objects.all()
+    if form.is_valid():
+        nume = form.cleaned_data.get('nume')
+        pret_min = form.cleaned_data.get('pret_min')
+        pret_max = form.cleaned_data.get('pret_max')
+    
+    # Construim queryset-ul pentru Prajituri, cu filtrele specificate
     if nume:
         prajituri = prajituri.filter(nume_prajitura__icontains=nume)  # Cautare partiala dupa nume, fara problema de capitalizare
     if pret_min:
@@ -177,8 +183,19 @@ def display_products(request):
 
     context = {
         'page_obj': page_obj,
-        'nume': nume,
-        'pret_min': pret_min,
-        'pret_max': pret_max,
+        'form' : form,
     }
     return render(request, 'display_products.html', context)
+
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():  
+            nume = form.cleaned_data['nume']
+            email = form.cleaned_data['email']
+            mesaj = form.cleaned_data['mesaj']
+            return redirect('mesaj_trimis')
+    else:
+        form = ContactForm()
+    return render(request, 'contact.html', {'form': form})
+
