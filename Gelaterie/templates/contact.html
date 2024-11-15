@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gelaterie</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Gelaterie</h1>
+    </header>
+    <main>
+        <h2>Trimite-ne un mesaj</h2>
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="id_nume">Nume:</label>
+                {{ form.nume.errors }}
+                {{ form.nume }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_prenume">Prenume:</label>
+                {{ form.prenume.errors }}
+                {{ form.prenume }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_data_nasterii">Data nașterii:</label>
+                {{ form.data_nasterii.errors }}
+                {{ form.data_nasterii }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_email">Email:</label>
+                {{ form.email.errors }}
+                {{ form.email }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_confirm_email">Confirmare Email:</label>
+                {{ form.confirm_email.errors }}
+                {{ form.confirm_email }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_tip_mesaj">Tip mesaj:</label>
+                {{ form.tip_mesaj.errors }}
+                {{ form.tip_mesaj }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_subiect">Subiect:</label>
+                {{ form.subiect.errors }}
+                {{ form.subiect }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_zile_asteptare">Minim zile așteptare:</label>
+                {{ form.zile_asteptare.errors }}
+                {{ form.zile_asteptare }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_mesaj">Mesaj (încheiați cu semnătura dvs.):</label>
+                {{ form.mesaj.errors }}
+                {{ form.mesaj }}
+            </div>
+
+            <button type="submit">Trimite</button>
+        </form>
+    </main>
+</body>
+</html>

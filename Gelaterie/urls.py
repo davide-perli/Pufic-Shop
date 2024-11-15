@@ -17,5 +17,6 @@ urlpatterns = [
     path("magazine", views.magazine, name="magazine"),
     path("informatii", views.informatii, name="informatii"),
     path('produse', views.display_products, name='display_products'),
-    path('contact', views.contact_view, name = "contact_view")
+    path('contact', views.contact_view, name = "contact_view"),
+    path('mesaj-trimis/', views.mesaj_trimis, name='mesaj_trimis'),
 ]

@@ -4,6 +4,8 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from .forms import PrajituriFilterForm
 from .forms import ContactForm
+import time, os, json
+from datetime import date, datetime
 
 def home(request):
     return HttpResponse("Salut")
@@ -199,12 +201,52 @@ def display_products(request):
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
-        if form.is_valid():  
-            nume = form.cleaned_data['nume']
-            email = form.cleaned_data['email']
-            mesaj = form.cleaned_data['mesaj']
+        if form.is_valid():
+            cleaned_data = form.cleaned_data
+
+            # Calculăm vârsta în ani și luni
+            data_nasterii = cleaned_data['data_nasterii']
+            today = date.today()
+            ani = today.year - data_nasterii.year
+            luni = today.month - data_nasterii.month
+            if luni < 0:  # Ajustăm anii dacă lunile sunt negative
+                ani -= 1
+                luni += 12
+
+            # Prelucrăm mesajul
+            mesaj = cleaned_data['mesaj']
+            mesaj = mesaj.replace('\n', ' ')  # Liniile noi devin spații
+            mesaj = ' '.join(mesaj.split())  # Eliminăm spațiile multiple
+
+            # Pregătim datele pentru salvare
+            data_to_save = {
+                "nume": cleaned_data['nume'],
+                "prenume": cleaned_data['prenume'],
+                "varsta": f"{ani} ani și {luni} luni",
+                "email": cleaned_data['email'],
+                "tip_mesaj": cleaned_data['tip_mesaj'],
+                "subiect": cleaned_data['subiect'],
+                "zile_asteptare": cleaned_data['zile_asteptare'],
+                "mesaj": mesaj,
+            }
+
+            # Creăm un folder dacă nu există
+            folder_path = os.path.join(os.getcwd(), 'mesaje')
+            os.makedirs(folder_path, exist_ok=True)
+
+            # Salvăm datele într-un fișier JSON
+            timestamp = int(time.time())
+            file_name = f"mesaj_{timestamp}.json"
+            file_path = os.path.join(folder_path, file_name)
+            with open(file_path, 'w') as json_file:
+                json.dump(data_to_save, json_file, indent=4)
+
             return redirect('mesaj_trimis')
     else:
         form = ContactForm()
+
     return render(request, 'contact.html', {'form': form})
 
+
+def mesaj_trimis(request):
+    return render(request, 'mesaj_trimis.html', {'message': 'Mesajul tău a fost trimis cu succes!'})
