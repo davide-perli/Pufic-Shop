@@ -2,9 +2,11 @@ from django import forms
 from datetime import date
 
 class PrajituriFilterForm(forms.Form):
-    nume = forms.CharField(required=False, label='Nume prăjitură')
-    pret_min = forms.DecimalField(required=False, label='Preț minim', decimal_places=2)
-    pret_max = forms.DecimalField(required=False, label='Preț maxim', decimal_places=2)
+    nume = forms.CharField(required = False, label = 'Nume prăjitură')
+    pret_min = forms.DecimalField(required = False, label = 'Preț minim', decimal_places = 2)
+    pret_max = forms.DecimalField(required = False, label = 'Preț maxim', decimal_places = 2)
+    alergeni_in = forms.CharField(required = False, label = 'Alergeni')
+    magazin_disponibil = forms.DecimalField(required = False, label = 'Magazin disponibil')
 
 class ContactForm(forms.Form):
     nume = forms.CharField(max_length = 10, label = 'Nume', required = True)

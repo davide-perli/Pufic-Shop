@@ -11,7 +11,7 @@
 
     <!-- Formular pentru filtre -->
     <section id="filtre-produs">
-        <h2>Filtrează produsele</h2>
+        <h2>Filtrează produsele</h2>    
         <form method="get">
             <div class="form-group">
                 <label for="nume">Nume prăjitură:</label>
@@ -24,6 +24,14 @@
             <div class="form-group">
                 <label for="pret_max">Preț maxim:</label>
                 <input type="number" id="pret_max" name="pret_max" step="0.50" value="{{ form.cleaned_data.pret_max }}">
+            </div>
+            <div class="form-group">
+                <label for="magazin_disponibil">Magazin disponibil:</label>
+                <input type="text" id="magazin_disponibil" name="magazin_disponibil" value="{{ form.cleaned_data.magazin_disponibil}}">
+            </div>
+            <div class="form-group">
+                <label for="alergeni_in">Alergeni:</label>
+                <input type="text" id="alergeni_in" name="alergeni_in" value="{{ form.cleaned_data.alergeni_in}}">
             </div>
             <button type="submit">Filtrează</button>
         </form>
@@ -38,6 +46,20 @@
                     <h3>{{ prajitura.nume_prajitura }}</h3>
                     <p><strong>Preț:</strong> {{ prajitura.info.pret }}</p>
                     <p><strong>Descriere:</strong> {{ prajitura.info.descriere }}</p>
+                    <p><strong>Alergeni:</strong>
+                        {% for alergen in prajitura.info.alergeni.all %}
+                            {{ alergen.nume_alergeni }}{% if not forloop.last %}, {% endif %}
+                        {% empty %}
+                            Niciun alergen existent
+                        {% endfor %}
+                    </p>                     
+                    <p><strong>Magazine disponibile:</strong>
+                        {% for magazin in prajitura.magazin.all %}
+                            {{ magazin.nume_magazin }}{% if not forloop.last %}, {% endif %}
+                        {% empty %}
+                            Niciun magazin disponibil
+                        {% endfor %}
+                    </p>                    
                 </li>
             {% empty %}
                 <p>Nu s-au găsit produse care să corespundă criteriilor de căutare.</p>

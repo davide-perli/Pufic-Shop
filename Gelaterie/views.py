@@ -3,7 +3,7 @@ from Gelaterie.models import Adresa, Alergeni, Bauturi, Inghetata, Biscuite, Pra
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from .forms import PrajituriFilterForm
-from  .forms import ContactForm
+from .forms import ContactForm
 
 def home(request):
     return HttpResponse("Salut")
@@ -158,34 +158,43 @@ def display_items(request):
     return render(request, 'store.html', context)
 
 def display_products(request):
-    #Initializare cu date din request
-    form = PrajituriFilterForm(request.GET)
+    # Inițializare cu date din request
+    form = PrajituriFilterForm(request.GET or None)
 
-    # Preluam query parameters pentru filtre din URL
+    # Preluăm toate prăjiturile
     prajituri = Prajituri.objects.all()
+
+    # Dacă formularul este valid, aplicăm filtrele
     if form.is_valid():
         nume = form.cleaned_data.get('nume')
         pret_min = form.cleaned_data.get('pret_min')
         pret_max = form.cleaned_data.get('pret_max')
-    
-    # Construim queryset-ul pentru Prajituri, cu filtrele specificate
-    if nume:
-        prajituri = prajituri.filter(nume_prajitura__icontains=nume)  # Cautare partiala dupa nume, fara problema de capitalizare
-    if pret_min:
-        prajituri = prajituri.filter(info__pret__gte=pret_min) # >=
-    if pret_max:
-        prajituri = prajituri.filter(info__pret__lte=pret_max) # <=
+        magazin_disponibil = form.cleaned_data.get('magazin_disponibil')
+        alergeni_in = form.cleaned_data.get('alergeni_in')
 
-    # Paginarea: 5 prajituri pe pagina
-    paginator = Paginator(prajituri, 5)  # 5 obiecte pe pagina
+        # Aplicăm filtrele
+        if nume:
+            prajituri = prajituri.filter(nume_prajitura__icontains = nume)
+        if pret_min is not None:
+            prajituri = prajituri.filter(info__pret__gte = pret_min)
+        if pret_max is not None:
+            prajituri = prajituri.filter(info__pret__lte = pret_max)
+        if magazin_disponibil:
+            prajituri = prajituri.filter(magazin__nume_magazin__icontains = magazin_disponibil)
+        if alergeni_in:
+            prajituri = prajituri.filter(info__alergeni__nume_alergeni__icontains = alergeni_in)
+
+    # Paginarea: 5 prăjituri pe pagină
+    paginator = Paginator(prajituri, 5)
     page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number) # Preia pagina dorita din obiectul paginator si returneaza obiectul de tip page page_obj
+    page_obj = paginator.get_page(page_number)
 
     context = {
         'page_obj': page_obj,
-        'form' : form,
+        'form': form,
     }
     return render(request, 'display_products.html', context)
+
 
 def contact_view(request):
     if request.method == 'POST':
