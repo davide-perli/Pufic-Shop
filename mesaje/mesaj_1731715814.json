@@ -2,9 +2,10 @@
     "nume": "Perli",
     "prenume": "Davide",
     "varsta": "20 ani \u0219i 6 luni",
-    "email": null,
+    "email": "perlidavide@gmail.com",
+    "confirm_email": "perlidavide@gmail.com",
     "tip_mesaj": "REVIEW",
     "subiect": "Compliment",
-    "zile_asteptare": 7,
+    "zile_asteptare": 6,
     "mesaj": "O experienta minunata. A fost delicios totul. Perli"
 }

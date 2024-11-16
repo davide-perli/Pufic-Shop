@@ -224,10 +224,11 @@ def contact_view(request):
                 "prenume": cleaned_data['prenume'],
                 "varsta": f"{ani} ani și {luni} luni",
                 "email": cleaned_data['email'],
+                "confirm_email" : cleaned_data['confirm_email'],
                 "tip_mesaj": cleaned_data['tip_mesaj'],
                 "subiect": cleaned_data['subiect'],
                 "zile_asteptare": cleaned_data['zile_asteptare'],
-                "mesaj": mesaj,
+                "mesaj": cleaned_data['mesaj']
             }
 
             # Creăm un folder dacă nu există

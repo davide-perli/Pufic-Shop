@@ -13,7 +13,7 @@ class ContactForm(forms.Form):
     nume = forms.CharField(max_length = 10, label = 'Nume', required = True)
     prenume = forms.CharField(label = 'Prenume', required = False)
     data_nasterii = forms.DateField(label = 'Data nasterii', required = True)
-    email = forms.EmailField(label = 'Email', required = True)
+    email = forms.EmailField(label = 'Email')
     confirm_email = forms.EmailField(label='Confirmare Email')
     optiuni_mesaj = (
         ("RECLAMATIE", "reclamatie"),
@@ -33,7 +33,8 @@ class ContactForm(forms.Form):
         confirm_email = cleaned_data.get("confirm_email")
         if email and confirm_email and email != confirm_email:
             raise forms.ValidationError("Adresele de email nu coincid.")
-        
+        return email
+
     def clean_zile(self):
         zile_asteptare = self.cleaned_data.get('zile_asteptare')
         if  zile_asteptare < 0:
