@@ -13,8 +13,8 @@ class ContactForm(forms.Form):
     nume = forms.CharField(max_length = 10, label = 'Nume', required = True)
     prenume = forms.CharField(label = 'Prenume', required = False)
     data_nasterii = forms.DateField(label = 'Data nasterii', required = True)
-    email = forms.EmailField(label = 'Email')
-    confirm_email = forms.EmailField(label='Confirmare Email')
+    email = forms.EmailField(label = 'Email', required = True)
+    confirm_email = forms.EmailField(label='Confirmare Email', required = True)
     optiuni_mesaj = (
         ("RECLAMATIE", "reclamatie"),
         ("INTREBARE", "intrebare"),
@@ -28,12 +28,26 @@ class ContactForm(forms.Form):
     mesaj = forms.CharField(max_length = 100 ,label = 'Mesaj')
 
     def clean_email(self):
+    # Returnăm direct email-ul validat
+        return self.cleaned_data.get("email", "").strip()
+
+    def clean(self):
+        # Preluăm toate datele curățate
         cleaned_data = super().clean()
+
+        # Validăm email-urile
         email = cleaned_data.get("email")
         confirm_email = cleaned_data.get("confirm_email")
-        if email and confirm_email and email != confirm_email:
-            raise forms.ValidationError("Adresele de email nu coincid.")
-        return email
+
+        if not email or not confirm_email: # Nu campuri goale
+            raise forms.ValidationError("Ambele câmpuri de email trebuie completate.")
+
+        if confirm_email == email:
+            return cleaned_data
+        self.add_error("confirm_email", "Adresele de email nu coincid.") # Imi trebuie o una specifica, altfel nu se afiseaza
+
+        
+
 
     def clean_zile(self):
         zile_asteptare = self.cleaned_data.get('zile_asteptare')
