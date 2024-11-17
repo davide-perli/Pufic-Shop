@@ -39,7 +39,7 @@ class ContactForm(forms.Form):
         # Preluare date curatate
         cleaned_data = super().clean()
 
-        # Validare email-uri proprie (numerge cu ce e in curs)
+        # Validare email-uri proprie (nu merge cu ce e in curs)
         email = cleaned_data.get("email")
         confirm_email = cleaned_data.get("confirm_email")
 
