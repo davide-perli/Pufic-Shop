@@ -48,7 +48,7 @@ class ContactForm(forms.Form):
 
         if confirm_email == email:
             return cleaned_data
-        self.add_error("confirm_email", "Adresele de email nu coincid.") # Imi trebuie o una specifica, altfel nu se afiseaza
+        self.add_error("confirm_email", "Adresele de email nu coincid.") # Imi trebuie una specifica, altfel nu se afiseaza
 
         
 
