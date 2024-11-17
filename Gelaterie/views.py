@@ -6,6 +6,9 @@ from .forms import PrajituriFilterForm
 from .forms import ContactForm
 import time, os, json
 from datetime import date, datetime
+from .forms import ComandaForm
+from .models import Informatii
+import decimal
 
 def home(request):
     return HttpResponse("Salut")
@@ -204,25 +207,16 @@ def contact_view(request):
         if form.is_valid():
             cleaned_data = form.cleaned_data
 
-            # Calculăm vârsta în ani și luni
             data_nasterii = cleaned_data['data_nasterii']
             today = date.today()
             ani = today.year - data_nasterii.year
-            luni = today.month - data_nasterii.month
-            if luni < 0:  # Ajustăm anii dacă lunile sunt negative
-                ani -= 1
-                luni += 12
 
-            # Prelucrăm mesajul
             mesaj = cleaned_data['mesaj']
-            mesaj = mesaj.replace('\n', ' ')  # Liniile noi devin spații
-            mesaj = ' '.join(mesaj.split())  # Eliminăm spațiile multiple
 
-            # Pregătim datele pentru salvare
             data_to_save = {
                 "nume": cleaned_data['nume'],
                 "prenume": cleaned_data['prenume'],
-                "varsta": f"{ani} ani și {luni} luni",
+                "varsta": f"{ani} ani",
                 "email": cleaned_data['email'],
                 "confirm_email" : cleaned_data['confirm_email'],
                 "tip_mesaj": cleaned_data['tip_mesaj'],
@@ -231,11 +225,9 @@ def contact_view(request):
                 "mesaj": cleaned_data['mesaj']
             }
 
-            # Creăm un folder dacă nu există
-            folder_path = os.path.join(os.getcwd(), 'mesaje')
-            os.makedirs(folder_path, exist_ok=True)
+            folder_path = os.path.join(os.getcwd(), 'mesaje') # Path folder
 
-            # Salvăm datele într-un fișier JSON
+            # Salvare data in json
             timestamp = int(time.time())
             file_name = f"mesaj_{timestamp}.json"
             file_path = os.path.join(folder_path, file_name)
@@ -252,24 +244,21 @@ def contact_view(request):
 def mesaj_trimis(request):
     return render(request, 'mesaj_trimis.html', {'message': 'Mesajul tău a fost trimis cu succes!'})
 
-from django.shortcuts import render, redirect
-from .forms import ComandaForm
-from .models import Informatii
-import decimal
+
 
 def adauga_comanda(request):
     if request.method == 'POST':
         form = ComandaForm(request.POST)
         if form.is_valid():
-            # Preluăm obiectul `Comanda` fără să-l salvăm
+            # Preluare obiect fara salvare
             comanda = form.save(commit=False)
 
-            # Procesăm câmpurile adiționale
+            # Procesez campurile adaugate
             cos_cumparaturi = form.cleaned_data['cos_cumparaturi']
             note = form.cleaned_data.get('note', '')
             discount_procent = form.cleaned_data.get('discount_procent', 0)
 
-            # Aplicăm discount-ul (opțional)
+            # Aplic discount
             if discount_procent:
                 discount = decimal.Decimal(discount_procent) / 100
                 for info in form.cleaned_data['informatii']:
@@ -277,15 +266,15 @@ def adauga_comanda(request):
                     info.pret = round(pret_reduse, 2)
                     info.save()
 
-            # Setăm informațiile suplimentare în comandă
+            # Setare info extra in comanda
             comanda.note = note
             comanda.cos_cumparaturi = cos_cumparaturi
 
-            # Salvăm comanda completată
+            # Save comanda (campurile extra nu vor fi ca doar sunt extra si nu le-am definit in model)
             comanda.save()
-            form.save_m2m()  # Salvăm relațiile many-to-many
+            form.save_m2m()  # Save relatiile many-to-many
 
-            return redirect('mesaj_trimis')  # Redirecționăm către o pagină de succes
+            return redirect('mesaj_trimis') 
     else:
         form = ComandaForm()
 

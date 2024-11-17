@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'stil_adauga_comanda.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adaugă o Comandă</title>
+    <title>Adauga o Comanda</title>
 </head>
 <body>
     <header>
-        <h1>Adaugă o Comandă</h1>
+        <h1>Adauga o Comanda</h1>
     </header>
     <main>
         <form method="post">
             {% csrf_token %}
             <div class="form-group">
-                <label for="id_cos_cumparaturi">Cos cumpărături:</label>
+                <label for="id_cos_cumparaturi">Cos cumparaturi:</label>
                 {{ form.cos_cumparaturi.errors }}
                 {{ form.cos_cumparaturi }}
                 <small class="help-text">{{ form.cos_cumparaturi.help_text }}</small>
             </div>
 
             <div class="form-group">
-                <label for="id_note">Notiță:</label>
+                <label for="id_note">Notita:</label>
                 {{ form.note.errors }}
                 {{ form.note }}
                 <small class="help-text">{{ form.note.help_text }}</small>
@@ -42,13 +42,13 @@
             </div>
 
             <div class="form-group">
-                <label for="id_informatii">Informații produse:</label>
+                <label for="id_informatii">Optiuni produse:</label>
                 {{ form.informatii.errors }}
                 {{ form.informatii }}
                 <small class="help-text">{{ form.informatii.help_text }}</small>
             </div>
 
-            <button type="submit" class="btn">Salvează Comanda</button>
+            <button type="submit" class="btn">Salveaza Comanda</button>
         </form>
     </main>
 </body>

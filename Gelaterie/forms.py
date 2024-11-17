@@ -1,6 +1,7 @@
 from django import forms
 from datetime import date
 import re
+from .models import Comanda, Informatii
 
 class PrajituriFilterForm(forms.Form):
     nume = forms.CharField(required = False, label = 'Nume prăjitură')
@@ -28,14 +29,17 @@ class ContactForm(forms.Form):
     mesaj = forms.CharField(max_length = 100 ,label = 'Mesaj')
 
     def clean_email(self):
-    # Returnăm direct email-ul validat
+    # Returnez direct email-ul validat
         return self.cleaned_data.get("email", "").strip()
+    def clean_confirm_email(self):
+    # Returnez direct confirm_email-ul validat
+        return self.cleaned_data.get("confirm_email", "").strip()
 
     def clean(self):
-        # Preluăm toate datele curățate
+        # Preluare date curatate
         cleaned_data = super().clean()
 
-        # Validăm email-urile
+        # Validare email-uri proprie (numerge cu ce e in curs)
         email = cleaned_data.get("email")
         confirm_email = cleaned_data.get("confirm_email")
 
@@ -51,7 +55,7 @@ class ContactForm(forms.Form):
 
     def clean_zile(self):
         zile_asteptare = self.cleaned_data.get('zile_asteptare')
-        if  zile_asteptare < 0:
+        if  zile_asteptare < 0:  # Validare zile de asteptare
             raise forms.ValidationError("Numarul minim de zile de asteptare trebuie sa fie mai mare ca 0")
         return zile_asteptare
 
@@ -61,23 +65,23 @@ class ContactForm(forms.Form):
             today = date.today()
             age = today.year - data_nasterii.year
             
-            if age < 18:
+            if age < 18: # Doar utilizatori majori
                 raise forms.ValidationError("Trebuie sa fii major (18+) pentru a completa acest formular.")
         return data_nasterii
     
     def clean_mesaj(self):
-        mesaj = self.cleaned_data.get('mesaj')
-        nume_utilizator = self.cleaned_data.get('nume')  # Preluare nume pentru semnatura
+        mesaj = self.cleaned_data.get('mesaj').strip()
+        nume_utilizator = self.cleaned_data.get('nume').strip()  # Preluare nume pentru semnatura
 
         cuvinte = re.findall(r'\b\w+\b', mesaj)  # Cuvinte alfanumerice
         if len(cuvinte) < 5 or len(cuvinte) > 100:
-            raise forms.ValidationError("Mesajul trebuie să conțină între 5 și 100 de cuvinte.")
+            raise forms.ValidationError("Mesajul trebuie sa contina intre 5 si 100 de cuvinte.")
 
         if re.search(r'\bhttps?://\S+', mesaj):  # Link detect
-            raise forms.ValidationError("Mesajul nu poate conține linkuri.")
+            raise forms.ValidationError("Mesajul nu poate contine linkuri.")
 
-        if not mesaj.strip().endswith(nume_utilizator): #verificare semnatura
-            raise forms.ValidationError(f"Mesajul trebuie să se termine cu numele utilizatorului: {nume_utilizator}")
+        if not mesaj.lower().endswith(nume_utilizator.lower()): #verificare semnatura   
+            raise forms.ValidationError(f"Mesajul trebuie sa se termine cu numele utilizatorului: {nume_utilizator}")
 
         return mesaj
     
@@ -86,14 +90,12 @@ class ContactForm(forms.Form):
             return value #Asa pot avea camp gol pentru prenume
         
         if not value[0].isupper():
-                    raise forms.ValidationError(f"{field_name} trebuie să înceapă cu literă mare.")
+                    raise forms.ValidationError(f"{field_name} trebuie sa inceapa cu litera mare.")
 
         if not all(char.isalpha() or char.isspace() for char in value):
-                    raise forms.ValidationError(f"{field_name} poate conține doar litere și spații.")
+                    raise forms.ValidationError(f"{field_name} poate contine doar litere si spatii.")
         
 
-from django import forms
-from .models import Comanda, Informatii
 
 class ComandaForm(forms.ModelForm):
     # Campuri aditionale
@@ -107,25 +109,26 @@ class ComandaForm(forms.ModelForm):
         max_length = 150,
         required = False,
         label = "Note",
-        help_text = "Adăugați o notiță pentru comandă."
+        help_text = "Adaugati o notita pentru comanda"
     )
     discount_procent = forms.DecimalField(
         max_digits = 5,
         decimal_places = 2,
         required = False,
         label = "Discount (%)",
-        help_text = "Introduceți procentul de discount (0-100)."
+        help_text = "Introduceti procentul de discount (0-100)"
     )
+
 
     class Meta:
         model = Comanda
-        fields = ['livrare_curier', 'informatii']
+        fields = ['livrare_curier', 'informatii'] # Preluare coloane dintre cele existente
         labels = {
             'livrare_curier': "Livrare curier",
-            'informatii': "Informații comandă",
+            'informatii': "Informatii comandă",
         }
         widgets = {
-            'informatii': forms.SelectMultiple(attrs={'class': 'form-select'}),
+            'informatii': forms.CheckboxSelectMultiple(attrs={'class': 'form-select'}), # Pentru a selecta mai multe comenzi
         }
 
     def clean_cos_cumparaturi(self):
@@ -156,7 +159,7 @@ class ComandaForm(forms.ModelForm):
             specificatii_list = [info.specificatii for info in informatii]
             if not any(spec in cos_cumparaturi for spec in specificatii_list):
                 raise forms.ValidationError(
-                    "Cosul de cumparaturi trebuie să includa una dintre specificatiile produselor selectate."
+                    "Cosul de cumparaturi trebuie să includa minim una dintre specificatiile produselor selectate."
                 )
 
         return cleaned_data
