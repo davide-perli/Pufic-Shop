@@ -40,6 +40,9 @@ class Informatii(models.Model):
     pret = models.DecimalField(max_digits = 5, decimal_places = 2, null = True)
     alergeni = models.ManyToManyField(Alergeni)
 
+    def __str__(self):
+        return f"{self.specificatii} - {self.pret} RON"
+
 
 #6
 class Inghetata(models.Model):

@@ -19,4 +19,5 @@ urlpatterns = [
     path('produse', views.display_products, name='display_products'),
     path('contact', views.contact_view, name = "contact_view"),
     path('mesaj_trimis', views.mesaj_trimis, name='mesaj_trimis'),
+    path('adaugare', views.adauga_comanda, name='adauga_comanda'),
 ]

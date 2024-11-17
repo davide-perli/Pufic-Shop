@@ -90,3 +90,74 @@ class ContactForm(forms.Form):
 
         if not all(char.isalpha() or char.isspace() for char in value):
                     raise forms.ValidationError(f"{field_name} poate conține doar litere și spații.")
+        
+
+from django import forms
+from .models import Comanda, Informatii
+
+class ComandaForm(forms.ModelForm):
+    # Campuri aditionale
+    cos_cumparaturi = forms.CharField(
+         max_length = 300,
+         required = True,
+         label = "Cos cumparaturi",
+         help_text = "Adaugati produsele  pe care le doriti"
+    )
+    note = forms.CharField(
+        max_length = 150,
+        required = False,
+        label = "Note",
+        help_text = "Adăugați o notiță pentru comandă."
+    )
+    discount_procent = forms.DecimalField(
+        max_digits = 5,
+        decimal_places = 2,
+        required = False,
+        label = "Discount (%)",
+        help_text = "Introduceți procentul de discount (0-100)."
+    )
+
+    class Meta:
+        model = Comanda
+        fields = ['livrare_curier', 'informatii']
+        labels = {
+            'livrare_curier': "Livrare curier",
+            'informatii': "Informații comandă",
+        }
+        widgets = {
+            'informatii': forms.SelectMultiple(attrs={'class': 'form-select'}),
+        }
+
+    def clean_cos_cumparaturi(self):
+        cos_cumparaturi = self.cleaned_data.get('cos_cumparaturi')
+        if not cos_cumparaturi[0].isupper():
+            raise forms.ValidationError("Cosul de cumparaturi trebuie sa inceapa cu o litera mare")
+        return cos_cumparaturi
+
+    def clean_note(self):
+        note = self.cleaned_data.get('note')
+        if note is not None and not note[0].isupper():
+            raise forms.ValidationError("Notita trebuie sa inceapa cu o litera mare.")
+        return note
+
+    def clean_discount_procent(self):
+        discount = self.cleaned_data.get('discount_procent')
+        if discount is not None and (discount < 0 or discount > 100):
+            raise forms.ValidationError("Discount-ul trebuie sa fie intre 0 și 100%.")
+        return discount
+    
+    def clean(self):
+        cleaned_data = super().clean()
+        cos_cumparaturi = cleaned_data.get('cos_cummparaturi')
+        informatii = cleaned_data.get('informatii')
+
+        if informatii and cos_cumparaturi:
+
+            specificatii_list = [info.specificatii for info in informatii]
+            if not any(spec in cos_cumparaturi for spec in specificatii_list):
+                raise forms.ValidationError(
+                    "Cosul de cumparaturi trebuie să includa una dintre specificatiile produselor selectate."
+                )
+
+        return cleaned_data
+

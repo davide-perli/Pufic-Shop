@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'stil_adauga_comanda.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaugă o Comandă</title>
+</head>
+<body>
+    <header>
+        <h1>Adaugă o Comandă</h1>
+    </header>
+    <main>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_cos_cumparaturi">Cos cumpărături:</label>
+                {{ form.cos_cumparaturi.errors }}
+                {{ form.cos_cumparaturi }}
+                <small class="help-text">{{ form.cos_cumparaturi.help_text }}</small>
+            </div>
+
+            <div class="form-group">
+                <label for="id_note">Notiță:</label>
+                {{ form.note.errors }}
+                {{ form.note }}
+                <small class="help-text">{{ form.note.help_text }}</small>
+            </div>
+
+            <div class="form-group">
+                <label for="id_discount_procent">Discount (%):</label>
+                {{ form.discount_procent.errors }}
+                {{ form.discount_procent }}
+                <small class="help-text">{{ form.discount_procent.help_text }}</small>
+            </div>
+
+            <div class="form-group">
+                <label for="id_livrare_curier">Livrare curier:</label>
+                {{ form.livrare_curier.errors }}
+                {{ form.livrare_curier }}
+            </div>
+
+            <div class="form-group">
+                <label for="id_informatii">Informații produse:</label>
+                {{ form.informatii.errors }}
+                {{ form.informatii }}
+                <small class="help-text">{{ form.informatii.help_text }}</small>
+            </div>
+
+            <button type="submit" class="btn">Salvează Comanda</button>
+        </form>
+    </main>
+</body>
+</html>

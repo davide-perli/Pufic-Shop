@@ -251,3 +251,42 @@ def contact_view(request):
 
 def mesaj_trimis(request):
     return render(request, 'mesaj_trimis.html', {'message': 'Mesajul tău a fost trimis cu succes!'})
+
+from django.shortcuts import render, redirect
+from .forms import ComandaForm
+from .models import Informatii
+import decimal
+
+def adauga_comanda(request):
+    if request.method == 'POST':
+        form = ComandaForm(request.POST)
+        if form.is_valid():
+            # Preluăm obiectul `Comanda` fără să-l salvăm
+            comanda = form.save(commit=False)
+
+            # Procesăm câmpurile adiționale
+            cos_cumparaturi = form.cleaned_data['cos_cumparaturi']
+            note = form.cleaned_data.get('note', '')
+            discount_procent = form.cleaned_data.get('discount_procent', 0)
+
+            # Aplicăm discount-ul (opțional)
+            if discount_procent:
+                discount = decimal.Decimal(discount_procent) / 100
+                for info in form.cleaned_data['informatii']:
+                    pret_reduse = info.pret * (1 - discount)
+                    info.pret = round(pret_reduse, 2)
+                    info.save()
+
+            # Setăm informațiile suplimentare în comandă
+            comanda.note = note
+            comanda.cos_cumparaturi = cos_cumparaturi
+
+            # Salvăm comanda completată
+            comanda.save()
+            form.save_m2m()  # Salvăm relațiile many-to-many
+
+            return redirect('mesaj_trimis')  # Redirecționăm către o pagină de succes
+    else:
+        form = ComandaForm()
+
+    return render(request, 'adauga_comanda.html', {'form': form})

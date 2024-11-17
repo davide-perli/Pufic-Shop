@@ -1,12 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'stil_mesaj.css' %}">
     <title>Mesaj Trimis</title>
 </head>
 <body>
-    <h1>Mesaj trimis cu succes!</h1>
-    <p>{{ message }}</p>
-    <a href="{% url 'display_items' %}">Înapoi la pagina principală</a>
+    <header>
+        <h1>Mulțumim pentru mesaj!</h1>
+    </header>
+    <main>
+        <div class="message-box">
+            <p>{{ message }}</p>
+            <a href="{% url 'display_items' %}" class="btn">Înapoi la pagina principală</a>
+        </div>
+    </main>
 </body>
 </html>
