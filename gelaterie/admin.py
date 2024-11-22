@@ -1,8 +1,10 @@
 from django.contrib import admin
 from .models import (
     Adresa, Alergeni, Bauturi, Inghetata, Biscuite, Prajituri, 
-    Torturi_Inghetata, Meniu, Comanda, Informatii, Sponsor, Magazine
+    Torturi_Inghetata, Meniu, Comanda, Informatii, Sponsor, Magazine, CustomUser
 )
+
+from django.contrib.auth.admin import UserAdmin
 
 
 # Personalizare pagina de administrare
@@ -70,6 +72,27 @@ class MagazineAdmin(admin.ModelAdmin):
     list_filter = ['nume_magazin']
 
 
+class CustomUserAdmin(UserAdmin):
+    model = CustomUser
+    list_display = ('username', 'email', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'is_staff')
+    search_fields = ('username', 'email', 'telefon', 'adresa', 'nationalitate')
+    list_filter = ('is_staff', 'is_active', 'sex', 'nationalitate')
+
+    fieldsets = (
+        (None, {'fields': ('username', 'password')}),
+        ('Personal Info', {'fields': ('email', 'telefon', 'adresa', 'age', 'sex', 'nationalitate')}),
+        ('Permissions', {'fields': ('is_staff', 'is_active', 'groups', 'user_permissions')}),
+        ('Important dates', {'fields': ('last_login', 'date_joined')}),
+    )
+
+    add_fieldsets = (
+        (None, {
+            'classes': ('wide',),
+            'fields': ('username', 'email', 'password1', 'password2', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'is_staff', 'is_active')}
+        ),
+    )
+
+
 # Inregistrarea modelelor în admin
 admin.site.register(Adresa, AdresaAdmin)
 admin.site.register(Alergeni, AlergeniAdmin)
@@ -83,3 +106,6 @@ admin.site.register(Comanda, ComandaAdmin)
 admin.site.register(Informatii, InformatiiAdmin)
 admin.site.register(Sponsor, SponsorAdmin)
 admin.site.register(Magazine, MagazineAdmin)
+admin.site.register(CustomUser, CustomUserAdmin)
+
+

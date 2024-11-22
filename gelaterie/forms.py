@@ -1,8 +1,10 @@
 from django import forms
 from datetime import date
 import re
-from .models import Comanda, Informatii
+from .models import Comanda
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.forms import UserCreationForm
+from .models import CustomUser
 
 class PrajituriFilterForm(forms.Form):
     nume = forms.CharField(required = False, label = 'Nume prăjitură')
@@ -166,6 +168,72 @@ class ComandaForm(forms.ModelForm):
 
         return cleaned_data
     
+
+
+class CustomUserCreationForm(UserCreationForm):
+    telefon = forms.CharField(
+        max_length=15,
+        required=False,
+        label="Telefon",
+        help_text="Introduceti un numar de telefon valid",
+    )
+    adresa = forms.CharField(
+        max_length=150,
+        required=False,
+        label="Adresa",
+        help_text="Introduceti adresa completa",
+    )
+    age = forms.IntegerField(
+        required=True,
+        label="Varsta",
+        help_text="Trebuie sa fi  major",
+    )
+    sex = forms.ChoiceField(
+        choices=CustomUser.optiuni_sex,
+        required=True,
+        label="Sex",
+    )
+    nationalitate = forms.CharField(
+        max_length=50,
+        required=True,
+        label="Nationalitate",
+        help_text="Introduceti nationalitatea dvs.",
+    )
+
+    class Meta:
+        model = CustomUser
+        fields = [
+            "username",
+            "email",
+            "password1",
+            "password2",
+            "telefon",
+            "adresa",
+            "age",
+            "sex",
+            "nationalitate",
+        ]
+
+    def clean_telefon(self):
+        telefon = self.cleaned_data.get("telefon")
+        if telefon and not telefon.isdigit():
+            raise forms.ValidationError("Numarul de telefon trebuie sa contina doar cifre!")
+        return telefon
+
+    def clean_age(self):
+        age = self.cleaned_data.get("age")
+        if age < 18:
+            raise forms.ValidationError("Trebuie sa fi major!")
+        return age
+
+    def clean_nationalitate(self):
+        nationalitate = self.cleaned_data.get("nationalitate")
+        if not nationalitate.isalpha():
+            raise forms.ValidationError("Nationalitatea trebuie sa contina doar litere!")
+        return nationalitate
+    
+
+
 class CustomAuthenticationForm(AuthenticationForm):
     ramane_logat = forms.BooleanField(
         required=False,
@@ -177,5 +245,4 @@ class CustomAuthenticationForm(AuthenticationForm):
         cleaned_data = super().clean()
         ramane_logat = self.cleaned_data.get('ramane_logat')
         return cleaned_data
-
 

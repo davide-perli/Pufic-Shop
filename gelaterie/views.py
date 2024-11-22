@@ -5,12 +5,16 @@ from django.shortcuts import render, redirect
 from .forms import PrajituriFilterForm
 from .forms import ContactForm
 import time, os, json
-from datetime import date, datetime
+from datetime import date
 from .forms import ComandaForm
 from .models import Informatii
 import decimal
 from django.contrib.auth import login
-from .forms import CustomAuthenticationForm     
+from .forms import CustomAuthenticationForm    
+from .forms import CustomUserCreationForm
+from django.contrib.auth import logout 
+from django.contrib.auth import authenticate
+from django.contrib.auth.decorators import login_required
 
 def home(request):
     return HttpResponse("Salut")
@@ -245,7 +249,7 @@ def mesaj_trimis(request):
     return render(request, 'mesaj_trimis.html', {'message': 'Mesajul tău a fost trimis cu succes!'})
 
 
-
+@login_required(login_url='custom_login_view')  # Redirectioneaza la login daca nu e autentificat
 def adauga_comanda(request):
     if request.method == 'POST':
         form = ComandaForm(request.POST)
@@ -283,18 +287,43 @@ def adauga_comanda(request):
 
 
 
+def register_view(request):
+    if request.method == "POST":
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('custom_login_view') 
+    else:
+        form = CustomUserCreationForm()
+    return render(request, "register.html", {"form": form})
+
+
+
+
 def custom_login_view(request):
     if request.method == 'POST':
         form = CustomAuthenticationForm(data=request.POST, request=request)
         if form.is_valid():
-            user = form.get_user()
+            username = form.cleaned_data.get('username')
+            user = authenticate(username=username, password=form.cleaned_data.get('password'))
+            
+            if user is None:
+                return redirect('register') 
+
             login(request, user)
             if not form.cleaned_data.get('ramane_logat'):
                 request.session.set_expiry(0)
             else:
-                request.session.set_expiry(2*7*24*60*60)  # 2 săptămâni în secunde            
-            return redirect('home')
+                request.session.set_expiry(1 * 24 * 60 * 60)  # 1 zi
+
+            return redirect('adauga_comanda')
     else:
         form = CustomAuthenticationForm()
 
     return render(request, 'login.html', {'form': form})
+
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('mesaj_trimis')

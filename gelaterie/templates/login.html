@@ -10,7 +10,7 @@
 <body>
     <div class="login-container">
         <h1>Login</h1>
-        <form method="post" action="{% url 'adauga_comanda' %}">
+        <form method="post" action="{% url 'custom_login_view' %}">
             {% csrf_token %}
             {{ form.non_field_errors }}
 
@@ -33,6 +33,11 @@
 
             <button type="submit" class="btn">Login</button>
         </form>
+
+        <div class="register-link">
+            <p>Nu ai un cont?</p>
+            <a href="{% url 'register_view' %}" class="btn-secondary">Inregistreaza-te</a>
+        </div>
     </div>
 </body>
 </html>
