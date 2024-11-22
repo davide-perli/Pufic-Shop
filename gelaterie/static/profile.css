@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.profile-container h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.profile-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profile-container strong {
+    font-weight: bold;
+}
+
+.profile-container .btn, .profile-container .btn-secondary {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.profile-container .btn:hover, .profile-container .btn-secondary:hover {
+    background-color: #45a049;
+}
+
+.profile-container .btn-secondary {
+    background-color: #0059ff;
+    margin-top: 10px;
+}
+
+.profile-container .btn-secondary:hover {
+    background-color: #004bb5;
+}

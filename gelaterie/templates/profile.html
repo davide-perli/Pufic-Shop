@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+    <title>Profil Utilizator</title>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Profil Utilizator</h1>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Telefon:</strong> {{ user.telefon }}</p>
+        <p><strong>Adresa:</strong> {{ user.adresa }}</p>
+        <p><strong>Varsta:</strong> {{ user.age }}</p>
+        <p><strong>Sex:</strong> {{ user.get_sex_display }}</p>
+        <p><strong>Nationalitate:</strong> {{ user.nationalitate }}</p>
+        
+        <a href="{% url 'adauga_comanda' %}" class="btn">Plaseaza comanda</a>
+        <a href="{% url 'change_password_view' %}" class="btn">Schimba Parola</a>
+    </div>
+</body>
+</html>

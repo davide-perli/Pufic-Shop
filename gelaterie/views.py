@@ -15,6 +15,7 @@ from .forms import CustomUserCreationForm
 from django.contrib.auth import logout 
 from django.contrib.auth import authenticate
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import PasswordChangeForm
 
 def home(request):
     return HttpResponse("Salut")
@@ -308,7 +309,7 @@ def custom_login_view(request):
             user = authenticate(username=username, password=form.cleaned_data.get('password'))
             
             if user is None:
-                return redirect('register') 
+                return redirect('register_view') 
 
             login(request, user)
             if not form.cleaned_data.get('ramane_logat'):
@@ -316,13 +317,28 @@ def custom_login_view(request):
             else:
                 request.session.set_expiry(1 * 24 * 60 * 60)  # 1 zi
 
-            return redirect('adauga_comanda')
+            return redirect('profile_view')  # După login, redirecționează către profil
     else:
         form = CustomAuthenticationForm()
 
     return render(request, 'login.html', {'form': form})
 
+@login_required
+def profile_view(request):
+    # Aici se vor adăuga datele utilizatorului la sesiune
+    user = request.user
+    return render(request, 'profile.html', {'user': user})
 
+@login_required
+def change_password_view(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('profile_view')  # După schimbarea parolei, redirecționează utilizatorul la profil
+    else:
+        form = PasswordChangeForm(request.user)
+    return render(request, 'change_password.html', {'form': form})
 
 def logout_view(request):
     logout(request)
