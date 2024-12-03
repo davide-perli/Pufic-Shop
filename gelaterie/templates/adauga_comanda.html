@@ -12,45 +12,54 @@
         <h1>Adauga o Comanda</h1>
         <a href="{% url 'logout_view' %}" class="logout-btn">Delogare</a>
     </header>
+
+    <!-- Butoane pentru detalii produse -->
+    <!-- Butoane pentru detalii produse -->
+    <div class="buttons-container">
+        <a href="{% url 'detalii_inghetata'%}" class="btn">Detalii Inghetata</a>
+        <a href="{% url 'detalii_bautura'%}" class="btn">Detalii Bauturi</a>
+        <a href="{% url 'detalii_biscuit'%}" class="btn">Detalii Biscuiti</a>
+        <a href="{% url 'detalii_prajitura'%}" class="btn">Detalii Prajituri</a>
+        <a href="{% url 'detalii_tort_inghetata'%}" class="btn">Detalii Torturi</a>
+    </div>
+
+    
+
     <main>
         <form method="post">
             {% csrf_token %}
             <div class="form-group">
                 <label for="id_cos_cumparaturi">Cos cumparaturi:</label>
-                {{ form.cos_cumparaturi.errors }}
                 {{ form.cos_cumparaturi }}
                 <small class="help-text">{{ form.cos_cumparaturi.help_text }}</small>
             </div>
-
+    
             <div class="form-group">
                 <label for="id_note">Notita:</label>
-                {{ form.note.errors }}
                 {{ form.note }}
                 <small class="help-text">{{ form.note.help_text }}</small>
             </div>
-
+    
             <div class="form-group">
                 <label for="id_discount_procent">Discount (%):</label>
-                {{ form.discount_procent.errors }}
                 {{ form.discount_procent }}
                 <small class="help-text">{{ form.discount_procent.help_text }}</small>
             </div>
-
+    
             <div class="form-group">
                 <label for="id_livrare_curier">Livrare curier:</label>
-                {{ form.livrare_curier.errors }}
                 {{ form.livrare_curier }}
             </div>
-
+    
             <div class="form-group">
                 <label for="id_informatii">Optiuni produse:</label>
-                {{ form.informatii.errors }}
                 {{ form.informatii }}
                 <small class="help-text">{{ form.informatii.help_text }}</small>
             </div>
-
+    
             <button type="submit" class="btn">Salveaza Comanda</button>
         </form>
     </main>
+    
 </body>
 </html>

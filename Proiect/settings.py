@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!^3ezkz#wq^_z_9mp^n_tp=w_y$aai__r@sgt*kk)$cgtbljw4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -126,7 +126,26 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587 
+EMAIL_USE_TLS = True 
+EMAIL_HOST_USER = 'artchanell01@gmail.com'
+EMAIL_HOST_PASSWORD = 'ghdbsyuwyejundji'
+DEFAULT_FROM_EMAIL = 'Gelateria-Pufic <artchanell01@gmail.com>'
+
+
+
+
+ADMINS = [
+    ('davide', 'perlidavide@gmail.com'),
+    ('andi', 'artchanell01@gmail.com'),
+]
+

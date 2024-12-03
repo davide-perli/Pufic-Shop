@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titlu }}</title>
+</head>
+<body>
+    <header>
+        <h1>Detalii pentru {{ titlu }}</h1>
+        <a href="{% url 'adauga_comanda' %}">Înapoi la Adaugă Comandă</a>
+    </header>
+    <main>
+        <ul>
+            {% for produs in produse %}
+            <li>
+                <strong>{{ produs }}</strong>
+                <p>Descriere: {{ produs.info.descriere }}</p>
+                <p>Preț: {{ produs.info.pret }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>

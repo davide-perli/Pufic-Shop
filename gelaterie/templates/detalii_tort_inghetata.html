@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detalii Tort Inghetata</title>
+</head>
+<body>
+    <h1>Detalii Torturi Inghetata</h1>
+    {% for tort in torturi %}
+    <p>{{ tort.tort }} - {{ tort.aroma }} - {{ tort.mod_servire }}</p>
+    <p>{{ tort.info.descriere }} - {{ tort.info.specificatii }} - {{ tort.info.pret }}</p>
+    {% endfor %}
+
+    <a href="/adaugare">Inapoi la Comanda</a>
+</body>
+</html>

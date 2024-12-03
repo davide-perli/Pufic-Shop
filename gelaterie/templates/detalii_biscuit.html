@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detalii Biscuit</title>
+</head>
+<body>
+    <h1>Detalii Biscuiti</h1>
+    {% for biscuit in biscuiti %}
+    <p>{{ biscuit.biscuit }} - {{ biscuit.aroma }} - {{ biscuit.mod_servire }}</p>
+    <p>{{ biscuit.info.descriere }} - {{ biscuit.info.specificatii }} - {{ biscuit.info.pret }}</p>
+    {% endfor %}
+
+    <a href="/adaugare">Inapoi la Comanda</a>
+</body>
+</html>

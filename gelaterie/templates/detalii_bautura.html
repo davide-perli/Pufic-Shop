@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detalii Bauturi</title>
+</head>
+<body>
+    <h1>Detalii Bautura</h1>
+    {% for bautura in bauturi %}
+    <p>{{ bautura.bautura }} - {{ bautura.tip }} - {{ bautura.mod_servire }}</p>
+    <p>{{ bautura.info.descriere }} - {{ bautura.info.specificatii }} - {{ bautura.info.pret }}</p>
+    {% endfor %}
+
+    <a href="/adaugare">Inapoi la Comanda</a>
+</body>
+</html>

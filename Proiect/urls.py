@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",include("gelaterie.urls")),
+    path('aplicatie/', include('gelaterie.urls')),  # Prefixul 'aplicatie' pentru toate rutele din aplicație
 ]

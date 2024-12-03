@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<body>
+    <p>Bun venit, {{ user.username }}!</p>
+    <p>Te-ai inregistrat pe site-ul nostru cu adresa de email {{ user.email }}.</p>
+    <p>Te rugam sa confirmi adresa de email accesand urmatorul link:</p>
+    <p>
+        <a href="http://192.168.0.103:8000/confirma_mail/{{ user.cod }}">
+            Confirma emailul (rețea locală)
+        </a>
+    </p>
+    <p>
+        <a href="http://localhost:8000/confirma_mail/{{ user.cod }}">
+            Confirma emailul (localhost)
+        </a>
+    </p>
+    <img src="http://192.168.0.103:8000/static/logo.jpg" alt="Logo">
+
+</body>
+</html>

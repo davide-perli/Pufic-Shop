@@ -1,6 +1,10 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
+import random
+import string
+from django.utils.timezone import now
+
 
 
 #1
@@ -172,3 +176,40 @@ class CustomUser(AbstractUser):
     age = models.SmallIntegerField(null = True)
     sex = models.CharField(choices = optiuni_sex, default = "NONE")
     nationalitate = models.CharField(max_length = 50, blank = True)
+    cod = models.CharField(max_length = 100, blank = True)
+    email_confirmat = models.BooleanField(default = False)
+
+    def generate_cod(self):
+        return ''.join(random.choices(string.ascii_letters + string.digits, k=20))
+
+    def save(self, *args, **kwargs):
+        if not self.cod:
+            self.cod = self.generate_cod()
+        super().save(*args, **kwargs)
+
+
+
+
+
+class Vizualizare(models.Model):
+    utilizator = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    produs = models.ForeignKey(Informatii, on_delete=models.CASCADE, null=True, blank=True)
+    categorie = models.CharField(max_length=100, null=True, blank=True)  # Nou câmp
+    data_vizualizare = models.DateTimeField(default=now)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['utilizator', 'categorie'], name='unique_vizualizare_per_utilizator_categorie')
+        ]
+
+
+class Promotie(models.Model):
+    nume = models.CharField(max_length = 100)
+    data_creare = models.DateTimeField(auto_now_add = True)
+    data_expirare = models.DateTimeField()
+    categorie = models.CharField(max_length = 100)
+    descriere = models.TextField()
+    discount = models.DecimalField(max_digits = 5, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.nume} - Expira: {self.data_expirare}"

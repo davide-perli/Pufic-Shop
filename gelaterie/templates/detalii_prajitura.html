@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detalii Prajitura</title>
+</head>
+<body>
+    <h1>Detalii Prajituri</h1>
+    {% for prajitura in prajituri %}
+    <p>{{ prajitura.prajitura }} - {{ prajitura.tip }} - {{ prajitura.mod_servire }}</p>
+    <p>{{ prajitura.info.descriere }} - {{ prajitura.info.specificatii }} - {{ prajitura.info.pret }}</p>
+    {% endfor %}
+
+    <a href="/">Inapoi la magazin</a>
+</body>
+</html>

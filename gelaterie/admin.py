@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
     Adresa, Alergeni, Bauturi, Inghetata, Biscuite, Prajituri, 
-    Torturi_Inghetata, Meniu, Comanda, Informatii, Sponsor, Magazine, CustomUser
+    Torturi_Inghetata, Meniu, Comanda, Informatii, Sponsor, Magazine, CustomUser,  Vizualizare, Promotie
 )
 
 from django.contrib.auth.admin import UserAdmin
@@ -74,13 +74,13 @@ class MagazineAdmin(admin.ModelAdmin):
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
-    list_display = ('username', 'email', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'is_staff')
-    search_fields = ('username', 'email', 'telefon', 'adresa', 'nationalitate')
-    list_filter = ('is_staff', 'is_active', 'sex', 'nationalitate')
+    list_display = ('username', 'email', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'cod', 'email_confirmat', 'is_staff')
+    search_fields = ('username', 'email', 'telefon', 'adresa', 'nationalitate', 'email_confirmat')
+    list_filter = ('is_staff', 'is_active', 'sex', 'nationalitate', 'email_confirmat')
 
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
-        ('Personal Info', {'fields': ('email', 'telefon', 'adresa', 'age', 'sex', 'nationalitate')}),
+        ('Personal Info', {'fields': ('email', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'cod', 'email_confirmat')}),
         ('Permissions', {'fields': ('is_staff', 'is_active', 'groups', 'user_permissions')}),
         ('Important dates', {'fields': ('last_login', 'date_joined')}),
     )
@@ -88,9 +88,27 @@ class CustomUserAdmin(UserAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('username', 'email', 'password1', 'password2', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'is_staff', 'is_active')}
+            'fields': ('username', 'email', 'password1', 'password2', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'cod', 'email_confirmat', 'is_staff', 'is_active')}
         ),
     )
+
+
+
+
+class VizualizareAdmin(admin.ModelAdmin):
+    list_display = ('utilizator', 'produs', 'categorie', 'data_vizualizare')  
+    search_fields = ('utilizator__username', 'produs__specificatii')  
+    list_filter = ('data_vizualizare', 'categorie') 
+    ordering = ('-data_vizualizare',)  
+
+# Clasa pentru administrarea Promoțiilor
+class PromotieAdmin(admin.ModelAdmin):
+    list_display = ('nume', 'data_creare', 'data_expirare', 'categorie', 'discount') 
+    search_fields = ('nume', 'categorie')  
+    list_filter = ('data_creare', 'data_expirare', 'categorie') 
+    ordering = ('-data_creare',) 
+
+
 
 
 # Inregistrarea modelelor în admin
@@ -109,3 +127,5 @@ admin.site.register(Magazine, MagazineAdmin)
 admin.site.register(CustomUser, CustomUserAdmin)
 
 
+admin.site.register(Vizualizare, VizualizareAdmin)
+admin.site.register(Promotie, PromotieAdmin)

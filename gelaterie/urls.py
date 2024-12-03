@@ -1,16 +1,19 @@
 from django.urls import path
 from . import views
 
+# python manage.py runserver 0.0.0.0:8000
+# http://192.168.0.103:8000
+
 urlpatterns = [
     path('', views.display_items, name = 'display_items'),
     path("home", views.home, name = "home"),
-    path("adresa", views.adresa, name = "adresa"),
-    path("alergeni", views.afiseaza_alergeni, name = "afiseaza_alergeni"),
-    path("bauturi", views.bauturi, name = "bauturi"),
-    path("inghetata", views.inghetata, name = "inghetata"),
-    path("biscuiti", views.biscuiti, name = "biscuiti"),
-    path("prajituri", views.prajituri, name = "prajituri"),
-    path("torturi-inghetata", views.torturi_inghetata, name = "torturi_inghetata"),
+    # path("adresa", views.adresa, name = "adresa"),
+    # path("alergeni", views.afiseaza_alergeni, name = "afiseaza_alergeni"),
+    # path("bauturi", views.bauturi, name = "bauturi"),
+    # path("inghetata", views.inghetata, name = "inghetata"),
+    # path("biscuiti", views.biscuiti, name = "biscuiti"),
+    # path("prajituri", views.prajituri, name = "prajituri"),
+    # path("torturi-inghetata", views.torturi_inghetata, name = "torturi_inghetata"),
     path("meniu", views.meniu, name = "meniu"),
     path("comenzi", views.comenzi, name = "comenzi"),
     path("sponsori", views.sponsori, name = "sponsori"),
@@ -24,5 +27,13 @@ urlpatterns = [
     path('register', views.register_view, name = "register_view"),
     path('logout', views.logout_view, name = "logout_view"),
     path('profile', views.profile_view, name = 'profile_view'),
-    path('schimbare_parola', views.change_password_view, name = "change_password_view")
+    path('schimbare_parola', views.change_password_view, name = "change_password_view"),
+    path('confirma_mail/<str:cod>', views.confirma_mail, name='confirma_mail'),  # Ruta pentru confirmarea emailului
+    path('promotii', views.creeaza_promotie, name='promotii'), 
+    path('detalii_inghetata', views.detalii_inghetata, name='detalii_inghetata'),
+    path('detalii_bautura', views.detalii_bautura, name='detalii_bautura'),
+    path('detalii_biscuit', views.detalii_biscuit, name='detalii_biscuit'),
+    path('detalii_prajitura', views.detalii_prajitura, name='detalii_prajitura'),
+    path('detalii_tort_inghetata', views.detalii_torturi, name='detalii_tort_inghetata'),
+
 ]

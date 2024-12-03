@@ -6,6 +6,9 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.forms import UserCreationForm
 from .models import CustomUser
 
+from .models import Promotie
+
+
 class PrajituriFilterForm(forms.Form):
     nume = forms.CharField(required = False, label = 'Nume prăjitură')
     pret_min = forms.DecimalField(required = False, label = 'Preț minim', decimal_places = 2)
@@ -223,7 +226,7 @@ class CustomUserCreationForm(UserCreationForm):
     def clean_age(self):
         age = self.cleaned_data.get("age")
         if age < 18:
-            raise forms.ValidationError("Trebuie sa fi major!")
+            raise forms.ValidationError("Trebuie sa fii major!")
         return age
 
     def clean_nationalitate(self):
@@ -245,4 +248,17 @@ class CustomAuthenticationForm(AuthenticationForm):
         cleaned_data = super().clean()
         ramane_logat = self.cleaned_data.get('ramane_logat')
         return cleaned_data
+    
+
+
+
+from django import forms
+from .models import Promotie
+
+class PromotieForm(forms.ModelForm):
+    k = forms.IntegerField(required=True, label="Minim Vizualizări", min_value=1)
+
+    class Meta:
+        model = Promotie
+        fields = ['nume', 'data_expirare', 'categorie', 'descriere', 'discount', 'k']
 
