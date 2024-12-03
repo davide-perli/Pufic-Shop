@@ -533,18 +533,18 @@ def creeaza_promotie(request):
             # Obtinere utilizatori
             utilizatori = CustomUser.objects.filter(id__in=[v['utilizator'] for v in utilizatori_cu_vizualizari])
 
-            subject = f'Promoție Specială: {promotie.nume}'
+            subject = f'Promotie Speciala: {promotie.nume}'
 
             for utilizator in utilizatori:
         
                 message = f"Salut {utilizator.username},\n\n"
-                message += f"Avem o nouă promoție pentru tine! Detaliile promoției:\n"
+                message += f"Avem o noua promotie pentru tine! Detaliile promotiei:\n"
                 message += f"Nume: {promotie.nume}\n"
                 message += f"Descriere: {promotie.descriere}\n"
                 message += f"Discount: {promotie.discount}%\n"
-                message += f"Data Expirării: {promotie.data_expirare.strftime('%d-%m-%Y')}\n"
+                message += f"Data Expirarii: {promotie.data_expirare.strftime('%d-%m-%Y')}\n"
                 message += f"Categorie: {promotie.categorie}\n\n"
-                message += "Nu rata această oportunitate! Vizitează-ne acum pentru mai multe detalii."
+                message += "Nu rata aceasta oportunitate! Viziteaza-ne acum pentru mai multe detalii."
 
               
                 send_mail(
