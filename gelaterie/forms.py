@@ -256,7 +256,11 @@ from django import forms
 from .models import Promotie
 
 class PromotieForm(forms.ModelForm):
-    k = forms.IntegerField(required=True, label="Minim Vizualizări", min_value=1)
+    k = forms.IntegerField(required=True, label="Minim Vizualizari", min_value=1)
+    data_expirare = forms.DateField(
+        widget=forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
+        label="Data Expirării"
+    )
 
     class Meta:
         model = Promotie

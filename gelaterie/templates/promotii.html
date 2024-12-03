@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <h1>Creează Promoție</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creeaza Promotie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .form-container button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Creeaza Promotie</h1>
         <form method="POST">
             {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-primary">Creează Promoție</button>
+            {{ form.nume.label_tag }}
+            {{ form.nume }}
+            
+            {{ form.data_expirare.label_tag }}
+            {{ form.data_expirare }}
+            
+            {{ form.categorie.label_tag }}
+            {{ form.categorie }}
+            
+            {{ form.descriere.label_tag }}
+            {{ form.descriere }}
+            
+            {{ form.discount.label_tag }}
+            {{ form.discount }}
+            
+            {{ form.k.label_tag }}
+            {{ form.k }}
+            
+            <button type="submit">Creeaza Promotie</button>
         </form>
-    </body>
+    </div>
+</body>
 </html>

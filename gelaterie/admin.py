@@ -101,7 +101,7 @@ class VizualizareAdmin(admin.ModelAdmin):
     list_filter = ('data_vizualizare', 'categorie') 
     ordering = ('-data_vizualizare',)  
 
-# Clasa pentru administrarea Promoțiilor
+
 class PromotieAdmin(admin.ModelAdmin):
     list_display = ('nume', 'data_creare', 'data_expirare', 'categorie', 'discount') 
     search_fields = ('nume', 'categorie')  

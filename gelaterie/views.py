@@ -515,7 +515,8 @@ def detalii_torturi(request):
 def is_admin(user):
     return user.is_staff  # Verifica daca utilizatorul este administrator
 
-@user_passes_test(is_admin, login_url='custom_login_view')  # Redirectionare daca nu e admin
+@user_passes_test(is_admin, login_url='https://www.youtube.com/watch?v=xvFZjo5PgG0')  # Redirectionare daca nu e admin
+# @user_passes_test(is_admin, login_url='custom_login_view') 
 @login_required
 def creeaza_promotie(request):
     if request.method == 'POST':
