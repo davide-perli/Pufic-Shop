@@ -41,3 +41,16 @@ Traceback (most recent call last):
     raise ValueError(
 ValueError: The view gelaterie.views.comenzi didn't return an HttpResponse object. It returned None instead.
 ERROR 2024-12-04 00:41:18,315 basehttp "GET /comenzi HTTP/1.1" 500 73273
+ERROR 2024-12-04 01:11:21,149 log Internal Server Error: /aplicatie/contact
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 278, in contact_view
+    with open(file_path, 'w') as json_file:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/davide/Documents/ProiectDjango/Proiect/mesaje/mesaj_1733274681.json'
+ERROR 2024-12-04 01:11:21,151 basehttp "POST /aplicatie/contact HTTP/1.1" 500 77745

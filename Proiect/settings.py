@@ -209,7 +209,6 @@ LOGGING = {
         # Logger pentru Django
         'django': {
             'handlers': ['console', 
-                         # Adauga handler-ele pentru fisiere
                          'debug_file', 
                          'info_file', 
                          'warning_file', 

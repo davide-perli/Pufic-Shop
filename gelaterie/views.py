@@ -42,11 +42,11 @@ import logging
 logger = logging.getLogger('django')
 
 def home(request):
-    logger.info("Functia home a fost apelata")
+    logger.info("--------------Functia home a fost apelata")
     return HttpResponse("Salut")
 
 def adresa(request):
-    logger.info("Functia adresa a fost apelata")
+    logger.info("--------------Functia adresa a fost apelata")
     adrese_list = Adresa.objects.all()
     response = "<br>".join([
         f"<br>Tara: {adrese.tara}, "
@@ -58,13 +58,13 @@ def adresa(request):
     return HttpResponse(f"Adresele: <ul>{response}</ul>")
 
 def afiseaza_alergeni(request):
-    logger.info("Functia afiseaza_alergeni a fost apelata")
+    logger.info("--------------Functia afiseaza_alergeni a fost apelata")
     alergeni = Alergeni.objects.all()
     response = "<br>".join([str(alergen.nume_alergeni) for alergen in alergeni]) 
     return HttpResponse(f"Alergenii disponibili:<br>{response}")
 
 def bauturi(request):
-    logger.info("Functia bauturi a fost apelata")
+    logger.info("--------------Functia bauturi a fost apelata")
     bauturi_list = Bauturi.objects.all()
     response = "<br>".join([
         f"<br>Băutură: {bautura.bautura}, "
@@ -76,7 +76,7 @@ def bauturi(request):
     return HttpResponse(f"Băuturi disponibile:<ul>{response}</ul>")
 
 def inghetata(request):
-    logger.info("Functia inghetata a fost apelata")
+    logger.info("--------------Functia inghetata a fost apelata")
     inghetata_list = Inghetata.objects.all()
     response = "<br>".join([
         f"<br>Tip inghetata: {inghetate.inghetata}, "
@@ -89,7 +89,7 @@ def inghetata(request):
     return HttpResponse(f"Inghetate disponibile:<ul>{response}</ul>")
 
 def biscuiti(request):
-    logger.info("Functia biscuiti a fost apelata")
+    logger.info("--------------Functia biscuiti a fost apelata")
     biscuiti_list = Biscuite.objects.all()
     response = "<br>".join([
         f"<br>Tip biscuite: {biscuite.tip_biscuite}, "
@@ -100,7 +100,7 @@ def biscuiti(request):
     return HttpResponse(f"Biscuiti disponibili:<ul>{response}</ul>")
 
 def prajituri(request):
-    logger.info("Functia prajituri a fost apelata")
+    logger.info("--------------Functia prajituri a fost apelata")
     prajituri_list = Prajituri.objects.all()
     response = "<br>".join([
         f"<br>Prajitura: {prajitura.nume_prajitura}, "
@@ -112,7 +112,7 @@ def prajituri(request):
 
 
 def torturi_inghetata(request):
-    logger.info("Functia torturi_inghetata a fost apelata")
+    logger.info("--------------Functia torturi_inghetata a fost apelata")
     torturi_list = Torturi_Inghetata.objects.all()
     response = "<br>".join([
         f"<br>Tort: {tort.nume_tort}, "
@@ -123,7 +123,7 @@ def torturi_inghetata(request):
     return HttpResponse(f"Torturi inghetata disponibile:<ul>{response}</ul>")
 
 def meniu(request):
-    logger.info("Functia meniu a fost apelata")
+    logger.info("--------------Functia meniu a fost apelata")
     meniu_list = Meniu.objects.all()
     response = "<br>".join([
         f"<br>Inghetata: {meniu.inghetata.aroma}, "
@@ -136,7 +136,7 @@ def meniu(request):
     return HttpResponse(f"Meniu:<ul>{response}</ul>")
 
 def comenzi(request):
-    logger.info("Functia comenzi a fost apelata")
+    logger.info("--------------Functia comenzi a fost apelata")
     try:
         comenzi_list = Comanda.objects.all()
         response = "<br>".join([f"<br>Data achizitie: {comanda.data_achizitie}" for comanda in comenzi_list])
@@ -147,7 +147,7 @@ def comenzi(request):
         return HttpResponse("A aparut o eroare la extragerea comenzilor.")
 
 def sponsori(request):
-    logger.info("Functia sponsori a fost apelata")
+    logger.info("--------------Functia sponsori a fost apelata")
     sponsori_list = Sponsor.objects.all()
     response = "<br>".join([
         f"<br>Nume: {sponsor.nume_sponsor}, "
@@ -158,7 +158,7 @@ def sponsori(request):
     return HttpResponse(f"Sponsori:<ul>{response}</ul>")
 
 def magazine(request):
-    logger.info("Functia magazine a fost apelata")
+    logger.info("--------------Functia magazine a fost apelata")
     magazine_list = Magazine.objects.all()
     response = "<br>".join([
         f"<br>Nume magazin: {magazin.nume_magazin}, "
@@ -172,7 +172,7 @@ def magazine(request):
     return HttpResponse(f"Magazine:<ul>{response}</ul>")
 
 def informatii(request):
-    logger.info("Functia informatii a fost apelata")
+    logger.info("--------------Functia informatii a fost apelata")
     informatii_list = Informatii.objects.all()
     response = "<br>".join([
         f"<br>Specificatii: {info.specificatii}, "
@@ -185,7 +185,7 @@ def informatii(request):
 
 
 def display_items(request):
-    logger.info("Functia display_items a fost apelata")
+    logger.info("--------------Functia display_items a fost apelata")
     inghetata_items = Inghetata.objects.all()
     bauturi_items = Bauturi.objects.all()
     biscuiti_items = Biscuite.objects.all()
@@ -207,7 +207,7 @@ def display_items(request):
     return render(request, 'store.html', context)
 
 def display_products(request):
-    logger.info("Functia display_products a fost apelata")
+    logger.info("--------------Functia display_products a fost apelata")
     form = PrajituriFilterForm(request.GET or None)
 
     prajituri = Prajituri.objects.all()
@@ -244,7 +244,7 @@ def display_products(request):
 
 
 def contact_view(request):
-    logger.info("Functia contact_view a fost apelata")
+    logger.info("--------------Functia contact_view a fost apelata")
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -271,6 +271,8 @@ def contact_view(request):
 
             folder_path = os.path.join(os.getcwd(), 'mesaje') # Path folder
 
+            os.makedirs(folder_path, exist_ok=True)
+
             # Salvare data in json
             timestamp = int(time.time())
             file_name = f"mesaj_{timestamp}.json"
@@ -286,13 +288,13 @@ def contact_view(request):
 
 
 def mesaj_trimis(request):
-    logger.info("Functia mesaj_trimis a fost apelata")
+    logger.info("--------------Functia mesaj_trimis a fost apelata")
     return render(request, 'mesaj_trimis.html', {'message': 'Mesajul tău a fost trimis cu succes!'})
 
 
 @login_required(login_url='custom_login_view')  # Redirectioneaza la login daca nu e autentificat
 def adauga_comanda(request):
-    logger.info("Functia adauga_comanda a fost apelata")
+    logger.info("--------------Functia adauga_comanda a fost apelata")
     inghetata_items = Inghetata.objects.all()
     bauturi_items = Bauturi.objects.all()
     biscuiti_items = Biscuite.objects.all()
@@ -339,7 +341,7 @@ def adauga_comanda(request):
 
 
 def get_site_url(request=None):
-    logger.info("Functia get_site_url a fost apelata")
+    logger.info("--------------Functia get_site_url a fost apelata")
     if request:
         # Daca exista un request, determin automat host-ul
         scheme = 'https' if request.is_secure() else 'http'
@@ -351,7 +353,7 @@ def get_site_url(request=None):
 
 
 def register_view(request):
-    logger.info("Functia register_view a fost apelata")
+    logger.info("--------------Functia register_view a fost apelata")
     if request.method == "POST":
         form = CustomUserCreationForm(request.POST)
 
@@ -407,7 +409,7 @@ def register_view(request):
 
 
 def confirma_mail(request, cod):
-    logger.info("Functia confirma_email a fost apelata")
+    logger.info("--------------Functia confirma_email a fost apelata")
     try:
         user = CustomUser.objects.get(cod=cod)
         user.email_confirmat = True
@@ -429,7 +431,7 @@ def confirma_mail(request, cod):
         return HttpResponse("A aparut o eroare. Va rugăm sa incercati din nou mai tarziu.")
 
 def send_error_email(error_message):
-    logger.info("Functia send_error_email a fost apelata")
+    logger.info("--------------Functia send_error_email a fost apelata")
     subject = 'Eroare la confirmarea emailului'
     message_text = f"A aparut o eroare: {error_message}"
 
@@ -461,7 +463,7 @@ def send_error_email(error_message):
 failed_login_attempts = {}  
 
 def custom_login_view(request):
-    logger.info("Functia custom_login_view a fost apelata")
+    logger.info("--------------Functia custom_login_view a fost apelata")
     if request.method == 'POST':
         form = CustomAuthenticationForm(data=request.POST, request=request)
         username = form.data.get('username')
@@ -494,14 +496,14 @@ def custom_login_view(request):
 
 
 def record_failed_attempt(username, ip_address):
-    logger.info("Functia record_failed_attemp a fost apelata")
+    logger.info("--------------Functia record_failed_attemp a fost apelata")
     timestamp = timezone.now()
     if username not in failed_login_attempts:
         failed_login_attempts[username] = []
     failed_login_attempts[username].append((timestamp, ip_address))
 
 def check_suspicious_activity(username):
-    logger.info("Functia check_suspicious_activity a fost apelata")
+    logger.info("--------------Functia check_suspicious_activity a fost apelata")
     if username in failed_login_attempts:
         attempts = failed_login_attempts[username]
         # Filtrare incercari care sunt mai vechi de 2 minute
@@ -510,7 +512,7 @@ def check_suspicious_activity(username):
     return False
 
 def send_suspicious_login_email(username, ip_address):
-    logger.info("Functia send_suspicious_login_email a fost apelata")
+    logger.info("--------------Functia send_suspicious_login_email a fost apelata")
     subject = 'Logari suspecte'
     message_text = f"Un utilizator a incercat sa se logheze de 3 ori esuat folosind username-ul '{username}'. IP-ul: {ip_address}"
 
@@ -540,13 +542,13 @@ def send_suspicious_login_email(username, ip_address):
 
 @login_required
 def profile_view(request):
-    logger.info("Functia profile_view a fost apelata")
+    logger.info("--------------Functia profile_view a fost apelata")
     user = request.user
     return render(request, 'profile.html', {'user': user})
 
 @login_required
 def change_password_view(request):
-    logger.info("Functia change_password_view a fost apelata")
+    logger.info("--------------Functia change_password_view a fost apelata")
     if request.method == 'POST':
         form = PasswordChangeForm(request.user, request.POST)
         if form.is_valid():
@@ -557,7 +559,7 @@ def change_password_view(request):
     return render(request, 'change_password.html', {'form': form})
 
 def logout_view(request):
-    logger.info("Functia logout_view a fost apelata")
+    logger.info("--------------Functia logout_view a fost apelata")
     logout(request)
     return redirect('mesaj_trimis')
 
@@ -567,7 +569,7 @@ def logout_view(request):
 
 def adauga_vizualizare(utilizator, categorie):
 
-    logger.info("Functia adauga_vizualizare a fost apelata")
+    logger.info("--------------Functia adauga_vizualizare a fost apelata")
 
     if not Vizualizare.objects.filter(utilizator=utilizator, categorie=categorie).exists():
         Vizualizare.objects.create(utilizator=utilizator, categorie=categorie)
@@ -582,7 +584,7 @@ def adauga_vizualizare(utilizator, categorie):
 
 @login_required
 def detalii_inghetata(request):
-    logger.info("Functia detalii_inghetata a fost apelata")
+    logger.info("--------------Functia detalii_inghetata a fost apelata")
     inghetate = Inghetata.objects.all()  
     utilizator = request.user
     categorie = 'Inghetata'
@@ -602,7 +604,7 @@ def detalii_inghetata(request):
 
 @login_required
 def detalii_biscuit(request):
-    logger.info("Functia detalii_biscuit a fost apelata")
+    logger.info("--------------Functia detalii_biscuit a fost apelata")
     biscuiti = Biscuite.objects.all()  
     utilizator = request.user
     categorie = 'Biscuiti'
@@ -622,7 +624,7 @@ def detalii_biscuit(request):
 
 @login_required
 def detalii_bautura(request):
-    logger.info("Functia detalii_bautura a fost apelata")
+    logger.info("--------------Functia detalii_bautura a fost apelata")
     bauturi = Bauturi.objects.all()  
     utilizator = request.user
     categorie = 'Bauturi'
@@ -642,7 +644,7 @@ def detalii_bautura(request):
 
 @login_required
 def detalii_prajitura(request):
-    logger.info("Functia detalii_prajitura a fost apelata")
+    logger.info("--------------Functia detalii_prajitura a fost apelata")
     prajituri = Prajituri.objects.all()  
     utilizator = request.user
     categorie = 'Prajituri'
@@ -662,7 +664,7 @@ def detalii_prajitura(request):
 
 @login_required
 def detalii_torturi(request):
-    logger.info("Functia detalii_torturi a fost apelata")
+    logger.info("--------------Functia detalii_torturi a fost apelata")
     torturi = Torturi_Inghetata.objects.all()  
     utilizator = request.user
     categorie = 'Torturi Inghetata'
@@ -684,14 +686,14 @@ def detalii_torturi(request):
 
 
 def is_admin(user):
-    logger.info("Functia is_admin a fost apelata")
+    logger.info("--------------Functia is_admin a fost apelata")
     return user.is_staff  # Verifica daca utilizatorul este administrator
 
 @user_passes_test(is_admin, login_url='https://www.youtube.com/watch?v=xvFZjo5PgG0')  # Redirectionare daca nu e admin
 # @user_passes_test(is_admin, login_url='custom_login_view') 
 @login_required
 def creeaza_promotie(request):
-    logger.info("Functia creeaza_promotie a fost apelata")
+    logger.info("--------------Functia creeaza_promotie a fost apelata")
     if request.method == 'POST':
         form = PromotieForm(request.POST)
         if form.is_valid():
@@ -740,7 +742,7 @@ def creeaza_promotie(request):
 
 
 def afisare_pagina(request):
-    logger.debug('Functia afisare_pagina a fost apelata')
+    logger.debug("--------------Functia afisare_pagina a fost apelata")
 
     try:
         result = 10 / 0  # Simulare operatiune care va genera eroare de tip ZeroDivisionError

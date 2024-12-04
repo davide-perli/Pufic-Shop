@@ -133,3 +133,52 @@ INFO 2024-12-04 01:03:22,539 autoreload /home/davide/Documents/ProiectDjango/Pro
 INFO 2024-12-04 01:03:22,989 autoreload Watching for file changes with StatReloader
 INFO 2024-12-04 01:04:29,758 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
 INFO 2024-12-04 01:04:30,278 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:09:54,704 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:10:01,207 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 01:10:01,523 basehttp "GET / HTTP/1.1" 200 16032
+INFO 2024-12-04 01:10:10,200 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 01:10:10,211 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 01:10:16,013 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 01:10:16,787 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 01:10:16,832 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 01:10:16,835 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 01:10:26,413 views --------------Functia contact_view a fost apelata
+INFO 2024-12-04 01:10:26,422 basehttp "GET /aplicatie/contact HTTP/1.1" 200 2895
+INFO 2024-12-04 01:11:21,057 views --------------Functia contact_view a fost apelata
+ERROR 2024-12-04 01:11:21,149 log Internal Server Error: /aplicatie/contact
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 278, in contact_view
+    with open(file_path, 'w') as json_file:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/davide/Documents/ProiectDjango/Proiect/mesaje/mesaj_1733274681.json'
+ERROR 2024-12-04 01:11:21,151 basehttp "POST /aplicatie/contact HTTP/1.1" 500 77745
+INFO 2024-12-04 01:14:25,493 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 01:14:25,959 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:14:31,965 views --------------Functia contact_view a fost apelata
+INFO 2024-12-04 01:14:31,991 basehttp "POST /aplicatie/contact HTTP/1.1" 302 0
+INFO 2024-12-04 01:14:31,998 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 01:14:32,009 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 01:15:06,128 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 01:15:06,473 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 01:15:30,736 views --------------Functia contact_view a fost apelata
+INFO 2024-12-04 01:15:30,752 basehttp "GET /aplicatie/contact HTTP/1.1" 200 2895
+INFO 2024-12-04 01:16:14,941 views --------------Functia contact_view a fost apelata
+INFO 2024-12-04 01:16:14,943 basehttp "POST /aplicatie/contact HTTP/1.1" 302 0
+INFO 2024-12-04 01:16:14,949 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 01:16:14,950 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 01:16:36,348 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 01:16:36,648 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 01:16:47,473 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 01:16:47,895 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:17:17,329 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 01:17:17,772 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:17:35,130 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 01:17:35,545 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:17:47,925 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 01:17:48,152 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
