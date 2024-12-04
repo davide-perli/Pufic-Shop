@@ -109,8 +109,6 @@ class PromotieAdmin(admin.ModelAdmin):
     ordering = ('-data_creare',) 
 
 
-
-
 # Inregistrarea modelelor în admin
 admin.site.register(Adresa, AdresaAdmin)
 admin.site.register(Alergeni, AlergeniAdmin)

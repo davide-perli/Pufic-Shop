@@ -54,3 +54,336 @@ Traceback (most recent call last):
          ^^^^^^^^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: '/home/davide/Documents/ProiectDjango/Proiect/mesaje/mesaj_1733274681.json'
 ERROR 2024-12-04 01:11:21,151 basehttp "POST /aplicatie/contact HTTP/1.1" 500 77745
+WARNING 2024-12-04 14:53:16,896 log Not Found: /favicon.ico
+WARNING 2024-12-04 14:53:16,897 basehttp "GET /favicon.ico HTTP/1.1" 404 7743
+WARNING 2024-12-04 14:53:29,556 log Not Found: /afiseaza_alergeni
+WARNING 2024-12-04 14:53:29,556 basehttp "GET /afiseaza_alergeni HTTP/1.1" 404 7761
+WARNING 2024-12-04 15:00:09,191 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:09,192 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:22,220 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:22,220 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,028 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,028 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,208 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,209 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,366 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,366 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,509 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,509 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,670 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,670 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,818 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,819 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,963 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,964 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:25,140 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:25,140 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:23,224 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:23,225 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:27,648 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:27,649 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:34,947 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:34,948 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:43,309 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:43,309 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:44,175 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:44,176 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:44,360 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:44,361 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:44,536 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:44,536 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:44,709 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:44,710 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:49,770 views Utilizatorul anonim a încercat să acceseze informațiile fără permisiune.
+WARNING 2024-12-04 15:01:49,773 log Forbidden: /informatii
+WARNING 2024-12-04 15:01:49,774 basehttp "GET /informatii HTTP/1.1" 403 415
+WARNING 2024-12-04 15:01:50,669 views Utilizatorul anonim a încercat să acceseze informațiile fără permisiune.
+WARNING 2024-12-04 15:01:50,670 log Forbidden: /informatii
+WARNING 2024-12-04 15:01:50,671 basehttp "GET /informatii HTTP/1.1" 403 415
+WARNING 2024-12-04 15:03:08,420 views Utilizatorul anonim a încercat să acceseze informațiile fără permisiune.
+WARNING 2024-12-04 15:03:08,428 log Forbidden: /informatii
+WARNING 2024-12-04 15:03:08,430 basehttp "GET /informatii HTTP/1.1" 403 415
+WARNING 2024-12-04 15:03:28,075 views Utilizatorul anonim a încercat să acceseze informațiile fără permisiune.
+WARNING 2024-12-04 15:03:28,075 log Forbidden: /informatii
+WARNING 2024-12-04 15:03:28,075 basehttp "GET /informatii HTTP/1.1" 403 415
+WARNING 2024-12-04 15:05:01,716 views Utilizatorul anonim a incercat sa acceseze informatiile fara permisiune.
+WARNING 2024-12-04 15:05:01,721 log Forbidden: /informatii
+WARNING 2024-12-04 15:05:01,722 basehttp "GET /informatii HTTP/1.1" 403 415
+WARNING 2024-12-04 15:17:56,387 views Utilizatorul maria a încercat să acceseze adresele fără permisiune.
+ERROR 2024-12-04 15:17:56,433 log Internal Server Error: /adresa
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 54, in adresa
+    return render(request, 'gelaterie/403.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: gelaterie/403.html
+ERROR 2024-12-04 15:17:56,435 basehttp "GET /adresa HTTP/1.1" 500 88031
+WARNING 2024-12-04 15:18:07,493 views Utilizatorul maria a încercat să acceseze adresele fără permisiune.
+WARNING 2024-12-04 15:18:07,502 log Forbidden: /adresa
+WARNING 2024-12-04 15:18:07,503 basehttp "GET /adresa HTTP/1.1" 403 400
+WARNING 2024-12-04 15:19:09,840 views Utilizatorul anonim a încercat să acceseze adresele fără permisiune.
+WARNING 2024-12-04 15:19:09,841 log Forbidden: /adresa
+WARNING 2024-12-04 15:19:09,841 basehttp "GET /adresa HTTP/1.1" 403 414
+WARNING 2024-12-04 15:24:42,849 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:42,850 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:42,851 basehttp "GET /alergeni HTTP/1.1" 403 414
+WARNING 2024-12-04 15:24:44,130 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:44,130 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:44,131 basehttp "GET /alergeni HTTP/1.1" 403 414
+WARNING 2024-12-04 15:24:44,871 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:44,872 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:44,872 basehttp "GET /alergeni HTTP/1.1" 403 414
+WARNING 2024-12-04 15:24:45,119 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:45,119 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:45,120 basehttp "GET /alergeni HTTP/1.1" 403 414
+WARNING 2024-12-04 15:24:45,349 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:45,350 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:45,350 basehttp "GET /alergeni HTTP/1.1" 403 414
+WARNING 2024-12-04 15:27:53,445 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-04 15:27:53,446 log Forbidden: /bauturi
+WARNING 2024-12-04 15:27:53,447 basehttp "GET /bauturi HTTP/1.1" 403 413
+WARNING 2024-12-04 15:30:06,540 views Utilizatorul anonim a incercat sa acceseze inghetatele fara permisiune!
+WARNING 2024-12-04 15:30:06,542 log Forbidden: /inghetata
+WARNING 2024-12-04 15:30:06,542 basehttp "GET /inghetata HTTP/1.1" 403 416
+WARNING 2024-12-04 15:31:57,124 views Utilizatorul anonim a incercat sa acceseze biscuitii fara permisiune!
+WARNING 2024-12-04 15:31:57,126 log Forbidden: /biscuiti
+WARNING 2024-12-04 15:31:57,126 basehttp "GET /biscuiti HTTP/1.1" 403 414
+WARNING 2024-12-04 15:32:10,285 views Utilizatorul anonim a incercat sa acceseze biscuitii fara permisiune!
+WARNING 2024-12-04 15:32:10,292 log Forbidden: /biscuiti
+WARNING 2024-12-04 15:32:10,293 basehttp "GET /biscuiti HTTP/1.1" 403 414
+WARNING 2024-12-04 15:33:45,850 views Utilizatorul anonim a incercat sa acceseze prajiturile fara permisiune!
+WARNING 2024-12-04 15:33:45,852 log Forbidden: /prajituri
+WARNING 2024-12-04 15:33:45,853 basehttp "GET /prajituri HTTP/1.1" 403 415
+WARNING 2024-12-04 15:34:05,832 views Utilizatorul anonim a incercat sa acceseze prajiturile fara permisiune!
+WARNING 2024-12-04 15:34:05,834 log Forbidden: /prajituri
+WARNING 2024-12-04 15:34:05,835 basehttp "GET /prajituri HTTP/1.1" 403 414
+WARNING 2024-12-04 15:36:09,115 views Utilizatorul anonim a incercat sa acceseze torturile de inghetata fara permisiune!
+WARNING 2024-12-04 15:36:09,117 log Forbidden: /torturi-inghetata
+WARNING 2024-12-04 15:36:09,117 basehttp "GET /torturi-inghetata HTTP/1.1" 403 427
+WARNING 2024-12-04 15:36:28,859 views Utilizatorul anonim a incercat sa acceseze torturile de inghetata fara permisiune!
+WARNING 2024-12-04 15:36:28,864 log Forbidden: /torturi-inghetata
+WARNING 2024-12-04 15:36:28,865 basehttp "GET /torturi-inghetata HTTP/1.1" 403 426
+WARNING 2024-12-04 15:37:59,213 log Not Found: /,emiu
+WARNING 2024-12-04 15:37:59,214 basehttp "GET /,emiu HTTP/1.1" 404 7725
+WARNING 2024-12-04 15:38:09,698 log Not Found: /memiu
+WARNING 2024-12-04 15:38:09,699 basehttp "GET /memiu HTTP/1.1" 404 7725
+WARNING 2024-12-04 15:38:28,603 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-04 15:38:28,604 log Forbidden: /meniu
+WARNING 2024-12-04 15:38:28,605 basehttp "GET /meniu HTTP/1.1" 403 410
+WARNING 2024-12-04 15:40:54,481 views Utilizatorul anonim a incercat sa acceseze comenzile fara permisiune!
+WARNING 2024-12-04 15:40:54,482 log Forbidden: /comenzi
+WARNING 2024-12-04 15:40:54,482 basehttp "GET /comenzi HTTP/1.1" 403 412
+WARNING 2024-12-04 15:44:52,528 views Utilizatorul  a incercat să acceseze sponsorii fara permisiune!
+WARNING 2024-12-04 15:44:52,530 log Forbidden: /sponsori
+WARNING 2024-12-04 15:44:52,530 basehttp "GET /sponsori HTTP/1.1" 403 413
+WARNING 2024-12-04 15:47:15,615 views Utilizatorul  a incercat sa acceseze magazinele fara permisiune!
+WARNING 2024-12-04 15:47:15,617 log Forbidden: /magazine
+WARNING 2024-12-04 15:47:15,617 basehttp "GET /magazine HTTP/1.1" 403 413
+WARNING 2024-12-04 15:47:21,115 views Utilizatorul anonim a incercat sa acceseze informatiile fara permisiune!
+WARNING 2024-12-04 15:47:21,116 log Forbidden: /informatii
+WARNING 2024-12-04 15:47:21,117 basehttp "GET /informatii HTTP/1.1" 403 412
+WARNING 2024-12-04 15:47:22,313 views Utilizatorul anonim a incercat sa acceseze informatiile fara permisiune!
+WARNING 2024-12-04 15:47:22,314 log Forbidden: /informatii
+WARNING 2024-12-04 15:47:22,315 basehttp "GET /informatii HTTP/1.1" 403 412
+WARNING 2024-12-04 15:48:05,194 views Utilizatorul ciuciu a incercat sa acceseze informatiile fara permisiune!
+WARNING 2024-12-04 15:48:05,195 log Forbidden: /informatii
+WARNING 2024-12-04 15:48:05,195 basehttp "GET /informatii HTTP/1.1" 403 400
+WARNING 2024-12-04 17:18:27,868 views Utilizatorul allah a incercat sa acceseze formularul de adaugare prajituri fara permisiune!
+WARNING 2024-12-04 17:18:27,870 log Forbidden: /adauga_prajitura
+WARNING 2024-12-04 17:18:27,870 basehttp "GET /adauga_prajitura HTTP/1.1" 403 390
+WARNING 2024-12-04 17:25:09,746 views Utilizatorul maria a incercat sa acceseze formularul de adaugare prajituri fara permisiune!
+WARNING 2024-12-04 17:25:09,750 log Forbidden: /adauga_prajitura
+WARNING 2024-12-04 17:25:09,751 basehttp "GET /adauga_prajitura HTTP/1.1" 403 390
+WARNING 2024-12-04 17:26:21,156 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-04 17:26:21,156 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-04 17:26:25,380 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-04 17:26:25,380 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-04 17:26:30,395 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-04 17:26:30,396 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-04 17:26:44,559 views Utilizatorul keny a incercat sa acceseze formularul de adaugare prajituri fara permisiune!
+WARNING 2024-12-04 17:26:44,559 log Forbidden: /adauga_prajitura
+WARNING 2024-12-04 17:26:44,560 basehttp "GET /adauga_prajitura HTTP/1.1" 403 389
+ERROR 2024-12-04 18:30:38,262 log Internal Server Error: /aplicatie/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 317, in display_items
+    return render(request, 'oferta.html', {'message': 'Reducere 50%! Profitați acum!'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: oferta.html
+ERROR 2024-12-04 18:30:38,263 basehttp "GET /aplicatie/ HTTP/1.1" 500 93163
+WARNING 2024-12-04 18:33:55,023 log Not Found: /ofera
+WARNING 2024-12-04 18:33:55,024 basehttp "GET /ofera HTTP/1.1" 404 8265
+ERROR 2024-12-04 18:34:05,676 log Internal Server Error: /oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 912, in oferta
+    return render(request, 'gelaterie/oferta.html', {'message': 'Reducere 50%! Profitați acum!'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: gelaterie/oferta.html
+ERROR 2024-12-04 18:34:05,677 basehttp "GET /oferta HTTP/1.1" 500 87654
+WARNING 2024-12-04 18:36:58,785 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:36:58,786 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:37:04,791 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:37:04,791 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:37:09,970 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:37:09,970 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:37:10,530 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:37:10,530 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:52,905 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:52,906 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:53,951 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:53,952 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:54,819 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:54,820 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:55,301 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:55,302 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:55,665 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:55,665 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:55,914 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:55,915 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:56,268 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:56,268 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:56,769 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:56,769 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:57,013 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:57,014 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:57,187 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:57,187 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:57,360 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:57,360 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:33,748 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:33,749 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:34,700 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:34,700 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,146 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,147 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,293 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,293 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,460 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,461 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,649 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,650 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,827 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,827 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:36,256 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:36,256 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:36,601 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:36,602 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:36,845 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:36,845 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:52,878 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:52,879 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:53,638 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:53,638 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:53,803 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:53,803 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:53,960 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:53,960 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:54,124 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:54,124 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:54,287 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:54,288 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:54,459 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:54,460 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:54,639 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:54,639 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:42:29,718 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:42:29,719 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:42:30,493 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:42:30,493 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:42:30,970 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:42:30,970 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:42:31,152 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:42:31,152 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:45:57,009 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:45:57,009 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:45:57,729 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:45:57,730 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:45:57,894 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:45:57,895 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:45:58,071 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:45:58,072 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:46:08,502 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:08,504 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8297
+WARNING 2024-12-04 18:46:09,134 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:09,134 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8297
+WARNING 2024-12-04 18:46:09,295 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:09,296 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8297
+WARNING 2024-12-04 18:46:09,477 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:09,478 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8297
+WARNING 2024-12-04 18:46:36,176 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:36,177 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:46:37,200 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:37,201 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:46:37,869 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:37,870 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:46:38,044 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:38,044 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:46:38,225 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:38,225 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:47:27,385 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:47:27,386 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:57:08,202 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:08,202 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:57:09,134 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:09,134 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:57:16,218 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:16,219 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:57:16,722 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:16,722 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:57:23,017 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:23,017 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:58:25,369 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:58:25,370 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:58:26,022 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:58:26,023 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:58:26,548 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:58:26,548 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:59:32,592 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:59:32,592 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+WARNING 2024-12-04 18:59:48,685 log Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /accepta-oferta/
+WARNING 2024-12-04 18:59:48,686 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 2553
+WARNING 2024-12-04 18:59:49,549 log Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /accepta-oferta/
+WARNING 2024-12-04 18:59:49,550 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 2553
+WARNING 2024-12-04 18:59:59,585 views Utilizatorul maria a incercat sa acceseze oferta fara permisiune!
+WARNING 2024-12-04 18:59:59,586 log Forbidden: /oferta/
+WARNING 2024-12-04 18:59:59,587 basehttp "GET /oferta/ HTTP/1.1" 403 388

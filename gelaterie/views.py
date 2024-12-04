@@ -35,6 +35,11 @@ from django.db.models import Count
 from django.contrib.auth.decorators import user_passes_test
 
 from django.core.mail import EmailMultiAlternatives
+from .forms import PrajituriForm
+
+from django.http import JsonResponse
+from django.contrib.auth.models import Permission
+
 
 
 import logging
@@ -47,148 +52,244 @@ def home(request):
 
 def adresa(request):
     logger.info("--------------Functia adresa a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre adrese este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze adresele fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
     adrese_list = Adresa.objects.all()
-    response = "<br>".join([
-        f"<br>Tara: {adrese.tara}, "
-        f"<br>Oras: {adrese.oras}, "
-        f"<br>Strada: {adrese.strada}, "
-        f"<br>Magazin: {adrese.magazin}"
-        for adrese in adrese_list
-    ]) 
+    response = "<br>".join([f"<br>Tara: {adrese.tara}, <br>Oras: {adrese.oras}, <br>Strada: {adrese.strada}, <br>Magazin: {adrese.magazin.nume_magazin}" for adrese in adrese_list])
+    logger.debug("--------------Adresele au fost extrase cu succes!")
     return HttpResponse(f"Adresele: <ul>{response}</ul>")
 
 def afiseaza_alergeni(request):
-    logger.info("--------------Functia afiseaza_alergeni a fost apelata")
+    logger.info("--------------Functia afisare_alergeni a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre alergeni este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze alergenii fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
     alergeni = Alergeni.objects.all()
-    response = "<br>".join([str(alergen.nume_alergeni) for alergen in alergeni]) 
+    response = "<br>".join([str(alergen.nume_alergeni) for alergen in alergeni])
+    logger.debug("--------------Alergenii au fost extrasi cu succes!")
     return HttpResponse(f"Alergenii disponibili:<br>{response}")
 
 def bauturi(request):
     logger.info("--------------Functia bauturi a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre bauturi este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze bauturile fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
     bauturi_list = Bauturi.objects.all()
-    response = "<br>".join([
-        f"<br>Băutură: {bautura.bautura}, "
-        f"<br>Pret: {bautura.info.pret if bautura.info else 'N/A'}, "
-        f"<br>Temperatura: {bautura.temperatura}, "
-        f"<br>Informatii: {bautura.info.descriere if bautura.info else 'N/A'}, Specificatii: {bautura.info.specificatii if bautura.info else 'N/A'}"
-        for bautura in bauturi_list
-    ])
+    response = "<br>".join([f"<br>Bautura: {bautura.bautura}, <br>Pret: {bautura.info.pret if bautura.info else 'N/A'}, <br>Temperatura: {bautura.temperatura}, <br>Informatii: {bautura.info.descriere if bautura.info else 'N/A'}, Specificatii: {bautura.info.specificatii if bautura.info else 'N/A'}" for bautura in bauturi_list])
+    logger.debug("--------------Bauturile au fost extrase cu succes!")
     return HttpResponse(f"Băuturi disponibile:<ul>{response}</ul>")
 
 def inghetata(request):
     logger.info("--------------Functia inghetata a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre inghetate este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze inghetatele fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
     inghetata_list = Inghetata.objects.all()
-    response = "<br>".join([
-        f"<br>Tip inghetata: {inghetate.inghetata}, "
-        f"<br>Aroma: {inghetate.aroma}, "
-        f"<br>Mod servire: {inghetate.mod_servire}, "
-        f"<br>Info: {inghetate.info.descriere if inghetate.info else 'N/A'}, Specificatii: {inghetate.info.specificatii if inghetate.info else 'N/A'}, "
-        f"<br>Pret: {inghetate.info.pret if inghetate.info else 'N/A'}"
-        for inghetate in inghetata_list
-    ])
+    response = "<br>".join([f"<br>Tip inghetata: {inghetate.inghetata}, <br>Aroma: {inghetate.aroma}, <br>Mod servire: {inghetate.mod_servire}, <br>Info: {inghetate.info.descriere if inghetate.info else 'N/A'}, Specificatii: {inghetate.info.specificatii if inghetate.info else 'N/A'}, <br>Pret: {inghetate.info.pret if inghetate.info else 'N/A'}" for inghetate in inghetata_list])
+    logger.debug("--------------Inghetatele au fost extrase cu succes!")
     return HttpResponse(f"Inghetate disponibile:<ul>{response}</ul>")
 
 def biscuiti(request):
     logger.info("--------------Functia biscuiti a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre biscuiti este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze biscuitii fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
     biscuiti_list = Biscuite.objects.all()
-    response = "<br>".join([
-        f"<br>Tip biscuite: {biscuite.tip_biscuite}, "
-        f"<br>Info: {biscuite.info.descriere if biscuite.info else 'N/A'}, Specificatii: {biscuite.info.specificatii if biscuite.info else 'N/A'}, "
-        f"<br>Pret: {biscuite.info.pret if biscuite.info else 'N/A'}"
-        for biscuite in biscuiti_list
-    ])
+    response = "<br>".join([f"<br>Tip biscuite: {biscuite.tip_biscuite}, <br>Info: {biscuite.info.descriere if biscuite.info else 'N/A'}, Specificatii: {biscuite.info.specificatii if biscuite.info else 'N/A'}, <br>Pret: {biscuite.info.pret if biscuite.info else 'N/A'}" for biscuite in biscuiti_list])
+    logger.debug("--------------Biscuitii au fost extrasi cu succes!")
     return HttpResponse(f"Biscuiti disponibili:<ul>{response}</ul>")
 
 def prajituri(request):
     logger.info("--------------Functia prajituri a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre prajituri este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze prajiturile fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
     prajituri_list = Prajituri.objects.all()
-    response = "<br>".join([
-        f"<br>Prajitura: {prajitura.nume_prajitura}, "
-        f"<br>Info: {prajitura.info.descriere if prajitura.info else 'N/A'}, Specificatii: {prajitura.info.specificatii if prajitura.info else 'N/A'}, "
-        f"<br>Pret: {prajitura.info.pret if prajitura.info else 'N/A'}"
-        for prajitura in prajituri_list
-    ])
+    response = "<br>".join([f"<br>Prajitura: {prajitura.nume_prajitura}, <br>Info: {prajitura.info.descriere if prajitura.info else 'N/A'}, Specificatii: {prajitura.info.specificatii if prajitura.info else 'N/A'}, <br>Pret: {prajitura.info.pret if prajitura.info else 'N/A'}" for prajitura in prajituri_list])
+    logger.debug("--------------Prajiturile au fost extrase cu succes!")
     return HttpResponse(f"Prajituri disponibile:<ul>{response}</ul>")
 
 
 def torturi_inghetata(request):
     logger.info("--------------Functia torturi_inghetata a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre torturile de ingheata este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze torturile de inghetata fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
     torturi_list = Torturi_Inghetata.objects.all()
-    response = "<br>".join([
-        f"<br>Tort: {tort.nume_tort}, "
-        f"<br>Info: {tort.info.descriere}, Specificatii: {tort.info.specificatii}, "
-        f"<br>Pret: {tort.info.pret}"
-        for tort in torturi_list
-    ])
+    response = "<br>".join([f"<br>Tort: {tort.nume_tort}, <br>Info: {tort.info.descriere}, Specificatii: {tort.info.specificatii}, <br>Pret: {tort.info.pret}" for tort in torturi_list])
+    logger.debug("--------------Torturile de inghetata au fost extrase cu succes!")
     return HttpResponse(f"Torturi inghetata disponibile:<ul>{response}</ul>")
 
 def meniu(request):
     logger.info("--------------Functia meniu a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre meniu este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze meniul fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
     meniu_list = Meniu.objects.all()
-    response = "<br>".join([
-        f"<br>Inghetata: {meniu.inghetata.aroma}, "
-        f"<br>Biscuiti: {meniu.biscuiti.tip_biscuite}, "
-        f"<br>Bauturi: {meniu.bauturi.bautura}, "
-        f"<br>Prajituri: {meniu.prajituri.nume_prajitura}, "
-        f"<br>Torturi: {meniu.torturi_inghetata.nume_tort}"
-        for meniu in meniu_list
-    ])
+    response = "<br>".join([f"<br>Inghetata: {meniu.inghetata.aroma}, "
+                            f"<br>Biscuiti: {meniu.biscuiti.tip_biscuite}, "
+                            f"<br>Bauturi: {meniu.bauturi.bautura}, "
+                            f"<br>Prajituri: {meniu.prajituri.nume_prajitura}, "
+                            f"<br>Torturi: {meniu.torturi_inghetata.nume_tort}" for meniu in meniu_list])
+    logger.debug("--------------Meniurile au fost extrase cu succes!")
     return HttpResponse(f"Meniu:<ul>{response}</ul>")
 
 def comenzi(request):
     logger.info("--------------Functia comenzi a fost apelata")
+
+    if request.user.username != 'davide':
+        mesaj_personalizat = "Accesul la informatiile despre comenzi este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze comenzile fara permisiune!")
+        return render(request, '403.html', {
+            'title': "Acces Interzis",
+            "mesaj_personalizat": mesaj_personalizat,
+            "user": request.user,
+        }, status=403)
+
     try:
         comenzi_list = Comanda.objects.all()
         response = "<br>".join([f"<br>Data achizitie: {comanda.data_achizitie}" for comanda in comenzi_list])
-        logger.debug("Comenzile au fost extrase cu succes.")
+        
+        logger.debug("--------------Comenzile au fost extrase cu succes!")
         return HttpResponse(f"Comenzi:<ul>{response}</ul>")
+        
     except Exception as e:
         logger.error("Eroare la extragerea comenzilor: %s", str(e))
-        return HttpResponse("A aparut o eroare la extragerea comenzilor.")
+        
+        return HttpResponse("A aparut o eroare la extragerea comenzilor!")
 
 def sponsori(request):
     logger.info("--------------Functia sponsori a fost apelata")
+
+    if request.user.username != "davide":
+        mesaj_personalizat = "Accesul la informatiile despre sponsori este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else ''} a incercat să acceseze sponsorii fara permisiune!")
+        
+        return render(request, "403.html", {
+            "title": "Acces Interzis",
+            "mesaj_personalizat": mesaj_personalizat,
+            "user": request.user,
+        }, status=403)
+
     sponsori_list = Sponsor.objects.all()
+
     response = "<br>".join([
-        f"<br>Nume: {sponsor.nume_sponsor}, "
-        f"<br>Email: {sponsor.email_sponsor}, "
-        f"<br>Telefon: {sponsor.numar_telefon_sponsor}"
+        f"<br>Nume sponsor: {sponsor.nume_sponsor}, "
+        f"<br>Email sponsor: {sponsor.email_sponsor}"
         for sponsor in sponsori_list
     ])
+    logger.debug("--------------Sponsorii au fost extrasi cu succes!")
     return HttpResponse(f"Sponsori:<ul>{response}</ul>")
 
+
 def magazine(request):
-    logger.info("--------------Functia magazine a fost apelata")
-    magazine_list = Magazine.objects.all()
-    response = "<br>".join([
-        f"<br>Nume magazin: {magazin.nume_magazin}, "
-        f"<br>Descriere: {magazin.descriere}, "
-        f"<br>Orar: {magazin.orar}, "
-        f"<br>Email: {magazin.email_magazin}, "
-        f"<br>Telefon: {magazin.numar_telefon_magazin}, "
-        f"<br>Sponsor: {magazin.sponsor.nume_sponsor}"
-        for magazin in magazine_list
-    ])
-    return HttpResponse(f"Magazine:<ul>{response}</ul>")
+   logger.info("--------------Functia magazine a fost apelata")
+
+   if request.user.username != "davide":
+       mesaj_personalizat = "Accesul la informatiile despre magazine este restrictionat!"
+       logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else ''} a incercat sa acceseze magazinele fara permisiune!")
+       
+       return render(request, "403.html", {
+           "title": "Acces Interzis",
+           "mesaj_personalizat": mesaj_personalizat,
+           "user": request.user,
+       }, status=403)
+
+   magazine_list = Magazine.objects.all()
+   response = "<br>".join([
+       f"<br>Nume magazin:{magazin.nume_magazin}, "
+       f"<br>Email:{magazin.email_magazin}"
+       for magazin in magazine_list])
+   logger.debug("--------------Magazinele au fost extrase cu succes!")
+   return HttpResponse(f"Magazine:<ul>{response}</ul>")
+
 
 def informatii(request):
     logger.info("--------------Functia informatii a fost apelata")
+
+    if request.user.username != "davide":
+        mesaj_personalizat = "Accesul la informatiile despre produse este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze informatiile fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
+
     informatii_list = Informatii.objects.all()
-    response = "<br>".join([
-        f"<br>Specificatii: {info.specificatii}, "
-        f"<br>Descriere: {info.descriere}, "
-        f"<br>Pret: {info.pret}, "
-        f"<br>Alergeni: {', '.join([alergen.nume_alergeni for alergen in info.alergeni.all()])}"
-        for info in informatii_list
-    ])
+    response = "<br>".join([f"<br>Specificatii: {info.specificatii}, "
+                            f"<br>Descriere: {info.descriere}, "
+                            f"<br>Pret: {info.pret}, "
+                            f"<br>Alergeni: {', '.join([alergen.nume_alergeni for alergen in info.alergeni.all()])}"
+                            for info in informatii_list])
+
+    logger.info("--------------Informatiile au fost extrase cu succes")
     return HttpResponse(f"Informatii disponibile:<ul>{response}</ul>")
 
 
 def display_items(request):
     logger.info("--------------Functia display_items a fost apelata")
     inghetata_items = Inghetata.objects.all()
-    bauturi_items = Bauturi.objects.all()
-    biscuiti_items = Biscuite.objects.all()
+    bauturi_items = Bauturi.objects.all().order_by('info__pret')
+    biscuiti_items = Biscuite.objects.all().order_by('info__pret')
     prajituri_items = Prajituri.objects.all().order_by('info__pret') #Schimbati ordinea afisarii campurilor pentru minim unul dintre modele
     torturi_items = Torturi_Inghetata.objects.all()
     meniu_items = Meniu.objects.all()
@@ -203,7 +304,8 @@ def display_items(request):
         'meniu_items': meniu_items,
         'sponsors': sponsors,
     }
-
+    
+    logger.debug("--------------Functia display_items executata cu succes!")
     return render(request, 'store.html', context)
 
 def display_products(request):
@@ -240,6 +342,7 @@ def display_products(request):
         'page_obj': page_obj,
         'form': form,
     }
+    logger.debug("--------------Functia display_products executata cu succes!")
     return render(request, 'display_products.html', context)
 
 
@@ -284,6 +387,7 @@ def contact_view(request):
     else:
         form = ContactForm()
 
+    logger.debug("--------------Functia contact_view executata cu succes!")
     return render(request, 'contact.html', {'form': form})
 
 
@@ -334,7 +438,7 @@ def adauga_comanda(request):
         'prajituri_items': prajituri_items,
         'torturi_items': torturi_items,
     }
-
+    logger.debug("--------------Functia adauga_comanda executata cu succes!")
     return render(request, 'adauga_comanda.html', context)
 
 
@@ -348,6 +452,7 @@ def get_site_url(request=None):
         host = request.get_host()
         return f"{scheme}://{host}"
     # Implicit varianta pentru IP
+    logger.debug("--------------Functia get_site_url executata cu succes!")
     return "http://192.168.0.103:8000"
 
 
@@ -402,6 +507,7 @@ def register_view(request):
     else:
         form = CustomUserCreationForm()
     
+    logger.debug("--------------Functia register_view executata cu succes!")
     return render(request, "register.html", {"form": form})
 
 
@@ -417,6 +523,8 @@ def confirma_mail(request, cod):
         logger.info(f"Email confirmat pentru utilizator: {user.username}")
 
         user.save()
+
+        logger.debug("--------------Functia confirma_mail executata cu succes!")
         return render(request, 'confirmation_success.html', {'message': 'Emailul a fost confirmat cu succes!'})
     except CustomUser.DoesNotExist:
        
@@ -492,6 +600,7 @@ def custom_login_view(request):
     else:
         form = CustomAuthenticationForm()
     
+    logger.debug("--------------Functia custom_login_view executata cu succes!")
     return render(request, 'login.html', {'form': form})
 
 
@@ -544,6 +653,7 @@ def send_suspicious_login_email(username, ip_address):
 def profile_view(request):
     logger.info("--------------Functia profile_view a fost apelata")
     user = request.user
+    logger.debug("--------------Functia profile_view executata cu succes!")
     return render(request, 'profile.html', {'user': user})
 
 @login_required
@@ -553,17 +663,22 @@ def change_password_view(request):
         form = PasswordChangeForm(request.user, request.POST)
         if form.is_valid():
             form.save()
+
+            logger.debug("--------------Parola schimbata!")
             return redirect('profile_view')  # Dupa schimbarea parolei, redirectionează utilizatorul la profil
     else:
         form = PasswordChangeForm(request.user)
+
+    logger.debug("--------------Functia change_password_view executata cu succes!")
     return render(request, 'change_password.html', {'form': form})
+
 
 def logout_view(request):
     logger.info("--------------Functia logout_view a fost apelata")
     logout(request)
+    
+    logger.debug("--------------Functia logout_view executata cu succes!")
     return redirect('mesaj_trimis')
-
-
 
 
 
@@ -598,7 +713,7 @@ def detalii_inghetata(request):
         'inghetate': inghetate,
         'categorie': categorie,
     }
-
+    logger.debug("--------------Functia detalii_inghetata executata cu succes!")
     return render(request, 'detalii_inghetata.html', context)
 
 
@@ -618,7 +733,7 @@ def detalii_biscuit(request):
         'biscuiti': biscuiti,
         'categorie': categorie,
     }
-
+    logger.debug("--------------Functia detalii_biscuiti executata cu succes!")
     return render(request, 'detalii_biscuit.html', context)
 
 
@@ -638,7 +753,7 @@ def detalii_bautura(request):
         'bauturi': bauturi,
         'categorie': categorie,
     }
-
+    logger.debug("--------------Functia detalii_bautura executata cu succes!")
     return render(request, 'detalii_bautura.html', context)
 
 
@@ -658,7 +773,7 @@ def detalii_prajitura(request):
         'prajituri': prajituri,
         'categorie': categorie,
     }
-
+    logger.debug("--------------Functia detalii_prajitura executata cu succes!")
     return render(request, 'detalii_prajitura.html', context)
 
 
@@ -678,7 +793,7 @@ def detalii_torturi(request):
         'torturi': torturi,
         'categorie': categorie,
     }
-
+    logger.debug("--------------Functia detalii_torturi executata cu succes!")
     return render(request, 'detalii_tort_inghetata.html', context)
 
 
@@ -729,11 +844,13 @@ def creeaza_promotie(request):
                     [utilizator.email]
                 )
 
+            logger.debug("--------------Promotie creata!")
             return redirect('mesaj_trimis') 
 
     else:
         form = PromotieForm()
 
+    logger.debug("--------------Functia creaza_promotie executata cu succes!")
     return render(request, 'promotii.html', {'form': form})
 
 
@@ -750,5 +867,56 @@ def afisare_pagina(request):
         logger.error("Eroare la calcul: %s", str(e))
         return HttpResponse("A aparut o eroare în procesare")
 
-    logger.info("Functia afisare_pagina a fost executata cu succes")
-    return HttpResponse("Pagina a fost afisata cu succes.")
+    logger.info("--------------Functia afisare_pagina a fost executata cu succes!")
+    return HttpResponse("Pagina a fost afisata cu succes!")
+
+
+
+def adauga_prajitura(request):
+    logger.info("--------------Functia adauga_prajitura a fost apelata")
+
+
+    if not request.user.has_perm('gelaterie.add_prajituri') :
+        mesaj_personalizat = "Nu ai voie sa adaugi prajituri!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze formularul de adaugare prajituri fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Eroare adaugare produse',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
+    if request.method == 'POST':
+        form = PrajituriForm(request.POST)
+        if form.is_valid():
+            form.save()
+            logger.info("Prajitura a fost adaugată cu succes!")
+            return redirect('mesaj_trimis') 
+    else:
+        form = PrajituriForm()
+
+    logger.info("--------------Functia adauga_prajitura a fost executata cu succes!")
+    return render(request, 'adauga_prajitura.html', {'form': form})
+
+
+def oferta(request):
+
+    if not request.user.has_perm('vizualizeaza_oferta'):
+        mesaj_personalizat = "Nu ai voie sa vizualizezi oferta!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze oferta fara permisiune!")
+        return render(request, '403.html', {
+            'title': 'Eroare afisare oferta',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+
+    logger.info("--------------Functia oferta a fost executata cu succes!")
+    return render(request, 'oferta.html', {'message': 'Reducere 50%! Profitati acum!'})
+
+
+@login_required
+def accepta_oferta(request):
+    if request.method == 'POST':
+        request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+        return JsonResponse({'success': True})
+    logger.info("--------------Functia accepta_oferta a fost executata cu succes!")
+    return JsonResponse({'success': False}, status=400)

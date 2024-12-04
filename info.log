@@ -182,3 +182,1643 @@ INFO 2024-12-04 01:17:35,130 autoreload /home/davide/Documents/ProiectDjango/Pro
 INFO 2024-12-04 01:17:35,545 autoreload Watching for file changes with StatReloader
 INFO 2024-12-04 01:17:47,925 views --------------Functia display_items a fost apelata
 INFO 2024-12-04 01:17:48,152 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 01:18:56,546 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:18:58,998 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 01:18:59,257 basehttp "GET / HTTP/1.1" 200 16032
+INFO 2024-12-04 01:19:03,857 basehttp "GET /admin/ HTTP/1.1" 200 14917
+INFO 2024-12-04 14:52:57,258 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:53:13,529 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 14:53:13,971 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:53:16,426 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 14:53:16,762 basehttp "GET / HTTP/1.1" 200 16032
+INFO 2024-12-04 14:53:16,788 basehttp "GET /static/style.css HTTP/1.1" 304 0
+WARNING 2024-12-04 14:53:16,896 log Not Found: /favicon.ico
+WARNING 2024-12-04 14:53:16,897 basehttp "GET /favicon.ico HTTP/1.1" 404 7743
+INFO 2024-12-04 14:53:22,685 basehttp "GET /admin/ HTTP/1.1" 200 14917
+WARNING 2024-12-04 14:53:29,556 log Not Found: /afiseaza_alergeni
+WARNING 2024-12-04 14:53:29,556 basehttp "GET /afiseaza_alergeni HTTP/1.1" 404 7761
+INFO 2024-12-04 14:53:42,988 basehttp "GET /admin/ HTTP/1.1" 200 14917
+INFO 2024-12-04 14:53:45,132 views --------------Funcția afisare_alergeni a fost apelată.
+INFO 2024-12-04 14:53:45,171 views Alergenii au fost extrasi cu succes.
+INFO 2024-12-04 14:53:45,171 basehttp "GET /alergeni HTTP/1.1" 200 60
+INFO 2024-12-04 14:54:26,938 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 14:54:27,687 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:54:39,093 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 14:54:39,517 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:54:42,811 views --------------Funcția afisare_alergeni a fost apelată.
+INFO 2024-12-04 14:54:42,850 views --------------Alergenii au fost extrasi cu succes.
+INFO 2024-12-04 14:54:42,852 basehttp "GET /alergeni HTTP/1.1" 200 60
+INFO 2024-12-04 14:55:03,103 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 14:55:03,943 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:59:28,132 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:59:34,716 views --------------Funcția informatii a fost apelată.
+INFO 2024-12-04 14:59:34,786 views Informațiile au fost extrase cu succes.
+INFO 2024-12-04 14:59:34,787 basehttp "GET /informatii HTTP/1.1" 200 4617
+INFO 2024-12-04 14:59:53,134 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 14:59:53,343 basehttp "GET / HTTP/1.1" 200 16032
+INFO 2024-12-04 14:59:58,848 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 14:59:58,861 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:00:01,658 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:00:02,321 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:00:02,355 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:00:02,358 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:00:03,938 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:00:03,960 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:00:03,993 basehttp "GET /static/stil_adauga_comanda.css HTTP/1.1" 304 0
+INFO 2024-12-04 15:00:05,570 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:00:05,605 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:00:05,611 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:00:05,612 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:00:05,799 basehttp "GET /static/stil_mesaj.css HTTP/1.1" 304 0
+INFO 2024-12-04 15:00:09,171 basehttp "GET /informatii HTTP/1.1" 302 0
+WARNING 2024-12-04 15:00:09,191 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:09,192 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+INFO 2024-12-04 15:00:22,201 basehttp "GET /informatii HTTP/1.1" 302 0
+WARNING 2024-12-04 15:00:22,220 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:22,220 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,028 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,028 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,208 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,209 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,366 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,366 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,509 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,509 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,670 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,670 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,818 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,819 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:24,963 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:24,964 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:00:25,140 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:00:25,140 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+INFO 2024-12-04 15:01:19,476 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:01:20,067 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 15:01:23,224 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:23,225 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:27,648 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:27,649 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+INFO 2024-12-04 15:01:34,930 basehttp "GET /informatii HTTP/1.1" 302 0
+WARNING 2024-12-04 15:01:34,947 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:34,948 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+INFO 2024-12-04 15:01:40,660 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:01:41,163 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 15:01:43,309 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:43,309 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:44,175 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:44,176 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:44,360 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:44,361 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:44,536 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:44,536 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+WARNING 2024-12-04 15:01:44,709 log Not Found: /accounts/login/
+WARNING 2024-12-04 15:01:44,710 basehttp "GET /accounts/login/?next=/informatii HTTP/1.1" 404 7772
+INFO 2024-12-04 15:01:49,769 views --------------Funcția informatii a fost apelată.
+WARNING 2024-12-04 15:01:49,770 views Utilizatorul anonim a încercat să acceseze informațiile fără permisiune.
+WARNING 2024-12-04 15:01:49,773 log Forbidden: /informatii
+WARNING 2024-12-04 15:01:49,774 basehttp "GET /informatii HTTP/1.1" 403 415
+INFO 2024-12-04 15:01:50,668 views --------------Funcția informatii a fost apelată.
+WARNING 2024-12-04 15:01:50,669 views Utilizatorul anonim a încercat să acceseze informațiile fără permisiune.
+WARNING 2024-12-04 15:01:50,670 log Forbidden: /informatii
+WARNING 2024-12-04 15:01:50,671 basehttp "GET /informatii HTTP/1.1" 403 415
+INFO 2024-12-04 15:02:02,781 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:02:03,234 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:03:07,040 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:03:07,792 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:03:08,419 views --------------Funcția informatii a fost apelată.
+WARNING 2024-12-04 15:03:08,420 views Utilizatorul anonim a încercat să acceseze informațiile fără permisiune.
+WARNING 2024-12-04 15:03:08,428 log Forbidden: /informatii
+WARNING 2024-12-04 15:03:08,430 basehttp "GET /informatii HTTP/1.1" 403 415
+INFO 2024-12-04 15:03:11,153 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:03:11,393 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:03:12,863 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:03:12,872 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:03:15,031 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:03:15,716 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:03:15,748 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:03:15,750 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:03:17,006 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:03:17,031 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:03:19,982 views --------------Funcția informatii a fost apelată.
+INFO 2024-12-04 15:03:20,078 views Informațiile au fost extrase cu succes.
+INFO 2024-12-04 15:03:20,079 basehttp "GET /informatii HTTP/1.1" 200 4617
+INFO 2024-12-04 15:03:23,100 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:03:23,139 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:03:23,144 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:03:23,145 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:03:24,882 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:03:25,068 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:03:28,074 views --------------Funcția informatii a fost apelată.
+WARNING 2024-12-04 15:03:28,075 views Utilizatorul anonim a încercat să acceseze informațiile fără permisiune.
+WARNING 2024-12-04 15:03:28,075 log Forbidden: /informatii
+WARNING 2024-12-04 15:03:28,075 basehttp "GET /informatii HTTP/1.1" 403 415
+INFO 2024-12-04 15:04:41,179 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:04:41,604 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:04:52,952 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:04:53,437 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:04:58,819 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:04:59,512 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:05:01,716 views --------------Functia informatii a fost apelata
+WARNING 2024-12-04 15:05:01,716 views Utilizatorul anonim a incercat sa acceseze informatiile fara permisiune.
+WARNING 2024-12-04 15:05:01,721 log Forbidden: /informatii
+WARNING 2024-12-04 15:05:01,722 basehttp "GET /informatii HTTP/1.1" 403 415
+INFO 2024-12-04 15:06:09,473 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:06:10,069 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:06:28,349 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:06:28,796 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:06:41,172 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 15:06:41,857 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:06:44,712 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:06:44,951 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:07:06,453 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:07:07,146 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:07:10,494 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 15:07:10,972 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:08:19,833 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:08:20,374 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:08:22,097 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:08:22,327 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:17:23,314 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:17:23,972 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:17:26,077 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:17:26,107 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:17:35,698 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:17:36,565 views --------------Functia record_failed_attemp a fost apelata
+INFO 2024-12-04 15:17:36,565 views --------------Functia check_suspicious_activity a fost apelata
+INFO 2024-12-04 15:17:36,569 basehttp "POST /aplicatie/login HTTP/1.1" 200 1587
+INFO 2024-12-04 15:17:47,392 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:17:48,068 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:17:48,101 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:17:48,105 basehttp "GET /aplicatie/profile HTTP/1.1" 200 875
+INFO 2024-12-04 15:17:50,576 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:17:50,595 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:17:54,033 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:17:54,106 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3700
+INFO 2024-12-04 15:17:56,354 views --------------Funcția adresa a fost apelată.
+WARNING 2024-12-04 15:17:56,387 views Utilizatorul maria a încercat să acceseze adresele fără permisiune.
+ERROR 2024-12-04 15:17:56,433 log Internal Server Error: /adresa
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 54, in adresa
+    return render(request, 'gelaterie/403.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: gelaterie/403.html
+ERROR 2024-12-04 15:17:56,435 basehttp "GET /adresa HTTP/1.1" 500 88031
+INFO 2024-12-04 15:18:05,866 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:18:06,639 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:18:07,442 views --------------Funcția adresa a fost apelată.
+WARNING 2024-12-04 15:18:07,493 views Utilizatorul maria a încercat să acceseze adresele fără permisiune.
+WARNING 2024-12-04 15:18:07,502 log Forbidden: /adresa
+WARNING 2024-12-04 15:18:07,503 basehttp "GET /adresa HTTP/1.1" 403 400
+INFO 2024-12-04 15:19:07,609 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:19:07,659 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:19:07,665 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:19:07,667 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:19:09,840 views --------------Funcția adresa a fost apelată.
+WARNING 2024-12-04 15:19:09,840 views Utilizatorul anonim a încercat să acceseze adresele fără permisiune.
+WARNING 2024-12-04 15:19:09,841 log Forbidden: /adresa
+WARNING 2024-12-04 15:19:09,841 basehttp "GET /adresa HTTP/1.1" 403 414
+INFO 2024-12-04 15:19:42,594 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:19:42,790 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:19:44,168 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:19:44,181 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:19:45,888 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:19:46,629 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:19:46,664 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:19:46,666 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:19:48,632 views --------------Funcția adresa a fost apelată.
+INFO 2024-12-04 15:19:48,668 basehttp "GET /adresa HTTP/1.1" 200 211
+INFO 2024-12-04 15:21:15,636 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:21:16,089 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:21:18,248 views --------------Functia adresa a fost apelata
+INFO 2024-12-04 15:21:18,304 basehttp "GET /adresa HTTP/1.1" 200 182
+INFO 2024-12-04 15:23:16,364 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:23:17,083 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:23:35,399 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:23:35,817 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:23:38,114 views --------------Functia afisare_alergeni a fost apelata
+INFO 2024-12-04 15:23:38,152 basehttp "GET /alergeni HTTP/1.1" 200 60
+INFO 2024-12-04 15:24:39,538 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:24:39,578 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:24:40,933 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:24:40,968 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:24:40,974 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:24:40,975 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:24:42,849 views --------------Functia afisare_alergeni a fost apelata
+WARNING 2024-12-04 15:24:42,849 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:42,850 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:42,851 basehttp "GET /alergeni HTTP/1.1" 403 414
+INFO 2024-12-04 15:24:44,129 views --------------Functia afisare_alergeni a fost apelata
+WARNING 2024-12-04 15:24:44,130 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:44,130 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:44,131 basehttp "GET /alergeni HTTP/1.1" 403 414
+INFO 2024-12-04 15:24:44,870 views --------------Functia afisare_alergeni a fost apelata
+WARNING 2024-12-04 15:24:44,871 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:44,872 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:44,872 basehttp "GET /alergeni HTTP/1.1" 403 414
+INFO 2024-12-04 15:24:45,118 views --------------Functia afisare_alergeni a fost apelata
+WARNING 2024-12-04 15:24:45,119 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:45,119 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:45,120 basehttp "GET /alergeni HTTP/1.1" 403 414
+INFO 2024-12-04 15:24:45,349 views --------------Functia afisare_alergeni a fost apelata
+WARNING 2024-12-04 15:24:45,349 views Utilizatorul anonim a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-04 15:24:45,350 log Forbidden: /alergeni
+WARNING 2024-12-04 15:24:45,350 basehttp "GET /alergeni HTTP/1.1" 403 414
+INFO 2024-12-04 15:24:55,588 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:24:55,772 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:24:56,679 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:24:56,686 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:24:57,853 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:24:58,653 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:24:58,688 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:24:58,690 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:25:00,084 views --------------Functia afisare_alergeni a fost apelata
+INFO 2024-12-04 15:25:00,119 basehttp "GET /alergeni HTTP/1.1" 200 60
+INFO 2024-12-04 15:25:37,104 views --------------Functia bauturi a fost apelata
+INFO 2024-12-04 15:25:37,143 basehttp "GET /bauturi HTTP/1.1" 200 1247
+INFO 2024-12-04 15:25:41,327 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:25:42,013 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:26:03,607 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:26:04,024 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:27:18,870 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:27:19,291 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:27:47,227 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:27:47,269 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:27:48,613 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:27:48,648 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:27:48,654 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:27:48,656 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:27:50,323 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:27:50,508 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:27:53,444 views --------------Functia bauturi a fost apelata
+WARNING 2024-12-04 15:27:53,445 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-04 15:27:53,446 log Forbidden: /bauturi
+WARNING 2024-12-04 15:27:53,447 basehttp "GET /bauturi HTTP/1.1" 403 413
+INFO 2024-12-04 15:27:57,642 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:27:57,651 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:27:58,855 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:27:59,659 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:27:59,692 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:27:59,694 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:28:01,220 views --------------Functia bauturi a fost apelata
+INFO 2024-12-04 15:28:01,264 basehttp "GET /bauturi HTTP/1.1" 200 1247
+INFO 2024-12-04 15:28:29,536 views --------------Functia informatii a fost apelata
+INFO 2024-12-04 15:28:29,640 views --------------Informatiile au fost extrase cu succes
+INFO 2024-12-04 15:28:29,640 basehttp "GET /informatii HTTP/1.1" 200 4616
+INFO 2024-12-04 15:28:32,447 views --------------Functia inghetata a fost apelata
+INFO 2024-12-04 15:28:32,500 basehttp "GET /inghetata HTTP/1.1" 200 2080
+INFO 2024-12-04 15:28:43,316 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:28:44,067 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:28:44,489 views --------------Funcția inghetata a fost apelată.
+INFO 2024-12-04 15:28:44,548 basehttp "GET /inghetata HTTP/1.1" 200 2080
+INFO 2024-12-04 15:28:45,694 views --------------Funcția inghetata a fost apelată.
+INFO 2024-12-04 15:28:45,749 basehttp "GET /inghetata HTTP/1.1" 200 2080
+INFO 2024-12-04 15:28:46,543 views --------------Funcția inghetata a fost apelată.
+INFO 2024-12-04 15:28:46,595 basehttp "GET /inghetata HTTP/1.1" 200 2080
+INFO 2024-12-04 15:28:46,913 views --------------Funcția inghetata a fost apelată.
+INFO 2024-12-04 15:28:46,968 basehttp "GET /inghetata HTTP/1.1" 200 2080
+INFO 2024-12-04 15:29:57,979 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:29:58,403 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:30:02,622 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:30:02,662 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:30:04,171 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:30:04,209 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:30:04,215 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:30:04,217 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:30:06,540 views --------------Functia inghetata a fost apelata
+WARNING 2024-12-04 15:30:06,540 views Utilizatorul anonim a incercat sa acceseze inghetatele fara permisiune!
+WARNING 2024-12-04 15:30:06,542 log Forbidden: /inghetata
+WARNING 2024-12-04 15:30:06,542 basehttp "GET /inghetata HTTP/1.1" 403 416
+INFO 2024-12-04 15:30:16,929 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:30:17,407 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:30:20,904 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:30:21,136 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:30:22,942 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:30:22,951 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:30:25,091 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:30:25,914 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:30:25,948 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:30:25,950 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:30:27,898 views --------------Functia inghetata a fost apelata
+INFO 2024-12-04 15:30:27,950 basehttp "GET /inghetata HTTP/1.1" 200 2080
+INFO 2024-12-04 15:30:49,999 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:30:50,514 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:30:56,681 views --------------Funcția biscuiti a fost apelată.
+INFO 2024-12-04 15:30:56,724 basehttp "GET /biscuiti HTTP/1.1" 200 617
+INFO 2024-12-04 15:31:45,248 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:31:45,916 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:31:51,251 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:31:51,300 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:31:52,888 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:31:52,925 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:31:52,930 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:31:52,931 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:31:57,124 views --------------Functia biscuiti a fost apelata
+WARNING 2024-12-04 15:31:57,124 views Utilizatorul anonim a incercat sa acceseze biscuitii fara permisiune!
+WARNING 2024-12-04 15:31:57,126 log Forbidden: /biscuiti
+WARNING 2024-12-04 15:31:57,126 basehttp "GET /biscuiti HTTP/1.1" 403 414
+INFO 2024-12-04 15:32:05,524 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:32:06,187 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:32:10,284 views --------------Functia biscuiti a fost apelata
+WARNING 2024-12-04 15:32:10,285 views Utilizatorul anonim a incercat sa acceseze biscuitii fara permisiune!
+WARNING 2024-12-04 15:32:10,292 log Forbidden: /biscuiti
+WARNING 2024-12-04 15:32:10,293 basehttp "GET /biscuiti HTTP/1.1" 403 414
+INFO 2024-12-04 15:32:13,464 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:32:13,703 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:32:15,098 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:32:15,107 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:32:16,737 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:32:17,468 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:32:17,516 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:32:17,518 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:32:18,979 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:32:18,998 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:32:21,281 views --------------Functia biscuiti a fost apelata
+INFO 2024-12-04 15:32:21,320 basehttp "GET /biscuiti HTTP/1.1" 200 617
+INFO 2024-12-04 15:33:10,202 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:33:10,737 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:33:33,193 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:33:33,856 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:33:37,755 views --------------Functia is_admin a fost apelata
+INFO 2024-12-04 15:33:37,789 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-04 15:33:37,806 basehttp "GET /promotii HTTP/1.1" 200 3081
+INFO 2024-12-04 15:33:39,930 views --------------Functia prajituri a fost apelata
+INFO 2024-12-04 15:33:39,983 basehttp "GET /prajituri HTTP/1.1" 200 1050
+INFO 2024-12-04 15:33:43,650 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:33:43,702 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:33:43,708 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:33:43,711 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:33:45,850 views --------------Functia prajituri a fost apelata
+WARNING 2024-12-04 15:33:45,850 views Utilizatorul anonim a incercat sa acceseze prajiturile fara permisiune!
+WARNING 2024-12-04 15:33:45,852 log Forbidden: /prajituri
+WARNING 2024-12-04 15:33:45,853 basehttp "GET /prajituri HTTP/1.1" 403 415
+INFO 2024-12-04 15:34:05,832 views --------------Functia prajituri a fost apelata
+WARNING 2024-12-04 15:34:05,832 views Utilizatorul anonim a incercat sa acceseze prajiturile fara permisiune!
+WARNING 2024-12-04 15:34:05,834 log Forbidden: /prajituri
+WARNING 2024-12-04 15:34:05,835 basehttp "GET /prajituri HTTP/1.1" 403 414
+INFO 2024-12-04 15:34:11,824 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:34:12,037 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:34:13,906 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:34:13,913 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:34:15,484 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:34:16,138 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:34:16,172 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:34:16,175 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:34:18,243 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:34:18,264 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:34:20,485 views --------------Functia prajituri a fost apelata
+INFO 2024-12-04 15:34:20,535 basehttp "GET /prajituri HTTP/1.1" 200 1050
+INFO 2024-12-04 15:35:55,364 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:35:55,786 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:36:03,373 views --------------Functia torturi_inghetata a fost apelata
+INFO 2024-12-04 15:36:03,414 basehttp "GET /torturi-inghetata HTTP/1.1" 200 659
+INFO 2024-12-04 15:36:07,008 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:36:07,064 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:36:07,069 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:36:07,074 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:36:09,115 views --------------Functia torturi_inghetata a fost apelata
+WARNING 2024-12-04 15:36:09,115 views Utilizatorul anonim a incercat sa acceseze torturile de inghetata fara permisiune!
+WARNING 2024-12-04 15:36:09,117 log Forbidden: /torturi-inghetata
+WARNING 2024-12-04 15:36:09,117 basehttp "GET /torturi-inghetata HTTP/1.1" 403 427
+INFO 2024-12-04 15:36:23,405 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:36:23,843 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:36:28,859 views --------------Functia torturi_inghetata a fost apelata
+WARNING 2024-12-04 15:36:28,859 views Utilizatorul anonim a incercat sa acceseze torturile de inghetata fara permisiune!
+WARNING 2024-12-04 15:36:28,864 log Forbidden: /torturi-inghetata
+WARNING 2024-12-04 15:36:28,865 basehttp "GET /torturi-inghetata HTTP/1.1" 403 426
+INFO 2024-12-04 15:36:39,193 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:36:39,414 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:36:40,717 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:36:40,730 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:36:42,042 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:36:42,703 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:36:42,734 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:36:42,736 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:36:43,842 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:36:43,861 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:36:46,246 views --------------Functia torturi_inghetata a fost apelata
+INFO 2024-12-04 15:36:46,284 basehttp "GET /torturi-inghetata HTTP/1.1" 200 659
+INFO 2024-12-04 15:37:52,014 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:37:52,486 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 15:37:59,213 log Not Found: /,emiu
+WARNING 2024-12-04 15:37:59,214 basehttp "GET /,emiu HTTP/1.1" 404 7725
+WARNING 2024-12-04 15:38:09,698 log Not Found: /memiu
+WARNING 2024-12-04 15:38:09,699 basehttp "GET /memiu HTTP/1.1" 404 7725
+INFO 2024-12-04 15:38:15,703 views --------------Functia meniu a fost apelata
+INFO 2024-12-04 15:38:15,765 basehttp "GET /meniu HTTP/1.1" 200 248
+INFO 2024-12-04 15:38:22,421 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:38:22,476 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:38:22,481 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:38:22,485 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:38:24,723 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:38:24,914 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:38:26,123 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:38:26,132 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:38:28,603 views --------------Functia meniu a fost apelata
+WARNING 2024-12-04 15:38:28,603 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-04 15:38:28,604 log Forbidden: /meniu
+WARNING 2024-12-04 15:38:28,605 basehttp "GET /meniu HTTP/1.1" 403 410
+INFO 2024-12-04 15:38:38,409 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:38:39,089 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:38:39,123 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:38:39,126 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:38:40,067 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:38:40,088 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:38:43,449 views --------------Functia meniu a fost apelata
+INFO 2024-12-04 15:38:43,495 basehttp "GET /meniu HTTP/1.1" 200 248
+INFO 2024-12-04 15:39:32,773 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:39:33,197 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:40:11,764 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:40:12,238 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:40:38,745 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:40:39,634 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:40:44,105 views --------------Functia comenzi a fost apelata
+INFO 2024-12-04 15:40:44,138 basehttp "GET /comenzi HTTP/1.1" 200 455
+INFO 2024-12-04 15:40:52,020 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:40:52,076 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:40:52,082 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:40:52,088 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:40:54,481 views --------------Functia comenzi a fost apelata
+WARNING 2024-12-04 15:40:54,481 views Utilizatorul anonim a incercat sa acceseze comenzile fara permisiune!
+WARNING 2024-12-04 15:40:54,482 log Forbidden: /comenzi
+WARNING 2024-12-04 15:40:54,482 basehttp "GET /comenzi HTTP/1.1" 403 412
+INFO 2024-12-04 15:41:01,830 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:41:02,021 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:41:03,269 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:41:03,283 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:41:04,786 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:41:05,476 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:41:05,522 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:41:05,525 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:41:07,135 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:41:07,154 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:41:09,447 views --------------Functia comenzi a fost apelata
+INFO 2024-12-04 15:41:09,478 basehttp "GET /comenzi HTTP/1.1" 200 455
+INFO 2024-12-04 15:42:00,803 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:42:01,274 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:44:38,446 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:44:38,852 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:44:44,820 views --------------Functia sponsori a fost apelata
+INFO 2024-12-04 15:44:44,859 basehttp "GET /sponsori HTTP/1.1" 200 150
+INFO 2024-12-04 15:44:49,413 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:44:49,466 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:44:49,472 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:44:49,477 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:44:52,528 views --------------Functia sponsori a fost apelata
+WARNING 2024-12-04 15:44:52,528 views Utilizatorul  a incercat să acceseze sponsorii fara permisiune!
+WARNING 2024-12-04 15:44:52,530 log Forbidden: /sponsori
+WARNING 2024-12-04 15:44:52,530 basehttp "GET /sponsori HTTP/1.1" 403 413
+INFO 2024-12-04 15:44:57,731 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:44:57,924 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:44:59,445 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:44:59,454 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:45:00,877 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:45:01,543 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:45:01,575 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:45:01,577 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:45:02,569 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:45:02,590 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:45:05,886 views --------------Functia sponsori a fost apelata
+INFO 2024-12-04 15:45:05,921 basehttp "GET /sponsori HTTP/1.1" 200 150
+INFO 2024-12-04 15:46:07,984 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:46:08,415 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:46:27,824 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:46:28,250 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:47:01,771 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:47:02,307 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:47:06,917 views --------------Functia magazine a fost apelata
+INFO 2024-12-04 15:47:06,954 basehttp "GET /magazine HTTP/1.1" 200 125
+INFO 2024-12-04 15:47:13,397 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:47:13,446 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:47:13,451 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:47:13,457 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:47:15,615 views --------------Functia magazine a fost apelata
+WARNING 2024-12-04 15:47:15,615 views Utilizatorul  a incercat sa acceseze magazinele fara permisiune!
+WARNING 2024-12-04 15:47:15,617 log Forbidden: /magazine
+WARNING 2024-12-04 15:47:15,617 basehttp "GET /magazine HTTP/1.1" 403 413
+INFO 2024-12-04 15:47:21,115 views --------------Functia informatii a fost apelata
+WARNING 2024-12-04 15:47:21,115 views Utilizatorul anonim a incercat sa acceseze informatiile fara permisiune!
+WARNING 2024-12-04 15:47:21,116 log Forbidden: /informatii
+WARNING 2024-12-04 15:47:21,117 basehttp "GET /informatii HTTP/1.1" 403 412
+INFO 2024-12-04 15:47:22,313 views --------------Functia informatii a fost apelata
+WARNING 2024-12-04 15:47:22,313 views Utilizatorul anonim a incercat sa acceseze informatiile fara permisiune!
+WARNING 2024-12-04 15:47:22,314 log Forbidden: /informatii
+WARNING 2024-12-04 15:47:22,315 basehttp "GET /informatii HTTP/1.1" 403 412
+INFO 2024-12-04 15:47:28,205 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:47:28,399 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:47:29,803 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:47:29,815 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:47:38,006 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:47:38,644 views --------------Functia record_failed_attemp a fost apelata
+INFO 2024-12-04 15:47:38,644 views --------------Functia check_suspicious_activity a fost apelata
+INFO 2024-12-04 15:47:38,646 basehttp "POST /aplicatie/login HTTP/1.1" 200 1587
+INFO 2024-12-04 15:47:46,585 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:47:47,262 views --------------Functia record_failed_attemp a fost apelata
+INFO 2024-12-04 15:47:47,263 views --------------Functia check_suspicious_activity a fost apelata
+INFO 2024-12-04 15:47:47,266 basehttp "POST /aplicatie/login HTTP/1.1" 200 1587
+INFO 2024-12-04 15:48:00,756 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:48:01,453 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:48:01,485 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:48:01,487 basehttp "GET /aplicatie/profile HTTP/1.1" 200 876
+INFO 2024-12-04 15:48:02,710 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:48:02,731 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:48:05,163 views --------------Functia informatii a fost apelata
+WARNING 2024-12-04 15:48:05,194 views Utilizatorul ciuciu a incercat sa acceseze informatiile fara permisiune!
+WARNING 2024-12-04 15:48:05,195 log Forbidden: /informatii
+WARNING 2024-12-04 15:48:05,195 basehttp "GET /informatii HTTP/1.1" 403 400
+INFO 2024-12-04 15:48:10,897 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 15:48:10,933 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 15:48:10,939 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 15:48:10,940 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 15:48:12,695 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 15:48:12,883 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 15:48:14,071 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:48:14,075 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 15:48:15,384 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 15:48:16,194 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 15:48:16,230 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 15:48:16,231 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 15:48:17,761 views --------------Functia informatii a fost apelata
+INFO 2024-12-04 15:48:17,858 views --------------Informatiile au fost extrase cu succes
+INFO 2024-12-04 15:48:17,858 basehttp "GET /informatii HTTP/1.1" 200 4616
+INFO 2024-12-04 15:48:24,651 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 15:48:24,666 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 15:54:04,418 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:54:05,151 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:54:11,527 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 15:54:12,057 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:54:20,904 views --------------Functia magazine a fost apelata
+INFO 2024-12-04 15:54:20,944 basehttp "GET /magazine HTTP/1.1" 200 125
+INFO 2024-12-04 15:54:37,654 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 15:54:38,105 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:55:23,752 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:55:24,236 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:59:06,243 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:59:06,671 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:59:29,052 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:59:29,532 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:59:50,924 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:59:51,437 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:59:57,731 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 15:59:58,188 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:02:56,850 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 16:02:57,349 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:03:15,761 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 16:03:16,252 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:03:21,612 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 16:03:21,796 basehttp "GET / HTTP/1.1" 200 16032
+INFO 2024-12-04 16:03:31,692 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 16:03:32,158 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:03:34,734 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 16:03:34,784 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 16:03:40,716 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 16:03:41,392 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 16:03:41,428 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 16:03:41,431 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 16:03:45,005 views --------------Functia change_password_view a fost apelata
+INFO 2024-12-04 16:03:45,030 basehttp "GET /aplicatie/schimbare_parola HTTP/1.1" 200 1434
+INFO 2024-12-04 16:03:45,074 basehttp "GET /static/change_password.css HTTP/1.1" 304 0
+INFO 2024-12-04 16:03:57,628 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 16:03:57,654 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 16:04:02,568 views --------------Functia detalii_inghetata a fost apelata
+INFO 2024-12-04 16:04:02,570 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,578 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,582 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,587 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,592 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,596 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,600 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,607 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,611 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,616 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,621 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,626 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,630 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,635 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,640 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-04 16:04:02,676 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 1433
+INFO 2024-12-04 16:04:31,070 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 16:04:31,506 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:04:39,030 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 16:04:39,080 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 16:04:39,085 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 16:04:39,093 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 16:04:40,360 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 16:04:40,552 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 16:58:32,402 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:58:32,428 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4180
+INFO 2024-12-04 16:58:36,507 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:58:36,568 basehttp "GET /admin/ HTTP/1.1" 200 14917
+INFO 2024-12-04 16:58:38,859 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22163
+INFO 2024-12-04 16:58:38,962 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 16:59:31,745 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12948
+INFO 2024-12-04 16:59:31,815 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 16:59:34,178 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 19442
+INFO 2024-12-04 16:59:34,241 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 16:59:36,162 basehttp "GET /admin/auth/group/1/delete/ HTTP/1.1" 200 11712
+INFO 2024-12-04 16:59:37,977 basehttp "POST /admin/auth/group/1/delete/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:59:38,038 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11961
+INFO 2024-12-04 16:59:38,156 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 16:59:40,575 basehttp "GET /admin/auth/group/add/ HTTP/1.1" 200 19203
+INFO 2024-12-04 16:59:40,654 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:00:21,918 basehttp "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:00:21,970 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 13175
+INFO 2024-12-04 17:00:22,070 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:00:24,385 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 20203
+INFO 2024-12-04 17:00:24,448 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:00:51,691 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22163
+INFO 2024-12-04 17:00:51,753 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:01:06,072 basehttp "GET /admin/gelaterie/customuser/33/change/ HTTP/1.1" 200 30956
+INFO 2024-12-04 17:01:06,134 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:01:20,812 basehttp "POST /admin/gelaterie/customuser/33/change/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:01:20,878 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22368
+INFO 2024-12-04 17:01:20,987 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:01:32,203 basehttp "GET /admin/gelaterie/customuser/33/change/ HTTP/1.1" 200 30964
+INFO 2024-12-04 17:01:32,270 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:01:53,643 basehttp "POST /admin/gelaterie/customuser/33/change/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:01:53,705 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22368
+INFO 2024-12-04 17:01:53,810 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:01:59,527 basehttp "GET /admin/gelaterie/customuser/33/change/ HTTP/1.1" 200 31693
+INFO 2024-12-04 17:01:59,589 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:02:04,143 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12965
+INFO 2024-12-04 17:02:04,210 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:02:05,807 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 20203
+INFO 2024-12-04 17:02:05,870 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:02:08,709 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12965
+INFO 2024-12-04 17:02:09,466 basehttp "GET /admin/gelaterie/customuser/33/change/ HTTP/1.1" 200 31693
+INFO 2024-12-04 17:02:14,696 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22163
+INFO 2024-12-04 17:09:07,579 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-04 17:09:08,142 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:11:17,440 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 17:11:17,902 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:11:26,083 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:11:26,491 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:12:12,050 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:12:12,508 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:12:39,943 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:12:40,383 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:13:13,867 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 17:13:14,637 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:13:23,292 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:13:23,344 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4146
+INFO 2024-12-04 17:14:16,655 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:14:16,699 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:17:17,909 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:17:18,375 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:17:57,910 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:17:58,325 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:18:03,405 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:18:03,454 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:18:10,395 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:18:10,439 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:18:13,772 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 17:18:13,981 basehttp "GET / HTTP/1.1" 200 16032
+INFO 2024-12-04 17:18:16,042 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:18:16,048 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 17:18:24,754 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:18:25,471 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 17:18:25,511 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 17:18:25,514 basehttp "GET /aplicatie/profile HTTP/1.1" 200 875
+INFO 2024-12-04 17:18:27,837 views --------------Functia adauga_prajitura a fost apelata
+WARNING 2024-12-04 17:18:27,868 views Utilizatorul allah a incercat sa acceseze formularul de adaugare prajituri fara permisiune!
+WARNING 2024-12-04 17:18:27,870 log Forbidden: /adauga_prajitura
+WARNING 2024-12-04 17:18:27,870 basehttp "GET /adauga_prajitura HTTP/1.1" 403 390
+INFO 2024-12-04 17:18:39,387 basehttp "GET /admin/auth/group/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:18:39,449 basehttp "GET /admin/login/?next=/admin/auth/group/ HTTP/1.1" 200 3722
+INFO 2024-12-04 17:18:41,782 basehttp "POST /admin/login/?next=/admin/auth/group/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:18:41,847 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12965
+INFO 2024-12-04 17:18:41,952 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:18:44,132 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 20203
+INFO 2024-12-04 17:18:44,198 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:18:51,219 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 20203
+INFO 2024-12-04 17:18:51,274 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:18:52,370 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 20203
+INFO 2024-12-04 17:18:52,432 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:19:58,634 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/admin.py changed, reloading.
+INFO 2024-12-04 17:19:59,058 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:20:32,022 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:22:41,356 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:22:41,792 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:22:47,704 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:22:47,754 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:22:51,561 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 17:22:51,598 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 17:22:53,148 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 17:22:53,184 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 17:22:53,190 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 17:22:53,191 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 17:22:55,283 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 17:22:55,477 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 17:22:56,968 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:22:56,974 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 17:23:02,335 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:23:03,038 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 17:23:03,076 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 17:23:03,079 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 17:23:05,221 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 17:23:05,236 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 17:23:08,426 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:23:08,469 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:23:10,865 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 17:23:10,902 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 17:23:10,908 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 17:23:10,909 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 17:23:12,251 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 17:23:12,439 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 17:23:13,879 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:23:13,883 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 17:23:21,336 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:23:21,973 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 17:23:22,003 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 17:23:22,004 basehttp "GET /aplicatie/profile HTTP/1.1" 200 875
+INFO 2024-12-04 17:23:23,644 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 17:23:23,660 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 17:23:26,277 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:23:26,319 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:23:27,457 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:23:27,502 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:23:27,750 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:23:27,795 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:23:27,923 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:23:27,969 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:23:28,087 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:23:28,130 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:23:28,278 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:23:28,322 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:23:28,460 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:23:28,502 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:24:59,282 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:24:59,901 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:25:09,706 views --------------Functia adauga_prajitura a fost apelata
+WARNING 2024-12-04 17:25:09,746 views Utilizatorul maria a incercat sa acceseze formularul de adaugare prajituri fara permisiune!
+WARNING 2024-12-04 17:25:09,750 log Forbidden: /adauga_prajitura
+WARNING 2024-12-04 17:25:09,751 basehttp "GET /adauga_prajitura HTTP/1.1" 403 390
+INFO 2024-12-04 17:25:13,746 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 17:25:13,801 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 17:25:13,806 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 17:25:13,809 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 17:25:15,242 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 17:25:15,442 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 17:25:16,690 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:25:16,701 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 17:25:26,542 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:25:27,262 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 17:25:27,299 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 17:25:27,301 basehttp "GET /aplicatie/profile HTTP/1.1" 200 875
+INFO 2024-12-04 17:25:30,553 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:25:30,608 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:25:33,277 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 17:25:33,297 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 17:25:34,657 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 17:25:34,697 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 17:25:34,703 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 17:25:34,704 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 17:25:36,916 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 17:25:37,105 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 17:25:38,214 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:25:38,218 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 17:25:41,759 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:25:42,396 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 17:25:42,426 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 17:25:42,427 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 17:25:44,426 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 17:25:44,441 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 17:25:46,934 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:25:46,976 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:25:47,870 views --------------Functia adauga_prajitura a fost apelata
+INFO 2024-12-04 17:25:47,910 basehttp "GET /adauga_prajitura HTTP/1.1" 200 4141
+INFO 2024-12-04 17:25:49,988 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 17:25:50,026 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 17:25:50,031 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 17:25:50,032 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 17:25:52,141 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 17:25:52,324 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 17:25:56,951 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:25:56,956 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 17:26:03,652 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:26:03,673 basehttp "GET /admin/login/?next=/admin/gelaterie/customuser/ HTTP/1.1" 200 4222
+INFO 2024-12-04 17:26:05,579 basehttp "POST /admin/login/?next=/admin/gelaterie/customuser/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:26:05,660 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22163
+INFO 2024-12-04 17:26:05,820 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING 2024-12-04 17:26:21,156 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-04 17:26:21,156 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-04 17:26:25,380 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-04 17:26:25,380 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-04 17:26:30,395 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-04 17:26:30,396 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+INFO 2024-12-04 17:26:32,053 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:26:32,057 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 17:26:37,362 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:26:38,007 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 17:26:38,037 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 17:26:38,038 basehttp "GET /aplicatie/profile HTTP/1.1" 200 874
+INFO 2024-12-04 17:26:39,243 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 17:26:39,259 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 17:26:44,527 views --------------Functia adauga_prajitura a fost apelata
+WARNING 2024-12-04 17:26:44,559 views Utilizatorul keny a incercat sa acceseze formularul de adaugare prajituri fara permisiune!
+WARNING 2024-12-04 17:26:44,559 log Forbidden: /adauga_prajitura
+WARNING 2024-12-04 17:26:44,560 basehttp "GET /adauga_prajitura HTTP/1.1" 403 389
+INFO 2024-12-04 17:27:09,291 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 17:27:09,326 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 17:27:09,332 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 17:27:09,333 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 17:27:10,840 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 17:27:11,019 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 17:27:12,872 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:27:12,876 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 17:27:14,386 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 17:27:15,081 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 17:27:15,115 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 17:27:15,116 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 17:27:21,278 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22163
+INFO 2024-12-04 17:27:21,347 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 17:27:54,878 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:27:55,359 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:28:04,664 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:28:05,122 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:28:15,448 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:28:15,943 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 17:28:21,194 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 17:28:21,680 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:21:37,266 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:21:42,040 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22212
+INFO 2024-12-04 18:21:42,120 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 18:21:49,930 basehttp "GET /admin/gelaterie/customuser/33/change/ HTTP/1.1" 200 31871
+INFO 2024-12-04 18:21:49,998 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-04 18:22:05,532 basehttp "GET /admin/gelaterie/customuser/33/password/ HTTP/1.1" 200 11717
+INFO 2024-12-04 18:22:11,063 basehttp "GET /admin/gelaterie/customuser/33/change/ HTTP/1.1" 200 31871
+INFO 2024-12-04 18:22:16,869 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 22212
+INFO 2024-12-04 18:22:51,711 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 18:22:51,730 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 18:22:51,761 basehttp "GET /static/stil_adauga_comanda.css HTTP/1.1" 304 0
+INFO 2024-12-04 18:22:53,327 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 18:22:53,361 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 18:22:53,367 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 18:22:53,368 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 18:22:55,125 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:22:55,317 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 18:22:58,442 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 18:22:58,447 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 18:23:01,892 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 18:23:02,551 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 18:23:02,583 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 18:23:02,585 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 18:23:12,257 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:23:12,457 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 18:25:26,594 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:26,779 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:27,511 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:27,693 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:28,043 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:28,221 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:28,529 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:28,709 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:29,057 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:29,241 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:29,491 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:29,665 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:29,923 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:30,107 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:30,348 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:30,533 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:30,660 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:30,848 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:31,007 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:31,185 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:31,301 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:31,490 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:31,607 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:31,786 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:32,059 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:32,241 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:34,039 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:34,222 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:34,541 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:34,728 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:34,964 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:35,151 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:35,202 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:35,406 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:35,590 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:35,769 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:35,958 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:36,134 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:36,325 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:36,499 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:36,682 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:36,862 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:25:37,105 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:25:37,286 basehttp "GET /aplicatie/ HTTP/1.1" 200 17225
+INFO 2024-12-04 18:27:15,349 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:27:15,829 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:28:53,760 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:28:54,409 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:30:32,440 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:30:33,032 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:30:38,164 views --------------Functia display_items a fost apelata
+ERROR 2024-12-04 18:30:38,262 log Internal Server Error: /aplicatie/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 317, in display_items
+    return render(request, 'oferta.html', {'message': 'Reducere 50%! Profitați acum!'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: oferta.html
+ERROR 2024-12-04 18:30:38,263 basehttp "GET /aplicatie/ HTTP/1.1" 500 93163
+INFO 2024-12-04 18:30:55,562 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:30:55,973 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:31:06,164 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:31:06,578 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:31:09,055 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:31:09,290 basehttp "GET /aplicatie/ HTTP/1.1" 200 17183
+INFO 2024-12-04 18:31:59,284 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:32:00,038 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:33:14,060 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 18:33:14,540 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 18:33:55,023 log Not Found: /ofera
+WARNING 2024-12-04 18:33:55,024 basehttp "GET /ofera HTTP/1.1" 404 8265
+ERROR 2024-12-04 18:34:05,676 log Internal Server Error: /oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 912, in oferta
+    return render(request, 'gelaterie/oferta.html', {'message': 'Reducere 50%! Profitați acum!'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: gelaterie/oferta.html
+ERROR 2024-12-04 18:34:05,677 basehttp "GET /oferta HTTP/1.1" 500 87654
+INFO 2024-12-04 18:34:21,479 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:34:22,189 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:34:23,271 basehttp "GET /oferta HTTP/1.1" 200 1053
+INFO 2024-12-04 18:34:25,394 basehttp "GET /oferta HTTP/1.1" 200 1053
+INFO 2024-12-04 18:36:42,818 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:46,434 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:47,080 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:47,264 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:47,439 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:47,612 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:48,179 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:48,338 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:48,511 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:49,034 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:49,637 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:50,329 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:50,512 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:52,114 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:52,793 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:53,444 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:54,022 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:54,766 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:55,454 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:36:56,166 basehttp "GET /oferta HTTP/1.1" 200 2065
+WARNING 2024-12-04 18:36:58,785 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:36:58,786 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:37:04,791 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:37:04,791 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:37:09,970 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:37:09,970 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:37:10,530 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:37:10,530 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+INFO 2024-12-04 18:37:16,327 basehttp "GET /oferta HTTP/1.1" 200 2065
+INFO 2024-12-04 18:37:37,997 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:38,232 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 18:37:50,354 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:50,561 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:51,172 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:51,353 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:51,765 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:51,946 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:52,239 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:52,414 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:52,658 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:52,828 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:53,107 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:53,293 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:53,491 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:53,671 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:53,927 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:54,107 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:54,216 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:54,380 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:55,061 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:55,239 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:55,671 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:55,849 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:57,423 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:57,603 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:58,438 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:58,619 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:37:59,091 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:37:59,261 basehttp "GET /aplicatie/ HTTP/1.1" 200 16883
+INFO 2024-12-04 18:38:32,266 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:32,475 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:33,612 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:33,789 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:33,981 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:34,157 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:34,347 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:34,529 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:34,671 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:34,847 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:35,265 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:35,441 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:36,095 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:36,268 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:36,617 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:36,825 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:37,256 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:37,431 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:37,863 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:38,042 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:38,445 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:38,621 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:38,793 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:38,972 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:39,405 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:39,585 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:41,145 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:41,331 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:41,798 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:41,978 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:42,680 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:42,858 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:43,528 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:43,754 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:44,426 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:44,602 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:45,117 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:45,296 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:45,830 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:46,008 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:46,552 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:46,731 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:47,447 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:47,636 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:48,105 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:48,268 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:48,743 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:48,917 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:49,582 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:49,757 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:50,281 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:50,457 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+INFO 2024-12-04 18:38:51,111 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:38:51,279 basehttp "GET /aplicatie/ HTTP/1.1" 200 17119
+WARNING 2024-12-04 18:38:52,905 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:52,906 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:53,951 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:53,952 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:54,819 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:54,820 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:55,301 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:55,302 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:55,665 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:55,665 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:55,914 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:55,915 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:56,268 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:56,268 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:56,769 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:56,769 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:57,013 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:57,014 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:57,187 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:57,187 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:38:57,360 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:38:57,360 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:33,748 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:33,749 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:34,700 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:34,700 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,146 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,147 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,293 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,293 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,460 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,461 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,649 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,650 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:35,827 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:35,827 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:36,256 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:36,256 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:36,601 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:36,602 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:36,845 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:36,845 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+INFO 2024-12-04 18:39:38,677 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:38,851 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:40,373 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:40,556 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:41,141 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:41,317 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:42,013 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:42,187 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:42,706 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:42,885 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:43,372 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:43,538 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:44,173 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:44,346 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:44,922 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:45,106 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:45,744 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:45,932 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:46,406 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:46,578 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:47,206 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:47,380 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:48,110 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:48,286 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:49,051 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:49,221 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:49,959 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:50,136 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+INFO 2024-12-04 18:39:50,898 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:39:51,069 basehttp "GET /aplicatie/ HTTP/1.1" 200 17090
+WARNING 2024-12-04 18:39:52,878 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:52,879 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:53,638 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:53,638 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:53,803 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:53,803 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:53,960 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:53,960 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:54,124 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:54,124 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:54,287 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:54,288 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:54,459 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:54,460 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:39:54,639 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:39:54,639 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:42:29,718 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:42:29,719 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:42:30,493 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:42:30,493 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:42:30,970 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:42:30,970 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:42:31,152 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:42:31,152 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+INFO 2024-12-04 18:42:32,577 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:32,757 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:33,582 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:33,760 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:34,610 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:34,812 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:35,743 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:35,928 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:36,993 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:37,173 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:37,953 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:38,134 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:38,936 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:39,114 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:39,924 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:40,109 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:40,894 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:41,069 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:41,840 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:42,022 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:42,779 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:42,952 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:43,673 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:43,844 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:44,539 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:44,720 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:45,489 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:45,665 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:46,495 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:46,670 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:47,360 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:47,533 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:48,338 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:48,516 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:49,193 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:49,372 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:50,592 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:50,767 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:51,292 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:51,460 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:51,639 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:51,812 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:51,954 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:52,134 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:52,292 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:52,475 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:52,645 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:52,816 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:53,011 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:53,186 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:53,378 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:53,550 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:53,732 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:53,911 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:54,088 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:54,264 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:54,441 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:54,607 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:54,800 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:54,975 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:55,181 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:55,353 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:55,582 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:55,756 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:55,971 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:56,150 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:56,350 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:56,525 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:56,710 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:56,888 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:57,063 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:57,239 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:57,424 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:57,595 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:57,771 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:57,944 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:58,130 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:58,301 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:58,524 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:58,694 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:42:59,443 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:42:59,617 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:00,239 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:00,414 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:00,891 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:01,066 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:01,508 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:01,677 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:02,280 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:02,457 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:03,676 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:03,850 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:04,030 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:04,201 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:04,399 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:04,569 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:04,779 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:04,949 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:05,152 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:05,324 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:05,512 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:05,678 basehttp "GET /aplicatie/ HTTP/1.1" 200 17095
+INFO 2024-12-04 18:43:53,133 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:53,352 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:53,761 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:53,937 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:54,243 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:54,415 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:54,675 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:54,886 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:55,165 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:55,337 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:55,511 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:55,680 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:55,856 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:56,020 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:56,105 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:56,287 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:56,825 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:56,997 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:57,350 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:57,528 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:57,872 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:58,047 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:58,362 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:58,539 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:58,926 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:59,114 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:43:59,512 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:43:59,709 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:00,028 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:00,204 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:00,506 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:00,685 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:00,902 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:01,075 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:01,122 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:01,308 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:01,521 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:01,689 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:01,925 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:02,096 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:02,175 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:02,352 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:02,525 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:02,700 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:02,927 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:03,100 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:03,208 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:03,379 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:03,541 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:03,710 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:03,935 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:04,107 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:13,508 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 18:44:13,520 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 18:44:13,568 basehttp "GET /static/login.css HTTP/1.1" 304 0
+INFO 2024-12-04 18:44:15,050 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 18:44:15,830 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 18:44:15,868 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 18:44:15,870 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 18:44:24,935 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:25,126 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:26,573 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:26,743 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:27,343 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:27,528 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:27,895 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:28,079 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:28,277 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:28,449 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:28,678 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:28,851 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:29,059 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:29,234 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:29,435 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:29,607 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:29,814 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:29,983 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:30,194 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:30,367 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:30,595 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:30,782 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:30,991 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:31,163 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:31,352 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:31,528 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:31,754 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:31,921 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:32,140 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:32,314 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:32,506 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:32,675 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:32,866 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:33,045 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:33,225 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:33,399 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:33,553 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:33,728 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:33,942 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:34,118 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:34,294 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:34,467 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:34,627 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:34,799 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:34,980 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:35,155 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:44:35,299 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:44:35,469 basehttp "GET /aplicatie/ HTTP/1.1" 200 17126
+INFO 2024-12-04 18:45:53,427 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:45:53,618 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:45:54,022 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:45:54,192 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:45:54,540 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:45:54,721 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:45:55,077 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:45:55,256 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+WARNING 2024-12-04 18:45:57,009 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:45:57,009 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:45:57,729 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:45:57,730 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:45:57,894 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:45:57,895 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+WARNING 2024-12-04 18:45:58,071 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:45:58,072 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+INFO 2024-12-04 18:46:05,797 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 18:46:06,236 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 18:46:08,502 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:08,504 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8297
+WARNING 2024-12-04 18:46:09,134 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:09,134 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8297
+WARNING 2024-12-04 18:46:09,295 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:09,296 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8297
+WARNING 2024-12-04 18:46:09,477 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:09,478 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8297
+INFO 2024-12-04 18:46:31,765 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 18:46:32,665 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 18:46:36,176 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:36,177 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:46:37,200 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:37,201 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:46:37,869 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:37,870 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:46:38,044 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:38,044 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+WARNING 2024-12-04 18:46:38,225 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:46:38,225 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8298
+INFO 2024-12-04 18:46:44,101 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 18:46:44,599 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:46:49,064 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
+INFO 2024-12-04 18:46:49,116 basehttp "GET /oferta/ HTTP/1.1" 200 1216
+INFO 2024-12-04 18:47:00,056 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 18:47:00,844 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:47:15,628 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:15,842 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:47:18,524 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:18,706 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:47:19,608 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:19,787 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:47:20,378 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:20,534 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:47:21,042 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:21,242 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:47:21,995 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:22,171 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:47:22,809 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:22,985 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:47:23,754 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:23,932 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:47:24,606 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:47:24,785 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+WARNING 2024-12-04 18:47:27,385 log Not Found: /accepta-oferta/
+WARNING 2024-12-04 18:47:27,386 basehttp "POST /accepta-oferta/ HTTP/1.1" 404 8296
+INFO 2024-12-04 18:47:40,501 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 18:47:41,260 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:47:42,067 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
+INFO 2024-12-04 18:47:42,130 basehttp "GET /oferta/ HTTP/1.1" 200 1216
+INFO 2024-12-04 18:49:18,253 basehttp "GET /oferta/ HTTP/1.1" 200 1101
+INFO 2024-12-04 18:49:43,339 basehttp "GET /oferta/ HTTP/1.1" 200 1193
+INFO 2024-12-04 18:50:14,852 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:50:15,651 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:50:30,074 basehttp "GET /oferta/ HTTP/1.1" 200 1187
+INFO 2024-12-04 18:50:31,425 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:31,610 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:50:36,145 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:36,322 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:50:36,831 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:37,032 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:50:37,441 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:37,620 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:50:38,073 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:38,243 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:50:38,739 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:38,910 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:50:39,473 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:39,654 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:50:40,124 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:40,292 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:50:43,569 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
+INFO 2024-12-04 18:50:43,613 basehttp "GET /oferta/ HTTP/1.1" 200 1187
+INFO 2024-12-04 18:50:45,936 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:50:46,121 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:52:40,777 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:52:41,218 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:53:19,775 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 18:53:20,374 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:53:27,759 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 18:53:28,351 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:53:33,461 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:53:33,811 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:53:34,947 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:53:35,188 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:53:36,740 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:53:37,023 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:53:38,163 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:53:38,388 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:53:39,399 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:53:39,686 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:53:40,717 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:53:40,940 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:53:41,999 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:53:42,294 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:53:53,014 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
+INFO 2024-12-04 18:53:53,059 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-04 18:53:53,060 basehttp "GET /oferta/ HTTP/1.1" 200 1187
+INFO 2024-12-04 18:53:58,045 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:53:58,315 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:54:10,220 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 18:54:10,676 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 18:56:21,633 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:21,873 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:56:27,394 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:27,569 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:56:28,082 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:28,259 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:56:28,727 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:28,879 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:56:29,208 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:29,349 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:56:30,046 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:30,199 basehttp "GET /aplicatie/ HTTP/1.1" 200 17086
+INFO 2024-12-04 18:56:50,969 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:51,208 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 18:56:53,684 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:53,851 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 18:56:54,311 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:54,483 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 18:56:55,026 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:55,200 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 18:56:55,657 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:55,829 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 18:56:56,270 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:56,444 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 18:56:56,898 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:56:57,068 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 18:56:58,887 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
+INFO 2024-12-04 18:56:58,928 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-04 18:56:58,929 basehttp "GET /oferta/ HTTP/1.1" 200 1187
+INFO 2024-12-04 18:57:01,213 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:57:01,388 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:57:04,298 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-04 18:57:04,324 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 18:57:05,741 views --------------Functia logout_view a fost apelata
+INFO 2024-12-04 18:57:05,776 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-04 18:57:05,781 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-04 18:57:05,783 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-04 18:57:08,179 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:57:08,202 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:08,202 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:57:09,119 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:57:09,134 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:09,134 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:57:16,204 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:57:16,218 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:16,219 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:57:16,709 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:57:16,722 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:16,722 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:57:18,915 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:57:19,091 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:57:19,741 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:57:19,921 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:57:20,545 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:57:20,718 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:57:21,241 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:57:21,422 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:57:23,003 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:57:23,017 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:57:23,017 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:58:25,353 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:58:25,369 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:58:25,370 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:58:26,008 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:58:26,022 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:58:26,023 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:58:26,532 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:58:26,548 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:58:26,548 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:59:29,231 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:59:29,414 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:59:32,577 basehttp "POST /accepta-oferta/ HTTP/1.1" 302 0
+WARNING 2024-12-04 18:59:32,592 log Not Found: /accounts/login/
+WARNING 2024-12-04 18:59:32,592 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 8319
+INFO 2024-12-04 18:59:34,273 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 18:59:34,281 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 18:59:45,610 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 18:59:46,269 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 18:59:46,303 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 18:59:46,305 basehttp "GET /aplicatie/profile HTTP/1.1" 200 875
+INFO 2024-12-04 18:59:46,384 basehttp "GET /static/profile.css HTTP/1.1" 304 0
+WARNING 2024-12-04 18:59:48,685 log Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /accepta-oferta/
+WARNING 2024-12-04 18:59:48,686 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 2553
+WARNING 2024-12-04 18:59:49,549 log Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /accepta-oferta/
+WARNING 2024-12-04 18:59:49,550 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 2553
+INFO 2024-12-04 18:59:55,308 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:59:55,483 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:59:56,095 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:59:56,279 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:59:56,846 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:59:57,031 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:59:57,547 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 18:59:57,721 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-04 18:59:59,536 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
+WARNING 2024-12-04 18:59:59,585 views Utilizatorul maria a incercat sa acceseze oferta fara permisiune!
+WARNING 2024-12-04 18:59:59,586 log Forbidden: /oferta/
+WARNING 2024-12-04 18:59:59,587 basehttp "GET /oferta/ HTTP/1.1" 403 388

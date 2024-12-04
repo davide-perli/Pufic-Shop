@@ -188,9 +188,14 @@ class CustomUser(AbstractUser):
         super().save(*args, **kwargs)
 
 
+    class Meta:
+        permissions = [
+            ("vizualizeaza_oferta", "Permite vizualizarea ofertei"),
+        ]
 
 
 
+#14
 class Vizualizare(models.Model):
     utilizator = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     produs = models.ForeignKey(Informatii, on_delete=models.CASCADE, null=True, blank=True)
@@ -202,7 +207,7 @@ class Vizualizare(models.Model):
             models.UniqueConstraint(fields=['utilizator', 'categorie'], name='unique_vizualizare_per_utilizator_categorie')
         ]
 
-
+#15
 class Promotie(models.Model):
     nume = models.CharField(max_length = 100)
     data_creare = models.DateTimeField(auto_now_add = True)

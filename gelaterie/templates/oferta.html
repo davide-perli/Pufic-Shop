@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Speciala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            padding: 20px;
+        }
+        .banner {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oferta Speciala!</h1>
+    <div class="banner" id="offer-banner" style="display:none;">
+        Reducere 50%! Profitati acum de această oferta limitata!
+        <button id="accept-offer">Accepta oferta</button>
+    </div>
+
+    <p>Va multumim ca sunteti clientul nostru! Aceasta oferta este valabila doar pentru o perioada limitata!</p>
+    <p>Contactati-ne pentru mai multe detalii sau vizitati magazinul nostru pentru a profita de reducere :)</p>
+
+    <li><button onclick="window.location.href='{% url 'display_items' %}'">Inapoi</button></li>     
+
+
+</body>
+</html>

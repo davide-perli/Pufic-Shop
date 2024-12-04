@@ -5,8 +5,8 @@ from .models import Comanda
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.forms import UserCreationForm
 from .models import CustomUser
-
 from .models import Promotie
+from .models import Prajituri
 
 
 class PrajituriFilterForm(forms.Form):
@@ -252,9 +252,6 @@ class CustomAuthenticationForm(AuthenticationForm):
 
 
 
-from django import forms
-from .models import Promotie
-
 class PromotieForm(forms.ModelForm):
     k = forms.IntegerField(required=True, label="Minim Vizualizari", min_value=1)
     data_expirare = forms.DateField(
@@ -266,3 +263,8 @@ class PromotieForm(forms.ModelForm):
         model = Promotie
         fields = ['nume', 'data_expirare', 'categorie', 'descriere', 'discount', 'k']
 
+
+class PrajituriForm(forms.ModelForm):
+    class Meta:
+        model = Prajituri
+        fields = ['nume_prajitura', 'info', 'magazin']
