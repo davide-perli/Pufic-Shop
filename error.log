@@ -1,0 +1,40 @@
+ERROR 2024-12-04 00:29:02,579 views Acesta este un mesaj de eroare.
+CRITICAL 2024-12-04 00:29:02,579 views Acesta este un mesaj critic.
+ERROR 2024-12-04 00:29:02,651 log Internal Server Error: /aplicatie/debug
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view gelaterie.views.afisare_pagina didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-12-04 00:29:02,652 basehttp "GET /aplicatie/debug HTTP/1.1" 500 73271
+ERROR 2024-12-04 00:31:24,277 views Eroare la calcul: division by zero
+ERROR 2024-12-04 00:32:35,596 views Eroare la calcul: division by zero
+ERROR 2024-12-04 00:32:44,189 views Eroare la calcul: division by zero
+ERROR 2024-12-04 00:37:07,812 views Eroare la calcul: division by zero
+ERROR 2024-12-04 00:38:13,409 views Eroare la calcul: division by zero
+ERROR 2024-12-04 00:40:44,478 log Internal Server Error: /comenzi
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view gelaterie.views.comenzi didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-12-04 00:40:44,479 basehttp "GET /comenzi HTTP/1.1" 500 73136
+ERROR 2024-12-04 00:41:18,314 log Internal Server Error: /comenzi
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view gelaterie.views.comenzi didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-12-04 00:41:18,315 basehttp "GET /comenzi HTTP/1.1" 500 73273

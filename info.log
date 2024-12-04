@@ -1,0 +1,135 @@
+INFO 2024-12-04 00:16:24,090 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:16:54,968 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:17:24,659 basehttp "GET / HTTP/1.1" 200 16032
+INFO 2024-12-04 00:17:35,887 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 00:17:40,110 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 00:17:40,151 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 00:18:15,151 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:18:15,588 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:19:35,048 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 00:20:22,916 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:20:23,431 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:20:28,954 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 1433
+INFO 2024-12-04 00:20:37,804 basehttp "GET /aplicatie/ HTTP/1.1" 200 16032
+INFO 2024-12-04 00:21:08,917 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 00:21:11,505 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 00:21:11,537 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-04 00:21:44,039 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-04 00:21:45,930 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 1014
+INFO 2024-12-04 00:22:32,850 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:22:33,266 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:24:41,543 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:24:41,945 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:25:00,369 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:25:00,866 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:26:44,983 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:26:45,731 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:27:30,321 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 00:27:30,796 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:28:32,521 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-04 00:28:32,920 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:28:42,201 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 1014
+INFO 2024-12-04 00:28:43,228 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 1014
+WARNING 2024-12-04 00:28:53,381 log Not Found: /aplicatie/afisare_pagina
+WARNING 2024-12-04 00:28:53,381 basehttp "GET /aplicatie/afisare_pagina HTTP/1.1" 404 13504
+INFO 2024-12-04 00:29:02,579 views Acesta este un mesaj informativ.
+WARNING 2024-12-04 00:29:02,579 views Acesta este un avertisment.
+ERROR 2024-12-04 00:29:02,579 views Acesta este un mesaj de eroare.
+CRITICAL 2024-12-04 00:29:02,579 views Acesta este un mesaj critic.
+ERROR 2024-12-04 00:29:02,651 log Internal Server Error: /aplicatie/debug
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view gelaterie.views.afisare_pagina didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-12-04 00:29:02,652 basehttp "GET /aplicatie/debug HTTP/1.1" 500 73271
+INFO 2024-12-04 00:31:20,622 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:31:21,040 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 00:31:24,277 views Eroare la calcul: division by zero
+INFO 2024-12-04 00:31:24,278 basehttp "GET /aplicatie/debug HTTP/1.1" 200 42
+INFO 2024-12-04 00:32:23,821 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:32:24,238 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:32:29,495 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:32:29,919 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 00:32:35,596 views Eroare la calcul: division by zero
+INFO 2024-12-04 00:32:35,598 basehttp "GET /aplicatie/debug HTTP/1.1" 200 31
+ERROR 2024-12-04 00:32:44,189 views Eroare la calcul: division by zero
+INFO 2024-12-04 00:32:44,190 basehttp "GET /aplicatie/debug HTTP/1.1" 200 31
+INFO 2024-12-04 00:33:36,730 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:33:37,103 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:33:47,155 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 1433
+INFO 2024-12-04 00:36:10,565 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:36:10,939 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:36:52,351 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:36:52,780 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:36:58,733 basehttp "GET / HTTP/1.1" 200 16032
+ERROR 2024-12-04 00:37:07,812 views Eroare la calcul: division by zero
+INFO 2024-12-04 00:37:07,813 basehttp "GET /debug HTTP/1.1" 200 31
+INFO 2024-12-04 00:37:50,571 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:37:50,985 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:38:07,331 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:38:07,749 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 00:38:13,409 views Eroare la calcul: division by zero
+INFO 2024-12-04 00:38:13,410 basehttp "GET /debug HTTP/1.1" 200 31
+INFO 2024-12-04 00:38:28,203 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:38:28,618 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:39:37,453 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:39:37,992 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:40:27,487 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:40:27,874 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:40:40,383 basehttp "GET /contact HTTP/1.1" 200 2895
+INFO 2024-12-04 00:40:40,416 basehttp "GET /static/stil_contact.css HTTP/1.1" 304 0
+ERROR 2024-12-04 00:40:44,478 log Internal Server Error: /comenzi
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view gelaterie.views.comenzi didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-12-04 00:40:44,479 basehttp "GET /comenzi HTTP/1.1" 500 73136
+INFO 2024-12-04 00:41:00,396 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:41:00,999 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 00:41:18,314 log Internal Server Error: /comenzi
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view gelaterie.views.comenzi didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-12-04 00:41:18,315 basehttp "GET /comenzi HTTP/1.1" 500 73273
+INFO 2024-12-04 00:41:42,709 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:41:43,497 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:41:44,778 views Functia comenzi a fost apelata
+INFO 2024-12-04 00:41:44,820 basehttp "GET /comenzi HTTP/1.1" 200 455
+INFO 2024-12-04 00:42:28,232 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:42:28,608 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:44:55,110 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:44:55,683 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:45:04,095 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:45:05,085 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:45:11,792 views Funcția home a fost apelata
+INFO 2024-12-04 00:45:11,793 basehttp "GET /home HTTP/1.1" 200 5
+INFO 2024-12-04 00:45:21,534 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-04 00:45:21,977 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:55:28,997 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:55:29,402 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:56:59,331 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 00:56:59,734 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:00:43,841 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 01:00:44,253 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:02:58,632 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 01:02:59,048 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:03:22,539 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 01:03:22,989 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:04:29,758 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-04 01:04:30,278 autoreload Watching for file changes with StatReloader

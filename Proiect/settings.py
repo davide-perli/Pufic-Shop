@@ -149,3 +149,74 @@ ADMINS = [
     ('andi', 'artchanell01@gmail.com'),
 ]
 
+
+import os
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'debug_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'debug.log'),
+            'formatter': 'verbose',
+        },
+        'info_file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'info.log'),
+            'formatter': 'verbose',
+        },
+        'warning_file': {
+            'level': 'WARNING',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'warning.log'),
+            'formatter': 'verbose',
+        },
+        'error_file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'error.log'),
+            'formatter': 'verbose',
+        },
+        'critical_file': {
+            'level': 'CRITICAL',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'critical.log'),
+            'formatter': 'verbose',
+        },
+        # Handler pentru consola
+        'console': {
+            'class': 'logging.StreamHandler',
+            # Afisez doar WARNING, ERROR și CRITICAL în consola
+            'level': 'WARNING',
+            'formatter': 'simple',
+        },
+    },
+    # Configurarea logger-ilor
+    'loggers': {
+        # Logger pentru Django
+        'django': {
+            'handlers': ['console', 
+                         # Adauga handler-ele pentru fisiere
+                         'debug_file', 
+                         'info_file', 
+                         'warning_file', 
+                         'error_file', 
+                         'critical_file'],
+            # Min level de severitate
+            'level': os.getenv('DJANGO_LOG_LEVEL', default='DEBUG'),  
+        },
+    },
+}
