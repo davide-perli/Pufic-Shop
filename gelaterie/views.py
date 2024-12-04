@@ -17,7 +17,7 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
 from django.http import HttpResponseForbidden
-
+from django.utils import timezone
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
@@ -34,6 +34,7 @@ from .forms import PromotieForm
 from django.db.models import Count
 from django.contrib.auth.decorators import user_passes_test
 
+from django.core.mail import EmailMultiAlternatives
 
 
 def home(request):
@@ -330,10 +331,41 @@ def get_site_url(request=None):
 def register_view(request):
     if request.method == "POST":
         form = CustomUserCreationForm(request.POST)
+
         if form.is_valid():
+            
+            if form.cleaned_data.get('username').lower() == 'admin':
+                subject = 'Cineva incearca sa ne preia site-ul'
+                message_text = f"Un utilizator a incercat sa se inregistreze cu username-ul 'admin'. Email: {form.cleaned_data.get('email')}"
+
+                message_html = f"""
+                <html>
+                    <head>
+                        <style>
+                            h1 {{
+                                color: red;
+                            }}
+                        </style>
+                    </head>
+                    <body>
+                        <h1>{subject}</h1>
+                        <p>{message_text}</p>
+                    </body>
+                </html>
+                """
+
+                # Crearea mesajului multipart
+                email = EmailMultiAlternatives(subject, message_text, settings.DEFAULT_FROM_EMAIL, [admin_email for admin_email in settings.ADMINS])
+                email.attach_alternative(message_html, "text/html")
+                
+                # Trimiterea emailului
+                email.send()
+
+                return render(request, "register.html", {"form": form, "error": f"Username-ul '{form.cleaned_data.get('username')}' nu este disponibil."})
+
             user = form.save(commit=False)
             user.cod = ''.join(random.choices(string.ascii_letters + string.digits, k=20))  # Cod random
-            user.email_confirmat = False  # Implicit emailul nu este confirmat
+            user.email_confirmat = False 
             user.save()
 
             subject = 'Confirmare Email'
@@ -344,41 +376,140 @@ def register_view(request):
             return redirect('custom_login_view')
     else:
         form = CustomUserCreationForm()
+    
     return render(request, "register.html", {"form": form})
 
 
 
+from django.core.mail import EmailMultiAlternatives
+from django.http import HttpResponse, HttpResponseForbidden
+from django.shortcuts import render
+from .models import CustomUser
+from django.conf import settings
+
 def confirma_mail(request, cod):
     try:
-        user = CustomUser.objects.get(cod = cod)
+        user = CustomUser.objects.get(cod=cod)
         user.email_confirmat = True
         user.save()
         return render(request, 'confirmation_success.html', {'message': 'Emailul a fost confirmat cu succes!'})
     except CustomUser.DoesNotExist:
+       
+        send_error_email(f"Codul de confirmare '{cod}' este invalid.")
         return HttpResponseForbidden("Codul de confirmare este invalid.")
+    
+    except Exception as e:
+
+        send_error_email(f"A aparut o eroare: {str(e)}")
+        return HttpResponse("A aparut o eroare. Va rugăm sa incercati din nou mai tarziu.")
+
+def send_error_email(error_message):
+    subject = 'Eroare la confirmarea emailului'
+    message_text = f"A aparut o eroare: {error_message}"
 
 
+    message_html = f"""
+    <html>
+        <head>
+            <style>
+                h1 {{
+                    color: red;
+                    background-color: #f8d7da;
+                }}
+            </style>
+        </head>
+        <body>
+            <h1>{subject}</h1>
+            <p>{message_text}</p>
+        </body>
+    </html>
+    """
 
 
+    email = EmailMultiAlternatives(subject, message_text, settings.DEFAULT_FROM_EMAIL, [admin_email for admin_email in settings.ADMINS])
+    email.attach_alternative(message_html, "text/html")
+    
+    email.send()
+
+
+failed_login_attempts = {}  
 
 def custom_login_view(request):
     if request.method == 'POST':
         form = CustomAuthenticationForm(data=request.POST, request=request)
+        username = form.data.get('username')
+        ip_address = request.META.get('REMOTE_ADDR')
+        
+
         if form.is_valid():
             user = authenticate(username=form.cleaned_data.get('username'), password=form.cleaned_data.get('password'))
             if user is None or not user.email_confirmat:
+                record_failed_attempt(username, ip_address)
+
+                if check_suspicious_activity(username):
+                    print("Suspicious activity detected. Sending email...")
+                    send_suspicious_login_email(username, ip_address)
+
                 return render(request, 'login.html', {'form': form, 'error': 'Emailul nu este confirmat. Verificați emailul.'})
+            
             login(request, user)
             return redirect('profile_view')
+        else:
+            record_failed_attempt(username, ip_address)
+            if check_suspicious_activity(username):
+                print("Suspicious activity detected. Sending email...")
+                send_suspicious_login_email(username, ip_address)
+
     else:
         form = CustomAuthenticationForm()
+    
     return render(request, 'login.html', {'form': form})
+
+
+def record_failed_attempt(username, ip_address):
+    timestamp = timezone.now()
+    if username not in failed_login_attempts:
+        failed_login_attempts[username] = []
+    failed_login_attempts[username].append((timestamp, ip_address))
+
+def check_suspicious_activity(username):
+    if username in failed_login_attempts:
+        attempts = failed_login_attempts[username]
+        # Filtrare incercari care sunt mai vechi de 2 minute
+        recent_attempts = [(ts, ip) for (ts, ip) in attempts if (timezone.now() - ts).total_seconds() < 120]
+        return len(recent_attempts) >= 3
+    return False
+
+def send_suspicious_login_email(username, ip_address):
+    subject = 'Logari suspecte'
+    message_text = f"Un utilizator a incercat sa se logheze de 3 ori esuat folosind username-ul '{username}'. IP-ul: {ip_address}"
+
+    message_html = f"""
+    <html>
+        <head>
+            <style>
+                h1 {{
+                    color: red;
+                }}
+            </style>
+        </head>
+        <body>
+            <h1>{subject}</h1>
+            <p>{message_text}</p>
+        </body>
+    </html>
+    """
+
+    # Mesaj multipart
+    email = EmailMultiAlternatives(subject, message_text, settings.DEFAULT_FROM_EMAIL, [admin_email for admin_email in settings.ADMINS])
+    email.attach_alternative(message_html, "text/html")
+    
+    email.send()
 
 
 
 @login_required
 def profile_view(request):
-    # Aici se vor adăuga datele utilizatorului la sesiune
     user = request.user
     return render(request, 'profile.html', {'user': user})
 
@@ -561,108 +692,3 @@ def creeaza_promotie(request):
 
     return render(request, 'promotii.html', {'form': form})
 
-
-
-
-
-
-
-
-
-
-
-
-# def creeaza_promotie(request):
-#     if request.method == 'POST':
-#         form = PromotieForm(request.POST)
-#         if form.is_valid():
-#             promotie = form.save()
-#             categorii_selectate = request.POST.getlist('categorii')  # Obține categoriile selectate
-#             k = int(request.POST.get('k', 1))  # K este minimul de vizualizări
-
-#             utilizatori_de_trimis = set()
-
-#             for categorie in categorii_selectate:
-#                 # Asigură-te că există produse în această categorie
-#                 if not categorie:
-#                     continue
-
-#                 # Obține utilizatorii care au vizualizat produse din categoria respectivă cu minim K vizualizări
-#                 utilizatori = Vizualizare.objects.filter(produs__categorie=categorie).values('utilizator').annotate(
-#                     numar_vizualizari=models.Count('id')
-#                 ).filter(numar_vizualizari__gte=k)
-
-#                 for utilizator in utilizatori:
-#                     utilizatori_de_trimis.add(utilizator['utilizator'])
-
-#             if utilizatori_de_trimis:
-#                 emails = []
-#                 for user_id in utilizatori_de_trimis:
-#                     user = CustomUser.objects.get(id=user_id)
-#                     subject = f"Promoție: {promotie.nume}"
-#                     message = f"Salut {user.username}, avem o promovare specială la {promotie.categorie}!\nExpiră pe: {promotie.data_expirare}.\nDetalii: {promotie.descriere}"
-                    
-#                     emails.append((subject, message, settings.DEFAULT_FROM_EMAIL, [user.email]))
-
-#                 # Trimite emailurile în grupuri
-#                 send_mass_mail(emails, fail_silently=False)
-
-#             return redirect('mesaj_trimis')
-#     else:
-#         form = PromotieForm()
-
-#     return render(request, 'promotii.html', {'form': form})
-
-
-
-
-# from django.core.mail import mail_admins
-# from django.utils.timezone import now, timedelta
-
-# failed_logins = {}
-
-# def monitorizare_logare(username, ip_address):
-#     """
-#     Monitorizează logările eșuate.
-#     Trimite un email dacă sunt 3 eșecuri în 2 minute.
-#     """
-#     now_time = now()
-#     if username not in failed_logins:
-#         failed_logins[username] = []
-
-#     failed_logins[username].append((now_time, ip_address))
-#     # Păstrează doar ultimele logări în ultimele 2 minute
-#     failed_logins[username] = [
-#         entry for entry in failed_logins[username] 
-#         if now_time - entry[0] <= timedelta(minutes=2)
-#     ]
-
-#     if len(failed_logins[username]) >= 3:
-#         subject = "Logări suspecte"
-#         message = f"Username: {username}\nIP: {ip_address}"
-#         html_message = f"<h1 style='color: red;'>Logări suspecte</h1><p>{message}</p>"
-#         mail_admins(subject, message, html_message=html_message)
-
-
-
-
-
-# def validare_inregistrare(username, email):
-#     if username.lower() == 'admin':
-#         subject = "Cineva încearcă să ne preia site-ul"
-#         message = f"Email utilizat: {email}"
-#         html_message = f"<h1 style='color: red;'>Alertă!</h1><p>{message}</p>"
-#         mail_admins(subject, message, html_message=html_message)
-#         return HttpResponseForbidden("Numele 'admin' nu este permis.")
-
-
-
-# def captura_eroare():
-#     try:
-#         # Cod care poate eșua
-#         1 / 0
-#     except Exception as e:
-#         subject = "Eroare în aplicație"
-#         message = str(e)
-#         html_message = f"<h1 style='color: red;'>Eroare Critică</h1><p>{message}</p>"
-#         mail_admins(subject, message, html_message=html_message)

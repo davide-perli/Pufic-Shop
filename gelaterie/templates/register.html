@@ -10,6 +10,13 @@
 <body>
     <div class="register-container">
         <h1>Inregistrare</h1>
+
+        {% if error %}
+            <div class="alert alert-danger">
+                {{ error }}
+            </div>
+        {% endif %}
+
         <form method="post">
             {% csrf_token %}
             {{ form.non_field_errors }}
