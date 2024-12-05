@@ -11,6 +11,13 @@
     <div class="login-container">
         <h1>Login</h1>
         <h3>Contul trebuie sa fie confirmat (verifica email)</h3>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li class="{{ message.tags }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
         <form method="post" action="{% url 'custom_login_view' %}">
             {% csrf_token %}
             {{ form.non_field_errors }}
@@ -40,5 +47,7 @@
             <a href="{% url 'register_view' %}" class="btn-secondary">Inregistreaza-te</a>
         </div>
     </div>
+
+
 </body>
 </html>

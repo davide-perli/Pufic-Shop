@@ -387,3 +387,361 @@ WARNING 2024-12-04 18:59:49,550 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 25
 WARNING 2024-12-04 18:59:59,585 views Utilizatorul maria a incercat sa acceseze oferta fara permisiune!
 WARNING 2024-12-04 18:59:59,586 log Forbidden: /oferta/
 WARNING 2024-12-04 18:59:59,587 basehttp "GET /oferta/ HTTP/1.1" 403 388
+WARNING 2024-12-04 19:48:43,453 log Not Found: /favicon.ico
+WARNING 2024-12-04 19:48:43,454 basehttp "GET /favicon.ico HTTP/1.1" 404 8285
+WARNING 2024-12-05 08:24:52,533 log Not Found: /favicon.ico
+WARNING 2024-12-05 08:24:52,534 basehttp "GET /favicon.ico HTTP/1.1" 404 8283
+WARNING 2024-12-05 08:27:38,538 log Not Found: /favicon.ico
+WARNING 2024-12-05 08:27:38,539 basehttp "GET /favicon.ico HTTP/1.1" 404 8283
+WARNING 2024-12-05 08:43:19,827 log Not Found: /favicon.ico
+WARNING 2024-12-05 08:43:19,827 basehttp "GET /favicon.ico HTTP/1.1" 404 8283
+WARNING 2024-12-05 08:50:41,985 log Not Found: /favicon.ico
+WARNING 2024-12-05 08:50:41,986 basehttp "GET /favicon.ico HTTP/1.1" 404 8283
+WARNING 2024-12-05 09:16:37,850 views Utilizatorul anonim a incercat sa acceseze adresele fara permisiune!
+WARNING 2024-12-05 09:16:37,852 log Forbidden: /aplicatie/adresa
+WARNING 2024-12-05 09:16:37,852 basehttp "GET /aplicatie/adresa HTTP/1.1" 403 636
+WARNING 2024-12-05 09:16:54,017 views Utilizatorul anonim a incercat sa acceseze adresele fara permisiune!
+WARNING 2024-12-05 09:16:54,019 log Forbidden: /aplicatie/adresa
+WARNING 2024-12-05 09:16:54,020 basehttp "GET /aplicatie/adresa HTTP/1.1" 403 636
+WARNING 2024-12-05 09:17:05,260 views Utilizatorul  a incercat să acceseze sponsorii fara permisiune!
+WARNING 2024-12-05 09:17:05,261 log Forbidden: /aplicatie/sponsori
+WARNING 2024-12-05 09:17:05,261 basehttp "GET /aplicatie/sponsori HTTP/1.1" 403 437
+WARNING 2024-12-05 09:19:47,555 views Utilizatorul  a incercat să acceseze sponsorii fara permisiune!
+WARNING 2024-12-05 09:19:47,565 log Forbidden: /aplicatie/sponsori
+WARNING 2024-12-05 09:19:47,566 basehttp "GET /aplicatie/sponsori HTTP/1.1" 403 638
+WARNING 2024-12-05 09:20:29,729 views Utilizatorul  a incercat sa acceseze magazinele fara permisiune!
+WARNING 2024-12-05 09:20:29,734 log Forbidden: /aplicatie/magazine
+WARNING 2024-12-05 09:20:29,735 basehttp "GET /aplicatie/magazine HTTP/1.1" 403 638
+WARNING 2024-12-05 10:52:24,971 log Not Found: /favicon.ico
+WARNING 2024-12-05 10:52:24,972 basehttp "GET /favicon.ico HTTP/1.1" 404 8457
+ERROR 2024-12-05 10:52:39,834 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:52:39,842 basehttp "GET /sitemap.xml HTTP/1.1" 500 103451
+WARNING 2024-12-05 10:52:51,417 log Not Found: /sitemap
+WARNING 2024-12-05 10:52:51,417 basehttp "GET /sitemap HTTP/1.1" 404 8445
+ERROR 2024-12-05 10:53:16,025 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:53:16,031 basehttp "GET /sitemap.xml HTTP/1.1" 500 103451
+ERROR 2024-12-05 10:55:14,628 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:55:14,634 basehttp "GET /sitemap.xml HTTP/1.1" 500 103588
+ERROR 2024-12-05 10:55:15,573 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:55:15,585 basehttp "GET /sitemap.xml HTTP/1.1" 500 103588
+ERROR 2024-12-05 10:55:16,408 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:55:16,419 basehttp "GET /sitemap.xml HTTP/1.1" 500 103588
+ERROR 2024-12-05 11:01:33,392 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 11:01:33,399 basehttp "GET /sitemap.xml HTTP/1.1" 500 102904
+ERROR 2024-12-05 11:01:34,347 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 11:01:34,358 basehttp "GET /sitemap.xml HTTP/1.1" 500 102904
+ERROR 2024-12-05 11:01:46,564 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 11:01:46,570 basehttp "GET /sitemap.xml HTTP/1.1" 500 102767
+ERROR 2024-12-05 11:06:55,836 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/sitemaps.py", line 16, in location
+    return reverse('sponsor_list')
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'sponsor_list' not found. 'sponsor_list' is not a valid view function or pattern name.
+ERROR 2024-12-05 11:06:55,841 basehttp "GET /sitemap.xml HTTP/1.1" 500 113763
+ERROR 2024-12-05 11:06:57,943 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/sitemaps.py", line 16, in location
+    return reverse('sponsor_list')
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'sponsor_list' not found. 'sponsor_list' is not a valid view function or pattern name.
+ERROR 2024-12-05 11:06:57,947 basehttp "GET /sitemap.xml HTTP/1.1" 500 113763
+WARNING 2024-12-05 11:09:01,682 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-05 11:09:01,684 log Forbidden: /bauturi
+WARNING 2024-12-05 11:09:01,685 basehttp "GET /bauturi HTTP/1.1" 403 637
+WARNING 2024-12-05 11:10:01,023 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-05 11:10:01,025 log Forbidden: /aplicatie/bauturi
+WARNING 2024-12-05 11:10:01,026 basehttp "GET /aplicatie/bauturi HTTP/1.1" 403 637
+WARNING 2024-12-05 11:12:10,899 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-05 11:12:10,904 log Forbidden: /aplicatie/bauturi
+WARNING 2024-12-05 11:12:10,905 basehttp "GET /aplicatie/bauturi HTTP/1.1" 403 637

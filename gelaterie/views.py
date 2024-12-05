@@ -40,7 +40,7 @@ from .forms import PrajituriForm
 from django.http import JsonResponse
 from django.contrib.auth.models import Permission
 
-
+from django.contrib import messages
 
 import logging
 
@@ -56,6 +56,8 @@ def adresa(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre adrese este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze adresele fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -73,6 +75,8 @@ def afiseaza_alergeni(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre alergeni este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze alergenii fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -90,6 +94,8 @@ def bauturi(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre bauturi este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze bauturile fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -107,6 +113,8 @@ def inghetata(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre inghetate este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze inghetatele fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -124,6 +132,8 @@ def biscuiti(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre biscuiti este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze biscuitii fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -141,6 +151,8 @@ def prajituri(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre prajituri este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze prajiturile fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -159,6 +171,8 @@ def torturi_inghetata(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre torturile de ingheata este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze torturile de inghetata fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -176,6 +190,8 @@ def meniu(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre meniu este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze meniul fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -197,6 +213,8 @@ def comenzi(request):
     if request.user.username != 'davide':
         mesaj_personalizat = "Accesul la informatiile despre comenzi este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze comenzile fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': "Acces Interzis",
             "mesaj_personalizat": mesaj_personalizat,
@@ -221,7 +239,8 @@ def sponsori(request):
     if request.user.username != "davide":
         mesaj_personalizat = "Accesul la informatiile despre sponsori este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else ''} a incercat să acceseze sponsorii fara permisiune!")
-        
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, "403.html", {
             "title": "Acces Interzis",
             "mesaj_personalizat": mesaj_personalizat,
@@ -245,7 +264,8 @@ def magazine(request):
    if request.user.username != "davide":
        mesaj_personalizat = "Accesul la informatiile despre magazine este restrictionat!"
        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else ''} a incercat sa acceseze magazinele fara permisiune!")
-       
+       messages.warning(request, "Acesta este un avertisment. :| ")
+       messages.error(request, "A aparut o eroare! >:((  ")
        return render(request, "403.html", {
            "title": "Acces Interzis",
            "mesaj_personalizat": mesaj_personalizat,
@@ -267,6 +287,8 @@ def informatii(request):
     if request.user.username != "davide":
         mesaj_personalizat = "Accesul la informatiile despre produse este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze informatiile fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Acces Interzis',
             'mesaj_personalizat': mesaj_personalizat,
@@ -438,6 +460,8 @@ def adauga_comanda(request):
         'prajituri_items': prajituri_items,
         'torturi_items': torturi_items,
     }
+
+    messages.debug(request, "Acesta este un mesaj de depanare!!!")
     logger.debug("--------------Functia adauga_comanda executata cu succes!")
     return render(request, 'adauga_comanda.html', context)
 
@@ -507,6 +531,9 @@ def register_view(request):
     else:
         form = CustomUserCreationForm()
     
+    messages.warning(request, "Acesta este un avertisment. :| ")
+    messages.error(request, "A aparut o eroare! >:((  ")
+    messages.debug(request, "Acesta este un mesaj de depanare!!!")
     logger.debug("--------------Functia register_view executata cu succes!")
     return render(request, "register.html", {"form": form})
 
@@ -599,7 +626,9 @@ def custom_login_view(request):
 
     else:
         form = CustomAuthenticationForm()
-    
+
+
+    messages.debug(request, "Acesta este un mesaj de depanare!!!")
     logger.debug("--------------Functia custom_login_view executata cu succes!")
     return render(request, 'login.html', {'form': form})
 
@@ -653,6 +682,9 @@ def send_suspicious_login_email(username, ip_address):
 def profile_view(request):
     logger.info("--------------Functia profile_view a fost apelata")
     user = request.user
+
+    messages.info(request, "Login executat cu succes :) ")
+    messages.debug(request, "Acesta este un mesaj de depanare!!!")
     logger.debug("--------------Functia profile_view executata cu succes!")
     return render(request, 'profile.html', {'user': user})
 
@@ -713,6 +745,8 @@ def detalii_inghetata(request):
         'inghetate': inghetate,
         'categorie': categorie,
     }
+    messages.warning(request, "Acesta este un avertisment. :| ")
+    messages.error(request, "A aparut o eroare! >:((  ")
     logger.debug("--------------Functia detalii_inghetata executata cu succes!")
     return render(request, 'detalii_inghetata.html', context)
 
@@ -850,6 +884,10 @@ def creeaza_promotie(request):
     else:
         form = PromotieForm()
 
+    messages.warning(request, "Acesta este un avertisment. :| ")
+    messages.error(request, "A aparut o eroare! >:((  ")
+    messages.debug(request, "Acesta este un mesaj de depanare, doar adminii il pot vedea!!! ")
+    messages.info(request, "Acesta este un mesaj de informare, doar adminii il pot vedea!!! ")
     logger.debug("--------------Functia creaza_promotie executata cu succes!")
     return render(request, 'promotii.html', {'form': form})
 
@@ -865,6 +903,8 @@ def afisare_pagina(request):
         result = 10 / 0  # Simulare operatiune care va genera eroare de tip ZeroDivisionError
     except ZeroDivisionError as e:
         logger.error("Eroare la calcul: %s", str(e))
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return HttpResponse("A aparut o eroare în procesare")
 
     logger.info("--------------Functia afisare_pagina a fost executata cu succes!")
@@ -879,6 +919,8 @@ def adauga_prajitura(request):
     if not request.user.has_perm('gelaterie.add_prajituri') :
         mesaj_personalizat = "Nu ai voie sa adaugi prajituri!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze formularul de adaugare prajituri fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Eroare adaugare produse',
             'mesaj_personalizat': mesaj_personalizat,
@@ -903,12 +945,15 @@ def oferta(request):
     if not request.user.has_perm('vizualizeaza_oferta'):
         mesaj_personalizat = "Nu ai voie sa vizualizezi oferta!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze oferta fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
         return render(request, '403.html', {
             'title': 'Eroare afisare oferta',
             'mesaj_personalizat': mesaj_personalizat,
             'user': request.user,
         }, status=403)
 
+    messages.info(request, "Oferta accesata cu succes :) ")
     logger.info("--------------Functia oferta a fost executata cu succes!")
     return render(request, 'oferta.html', {'message': 'Reducere 50%! Profitati acum!'})
 
@@ -918,5 +963,7 @@ def accepta_oferta(request):
     if request.method == 'POST':
         request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
         return JsonResponse({'success': True})
+    
+
     logger.info("--------------Functia accepta_oferta a fost executata cu succes!")
     return JsonResponse({'success': False}, status=400)

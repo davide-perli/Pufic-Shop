@@ -1,8 +1,29 @@
 from django.urls import path
 from . import views
+from django.contrib.sitemaps.views import sitemap
+from .sitemaps import (
+    SponsorSitemap, MagazineSitemap, AdresaSitemap, AlergeniSitemap, InformatiiSitemap,
+    InghetataSitemap, BiscuiteSitemap, BauturiSitemap, PrajituriSitemap, TorturiInghetataSitemap
+)
 
 # python manage.py runserver 0.0.0.0:8000
 # http://192.168.0.103:8000
+
+
+sitemaps = {
+    'sponsor': SponsorSitemap,
+    'magazine': MagazineSitemap,
+    'adresa': AdresaSitemap,
+    'alergeni': AlergeniSitemap,
+    'informatii': InformatiiSitemap,
+    'inghetata': InghetataSitemap,
+    'biscuiti': BiscuiteSitemap,
+    'bauturi': BauturiSitemap,
+    'prajituri': PrajituriSitemap,
+    'torturi_inghetata': TorturiInghetataSitemap,
+}
+
+
 
 urlpatterns = [
     path('', views.display_items, name = 'display_items'),
@@ -39,4 +60,6 @@ urlpatterns = [
     path('adauga_prajitura', views.adauga_prajitura, name = "adauga_prajitura"),
     path('oferta/', views.oferta, name = "oferta"),
     path('accepta-oferta/', views.accepta_oferta, name = "accepta_oferta"),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name = 'sitemap'),
+
 ]

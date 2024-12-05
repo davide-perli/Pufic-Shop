@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'gelaterie',
 ]
 
@@ -218,4 +219,22 @@ LOGGING = {
             'level': os.getenv('DJANGO_LOG_LEVEL', default='DEBUG'),  
         },
     },
+}
+
+
+
+
+
+
+from django.contrib.messages import constants as message_constants
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+#Personalizarea nivelurilor de mesaje:
+MESSAGE_TAGS = {
+    message_constants.DEBUG: 'debug',
+    message_constants.INFO: 'info',
+    message_constants.SUCCESS: 'success',
+    message_constants.WARNING: 'warning',
+    message_constants.ERROR: 'error',
 }

@@ -1822,3 +1822,829 @@ INFO 2024-12-04 18:59:59,536 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
 WARNING 2024-12-04 18:59:59,585 views Utilizatorul maria a incercat sa acceseze oferta fara permisiune!
 WARNING 2024-12-04 18:59:59,586 log Forbidden: /oferta/
 WARNING 2024-12-04 18:59:59,587 basehttp "GET /oferta/ HTTP/1.1" 403 388
+INFO 2024-12-04 19:48:29,013 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 19:48:41,924 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 19:48:42,183 basehttp "GET / HTTP/1.1" 200 17032
+WARNING 2024-12-04 19:48:43,453 log Not Found: /favicon.ico
+WARNING 2024-12-04 19:48:43,454 basehttp "GET /favicon.ico HTTP/1.1" 404 8285
+INFO 2024-12-04 19:48:53,353 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 19:48:53,642 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 19:48:55,864 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 19:48:56,127 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 19:48:56,834 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 19:48:57,119 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 19:48:57,727 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 19:48:57,936 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 19:48:58,588 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 19:48:58,995 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 19:48:59,451 views --------------Functia display_items a fost apelata
+INFO 2024-12-04 19:48:59,678 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-04 19:49:03,293 views --------------Functia contact_view a fost apelata
+INFO 2024-12-04 19:49:03,314 basehttp "GET /aplicatie/contact HTTP/1.1" 200 2895
+INFO 2024-12-04 19:49:11,874 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 19:49:11,882 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 19:49:35,546 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 19:49:35,551 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-04 19:49:42,728 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-04 19:49:43,343 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-04 19:49:43,376 views --------------Functia profile_view a fost apelata
+INFO 2024-12-04 19:49:43,379 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-05 08:24:44,659 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:24:50,953 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:24:51,271 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:24:52,412 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-05 08:24:52,412 basehttp "GET /static/script.js HTTP/1.1" 304 0
+WARNING 2024-12-05 08:24:52,533 log Not Found: /favicon.ico
+WARNING 2024-12-05 08:24:52,534 basehttp "GET /favicon.ico HTTP/1.1" 404 8283
+INFO 2024-12-05 08:24:55,017 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:24:55,074 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-05 08:24:55,110 basehttp "GET /static/login.css HTTP/1.1" 304 0
+INFO 2024-12-05 08:25:05,584 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:25:05,964 views --------------Functia record_failed_attemp a fost apelata
+INFO 2024-12-05 08:25:05,964 views --------------Functia check_suspicious_activity a fost apelata
+INFO 2024-12-05 08:25:05,971 basehttp "POST /aplicatie/login HTTP/1.1" 200 1732
+INFO 2024-12-05 08:25:15,240 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:25:15,592 views --------------Functia record_failed_attemp a fost apelata
+INFO 2024-12-05 08:25:15,592 views --------------Functia check_suspicious_activity a fost apelata
+INFO 2024-12-05 08:25:15,600 basehttp "POST /aplicatie/login HTTP/1.1" 200 1732
+INFO 2024-12-05 08:25:40,522 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:25:41,162 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 08:25:41,194 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:25:41,196 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-05 08:25:41,267 basehttp "GET /static/profile.css HTTP/1.1" 304 0
+INFO 2024-12-05 08:26:45,456 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 08:26:45,486 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-05 08:26:45,530 basehttp "GET /static/stil_adauga_comanda.css HTTP/1.1" 200 1715
+INFO 2024-12-05 08:26:50,756 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:26:50,812 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-05 08:26:50,967 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:26:51,244 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:26:53,202 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:26:53,241 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-05 08:27:00,456 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:27:01,094 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 08:27:01,127 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:27:01,129 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-05 08:27:36,944 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:27:37,202 basehttp "GET / HTTP/1.1" 200 17032
+WARNING 2024-12-05 08:27:38,538 log Not Found: /favicon.ico
+WARNING 2024-12-05 08:27:38,539 basehttp "GET /favicon.ico HTTP/1.1" 404 8283
+INFO 2024-12-05 08:27:53,767 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-05 08:27:54,474 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:27:59,026 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:27:59,097 basehttp "GET /aplicatie/login HTTP/1.1" 200 1574
+INFO 2024-12-05 08:28:17,838 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:28:18,230 views --------------Functia record_failed_attemp a fost apelata
+INFO 2024-12-05 08:28:18,230 views --------------Functia check_suspicious_activity a fost apelata
+INFO 2024-12-05 08:28:18,238 basehttp "POST /aplicatie/login HTTP/1.1" 200 1724
+INFO 2024-12-05 08:28:22,969 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:28:23,659 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 08:28:23,696 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:28:23,701 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-05 08:31:08,753 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:31:14,158 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:31:14,465 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:31:18,087 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:31:18,133 basehttp "GET /aplicatie/login HTTP/1.1" 200 2280
+INFO 2024-12-05 08:31:48,097 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:31:48,734 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 08:31:48,767 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:31:48,769 basehttp "GET /aplicatie/profile HTTP/1.1" 200 831
+INFO 2024-12-05 08:32:05,334 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 08:32:05,358 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-05 08:32:36,153 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:32:36,208 basehttp "GET /aplicatie/login HTTP/1.1" 200 1776
+INFO 2024-12-05 08:32:37,502 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:32:37,551 basehttp "GET /aplicatie/login HTTP/1.1" 200 1703
+INFO 2024-12-05 08:32:38,444 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:32:38,478 basehttp "GET /aplicatie/login HTTP/1.1" 200 1703
+INFO 2024-12-05 08:32:41,954 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:32:42,151 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:32:44,355 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:32:44,389 basehttp "GET /aplicatie/login HTTP/1.1" 200 1703
+INFO 2024-12-05 08:33:47,342 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:33:47,998 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:34:13,634 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:34:13,664 basehttp "GET /aplicatie/login HTTP/1.1" 200 1576
+INFO 2024-12-05 08:34:21,157 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:34:21,795 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 08:34:21,828 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:34:21,832 basehttp "GET /aplicatie/profile HTTP/1.1" 200 987
+INFO 2024-12-05 08:34:49,561 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:34:49,565 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-05 08:35:06,486 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:35:06,489 basehttp "GET /aplicatie/profile HTTP/1.1" 200 991
+INFO 2024-12-05 08:35:18,313 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:35:18,315 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-05 08:35:34,885 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:35:35,100 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:36:57,039 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:36:57,496 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:39:23,846 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:39:24,407 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:40:10,271 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:10,494 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:11,103 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:11,298 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:11,936 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:12,243 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:13,413 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:13,619 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:14,247 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:14,566 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:14,912 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:15,223 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:15,925 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:16,131 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:16,800 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:17,119 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:17,981 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:18,180 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:19,060 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:19,261 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:20,405 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:20,588 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:21,153 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:21,333 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:21,876 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:40:22,048 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 08:40:23,846 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
+INFO 2024-12-05 08:40:23,888 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:40:23,889 basehttp "GET /oferta/ HTTP/1.1" 200 1192
+INFO 2024-12-05 08:40:57,752 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:40:58,166 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:40:59,743 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:40:59,765 basehttp "GET /oferta/ HTTP/1.1" 200 1315
+INFO 2024-12-05 08:41:15,254 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:41:15,257 basehttp "GET /oferta/ HTTP/1.1" 200 1315
+INFO 2024-12-05 08:41:31,039 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:41:31,042 basehttp "GET /oferta/ HTTP/1.1" 200 1317
+INFO 2024-12-05 08:41:46,392 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:41:46,394 basehttp "GET /oferta/ HTTP/1.1" 200 1317
+INFO 2024-12-05 08:41:47,285 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:41:47,286 basehttp "GET /oferta/ HTTP/1.1" 200 1317
+INFO 2024-12-05 08:42:00,557 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:42:56,179 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:43:02,911 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:43:13,213 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:43:18,297 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:43:18,555 basehttp "GET / HTTP/1.1" 200 17032
+WARNING 2024-12-05 08:43:19,827 log Not Found: /favicon.ico
+WARNING 2024-12-05 08:43:19,827 basehttp "GET /favicon.ico HTTP/1.1" 404 8283
+INFO 2024-12-05 08:43:21,714 basehttp "POST /accepta-oferta/ HTTP/1.1" 200 17
+INFO 2024-12-05 08:43:21,769 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:43:21,771 basehttp "GET /oferta/ HTTP/1.1" 200 1321
+INFO 2024-12-05 08:43:48,259 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:43:48,260 basehttp "GET /oferta/ HTTP/1.1" 200 1321
+INFO 2024-12-05 08:43:56,869 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:43:56,873 basehttp "GET /oferta/ HTTP/1.1" 200 1313
+INFO 2024-12-05 08:43:57,775 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:43:57,777 basehttp "GET /oferta/ HTTP/1.1" 200 1313
+INFO 2024-12-05 08:44:07,757 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:44:07,759 basehttp "GET /oferta/ HTTP/1.1" 200 1321
+INFO 2024-12-05 08:44:08,689 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:44:08,691 basehttp "GET /oferta/ HTTP/1.1" 200 1321
+INFO 2024-12-05 08:44:22,679 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:44:22,682 basehttp "GET /oferta/ HTTP/1.1" 200 1321
+INFO 2024-12-05 08:44:33,833 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:44:33,836 basehttp "GET /oferta/ HTTP/1.1" 200 1321
+INFO 2024-12-05 08:44:50,229 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:44:50,232 basehttp "GET /oferta/ HTTP/1.1" 200 1313
+INFO 2024-12-05 08:45:04,064 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-05 08:45:04,067 basehttp "GET /oferta/ HTTP/1.1" 200 1321
+INFO 2024-12-05 08:49:41,692 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:49:42,139 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:50:41,516 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:50:41,826 basehttp "GET / HTTP/1.1" 200 17032
+WARNING 2024-12-05 08:50:41,985 log Not Found: /favicon.ico
+WARNING 2024-12-05 08:50:41,986 basehttp "GET /favicon.ico HTTP/1.1" 404 8283
+INFO 2024-12-05 08:50:44,672 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:50:44,685 basehttp "GET /aplicatie/login HTTP/1.1" 200 1576
+INFO 2024-12-05 08:50:57,820 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:50:58,454 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 08:50:58,483 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:50:58,485 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-05 08:51:05,976 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:51:06,009 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:51:06,016 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3104
+INFO 2024-12-05 08:51:27,459 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:51:27,500 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:51:27,508 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3130
+INFO 2024-12-05 08:51:28,520 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:51:28,553 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:51:28,557 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3130
+INFO 2024-12-05 08:51:42,114 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:51:42,158 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:51:42,167 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3105
+INFO 2024-12-05 08:52:01,896 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:01,924 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:01,930 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-05 08:52:02,680 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:02,709 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:02,714 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-05 08:52:02,927 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:02,959 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:02,964 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-05 08:52:03,085 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:03,120 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:03,125 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-05 08:52:03,279 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:03,312 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:03,320 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-05 08:52:03,474 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:03,505 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:03,510 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-05 08:52:13,758 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:52:14,482 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:52:15,448 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:15,480 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:15,495 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3291
+INFO 2024-12-05 08:52:24,016 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:52:24,684 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:52:25,745 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:25,777 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:25,793 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-05 08:52:47,285 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:52:47,759 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:52:49,060 views --------------Functia is_admin a fost apelata
+INFO 2024-12-05 08:52:49,091 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-05 08:52:49,114 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3292
+INFO 2024-12-05 08:54:52,170 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:54:52,694 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:55:19,185 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:55:19,794 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:55:23,901 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 08:55:24,141 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-05 08:55:25,738 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:55:25,750 basehttp "GET /aplicatie/login HTTP/1.1" 200 1576
+INFO 2024-12-05 08:55:32,860 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 08:55:33,531 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 08:55:33,563 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 08:55:33,566 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-05 08:55:35,139 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 08:55:35,164 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10100
+INFO 2024-12-05 08:55:46,384 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:55:46,889 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:56:54,762 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 08:56:55,439 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 08:58:12,114 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 08:58:12,192 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10256
+INFO 2024-12-05 08:59:22,232 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 08:59:22,250 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10109
+INFO 2024-12-05 08:59:23,044 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 08:59:23,068 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10109
+INFO 2024-12-05 08:59:23,677 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 08:59:23,703 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10109
+INFO 2024-12-05 09:00:02,270 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:00:02,902 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:00:39,198 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 09:00:39,402 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-05 09:00:41,285 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:00:41,294 basehttp "GET /aplicatie/login HTTP/1.1" 200 1576
+INFO 2024-12-05 09:00:42,548 views --------------Functia register_view a fost apelata
+INFO 2024-12-05 09:00:42,607 basehttp "GET /aplicatie/register HTTP/1.1" 200 4125
+INFO 2024-12-05 09:00:42,663 basehttp "GET /static/register.css HTTP/1.1" 200 957
+INFO 2024-12-05 09:00:44,602 views --------------Functia register_view a fost apelata
+INFO 2024-12-05 09:00:44,639 basehttp "GET /aplicatie/register HTTP/1.1" 200 4125
+INFO 2024-12-05 09:01:55,787 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 09:01:55,963 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-05 09:01:57,971 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:01:58,009 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-05 09:01:59,673 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:01:59,713 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-05 09:06:17,153 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:06:17,625 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:07:32,516 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:07:32,948 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:07:47,232 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:07:47,894 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 09:07:47,927 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:07:47,935 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:07:50,829 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:07:50,832 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:07:51,773 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:07:51,775 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:07:52,596 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:07:52,598 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:07:53,273 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:07:53,276 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:12,316 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:12,318 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:13,087 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:13,089 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:14,021 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:14,022 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:14,207 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:14,209 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:14,391 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:14,392 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:14,577 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:14,578 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:14,728 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:14,730 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:14,929 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:14,931 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:15,137 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:15,139 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:15,331 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:08:15,333 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:08:24,457 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 09:08:24,746 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 09:08:26,859 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:08:26,900 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:08:55,515 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:08:55,555 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:08:56,229 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:08:56,272 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:09:40,311 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:09:40,763 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:09:42,748 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:09:42,809 basehttp "GET /aplicatie/login HTTP/1.1" 200 1811
+INFO 2024-12-05 09:10:04,293 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:10:04,806 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:10:06,007 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:06,068 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:10:06,867 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:06,917 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:10:07,052 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:07,086 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:10:07,204 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:07,235 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:10:07,364 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:07,401 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:10:07,534 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:07,569 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:10:07,708 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:07,742 basehttp "GET /aplicatie/login HTTP/1.1" 200 1818
+INFO 2024-12-05 09:10:25,309 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:10:25,739 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:10:27,770 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:27,835 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-05 09:10:34,300 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 09:10:34,933 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 09:10:34,967 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:10:34,974 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1155
+INFO 2024-12-05 09:11:38,774 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:11:39,317 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:11:42,403 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 09:11:42,439 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-05 09:12:38,128 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:12:38,543 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:13:42,079 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:13:42,538 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:14:29,982 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:14:30,391 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:15:44,212 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:15:44,693 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:16:25,763 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 09:16:25,805 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10109
+INFO 2024-12-05 09:16:29,702 views --------------Functia logout_view a fost apelata
+INFO 2024-12-05 09:16:29,737 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-05 09:16:29,742 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-05 09:16:29,744 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-05 09:16:29,882 basehttp "GET /static/stil_mesaj.css HTTP/1.1" 200 1047
+INFO 2024-12-05 09:16:35,189 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 09:16:35,359 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-05 09:16:37,850 views --------------Functia adresa a fost apelata
+WARNING 2024-12-05 09:16:37,850 views Utilizatorul anonim a incercat sa acceseze adresele fara permisiune!
+WARNING 2024-12-05 09:16:37,852 log Forbidden: /aplicatie/adresa
+WARNING 2024-12-05 09:16:37,852 basehttp "GET /aplicatie/adresa HTTP/1.1" 403 636
+INFO 2024-12-05 09:16:54,016 views --------------Functia adresa a fost apelata
+WARNING 2024-12-05 09:16:54,017 views Utilizatorul anonim a incercat sa acceseze adresele fara permisiune!
+WARNING 2024-12-05 09:16:54,019 log Forbidden: /aplicatie/adresa
+WARNING 2024-12-05 09:16:54,020 basehttp "GET /aplicatie/adresa HTTP/1.1" 403 636
+INFO 2024-12-05 09:17:05,260 views --------------Functia sponsori a fost apelata
+WARNING 2024-12-05 09:17:05,260 views Utilizatorul  a incercat să acceseze sponsorii fara permisiune!
+WARNING 2024-12-05 09:17:05,261 log Forbidden: /aplicatie/sponsori
+WARNING 2024-12-05 09:17:05,261 basehttp "GET /aplicatie/sponsori HTTP/1.1" 403 437
+INFO 2024-12-05 09:17:59,158 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:17:59,629 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:18:16,067 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:18:16,529 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:18:31,940 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:18:32,421 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:18:44,842 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:18:45,287 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:18:56,668 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:18:57,114 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:19:09,483 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:19:10,014 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:19:20,376 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:19:20,831 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:19:39,250 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:19:39,708 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:19:47,555 views --------------Functia sponsori a fost apelata
+WARNING 2024-12-05 09:19:47,555 views Utilizatorul  a incercat să acceseze sponsorii fara permisiune!
+WARNING 2024-12-05 09:19:47,565 log Forbidden: /aplicatie/sponsori
+WARNING 2024-12-05 09:19:47,566 basehttp "GET /aplicatie/sponsori HTTP/1.1" 403 638
+INFO 2024-12-05 09:20:24,408 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:20:24,992 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:20:29,729 views --------------Functia magazine a fost apelata
+WARNING 2024-12-05 09:20:29,729 views Utilizatorul  a incercat sa acceseze magazinele fara permisiune!
+WARNING 2024-12-05 09:20:29,734 log Forbidden: /aplicatie/magazine
+WARNING 2024-12-05 09:20:29,735 basehttp "GET /aplicatie/magazine HTTP/1.1" 403 638
+INFO 2024-12-05 09:20:51,504 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:20:51,957 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:21:04,333 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:21:04,845 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:21:28,324 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-05 09:21:28,792 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:43:43,582 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:45:19,426 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:49:05,824 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:50:42,362 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:52:20,755 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:52:24,499 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 10:52:24,820 basehttp "GET / HTTP/1.1" 200 17032
+WARNING 2024-12-05 10:52:24,971 log Not Found: /favicon.ico
+WARNING 2024-12-05 10:52:24,972 basehttp "GET /favicon.ico HTTP/1.1" 404 8457
+ERROR 2024-12-05 10:52:39,834 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:52:39,842 basehttp "GET /sitemap.xml HTTP/1.1" 500 103451
+WARNING 2024-12-05 10:52:51,417 log Not Found: /sitemap
+WARNING 2024-12-05 10:52:51,417 basehttp "GET /sitemap HTTP/1.1" 404 8445
+ERROR 2024-12-05 10:53:16,025 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:53:16,031 basehttp "GET /sitemap.xml HTTP/1.1" 500 103451
+ERROR 2024-12-05 10:55:14,628 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:55:14,634 basehttp "GET /sitemap.xml HTTP/1.1" 500 103588
+ERROR 2024-12-05 10:55:15,573 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:55:15,585 basehttp "GET /sitemap.xml HTTP/1.1" 500 103588
+ERROR 2024-12-05 10:55:16,408 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 10:55:16,419 basehttp "GET /sitemap.xml HTTP/1.1" 500 103588
+INFO 2024-12-05 10:59:52,696 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/sitemaps.py changed, reloading.
+INFO 2024-12-05 10:59:53,093 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:00:35,496 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-05 11:00:35,873 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:01:25,306 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-05 11:01:25,705 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:01:30,523 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 11:01:30,846 basehttp "GET / HTTP/1.1" 200 17032
+ERROR 2024-12-05 11:01:33,392 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 11:01:33,399 basehttp "GET /sitemap.xml HTTP/1.1" 500 102904
+ERROR 2024-12-05 11:01:34,347 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 11:01:34,358 basehttp "GET /sitemap.xml HTTP/1.1" 500 102904
+ERROR 2024-12-05 11:01:46,564 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 132, in location
+    return item.get_absolute_url()
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sponsor' object has no attribute 'get_absolute_url'
+ERROR 2024-12-05 11:01:46,570 basehttp "GET /sitemap.xml HTTP/1.1" 500 102767
+INFO 2024-12-05 11:02:24,574 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/sitemaps.py changed, reloading.
+INFO 2024-12-05 11:02:24,997 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:06:27,119 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-05 11:06:27,502 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:06:30,660 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/sitemaps.py changed, reloading.
+INFO 2024-12-05 11:06:31,283 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-05 11:06:55,836 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/sitemaps.py", line 16, in location
+    return reverse('sponsor_list')
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'sponsor_list' not found. 'sponsor_list' is not a valid view function or pattern name.
+ERROR 2024-12-05 11:06:55,841 basehttp "GET /sitemap.xml HTTP/1.1" 500 113763
+ERROR 2024-12-05 11:06:57,943 log Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 187, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 122, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sitemaps/__init__.py", line 92, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/sitemaps.py", line 16, in location
+    return reverse('sponsor_list')
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'sponsor_list' not found. 'sponsor_list' is not a valid view function or pattern name.
+ERROR 2024-12-05 11:06:57,947 basehttp "GET /sitemap.xml HTTP/1.1" 500 113763
+INFO 2024-12-05 11:08:47,845 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/sitemaps.py changed, reloading.
+INFO 2024-12-05 11:08:48,351 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:08:52,869 basehttp "GET /sitemap.xml HTTP/1.1" 200 10651
+INFO 2024-12-05 11:09:01,682 views --------------Functia bauturi a fost apelata
+WARNING 2024-12-05 11:09:01,682 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-05 11:09:01,684 log Forbidden: /bauturi
+WARNING 2024-12-05 11:09:01,685 basehttp "GET /bauturi HTTP/1.1" 403 637
+INFO 2024-12-05 11:09:06,054 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 11:09:06,294 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-05 11:09:08,236 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 11:09:08,248 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-05 11:09:14,941 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 11:09:15,279 views --------------Functia record_failed_attemp a fost apelata
+INFO 2024-12-05 11:09:15,279 views --------------Functia check_suspicious_activity a fost apelata
+INFO 2024-12-05 11:09:15,281 basehttp "POST /aplicatie/login HTTP/1.1" 200 1735
+INFO 2024-12-05 11:09:19,467 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 11:09:20,349 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 11:09:20,379 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 11:09:20,381 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-05 11:09:25,409 views --------------Functia bauturi a fost apelata
+INFO 2024-12-05 11:09:25,459 basehttp "GET /aplicatie/bauturi HTTP/1.1" 200 1231
+INFO 2024-12-05 11:09:40,458 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 11:09:40,479 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10109
+INFO 2024-12-05 11:09:54,436 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:09:55,862 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-05 11:09:55,908 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 10109
+INFO 2024-12-05 11:09:57,883 views --------------Functia logout_view a fost apelata
+INFO 2024-12-05 11:09:57,921 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-05 11:09:57,926 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-05 11:09:57,928 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-05 11:10:01,023 views --------------Functia bauturi a fost apelata
+WARNING 2024-12-05 11:10:01,023 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-05 11:10:01,025 log Forbidden: /aplicatie/bauturi
+WARNING 2024-12-05 11:10:01,026 basehttp "GET /aplicatie/bauturi HTTP/1.1" 403 637
+INFO 2024-12-05 11:12:06,474 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:12:10,898 views --------------Functia bauturi a fost apelata
+WARNING 2024-12-05 11:12:10,899 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-05 11:12:10,904 log Forbidden: /aplicatie/bauturi
+WARNING 2024-12-05 11:12:10,905 basehttp "GET /aplicatie/bauturi HTTP/1.1" 403 637
+INFO 2024-12-05 11:12:14,884 views --------------Functia display_items a fost apelata
+INFO 2024-12-05 11:12:15,093 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-05 11:12:17,174 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 11:12:17,184 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-05 11:12:24,689 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 11:12:25,058 views --------------Functia record_failed_attemp a fost apelata
+INFO 2024-12-05 11:12:25,058 views --------------Functia check_suspicious_activity a fost apelata
+INFO 2024-12-05 11:12:25,060 basehttp "POST /aplicatie/login HTTP/1.1" 200 1735
+INFO 2024-12-05 11:12:30,457 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-05 11:12:31,059 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-05 11:12:31,092 views --------------Functia profile_view a fost apelata
+INFO 2024-12-05 11:12:31,096 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-05 11:12:39,761 views --------------Functia bauturi a fost apelata
+INFO 2024-12-05 11:12:39,806 basehttp "GET /aplicatie/bauturi HTTP/1.1" 200 1231
+INFO 2024-12-05 11:13:03,604 basehttp "GET /aplicatie/sitemap.xml HTTP/1.1" 200 10689

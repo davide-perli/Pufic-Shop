@@ -9,6 +9,13 @@
 </head>
 <body>
     <div class="profile-container">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li class="{{ message.tags }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
         <h1>Profil Utilizator</h1>
         <p><strong>Username:</strong> {{ user.username }}</p>
         <p><strong>Email:</strong> {{ user.email }}</p>
@@ -20,6 +27,8 @@
         
         <a href="{% url 'adauga_comanda' %}" class="btn">Plaseaza comanda</a>
         <a href="{% url 'change_password_view' %}" class="btn">Schimba Parola</a>
+
+
     </div>
 </body>
 </html>

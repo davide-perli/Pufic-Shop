@@ -23,6 +23,7 @@
     </style>
 </head>
 <body>
+
     <h1>Oferta Speciala!</h1>
     <div class="banner" id="offer-banner" style="display:none;">
         Reducere 50%! Profitati acum de această oferta limitata!
@@ -32,7 +33,15 @@
     <p>Va multumim ca sunteti clientul nostru! Aceasta oferta este valabila doar pentru o perioada limitata!</p>
     <p>Contactati-ne pentru mai multe detalii sau vizitati magazinul nostru pentru a profita de reducere :)</p>
 
-    <li><button onclick="window.location.href='{% url 'display_items' %}'">Inapoi</button></li>     
+    <li><button onclick="window.location.href='{% url 'display_items' %}'">Inapoi</button></li> 
+    <br>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <ul class="{{ message.tags }}">{{ message }}</ul>
+        {% endfor %}
+    </ul>
+    {% endif %}
 
 
 </body>
