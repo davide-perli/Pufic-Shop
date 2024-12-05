@@ -38,9 +38,12 @@ from django.core.mail import EmailMultiAlternatives
 from .forms import PrajituriForm
 
 from django.http import JsonResponse
-from django.contrib.auth.models import Permission
 
 from django.contrib import messages
+
+from django.contrib.auth.models import Group, Permission
+from django.contrib.contenttypes.models import ContentType
+from gelaterie.models import CustomUser
 
 import logging
 
@@ -525,14 +528,12 @@ def register_view(request):
             subject = 'Confirmare Email'
             message = render_to_string('email/confirmation_email.html', {'user': user})
             send_mail(
-                subject, '', settings.DEFAULT_FROM_EMAIL, [user.email], html_message=message
+                subject, '', settings.DEFAULT_FROM_EMAIL, [user.email], html_message = message
             )
             return redirect('custom_login_view')
     else:
         form = CustomUserCreationForm()
     
-    messages.warning(request, "Acesta este un avertisment. :| ")
-    messages.error(request, "A aparut o eroare! >:((  ")
     messages.debug(request, "Acesta este un mesaj de depanare!!!")
     logger.debug("--------------Functia register_view executata cu succes!")
     return render(request, "register.html", {"form": form})
@@ -600,13 +601,17 @@ failed_login_attempts = {}
 def custom_login_view(request):
     logger.info("--------------Functia custom_login_view a fost apelata")
     if request.method == 'POST':
-        form = CustomAuthenticationForm(data=request.POST, request=request)
+        form = CustomAuthenticationForm(data = request.POST, request = request)
         username = form.data.get('username')
         ip_address = request.META.get('REMOTE_ADDR')
         
 
         if form.is_valid():
-            user = authenticate(username=form.cleaned_data.get('username'), password=form.cleaned_data.get('password'))
+            user = authenticate(username = form.cleaned_data.get('username'), password = form.cleaned_data.get('password'))
+            if user.is_blocked:
+                messages.error(request, "Contul tau a fost blocat!!!!")
+                return render(request, 'login.html')
+            
             if user is None or not user.email_confirmat:
                 record_failed_attempt(username, ip_address)
 
@@ -859,6 +864,7 @@ def creeaza_promotie(request):
 
             subject = f'Promotie Speciala: {promotie.nume}'
 
+            messages = []
             for utilizator in utilizatori:
         
                 message = f"Salut {utilizator.username},\n\n"
@@ -869,14 +875,11 @@ def creeaza_promotie(request):
                 message += f"Data Expirarii: {promotie.data_expirare.strftime('%d-%m-%Y')}\n"
                 message += f"Categorie: {promotie.categorie}\n\n"
                 message += "Nu rata aceasta oportunitate! Viziteaza-ne acum pentru mai multe detalii."
-
+ 
+                messages.append((subject, message, [utilizator.email]))
               
-                send_mail(
-                    subject, 
-                    message, 
-                    settings.DEFAULT_FROM_EMAIL, 
-                    [utilizator.email]
-                )
+            if messages:
+                send_mass_mail(messages, fail_silently=False)
 
             logger.debug("--------------Promotie creata!")
             return redirect('mesaj_trimis') 
@@ -884,10 +887,6 @@ def creeaza_promotie(request):
     else:
         form = PromotieForm()
 
-    messages.warning(request, "Acesta este un avertisment. :| ")
-    messages.error(request, "A aparut o eroare! >:((  ")
-    messages.debug(request, "Acesta este un mesaj de depanare, doar adminii il pot vedea!!! ")
-    messages.info(request, "Acesta este un mesaj de informare, doar adminii il pot vedea!!! ")
     logger.debug("--------------Functia creaza_promotie executata cu succes!")
     return render(request, 'promotii.html', {'form': form})
 
@@ -967,3 +966,21 @@ def accepta_oferta(request):
 
     logger.info("--------------Functia accepta_oferta a fost executata cu succes!")
     return JsonResponse({'success': False}, status=400)
+
+
+
+
+
+moderators_group, created = Group.objects.get_or_create(name="Moderatori") # Grup Moderatori creare
+
+# Permisiuni la grupul Moderatori
+content_type = ContentType.objects.get_for_model(CustomUser)
+
+permissions = [
+    "view_customuser",  
+    "change_customuser"  
+]
+
+for codename in permissions:
+    permission = Permission.objects.get(codename = codename, content_type = content_type) # Cautare in baza de date a permisiunilor 
+    moderators_group.permissions.add(permission)

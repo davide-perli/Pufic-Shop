@@ -207,6 +207,8 @@ class CustomUserCreationForm(UserCreationForm):
         model = CustomUser
         fields = [
             "username",
+            "first_name",
+            "last_name",
             "email",
             "password1",
             "password2",
@@ -268,3 +270,4 @@ class PrajituriForm(forms.ModelForm):
     class Meta:
         model = Prajituri
         fields = ['nume_prajitura', 'info', 'magazin']
+

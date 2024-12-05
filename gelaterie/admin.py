@@ -74,23 +74,55 @@ class MagazineAdmin(admin.ModelAdmin):
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
-    list_display = ('username', 'email', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'cod', 'email_confirmat', 'is_staff')
-    search_fields = ('username', 'email', 'telefon', 'adresa', 'nationalitate', 'email_confirmat')
-    list_filter = ('is_staff', 'is_active', 'sex', 'nationalitate', 'email_confirmat')
+    list_display = (
+        'username', 'email', 'telefon', 'adresa', 'age', 'first_name', 'last_name',
+        'sex', 'nationalitate', 'cod', 'email_confirmat', 'is_staff', 'is_blocked'
+    )
+    search_fields = (
+        'username', 'email', 'telefon', 'adresa',
+        'nationalitate'
+    )
+    list_filter = ('is_staff', 'is_active', 'is_blocked')
 
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
-        ('Personal Info', {'fields': ('email', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'cod', 'email_confirmat')}),
-        ('Permissions', {'fields': ('is_staff', 'is_active', 'groups', 'user_permissions')}),
-        ('Important dates', {'fields': ('last_login', 'date_joined')}),
+        ('Informații personale', {'fields': (
+            'first_name',  
+            'last_name',   
+            'email',      
+            'telefon',    
+            'adresa',     
+            'age',         
+            'sex',        
+            'nationalitate',
+            'cod',         
+            'email_confirmat'  
+        )}),
+        ('Blocare utilizator', {'fields': ('is_blocked',)}),  
+        ('Permisiuni', {'fields': ('is_staff', 'is_active', 'groups', 'user_permissions')}),
+        ('Date importante', {'fields': ('last_login', 'date_joined')}),
     )
 
-    add_fieldsets = (
-        (None, {
-            'classes': ('wide',),
-            'fields': ('username', 'email', 'password1', 'password2', 'telefon', 'adresa', 'age', 'sex', 'nationalitate', 'cod', 'email_confirmat', 'is_staff', 'is_active')}
-        ),
-    )
+    def get_readonly_fields(self, request, obj=None):
+        readonly_fields = super().get_readonly_fields(request, obj)
+        
+        if not request.user.is_superuser and request.user.groups.filter(name="Moderatori").exists():
+            # Campurile astea nu le poate accesa un Moderator, doar vedea
+            readonly_fields += (
+                'username',
+                'telefon',
+                'adresa',
+                'age',
+                'sex',
+                'nationalitate',
+                'cod',
+                'email_confirmat',
+                'is_staff',
+                'groups',
+                'user_permissions'
+            )
+
+        return readonly_fields
 
 
 
@@ -107,6 +139,8 @@ class PromotieAdmin(admin.ModelAdmin):
     search_fields = ('nume', 'categorie')  
     list_filter = ('data_creare', 'data_expirare', 'categorie') 
     ordering = ('-data_creare',) 
+
+
 
 
 # Inregistrarea modelelor în admin

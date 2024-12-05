@@ -7,6 +7,7 @@ from django.utils.timezone import now
 
 
 
+
 #1
 class Sponsor(models.Model):
     nume_sponsor = models.CharField(max_length = 100)
@@ -178,6 +179,7 @@ class CustomUser(AbstractUser):
     nationalitate = models.CharField(max_length = 50, blank = True)
     cod = models.CharField(max_length = 100, blank = True)
     email_confirmat = models.BooleanField(default = False)
+    is_blocked = models.BooleanField(default = False)
 
     def generate_cod(self):
         return ''.join(random.choices(string.ascii_letters + string.digits, k=20))
@@ -192,6 +194,7 @@ class CustomUser(AbstractUser):
         permissions = [
             ("vizualizeaza_oferta", "Permite vizualizarea ofertei"),
         ]
+        
 
 
 
@@ -218,3 +221,4 @@ class Promotie(models.Model):
 
     def __str__(self):
         return f"{self.nume} - Expira: {self.data_expirare}"
+    

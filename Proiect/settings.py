@@ -216,7 +216,7 @@ LOGGING = {
                          'error_file', 
                          'critical_file'],
             # Min level de severitate
-            'level': os.getenv('DJANGO_LOG_LEVEL', default='DEBUG'),  
+            'level': 'DEBUG',  
         },
     },
 }
