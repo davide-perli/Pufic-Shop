@@ -4509,3 +4509,32 @@ Traceback (most recent call last):
           ^^^^^^^^^^^
 AttributeError: 'CustomForm' object has no attribute 'fields'
 ERROR 2024-12-05 21:32:29,819 basehttp "GET /admin/gelaterie/customuser/34/change/ HTTP/1.1" 500 123447
+WARNING 2024-12-05 23:21:55,640 log Not Found: /favicon.ico
+WARNING 2024-12-05 23:21:55,640 basehttp "GET /favicon.ico HTTP/1.1" 404 8459
+WARNING 2024-12-05 23:35:21,612 log Not Found: /favicon.ico
+WARNING 2024-12-05 23:35:21,613 basehttp "GET /favicon.ico HTTP/1.1" 404 8459
+WARNING 2024-12-05 23:36:26,345 log Not Found: /favicon.ico
+WARNING 2024-12-05 23:36:26,346 basehttp "GET /favicon.ico HTTP/1.1" 404 8459
+WARNING 2024-12-07 12:16:36,102 log Not Found: /favicon.ico
+WARNING 2024-12-07 12:16:36,103 basehttp "GET /favicon.ico HTTP/1.1" 404 8459
+WARNING 2024-12-07 12:24:47,401 log Not Found: /favicon.ico
+WARNING 2024-12-07 12:24:47,401 basehttp "GET /favicon.ico HTTP/1.1" 404 8459
+ERROR 2024-12-07 12:30:26,893 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 526, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 198, in save
+    "password": self.raw_password  # Folosește un atribut temporar pentru parola necriptată
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUser' object has no attribute 'raw_password'. Did you mean: '_password'?
+ERROR 2024-12-07 12:30:26,898 basehttp "POST /aplicatie/register HTTP/1.1" 500 79962
+WARNING 2024-12-07 12:50:42,059 log Not Found: /favicon.ico
+WARNING 2024-12-07 12:50:42,060 basehttp "GET /favicon.ico HTTP/1.1" 404 8457
+WARNING 2024-12-07 12:51:49,049 log Not Found: /favicon.ico
+WARNING 2024-12-07 12:51:49,049 basehttp "GET /favicon.ico HTTP/1.1" 404 8463

@@ -237,6 +237,19 @@ class CustomUserCreationForm(UserCreationForm):
             raise forms.ValidationError("Nationalitatea trebuie sa contina doar litere!")
         return nationalitate
     
+    def clean(self):
+        cleaned_data = super().clean()
+        
+        password1 = cleaned_data.get("password1")
+        password2 = cleaned_data.get("password2")
+
+        if password1 and password2 and password1 != password2:
+            raise forms.ValidationError("Parolele nu se potrivesc!")
+
+        self.instance.raw_password = password1
+
+        return cleaned_data
+    
 
 
 class CustomAuthenticationForm(AuthenticationForm):

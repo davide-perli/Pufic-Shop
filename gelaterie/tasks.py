@@ -11,7 +11,7 @@ django.setup()
 
 def delete_unconfirmed_users():
 
-    threshold = timezone.now() - timezone.timedelta(minutes = 2)  # Utilizatorii neconfirmati mai vechi de 2 de minute
+    threshold = timezone.now() - timezone.timedelta(minutes = 7)  # Utilizatorii neconfirmati mai vechi de 7 de minute
     unconfirmed_users = CustomUser.objects.filter(email_confirmat = False, date_joined__lt = threshold)
     count = unconfirmed_users.count()
     unconfirmed_users.delete()

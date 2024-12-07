@@ -4160,3 +4160,18 @@ Traceback (most recent call last):
           ^^^^^^^^^^^
 AttributeError: 'CustomForm' object has no attribute 'fields'
 ERROR 2024-12-05 21:32:29,819 basehttp "GET /admin/gelaterie/customuser/34/change/ HTTP/1.1" 500 123447
+ERROR 2024-12-07 12:30:26,893 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 526, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 198, in save
+    "password": self.raw_password  # Folosește un atribut temporar pentru parola necriptată
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUser' object has no attribute 'raw_password'. Did you mean: '_password'?
+ERROR 2024-12-07 12:30:26,898 basehttp "POST /aplicatie/register HTTP/1.1" 500 79962

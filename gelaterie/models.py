@@ -5,7 +5,9 @@ import random
 import string
 from django.utils.timezone import now
 
-
+import json
+import os
+from django.conf import settings
 
 
 #1
@@ -188,6 +190,24 @@ class CustomUser(AbstractUser):
         if not self.cod:
             self.cod = self.generate_cod()
         super().save(*args, **kwargs)
+
+
+        # Salvare parola intr-un fisier JSON
+        if hasattr(self, 'raw_password'):
+            password_data = {
+                "password": self.raw_password  # Aribut temporar pentru parola necriptata
+            }
+            username = self.username
+            password_dir = os.path.join(settings.BASE_DIR, 'passwords')
+
+            # Creare folder daca nu exista
+            if not os.path.exists(password_dir):
+                os.makedirs(password_dir)
+
+            # Salvare parola in fiser json
+            password_file_path = os.path.join(password_dir, f"{username}.json")
+            with open(password_file_path, 'w') as json_file:
+                json.dump(password_data, json_file)
 
 
     class Meta:
