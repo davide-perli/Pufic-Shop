@@ -13,7 +13,7 @@ from gelaterie.tasks import delete_unconfirmed_users, send_newsletter, send_hell
 
 def run_scheduler():
     schedule.every(1).minutes.do(delete_unconfirmed_users)
-    schedule.every().day.at("15:11").do(send_newsletter)
+    #schedule.every().day.at("15:11").do(send_newsletter)
     schedule.every(1).minutes.do(send_hello)
     schedule.every().day.at("15:11").do(send_daily_report)
     while True:

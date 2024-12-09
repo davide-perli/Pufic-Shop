@@ -4175,3 +4175,18 @@ Traceback (most recent call last):
                 ^^^^^^^^^^^^^^^^^
 AttributeError: 'CustomUser' object has no attribute 'raw_password'. Did you mean: '_password'?
 ERROR 2024-12-07 12:30:26,898 basehttp "POST /aplicatie/register HTTP/1.1" 500 79962
+ERROR 2024-12-09 12:16:07,573 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 532, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 201, in save
+    "first_name": self.first_name_extra,
+                  ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUser' object has no attribute 'first_name_extra'
+ERROR 2024-12-09 12:16:07,580 basehttp "POST /aplicatie/register HTTP/1.1" 500 80355

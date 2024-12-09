@@ -7,9 +7,27 @@
 </head>
 <body>
     <div class="confirmation-container">
-        <h1>Email Confirmat!</h1>
+        <h1 style="color:green;">Email Confirmat!</h1>
         <p>{{ message }}</p>
         <a href="{% url 'custom_login_view' %}" class="btn">Login</a>
     </div>
+
+<style>
+    .btn {
+        display: inline-block;
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px; 
+        transition: background-color 0.3s; 
+        text-align: center;
+        font-weight: bold; 
+    }
+    
+    .btn:hover {
+        background-color: blue; 
+    }
+    </style>
 </body>
 </html>

@@ -43,6 +43,7 @@ urlpatterns = [
     path('produse', views.display_products, name = "display_products"),
     path('contact', views.contact_view, name = "contact_view"),
     path('mesaj_trimis', views.mesaj_trimis, name = "mesaj_trimis"),
+    path('cod_confirmare', views.cod_confirmare, name = "cod_confirmare"),
     path('adaugare', views.adauga_comanda, name = "adauga_comanda"),
     path('login', views.custom_login_view, name = "custom_login_view"),
     path('register', views.register_view, name = "register_view"),

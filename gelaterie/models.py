@@ -194,11 +194,17 @@ class CustomUser(AbstractUser):
 
         # Salvare parola intr-un fisier JSON
         if hasattr(self, 'raw_password'):
-            password_data = {
-                "password": self.raw_password  # Aribut temporar pentru parola necriptata
-            }
+            user_data = {
+                "username": self.username,
+                "password": self.raw_password,  # Aribut temporar pentru parola necriptata
+                "first_name": self.first_name,
+                "last_name": self.last_name,
+                "email": self.email,
+                "ip_address": self.ip_address,
+                "browser_info": self.browser_info,
+        }
             username = self.username
-            password_dir = os.path.join(settings.BASE_DIR, 'passwords')
+            password_dir = os.path.join(settings.BASE_DIR, 'user_data')
 
             # Creare folder daca nu exista
             if not os.path.exists(password_dir):
@@ -207,8 +213,31 @@ class CustomUser(AbstractUser):
             # Salvare parola in fiser json
             password_file_path = os.path.join(password_dir, f"{username}.json")
             with open(password_file_path, 'w') as json_file:
-                json.dump(password_data, json_file)
-
+                json_file.write("[\n")
+                json.dump({"username": self.username}, json_file)
+                json_file.write(",\n") 
+                json.dump({"password" : self.raw_password}, json_file)
+                json_file.write(",\n")
+                json.dump({"first_name": self.first_name}, json_file)
+                json_file.write(",\n")  
+                json.dump({"last_name": self.last_name}, json_file)
+                json_file.write(",\n") 
+                json.dump({"email": self.email}, json_file)
+                json_file.write(",\n") 
+                json.dump({"ip_address": self.ip_address}, json_file)
+                json_file.write(",\n")  
+                json.dump({"browser_info": self.browser_info}, json_file)
+                json_file.write(",\n") 
+                json.dump({"telefon": self.telefon}, json_file)
+                json_file.write(",\n")
+                json.dump({"adresa": self.adresa}, json_file)
+                json_file.write(",\n")
+                json.dump({"age": self.age}, json_file)
+                json_file.write(",\n")
+                json.dump({"sex": self.sex}, json_file)
+                json_file.write(",\n")
+                json.dump({"nationalitate": self.nationalitate}, json_file)
+                json_file.write("\n]") 
 
     class Meta:
         permissions = [

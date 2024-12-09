@@ -82,7 +82,7 @@ class CustomUserAdmin(UserAdmin):
         'username', 'email', 'telefon', 'adresa',
         'nationalitate'
     )
-    list_filter = ('is_staff', 'is_active', 'is_blocked')
+    list_filter = ('is_staff', 'is_active', 'is_blocked', 'date_joined')
 
     fieldsets = (
         (None, {'fields': ('username', 'password')}),

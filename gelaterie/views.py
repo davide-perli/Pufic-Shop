@@ -420,6 +420,10 @@ def mesaj_trimis(request):
     logger.info("--------------Functia mesaj_trimis a fost apelata")
     return render(request, 'mesaj_trimis.html', {'message': 'Mesajul tău a fost trimis cu succes!'})
 
+def cod_confirmare(request):
+    logger.info("--------------Functia cod_confirmare a fost apelata")
+    return render(request, 'cod_confirmare.html')
+
 
 @login_required(login_url='custom_login_view')  # Redirectioneaza la login daca nu e autentificat
 def adauga_comanda(request):
@@ -523,6 +527,8 @@ def register_view(request):
             user = form.save(commit=False)
             user.cod = ''.join(random.choices(string.ascii_letters + string.digits, k=20))  # Cod random
             user.email_confirmat = False 
+            user.ip_address = request.META.get('REMOTE_ADDR')
+            user.browser_info = request.META.get('HTTP_USER_AGENT', '')
             user.save()
 
             subject = 'Confirmare Email'
@@ -530,7 +536,7 @@ def register_view(request):
             send_mail(
                 subject, '', settings.DEFAULT_FROM_EMAIL, [user.email], html_message = message
             )
-            return redirect('custom_login_view')
+            return redirect('cod_confirmare')
     else:
         form = CustomUserCreationForm()
     

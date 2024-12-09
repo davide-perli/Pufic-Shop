@@ -8352,3 +8352,405 @@ INFO 2024-12-07 12:56:08,736 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1
 INFO 2024-12-07 12:56:08,816 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 INFO 2024-12-07 12:56:20,676 basehttp "GET /admin/gelaterie/customuser/43/change/ HTTP/1.1" 200 33133
 INFO 2024-12-07 12:56:20,755 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 11:27:49,023 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 11:27:51,132 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 11:27:51,445 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 11:27:51,503 basehttp "GET /static/script.js HTTP/1.1" 304 0
+WARNING 2024-12-09 11:27:51,600 log Not Found: /favicon.ico
+WARNING 2024-12-09 11:27:51,602 basehttp "GET /favicon.ico HTTP/1.1" 404 8459
+WARNING 2024-12-09 11:28:14,850 log Not Found: /cod_confirmare.html
+WARNING 2024-12-09 11:28:14,851 basehttp "GET /cod_confirmare.html HTTP/1.1" 404 8483
+INFO 2024-12-09 11:28:30,146 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 11:28:30,194 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 11:28:30,215 basehttp "GET /static/login.css HTTP/1.1" 304 0
+INFO 2024-12-09 11:28:31,987 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 11:28:32,048 basehttp "GET /aplicatie/register HTTP/1.1" 200 4745
+INFO 2024-12-09 11:28:32,071 basehttp "GET /static/register.css HTTP/1.1" 304 0
+INFO 2024-12-09 11:29:15,192 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 11:29:17,437 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+WARNING 2024-12-09 11:29:17,453 log Not Found: /aplicatie/cod_confirmare.html
+WARNING 2024-12-09 11:29:17,453 basehttp "GET /aplicatie/cod_confirmare.html HTTP/1.1" 404 14991
+INFO 2024-12-09 11:30:07,630 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 11:30:08,360 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 11:31:42,353 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 11:31:42,808 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 11:32:25,471 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-09 11:32:25,925 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 11:32:50,026 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 11:32:50,101 basehttp "POST /aplicatie/register HTTP/1.1" 200 4975
+INFO 2024-12-09 11:33:07,543 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 11:33:07,586 basehttp "POST /aplicatie/register HTTP/1.1" 200 4974
+INFO 2024-12-09 11:33:23,690 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 11:33:25,676 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 11:33:25,680 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:33:25,681 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 436
+INFO 2024-12-09 11:33:39,210 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:33:39,211 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 441
+INFO 2024-12-09 11:33:40,286 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:33:40,287 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 441
+INFO 2024-12-09 11:33:45,805 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:33:45,807 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 458
+INFO 2024-12-09 11:33:46,410 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:33:46,411 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 458
+INFO 2024-12-09 11:34:53,292 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:34:53,294 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 455
+INFO 2024-12-09 11:34:54,071 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:34:54,071 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 455
+INFO 2024-12-09 11:35:47,930 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 11:35:48,516 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 11:35:51,787 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:51,791 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:52,494 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:52,494 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:52,662 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:52,663 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:52,817 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:52,818 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:52,994 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:52,995 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:53,165 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:53,166 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:53,342 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:53,343 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:53,978 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:53,979 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:54,689 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:54,690 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:35:55,466 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:35:55,467 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+WARNING 2024-12-09 11:36:08,698 log Not Found: /aplicatie/{'url = https://mail.google.com/mail/u/0/
+WARNING 2024-12-09 11:36:08,698 basehttp "GET /aplicatie/%7B'url%20=%20https://mail.google.com/mail/u/0/?tab=rm&ogbl HTTP/1.1" 404 15474
+INFO 2024-12-09 11:36:17,550 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:36:17,551 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 457
+INFO 2024-12-09 11:37:44,823 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 11:37:45,409 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 11:37:49,664 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 11:37:51,733 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 11:37:51,737 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:37:51,739 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 456
+WARNING 2024-12-09 11:37:55,384 log Not Found: /aplicatie/{
+WARNING 2024-12-09 11:37:55,385 basehttp "GET /aplicatie/%7B HTTP/1.1" 404 15317
+INFO 2024-12-09 11:39:46,909 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 11:39:47,552 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-09 11:39:51,867 log Not Found: /aplicatie/{
+WARNING 2024-12-09 11:39:51,868 basehttp "GET /aplicatie/%7B HTTP/1.1" 404 15317
+WARNING 2024-12-09 11:39:55,801 log Not Found: /aplicatie/{
+WARNING 2024-12-09 11:39:55,801 basehttp "GET /aplicatie/%7B HTTP/1.1" 404 15317
+INFO 2024-12-09 11:40:12,072 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 11:40:14,040 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 11:40:14,045 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 11:40:14,047 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 448
+INFO 2024-12-09 11:40:45,571 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 11:40:46,304 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 11:40:53,366 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 11:40:54,762 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 11:40:55,041 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 11:40:58,353 basehttp "GET /admin/ HTTP/1.1" 200 15008
+INFO 2024-12-09 11:41:02,306 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 27698
+INFO 2024-12-09 11:41:02,364 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 11:53:50,099 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 24297
+INFO 2024-12-09 11:53:50,170 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 11:54:43,706 basehttp "GET /admin/gelaterie/customuser/43/change/ HTTP/1.1" 200 33133
+INFO 2024-12-09 11:54:43,777 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 11:54:45,579 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 24297
+INFO 2024-12-09 11:54:52,275 basehttp "GET /admin/gelaterie/customuser/42/change/ HTTP/1.1" 200 33047
+INFO 2024-12-09 11:54:52,333 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 11:54:55,428 basehttp "GET /admin/gelaterie/customuser/42/delete/ HTTP/1.1" 200 11493
+INFO 2024-12-09 11:54:57,095 basehttp "POST /admin/gelaterie/customuser/42/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 11:54:57,172 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 23613
+INFO 2024-12-09 11:54:57,273 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:00:02,510 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 12:00:02,715 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 12:00:15,455 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:00:15,456 basehttp "GET /cod_confirmare HTTP/1.1" 200 641
+INFO 2024-12-09 12:00:44,338 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:00:59,411 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:01:01,978 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:01:01,980 basehttp "GET /cod_confirmare HTTP/1.1" 200 448
+INFO 2024-12-09 12:01:39,918 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:01:39,920 basehttp "GET /cod_confirmare HTTP/1.1" 200 906
+INFO 2024-12-09 12:02:40,809 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:02:40,810 basehttp "GET /cod_confirmare HTTP/1.1" 200 945
+INFO 2024-12-09 12:03:16,353 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:03:16,354 basehttp "GET /cod_confirmare HTTP/1.1" 200 757
+INFO 2024-12-09 12:03:17,207 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:03:17,207 basehttp "GET /cod_confirmare HTTP/1.1" 200 757
+INFO 2024-12-09 12:03:48,234 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:03:48,236 basehttp "GET /cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:15:01,612 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:15:04,962 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 12:15:05,268 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 12:15:07,228 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 12:15:07,268 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 12:15:09,580 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:15:09,638 basehttp "GET /aplicatie/register HTTP/1.1" 200 4745
+INFO 2024-12-09 12:15:53,099 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:15:53,146 basehttp "POST /aplicatie/register HTTP/1.1" 200 4966
+INFO 2024-12-09 12:16:07,165 views --------------Functia register_view a fost apelata
+ERROR 2024-12-09 12:16:07,573 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 532, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 201, in save
+    "first_name": self.first_name_extra,
+                  ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUser' object has no attribute 'first_name_extra'
+ERROR 2024-12-09 12:16:07,580 basehttp "POST /aplicatie/register HTTP/1.1" 500 80355
+INFO 2024-12-09 12:17:35,194 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 12:17:35,789 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:18:55,771 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:18:56,206 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:19:00,557 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:19:00,996 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:19:07,932 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:19:08,011 basehttp "POST /aplicatie/register HTTP/1.1" 200 4968
+INFO 2024-12-09 12:19:26,728 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:19:28,943 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:19:28,948 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:19:28,948 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:21:37,073 basehttp "GET /admin/ HTTP/1.1" 200 14958
+INFO 2024-12-09 12:21:40,558 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 25155
+INFO 2024-12-09 12:21:40,642 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:21:44,229 basehttp "GET /admin/gelaterie/customuser/48/change/ HTTP/1.1" 200 33025
+INFO 2024-12-09 12:21:44,314 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:21:47,216 basehttp "GET /admin/gelaterie/customuser/48/delete/ HTTP/1.1" 200 11499
+INFO 2024-12-09 12:21:49,007 basehttp "POST /admin/gelaterie/customuser/48/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:21:49,082 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 24469
+INFO 2024-12-09 12:21:49,195 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:21:51,493 basehttp "GET /admin/gelaterie/customuser/49/change/ HTTP/1.1" 200 33033
+INFO 2024-12-09 12:21:51,572 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:21:53,607 basehttp "GET /admin/gelaterie/customuser/49/delete/ HTTP/1.1" 200 11505
+INFO 2024-12-09 12:21:55,262 basehttp "POST /admin/gelaterie/customuser/49/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:21:55,339 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 23617
+INFO 2024-12-09 12:21:55,451 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:22:13,267 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:22:15,229 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:22:15,234 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:22:15,235 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:22:36,207 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:22:36,646 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:22:50,941 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 24306
+INFO 2024-12-09 12:22:51,018 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:22:53,703 basehttp "GET /admin/gelaterie/customuser/50/change/ HTTP/1.1" 200 33033
+INFO 2024-12-09 12:22:53,771 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:22:56,470 basehttp "GET /admin/gelaterie/customuser/50/delete/ HTTP/1.1" 200 11505
+INFO 2024-12-09 12:22:58,035 basehttp "POST /admin/gelaterie/customuser/50/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:22:58,115 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 23617
+INFO 2024-12-09 12:22:58,226 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:23:08,873 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:23:10,725 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:23:10,730 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:23:10,731 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:25:35,538 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:25:36,031 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:25:49,429 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:25:50,034 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:25:53,906 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 24306
+INFO 2024-12-09 12:25:54,006 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:25:56,624 basehttp "GET /admin/gelaterie/customuser/51/change/ HTTP/1.1" 200 33033
+INFO 2024-12-09 12:25:56,704 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:25:59,221 basehttp "GET /admin/gelaterie/customuser/51/delete/ HTTP/1.1" 200 11505
+INFO 2024-12-09 12:26:00,971 basehttp "POST /admin/gelaterie/customuser/51/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:26:01,044 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 23617
+INFO 2024-12-09 12:26:01,149 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:26:18,176 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:26:20,067 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:26:20,073 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:26:20,074 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:27:21,391 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:27:30,141 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 12:27:30,173 views Email confirmat pentru utilizator: hellokity69
+INFO 2024-12-09 12:27:30,203 basehttp "GET /confirma_mail/y5OSeQ63vcvpWGEI5eRU HTTP/1.1" 200 403
+WARNING 2024-12-09 12:27:30,398 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:27:30,399 basehttp "GET /favicon.ico HTTP/1.1" 404 8643
+INFO 2024-12-09 12:27:58,581 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 24306
+INFO 2024-12-09 12:27:58,650 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:28:29,174 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:29:15,042 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 12:29:15,233 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 12:29:15,277 basehttp "GET /static/style.css HTTP/1.1" 200 1524
+INFO 2024-12-09 12:29:15,278 basehttp "GET /static/script.js HTTP/1.1" 200 946
+WARNING 2024-12-09 12:29:15,491 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:29:15,491 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
+INFO 2024-12-09 12:29:18,953 views --------------Functia contact_view a fost apelata
+INFO 2024-12-09 12:29:18,967 basehttp "GET /aplicatie/contact HTTP/1.1" 200 2895
+INFO 2024-12-09 12:29:19,011 basehttp "GET /static/stil_contact.css HTTP/1.1" 200 888
+INFO 2024-12-09 12:29:21,478 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 12:29:21,646 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 12:29:23,218 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 12:29:23,228 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 12:29:23,290 basehttp "GET /static/login.css HTTP/1.1" 304 0
+INFO 2024-12-09 12:29:28,953 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:29:28,982 basehttp "GET /aplicatie/register HTTP/1.1" 200 4745
+INFO 2024-12-09 12:29:29,036 basehttp "GET /static/register.css HTTP/1.1" 200 957
+INFO 2024-12-09 12:30:29,898 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:30:29,936 basehttp "POST /aplicatie/register HTTP/1.1" 200 4965
+INFO 2024-12-09 12:31:16,375 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:31:16,417 basehttp "POST /aplicatie/register HTTP/1.1" 200 4954
+INFO 2024-12-09 12:31:40,642 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:31:42,528 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:31:42,593 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:31:42,594 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:31:56,309 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 12:31:56,334 views Email confirmat pentru utilizator: 123@gmail
+INFO 2024-12-09 12:31:56,339 basehttp "GET /confirma_mail/Tf4W5fPKZ1PePm0QxJmY HTTP/1.1" 200 403
+INFO 2024-12-09 12:31:58,767 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 12:31:58,772 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 12:34:09,329 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:34:20,487 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-09 12:34:20,967 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:34:24,645 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 12:34:24,933 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 12:34:24,973 basehttp "GET /static/script.js HTTP/1.1" 304 0
+WARNING 2024-12-09 12:34:25,149 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:34:25,150 basehttp "GET /favicon.ico HTTP/1.1" 404 8641
+INFO 2024-12-09 12:34:26,919 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 12:34:26,956 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 12:34:26,991 basehttp "GET /static/login.css HTTP/1.1" 304 0
+INFO 2024-12-09 12:34:28,730 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:34:28,787 basehttp "GET /aplicatie/register HTTP/1.1" 200 4745
+INFO 2024-12-09 12:34:28,823 basehttp "GET /static/register.css HTTP/1.1" 304 0
+INFO 2024-12-09 12:35:00,735 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:35:02,634 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:35:02,640 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:35:02,641 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:35:47,057 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26007
+INFO 2024-12-09 12:35:47,131 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:35:55,937 basehttp "GET /admin/gelaterie/customuser/54/change/ HTTP/1.1" 200 33008
+INFO 2024-12-09 12:35:56,005 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:36:03,938 basehttp "GET /admin/gelaterie/customuser/54/delete/ HTTP/1.1" 200 11496
+INFO 2024-12-09 12:36:05,559 basehttp "POST /admin/gelaterie/customuser/54/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:36:05,628 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 25325
+INFO 2024-12-09 12:36:05,725 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:36:45,619 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/admin.py changed, reloading.
+INFO 2024-12-09 12:36:46,115 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:36:49,306 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 25952
+INFO 2024-12-09 12:36:49,380 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:36:53,466 basehttp "GET /admin/gelaterie/customuser/?date_joined__gte=2024-12-09+00%3A00%3A00%2B00%3A00&date_joined__lt=2024-12-10+00%3A00%3A00%2B00%3A00 HTTP/1.1" 200 21706
+INFO 2024-12-09 12:36:53,534 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:36:58,766 basehttp "GET /admin/gelaterie/customuser/? HTTP/1.1" 200 25952
+INFO 2024-12-09 12:36:58,831 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:38:59,602 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:39:00,066 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:39:32,677 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:39:33,293 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:39:49,659 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:39:50,104 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:41:12,051 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 12:41:12,704 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:41:43,309 basehttp "GET /admin/gelaterie/customuser/? HTTP/1.1" 200 25952
+INFO 2024-12-09 12:41:43,381 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:41:46,027 basehttp "GET /admin/gelaterie/customuser/53/change/ HTTP/1.1" 200 33032
+INFO 2024-12-09 12:41:46,108 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:41:49,067 basehttp "GET /admin/gelaterie/customuser/53/delete/ HTTP/1.1" 200 11499
+INFO 2024-12-09 12:41:50,682 basehttp "POST /admin/gelaterie/customuser/53/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:41:50,753 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 25258
+INFO 2024-12-09 12:41:50,863 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:41:53,208 basehttp "GET /admin/gelaterie/customuser/52/change/ HTTP/1.1" 200 33041
+INFO 2024-12-09 12:41:53,278 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:41:55,511 basehttp "GET /admin/gelaterie/customuser/52/delete/ HTTP/1.1" 200 11505
+INFO 2024-12-09 12:41:57,226 basehttp "POST /admin/gelaterie/customuser/52/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:41:57,295 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 24406
+INFO 2024-12-09 12:41:57,404 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:42:02,367 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 12:42:02,589 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 12:42:04,441 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 12:42:04,477 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 12:42:06,337 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:42:06,393 basehttp "GET /aplicatie/register HTTP/1.1" 200 4745
+INFO 2024-12-09 12:42:36,445 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:42:38,238 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:42:38,243 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:42:38,244 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:42:50,960 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 12:42:50,989 views Email confirmat pentru utilizator: hellokity69
+INFO 2024-12-09 12:42:50,995 basehttp "GET /confirma_mail/EzGG51pZw71lju5d2Z6F HTTP/1.1" 200 403
+WARNING 2024-12-09 12:42:51,178 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:42:51,179 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
+INFO 2024-12-09 12:43:05,178 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 25095
+INFO 2024-12-09 12:43:05,251 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:44:36,526 basehttp "GET /admin/gelaterie/customuser/55/change/ HTTP/1.1" 200 33041
+INFO 2024-12-09 12:44:36,609 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:44:40,248 basehttp "GET /admin/gelaterie/customuser/55/delete/ HTTP/1.1" 200 11505
+INFO 2024-12-09 12:44:41,715 basehttp "POST /admin/gelaterie/customuser/55/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:44:41,790 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 24406
+INFO 2024-12-09 12:44:41,915 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:46:40,880 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 12:46:41,339 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:46:47,886 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:47:02,832 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 12:47:03,076 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 12:47:04,757 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 12:47:04,794 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 12:47:06,986 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:47:07,046 basehttp "GET /aplicatie/register HTTP/1.1" 200 4745
+INFO 2024-12-09 12:47:53,501 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:47:55,231 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:47:55,237 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:47:55,238 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 12:48:03,194 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 12:48:03,221 views Email confirmat pentru utilizator: hellokity69
+INFO 2024-12-09 12:48:03,228 basehttp "GET /confirma_mail/svVAHqmujXVhZrscLvWN HTTP/1.1" 200 403
+INFO 2024-12-09 12:48:11,280 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 25103
+INFO 2024-12-09 12:48:11,378 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:51:00,547 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 12:51:00,578 views Email confirmat pentru utilizator: hellokity69
+INFO 2024-12-09 12:51:00,583 basehttp "GET /confirma_mail/svVAHqmujXVhZrscLvWN HTTP/1.1" 200 775
+INFO 2024-12-09 12:51:29,622 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 12:51:29,650 views Email confirmat pentru utilizator: hellokity69
+INFO 2024-12-09 12:51:29,655 basehttp "GET /confirma_mail/svVAHqmujXVhZrscLvWN HTTP/1.1" 200 795
+INFO 2024-12-09 12:51:30,739 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 12:51:30,774 views Email confirmat pentru utilizator: hellokity69
+INFO 2024-12-09 12:51:30,779 basehttp "GET /confirma_mail/svVAHqmujXVhZrscLvWN HTTP/1.1" 200 795
+INFO 2024-12-09 12:51:47,322 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 12:51:47,357 views Email confirmat pentru utilizator: hellokity69
+INFO 2024-12-09 12:51:47,365 basehttp "GET /confirma_mail/svVAHqmujXVhZrscLvWN HTTP/1.1" 200 796
+INFO 2024-12-09 12:53:37,087 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 12:55:51,775 basehttp "POST /admin/logout/ HTTP/1.1" 200 3575
+INFO 2024-12-09 12:55:54,423 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:55:54,442 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4180
+INFO 2024-12-09 12:56:04,685 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:56:04,738 basehttp "GET /admin/ HTTP/1.1" 200 7467
+INFO 2024-12-09 12:56:06,705 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 18183
+INFO 2024-12-09 12:56:08,951 basehttp "GET /admin/gelaterie/customuser/34/change/ HTTP/1.1" 200 20233
+INFO 2024-12-09 12:56:09,019 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:56:13,616 basehttp "POST /admin/logout/ HTTP/1.1" 200 3575
+INFO 2024-12-09 12:56:15,671 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:56:15,685 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4180
+INFO 2024-12-09 12:56:17,536 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-09 12:56:17,585 basehttp "GET /admin/ HTTP/1.1" 200 14577
+INFO 2024-12-09 12:56:32,263 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 25103
+INFO 2024-12-09 12:56:32,332 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 12:58:42,843 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 12:58:43,050 basehttp "GET / HTTP/1.1" 200 17032
+WARNING 2024-12-09 12:58:43,911 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:58:43,911 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
+INFO 2024-12-09 12:58:50,364 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 12:58:50,370 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 12:58:54,848 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:58:54,875 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-09 12:59:42,881 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 12:59:44,759 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 12:59:44,828 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 12:59:44,829 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 13:00:12,263 views --------------Functia confirma_email a fost apelata
+WARNING 2024-12-09 13:00:12,289 views Codul de confirmare 'Tf4W5fPKZ1PePm0QxJmY' este invalida
+INFO 2024-12-09 13:00:12,289 views --------------Functia send_error_email a fost apelata
+WARNING 2024-12-09 13:00:13,946 log Forbidden: /confirma_mail/Tf4W5fPKZ1PePm0QxJmY
+WARNING 2024-12-09 13:00:13,947 basehttp "GET /confirma_mail/Tf4W5fPKZ1PePm0QxJmY HTTP/1.1" 403 33
+INFO 2024-12-09 13:00:21,888 views --------------Functia confirma_email a fost apelata
+INFO 2024-12-09 13:00:21,913 views Email confirmat pentru utilizator: amgrija23_
+INFO 2024-12-09 13:00:21,917 basehttp "GET /confirma_mail/yZNKvuM3cVt8gbCs62e4 HTTP/1.1" 200 796
+INFO 2024-12-09 13:00:24,653 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 13:00:24,657 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 13:00:31,719 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 13:00:32,773 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-09 13:00:32,865 views --------------Functia profile_view a fost apelata
+INFO 2024-12-09 13:00:32,868 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1034
+INFO 2024-12-09 13:00:32,948 basehttp "GET /static/profile.css HTTP/1.1" 200 1304

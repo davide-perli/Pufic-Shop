@@ -4538,3 +4538,45 @@ WARNING 2024-12-07 12:50:42,059 log Not Found: /favicon.ico
 WARNING 2024-12-07 12:50:42,060 basehttp "GET /favicon.ico HTTP/1.1" 404 8457
 WARNING 2024-12-07 12:51:49,049 log Not Found: /favicon.ico
 WARNING 2024-12-07 12:51:49,049 basehttp "GET /favicon.ico HTTP/1.1" 404 8463
+WARNING 2024-12-09 11:27:51,600 log Not Found: /favicon.ico
+WARNING 2024-12-09 11:27:51,602 basehttp "GET /favicon.ico HTTP/1.1" 404 8459
+WARNING 2024-12-09 11:28:14,850 log Not Found: /cod_confirmare.html
+WARNING 2024-12-09 11:28:14,851 basehttp "GET /cod_confirmare.html HTTP/1.1" 404 8483
+WARNING 2024-12-09 11:29:17,453 log Not Found: /aplicatie/cod_confirmare.html
+WARNING 2024-12-09 11:29:17,453 basehttp "GET /aplicatie/cod_confirmare.html HTTP/1.1" 404 14991
+WARNING 2024-12-09 11:36:08,698 log Not Found: /aplicatie/{'url = https://mail.google.com/mail/u/0/
+WARNING 2024-12-09 11:36:08,698 basehttp "GET /aplicatie/%7B'url%20=%20https://mail.google.com/mail/u/0/?tab=rm&ogbl HTTP/1.1" 404 15474
+WARNING 2024-12-09 11:37:55,384 log Not Found: /aplicatie/{
+WARNING 2024-12-09 11:37:55,385 basehttp "GET /aplicatie/%7B HTTP/1.1" 404 15317
+WARNING 2024-12-09 11:39:51,867 log Not Found: /aplicatie/{
+WARNING 2024-12-09 11:39:51,868 basehttp "GET /aplicatie/%7B HTTP/1.1" 404 15317
+WARNING 2024-12-09 11:39:55,801 log Not Found: /aplicatie/{
+WARNING 2024-12-09 11:39:55,801 basehttp "GET /aplicatie/%7B HTTP/1.1" 404 15317
+ERROR 2024-12-09 12:16:07,573 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 532, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 201, in save
+    "first_name": self.first_name_extra,
+                  ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUser' object has no attribute 'first_name_extra'
+ERROR 2024-12-09 12:16:07,580 basehttp "POST /aplicatie/register HTTP/1.1" 500 80355
+WARNING 2024-12-09 12:27:30,398 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:27:30,399 basehttp "GET /favicon.ico HTTP/1.1" 404 8643
+WARNING 2024-12-09 12:29:15,491 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:29:15,491 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
+WARNING 2024-12-09 12:34:25,149 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:34:25,150 basehttp "GET /favicon.ico HTTP/1.1" 404 8641
+WARNING 2024-12-09 12:42:51,178 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:42:51,179 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
+WARNING 2024-12-09 12:58:43,911 log Not Found: /favicon.ico
+WARNING 2024-12-09 12:58:43,911 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
+WARNING 2024-12-09 13:00:12,289 views Codul de confirmare 'Tf4W5fPKZ1PePm0QxJmY' este invalida
+WARNING 2024-12-09 13:00:13,946 log Forbidden: /confirma_mail/Tf4W5fPKZ1PePm0QxJmY
+WARNING 2024-12-09 13:00:13,947 basehttp "GET /confirma_mail/Tf4W5fPKZ1PePm0QxJmY HTTP/1.1" 403 33
