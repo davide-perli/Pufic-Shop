@@ -45,6 +45,8 @@ from django.contrib.auth.models import Group, Permission
 from django.contrib.contenttypes.models import ContentType
 from gelaterie.models import CustomUser
 
+import requests
+
 import logging
 
 logger = logging.getLogger('django')
@@ -487,6 +489,33 @@ def get_site_url(request=None):
     return "http://192.168.0.103:8000"
 
 
+def get_public_ip():
+    try:
+        response = requests.get("https://api.ipify.org?format=json")
+        response.raise_for_status()
+        return response.json().get("ip", "")
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Error fetching public IP: {e}")
+        return ""
+
+
+def get_location(ip_address):
+
+    # Daca IP-ul este localhost sau un IP privat, folosim un IP public pentru test
+    private_ip_prefixes = ('127.', '192.168.', '10.', '172.')
+    if any(ip_address.startswith(prefix) for prefix in private_ip_prefixes):
+        ip_address = get_public_ip()  # IP public al server-ului        
+
+    try:
+        response = requests.get(f'https://ipinfo.io/{ip_address}/json')
+        response.raise_for_status()
+        data = response.json()
+        return data.get('city', ''), data.get('region', ''), data.get('country', '')
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Error fetching location: {e}")
+        return '', '', ''
+
+
 
 def register_view(request):
     logger.info("--------------Functia register_view a fost apelata")
@@ -529,6 +558,15 @@ def register_view(request):
             user.email_confirmat = False 
             user.ip_address = request.META.get('REMOTE_ADDR')
             user.browser_info = request.META.get('HTTP_USER_AGENT', '')
+
+            # Obtinere locatie user
+            ip_address = request.META.get('REMOTE_ADDR')
+            city, region, country = get_location(ip_address)
+
+            user.location_city = city
+            user.location_region = region
+            user.location_country = country
+
             user.save()
 
             subject = 'Confirmare Email'

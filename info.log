@@ -8754,3 +8754,254 @@ INFO 2024-12-09 13:00:32,773 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
 INFO 2024-12-09 13:00:32,865 views --------------Functia profile_view a fost apelata
 INFO 2024-12-09 13:00:32,868 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1034
 INFO 2024-12-09 13:00:32,948 basehttp "GET /static/profile.css HTTP/1.1" 200 1304
+INFO 2024-12-09 22:23:27,317 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:23:30,840 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 22:23:31,147 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 22:23:31,173 basehttp "GET /static/style.css HTTP/1.1" 304 0
+WARNING 2024-12-09 22:23:31,376 log Not Found: /favicon.ico
+WARNING 2024-12-09 22:23:31,377 basehttp "GET /favicon.ico HTTP/1.1" 404 8641
+INFO 2024-12-09 22:23:38,859 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 22:23:38,903 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 22:23:41,142 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 22:23:41,203 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-09 22:24:08,860 views --------------Functia register_view a fost apelata
+ERROR 2024-12-09 22:24:09,636 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column "location_city" of relation "gelaterie_customuser" does not exist
+LINE 1: ...alitate", "cod", "email_confirmat", "is_blocked", "location_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 552, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 196, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/lib/python3/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column "location_city" of relation "gelaterie_customuser" does not exist
+LINE 1: ...alitate", "cod", "email_confirmat", "is_blocked", "location_...
+                                                             ^
+
+ERROR 2024-12-09 22:24:09,638 basehttp "POST /aplicatie/register HTTP/1.1" 500 167917
+INFO 2024-12-09 22:25:58,538 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:26:03,262 views --------------Functia register_view a fost apelata
+ERROR 2024-12-09 22:26:03,984 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "location_city" of relation "gelaterie_customuser" violates not-null constraint
+DETAIL:  Failing row contains (58, pbkdf2_sha256$600000$wjFptItSP9U1ePKSh9HhEI$HlQKsADtHuvmYfG3Dk30..., null, f, jarvis, tony, stark, artchanell01@gmail.com, f, t, 2024-12-09 22:26:03.263319+00, 5555555555, strada cutitarului 23, 33, BARBAT, romana, ap4H1V8utLIWL0xZZchK, f, f, null, null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 552, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 196, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/lib/python3/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "location_city" of relation "gelaterie_customuser" violates not-null constraint
+DETAIL:  Failing row contains (58, pbkdf2_sha256$600000$wjFptItSP9U1ePKSh9HhEI$HlQKsADtHuvmYfG3Dk30..., null, f, jarvis, tony, stark, artchanell01@gmail.com, f, t, 2024-12-09 22:26:03.263319+00, 5555555555, strada cutitarului 23, 33, BARBAT, romana, ap4H1V8utLIWL0xZZchK, f, f, null, null, null).
+
+ERROR 2024-12-09 22:26:03,986 basehttp "POST /aplicatie/register HTTP/1.1" 500 169126
+INFO 2024-12-09 22:32:30,761 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:32:35,380 views --------------Functia register_view a fost apelata
+ERROR 2024-12-09 22:32:36,161 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 553, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 240, in save
+    json.dump({"city": self.location_city}, json_file)
+                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUser' object has no attribute 'location_city'
+ERROR 2024-12-09 22:32:36,166 basehttp "POST /aplicatie/register HTTP/1.1" 500 81313
+INFO 2024-12-09 22:32:59,522 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 22:32:59,956 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:33:04,063 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 22:33:04,193 basehttp "POST /aplicatie/register HTTP/1.1" 200 4978
+INFO 2024-12-09 22:33:27,206 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 22:33:27,416 basehttp "GET /aplicatie/ HTTP/1.1" 200 17032
+INFO 2024-12-09 22:33:29,319 basehttp "GET /admin/ HTTP/1.1" 200 14577
+INFO 2024-12-09 22:33:32,123 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26802
+INFO 2024-12-09 22:33:32,190 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:33:38,002 basehttp "GET /admin/gelaterie/customuser/59/change/ HTTP/1.1" 200 33027
+INFO 2024-12-09 22:33:38,051 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2024-12-09 22:33:38,051 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+INFO 2024-12-09 22:33:38,064 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:33:38,235 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2024-12-09 22:33:38,238 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2024-12-09 22:33:38,238 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2024-12-09 22:33:40,270 basehttp "GET /admin/gelaterie/customuser/59/delete/ HTTP/1.1" 200 11490
+INFO 2024-12-09 22:33:40,319 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2024-12-09 22:33:41,740 basehttp "POST /admin/gelaterie/customuser/59/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 22:33:41,807 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26111
+INFO 2024-12-09 22:33:41,907 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:33:48,551 views --------------Functia display_items a fost apelata
+INFO 2024-12-09 22:33:48,765 basehttp "GET / HTTP/1.1" 200 17032
+INFO 2024-12-09 22:33:50,502 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-09 22:33:50,537 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-09 22:33:52,104 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 22:33:52,149 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-09 22:34:24,129 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 22:34:26,641 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 22:34:26,647 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 22:34:26,649 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 22:34:56,399 basehttp "GET /admin/ HTTP/1.1" 200 14572
+INFO 2024-12-09 22:34:59,633 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26802
+INFO 2024-12-09 22:34:59,706 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:35:02,618 basehttp "GET /admin/gelaterie/customuser/60/change/ HTTP/1.1" 200 33027
+INFO 2024-12-09 22:35:02,679 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:35:05,141 basehttp "GET /admin/gelaterie/customuser/60/delete/ HTTP/1.1" 200 11490
+INFO 2024-12-09 22:35:06,746 basehttp "POST /admin/gelaterie/customuser/60/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 22:35:06,812 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26111
+INFO 2024-12-09 22:35:06,920 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:35:16,966 basehttp "GET /admin/gelaterie/customuser/14/change/ HTTP/1.1" 200 33060
+INFO 2024-12-09 22:35:17,035 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:35:23,101 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 25951
+INFO 2024-12-09 22:35:57,130 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-09 22:35:57,660 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:36:16,186 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:36:16,850 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:36:36,468 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:36:37,116 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:36:43,644 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 22:36:46,643 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 22:36:46,647 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 22:36:46,649 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 22:38:22,672 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:38:23,313 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:42:51,954 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:42:52,562 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:43:06,079 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:43:06,552 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:43:24,089 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26802
+INFO 2024-12-09 22:43:24,172 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:43:26,687 basehttp "GET /admin/gelaterie/customuser/61/change/ HTTP/1.1" 200 33027
+INFO 2024-12-09 22:43:26,768 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:43:29,251 basehttp "GET /admin/gelaterie/customuser/61/delete/ HTTP/1.1" 200 11490
+INFO 2024-12-09 22:43:30,536 basehttp "POST /admin/gelaterie/customuser/61/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 22:43:30,608 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26111
+INFO 2024-12-09 22:43:30,720 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:43:47,531 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 22:43:50,155 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 22:43:50,161 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 22:43:50,161 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 22:44:04,609 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26802
+INFO 2024-12-09 22:44:04,671 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:44:06,511 basehttp "GET /admin/gelaterie/customuser/62/change/ HTTP/1.1" 200 33027
+INFO 2024-12-09 22:44:06,578 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:44:09,181 basehttp "GET /admin/gelaterie/customuser/62/delete/ HTTP/1.1" 200 11490
+INFO 2024-12-09 22:44:11,107 basehttp "POST /admin/gelaterie/customuser/62/delete/ HTTP/1.1" 302 0
+INFO 2024-12-09 22:44:11,180 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 26111
+INFO 2024-12-09 22:44:11,284 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-09 22:45:12,229 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:45:12,663 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:47:05,016 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:47:05,447 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:47:10,439 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 22:47:10,512 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-09 22:47:50,480 views --------------Functia register_view a fost apelata
+INFO 2024-12-09 22:47:53,140 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-09 22:47:53,145 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-09 22:47:53,146 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-09 22:49:02,996 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:49:03,471 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 22:51:30,196 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-09 22:51:30,671 autoreload Watching for file changes with StatReloader

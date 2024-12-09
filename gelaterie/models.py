@@ -183,6 +183,7 @@ class CustomUser(AbstractUser):
     email_confirmat = models.BooleanField(default = False)
     is_blocked = models.BooleanField(default = False)
 
+
     def generate_cod(self):
         return ''.join(random.choices(string.ascii_letters + string.digits, k=20))
 
@@ -236,7 +237,11 @@ class CustomUser(AbstractUser):
                 json_file.write(",\n")
                 json.dump({"sex": self.sex}, json_file)
                 json_file.write(",\n")
-                json.dump({"nationalitate": self.nationalitate}, json_file)
+                json.dump({"location_city": self.location_city}, json_file)
+                json_file.write(",\n")
+                json.dump({"location_region": self.location_region}, json_file)
+                json_file.write(",\n")
+                json.dump({"location_country": self.location_country}, json_file)
                 json_file.write("\n]") 
 
     class Meta:

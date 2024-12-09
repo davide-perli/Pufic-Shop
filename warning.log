@@ -4580,3 +4580,148 @@ WARNING 2024-12-09 12:58:43,911 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
 WARNING 2024-12-09 13:00:12,289 views Codul de confirmare 'Tf4W5fPKZ1PePm0QxJmY' este invalida
 WARNING 2024-12-09 13:00:13,946 log Forbidden: /confirma_mail/Tf4W5fPKZ1PePm0QxJmY
 WARNING 2024-12-09 13:00:13,947 basehttp "GET /confirma_mail/Tf4W5fPKZ1PePm0QxJmY HTTP/1.1" 403 33
+WARNING 2024-12-09 22:23:31,376 log Not Found: /favicon.ico
+WARNING 2024-12-09 22:23:31,377 basehttp "GET /favicon.ico HTTP/1.1" 404 8641
+ERROR 2024-12-09 22:24:09,636 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column "location_city" of relation "gelaterie_customuser" does not exist
+LINE 1: ...alitate", "cod", "email_confirmat", "is_blocked", "location_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 552, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 196, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/lib/python3/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column "location_city" of relation "gelaterie_customuser" does not exist
+LINE 1: ...alitate", "cod", "email_confirmat", "is_blocked", "location_...
+                                                             ^
+
+ERROR 2024-12-09 22:24:09,638 basehttp "POST /aplicatie/register HTTP/1.1" 500 167917
+ERROR 2024-12-09 22:26:03,984 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "location_city" of relation "gelaterie_customuser" violates not-null constraint
+DETAIL:  Failing row contains (58, pbkdf2_sha256$600000$wjFptItSP9U1ePKSh9HhEI$HlQKsADtHuvmYfG3Dk30..., null, f, jarvis, tony, stark, artchanell01@gmail.com, f, t, 2024-12-09 22:26:03.263319+00, 5555555555, strada cutitarului 23, 33, BARBAT, romana, ap4H1V8utLIWL0xZZchK, f, f, null, null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 552, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 196, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/lib/python3/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "location_city" of relation "gelaterie_customuser" violates not-null constraint
+DETAIL:  Failing row contains (58, pbkdf2_sha256$600000$wjFptItSP9U1ePKSh9HhEI$HlQKsADtHuvmYfG3Dk30..., null, f, jarvis, tony, stark, artchanell01@gmail.com, f, t, 2024-12-09 22:26:03.263319+00, 5555555555, strada cutitarului 23, 33, BARBAT, romana, ap4H1V8utLIWL0xZZchK, f, f, null, null, null).
+
+ERROR 2024-12-09 22:26:03,986 basehttp "POST /aplicatie/register HTTP/1.1" 500 169126
+ERROR 2024-12-09 22:32:36,161 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 553, in register_view
+    user.save()
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py", line 240, in save
+    json.dump({"city": self.location_city}, json_file)
+                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUser' object has no attribute 'location_city'
+ERROR 2024-12-09 22:32:36,166 basehttp "POST /aplicatie/register HTTP/1.1" 500 81313
