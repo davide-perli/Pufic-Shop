@@ -4725,3 +4725,88 @@ Traceback (most recent call last):
                        ^^^^^^^^^^^^^^^^^^
 AttributeError: 'CustomUser' object has no attribute 'location_city'
 ERROR 2024-12-09 22:32:36,166 basehttp "POST /aplicatie/register HTTP/1.1" 500 81313
+WARNING 2024-12-09 22:56:09,346 log Not Found: /favicon.ico
+WARNING 2024-12-09 22:56:09,347 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
+WARNING 2024-12-11 18:37:51,397 log Not Found: /favicon.ico
+WARNING 2024-12-11 18:37:51,398 basehttp "GET /favicon.ico HTTP/1.1" 404 8641
+WARNING 2024-12-11 18:42:37,625 log Not Found: /favicon.ico
+WARNING 2024-12-11 18:42:37,626 basehttp "GET /favicon.ico HTTP/1.1" 404 8647
+ERROR 2024-12-11 18:45:04,499 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 926, in creeaza_promotie
+    send_mass_mail(messages, fail_silently=False)
+  File "/usr/lib/python3/dist-packages/django/core/mail/__init__.py", line 112, in send_mass_mail
+    for subject, message, sender, recipient in datatuple
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 4, got 3)
+ERROR 2024-12-11 18:45:04,501 basehttp "POST /promotii HTTP/1.1" 500 94177
+WARNING 2024-12-11 18:46:47,128 views Utilizatorul teosw a incercat sa acceseze prajiturile fara permisiune!
+WARNING 2024-12-11 18:46:47,130 log Forbidden: /prajituri
+WARNING 2024-12-11 18:46:47,131 basehttp "GET /prajituri HTTP/1.1" 403 626
+WARNING 2024-12-11 20:43:40,954 log Not Found: /favicon.ico
+WARNING 2024-12-11 20:43:40,954 basehttp "GET /favicon.ico HTTP/1.1" 404 8643
+WARNING 2024-12-11 20:48:54,730 log Not Found: /favicon.ico
+WARNING 2024-12-11 20:48:54,730 basehttp "GET /favicon.ico HTTP/1.1" 404 8643
+WARNING 2024-12-11 20:49:03,652 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:49:03,654 log Forbidden: /alergeni
+WARNING 2024-12-11 20:49:03,654 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:49:20,099 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:49:20,099 log Forbidden: /alergeni
+WARNING 2024-12-11 20:49:20,100 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:49:21,240 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:49:21,241 log Forbidden: /alergeni
+WARNING 2024-12-11 20:49:21,241 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:29,405 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:29,410 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:29,411 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:30,294 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:30,295 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:30,295 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:31,998 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:31,999 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:32,000 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:32,514 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:32,515 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:32,515 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:32,677 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:32,678 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:32,678 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:32,843 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:32,844 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:32,845 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:32,999 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:33,000 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:33,001 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:33,177 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:33,177 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:33,178 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:43,002 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:43,007 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:43,007 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:49,781 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:49,782 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:49,782 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:50:51,663 views Utilizatorul davide a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:50:51,664 log Forbidden: /alergeni
+WARNING 2024-12-11 20:50:51,665 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:52:49,749 views Utilizatorul jarvis a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:52:49,751 log Forbidden: /alergeni
+WARNING 2024-12-11 20:52:49,751 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:52:50,726 views Utilizatorul jarvis a incercat sa acceseze alergenii fara permisiune!
+WARNING 2024-12-11 20:52:50,727 log Forbidden: /alergeni
+WARNING 2024-12-11 20:52:50,728 basehttp "GET /alergeni HTTP/1.1" 403 626
+WARNING 2024-12-11 20:55:38,147 views Utilizatorul jarvis a incercat sa acceseze prajiturile fara permisiune!
+WARNING 2024-12-11 20:55:38,149 log Forbidden: /prajituri
+WARNING 2024-12-11 20:55:38,149 basehttp "GET /prajituri HTTP/1.1" 403 627

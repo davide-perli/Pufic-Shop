@@ -4333,3 +4333,24 @@ Traceback (most recent call last):
                        ^^^^^^^^^^^^^^^^^^
 AttributeError: 'CustomUser' object has no attribute 'location_city'
 ERROR 2024-12-09 22:32:36,166 basehttp "POST /aplicatie/register HTTP/1.1" 500 81313
+ERROR 2024-12-11 18:45:04,499 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 926, in creeaza_promotie
+    send_mass_mail(messages, fail_silently=False)
+  File "/usr/lib/python3/dist-packages/django/core/mail/__init__.py", line 112, in send_mass_mail
+    for subject, message, sender, recipient in datatuple
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 4, got 3)
+ERROR 2024-12-11 18:45:04,501 basehttp "POST /promotii HTTP/1.1" 500 94177

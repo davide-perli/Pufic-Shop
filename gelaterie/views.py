@@ -77,7 +77,7 @@ def adresa(request):
 def afiseaza_alergeni(request):
     logger.info("--------------Functia afisare_alergeni a fost apelata")
 
-    if request.user.username != 'davide':
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre alergeni este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze alergenii fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -96,7 +96,7 @@ def afiseaza_alergeni(request):
 def bauturi(request):
     logger.info("--------------Functia bauturi a fost apelata")
 
-    if request.user.username != 'davide':
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre bauturi este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze bauturile fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -115,7 +115,7 @@ def bauturi(request):
 def inghetata(request):
     logger.info("--------------Functia inghetata a fost apelata")
 
-    if request.user.username != 'davide':
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre inghetate este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze inghetatele fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -134,7 +134,7 @@ def inghetata(request):
 def biscuiti(request):
     logger.info("--------------Functia biscuiti a fost apelata")
 
-    if request.user.username != 'davide':
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre biscuiti este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze biscuitii fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -153,7 +153,7 @@ def biscuiti(request):
 def prajituri(request):
     logger.info("--------------Functia prajituri a fost apelata")
 
-    if request.user.username != 'davide':
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre prajituri este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze prajiturile fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -173,7 +173,7 @@ def prajituri(request):
 def torturi_inghetata(request):
     logger.info("--------------Functia torturi_inghetata a fost apelata")
 
-    if request.user.username != 'davide':
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre torturile de ingheata este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze torturile de inghetata fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -192,7 +192,7 @@ def torturi_inghetata(request):
 def meniu(request):
     logger.info("--------------Functia meniu a fost apelata")
 
-    if request.user.username != 'davide':
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre meniu este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze meniul fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -215,7 +215,7 @@ def meniu(request):
 def comenzi(request):
     logger.info("--------------Functia comenzi a fost apelata")
 
-    if request.user.username != 'davide':
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre comenzi este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze comenzile fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -241,7 +241,7 @@ def comenzi(request):
 def sponsori(request):
     logger.info("--------------Functia sponsori a fost apelata")
 
-    if request.user.username != "davide":
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre sponsori este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else ''} a incercat să acceseze sponsorii fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
@@ -266,7 +266,7 @@ def sponsori(request):
 def magazine(request):
    logger.info("--------------Functia magazine a fost apelata")
 
-   if request.user.username != "davide":
+   if not request.user.is_superuser:
        mesaj_personalizat = "Accesul la informatiile despre magazine este restrictionat!"
        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else ''} a incercat sa acceseze magazinele fara permisiune!")
        messages.warning(request, "Acesta este un avertisment. :| ")
@@ -289,7 +289,7 @@ def magazine(request):
 def informatii(request):
     logger.info("--------------Functia informatii a fost apelata")
 
-    if request.user.username != "davide":
+    if not request.user.is_superuser:
         mesaj_personalizat = "Accesul la informatiile despre produse este restrictionat!"
         logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze informatiile fara permisiune!")
         messages.warning(request, "Acesta este un avertisment. :| ")
