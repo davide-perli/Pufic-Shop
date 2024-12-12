@@ -7,7 +7,7 @@
     <h1>Detalii Torturi Inghetata</h1>
     {% for tort in torturi %}
     <p>{{ tort.tort }} - {{ tort.aroma }} - {{ tort.mod_servire }}</p>
-    <p>{{ tort.info.descriere }} - {{ tort.info.specificatii }} - {{ tort.info.pret }}</p>
+    <p>{{ tort.info.descriere }} - {{ tort.info.specificatii }} - {{ tort.info.pret }} lei - stoc: {{ tort.info.stoc }}</p>
     {% endfor %}
 
     <a href="/adaugare">Inapoi la Comanda</a>

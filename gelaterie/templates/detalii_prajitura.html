@@ -7,7 +7,7 @@
     <h1>Detalii Prajituri</h1>
     {% for prajitura in prajituri %}
     <p>{{ prajitura.prajitura }} - {{ prajitura.tip }} - {{ prajitura.mod_servire }}</p>
-    <p>{{ prajitura.info.descriere }} - {{ prajitura.info.specificatii }} - {{ prajitura.info.pret }}</p>
+    <p>{{ prajitura.info.descriere }} - {{ prajitura.info.specificatii }} - {{ prajitura.info.pret }} lei - stoc: {{ prajitura.info.stoc }}</p>
     {% endfor %}
 
     <a href="/">Inapoi la magazin</a>

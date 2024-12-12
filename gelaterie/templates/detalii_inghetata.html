@@ -7,7 +7,7 @@
     <h1>Detalii Inghetate</h1>
     {% for inghetata in inghetate %}
     <p>{{ inghetata.inghetata }} - {{ inghetata.aroma }} - {{ inghetata.mod_servire }}</p>
-    <p>{{ inghetata.info.descriere }} - {{ inghetata.info.specificatii }} - {{ inghetata.info.pret }}</p>
+    <p>{{ inghetata.info.descriere }} - {{ inghetata.info.specificatii }} - {{ inghetata.info.pret }} lei -  stoc: {{ inghetata.info.stoc }}</p>
     {% endfor %}
     <a href="/adaugare">Inapoi la Comanda</a>
 </body>

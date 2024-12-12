@@ -305,6 +305,7 @@ def informatii(request):
     response = "<br>".join([f"<br>Specificatii: {info.specificatii}, "
                             f"<br>Descriere: {info.descriere}, "
                             f"<br>Pret: {info.pret}, "
+                            f"<br>Stoc: {info.stoc}, "
                             f"<br>Alergeni: {', '.join([alergen.nume_alergeni for alergen in info.alergeni.all()])}"
                             for info in informatii_list])
 

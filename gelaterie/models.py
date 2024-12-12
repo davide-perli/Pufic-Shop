@@ -48,6 +48,7 @@ class Informatii(models.Model):
     specificatii = models.CharField(max_length = 250, blank = True)
     descriere = models.TextField(null=True, blank=True)
     pret = models.DecimalField(max_digits = 5, decimal_places = 2, null = True)
+    stoc = models.IntegerField(default = 10)
     alergeni = models.ManyToManyField(Alergeni)
 
     def __str__(self):

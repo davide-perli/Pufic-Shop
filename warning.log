@@ -4810,3 +4810,18 @@ WARNING 2024-12-11 20:52:50,728 basehttp "GET /alergeni HTTP/1.1" 403 626
 WARNING 2024-12-11 20:55:38,147 views Utilizatorul jarvis a incercat sa acceseze prajiturile fara permisiune!
 WARNING 2024-12-11 20:55:38,149 log Forbidden: /prajituri
 WARNING 2024-12-11 20:55:38,149 basehttp "GET /prajituri HTTP/1.1" 403 627
+WARNING 2024-12-12 08:36:03,602 log Not Found: /favicon.ico
+WARNING 2024-12-12 08:36:03,603 basehttp "GET /favicon.ico HTTP/1.1" 404 8643
+ERROR 2024-12-12 08:38:35,064 log Internal Server Error: /informatii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 309, in informatii
+    f"<br>Alergeni: {', '.join([alergen.nume_alergeni for alergen in info.Alergeni.all()])}"
+                                                                     ^^^^^^^^^^^^^
+AttributeError: 'Informatii' object has no attribute 'Alergeni'. Did you mean: 'alergeni'?
+ERROR 2024-12-12 08:38:35,067 basehttp "GET /informatii HTTP/1.1" 500 74670
