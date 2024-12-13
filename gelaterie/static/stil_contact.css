@@ -56,3 +56,21 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon input[type="date"] {
+    flex: 1; 
+    padding-right: 30px; /
+}
+
+.icon-calendar {
+    margin-left: -30px;
+    cursor: pointer; 
+    font-size: 18px;
+    color: #888; 
+}

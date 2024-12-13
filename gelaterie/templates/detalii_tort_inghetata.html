@@ -33,7 +33,7 @@
         .product h3 {
             margin: 0 0 10px 0;
             font-size: 20px;
-            color: #007bff;
+            color: pink;
         }
         .product p {
             margin: 5px 0;
@@ -65,12 +65,10 @@
     <main>
         {% for tort in torturi %}
         <div class="product">
-            <h3>{{ tort.tort }}</h3>
-            <p>Aroma: {{ tort.aroma }}</p>
-            <p>Mod de servire: {{ tort.mod_servire }}</p>
-            <p>{{ tort.info.descriere }}</p>
-            <p>Specificații: {{ tort.info.specificatii }}</p>
-            <p>Preț: {{ tort.info.pret }} lei</p>
+            <h3>{{ tort.nume_tort }}</h3>
+            <p>Descriere: {{ tort.info.descriere }}</p>
+            <p>Specificatii: {{ tort.info.specificatii }}</p>
+            <p>Pret: {{ tort.info.pret }} lei</p>
             <p>Stoc: {{ tort.info.stoc }}</p>
         </div>
         {% endfor %}

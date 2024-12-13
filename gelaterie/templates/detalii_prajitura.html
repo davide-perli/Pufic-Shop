@@ -33,7 +33,7 @@
         .product h3 {
             margin: 0 0 10px 0;
             font-size: 20px;
-            color: #007bff;
+            color: brown;
         }
         .product p {
             margin: 5px 0;
@@ -65,12 +65,10 @@
     <main>
         {% for prajitura in prajituri %}
         <div class="product">
-            <h3>{{ prajitura.prajitura }}</h3>
-            <p>Tip: {{ prajitura.tip }}</p>
-            <p>Mod de servire: {{ prajitura.mod_servire }}</p>
-            <p>{{ prajitura.info.descriere }}</p>
+            <h3>{{ prajitura.nume_prajitura }}</h3>
+            <p>Descirere: {{ prajitura.info.descriere }}</p>
             <p>Specificații: {{ prajitura.info.specificatii }}</p>
-            <p>Preț: {{ prajitura.info.pret }} lei</p>
+            <p>Pret: {{ prajitura.info.pret }} lei</p>
             <p>Stoc: {{ prajitura.info.stoc }}</p>
         </div>
         {% endfor %}

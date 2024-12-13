@@ -1,0 +1,627 @@
+INFO 2024-12-13 21:05:03,844 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 21:05:09,421 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:05:09,654 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-13 21:05:09,766 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 304 0
+WARNING 2024-12-13 21:05:10,858 log Not Found: /favicon.ico
+WARNING 2024-12-13 21:05:10,859 basehttp "GET /favicon.ico HTTP/1.1" 404 9011
+INFO 2024-12-13 21:05:19,300 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 21:05:19,375 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 21:05:19,430 basehttp "GET /static/login.css HTTP/1.1" 304 0
+INFO 2024-12-13 21:05:20,964 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 21:05:21,583 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 21:05:21,613 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 21:05:21,616 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 21:05:21,697 basehttp "GET /static/profile.css HTTP/1.1" 304 0
+INFO 2024-12-13 21:05:24,729 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 21:05:24,745 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32220
+INFO 2024-12-13 21:05:24,775 basehttp "GET /static/stil_adauga_comanda.css?v=1.0 HTTP/1.1" 304 0
+INFO 2024-12-13 21:05:27,836 views --------------Functia detalii_inghetata a fost apelata
+INFO 2024-12-13 21:05:27,838 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,852 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,856 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,860 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,863 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,866 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,869 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,873 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,877 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,880 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,884 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,888 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,891 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,894 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,898 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:27,929 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 6165
+INFO 2024-12-13 21:05:36,874 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:05:36,876 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:36,887 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:36,890 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:36,894 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:36,897 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:36,901 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:36,905 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:36,908 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:05:36,960 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4226
+INFO 2024-12-13 21:06:01,116 views --------------Functia bauturi a fost apelata
+INFO 2024-12-13 21:06:01,165 basehttp "GET /aplicatie/bauturi HTTP/1.1" 200 1231
+INFO 2024-12-13 21:07:01,107 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:07:01,110 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:01,117 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:01,124 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:01,132 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:01,140 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:01,148 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:01,155 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:01,160 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:01,241 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4026
+INFO 2024-12-13 21:07:34,441 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:07:34,442 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:34,446 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:34,450 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:34,454 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:34,458 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:34,462 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:34,466 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:34,469 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:34,489 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4140
+INFO 2024-12-13 21:07:49,851 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:07:49,854 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:49,862 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:49,869 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:49,876 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:49,883 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:49,890 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:49,898 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:49,906 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:07:49,946 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4228
+INFO 2024-12-13 21:08:01,100 views --------------Functia detalii_inghetata a fost apelata
+INFO 2024-12-13 21:08:01,102 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,106 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,109 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,113 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,117 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,120 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,123 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,127 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,131 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,135 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,139 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,142 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,146 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,150 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,153 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:01,189 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 6165
+INFO 2024-12-13 21:08:05,324 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:08:05,325 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:05,329 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:05,333 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:05,337 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:05,340 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:05,344 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:05,348 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:05,351 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:05,368 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4228
+INFO 2024-12-13 21:08:09,077 views --------------Functia detalii_inghetata a fost apelata
+INFO 2024-12-13 21:08:09,078 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,083 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,087 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,091 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,095 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,099 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,103 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,107 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,112 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,116 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,121 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,126 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,130 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,134 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,138 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:09,172 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 6165
+INFO 2024-12-13 21:08:13,474 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:08:13,476 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:13,480 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:13,484 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:13,488 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:13,491 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:13,494 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:13,498 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:13,501 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:13,519 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4228
+INFO 2024-12-13 21:08:16,438 views --------------Functia detalii_inghetata a fost apelata
+INFO 2024-12-13 21:08:16,440 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,443 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,447 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,451 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,454 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,458 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,461 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,465 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,469 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,473 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,477 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,480 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,484 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,488 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,492 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:16,525 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 6165
+INFO 2024-12-13 21:08:30,347 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:08:30,348 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:30,361 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:30,365 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:30,368 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:30,372 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:30,416 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 3216
+INFO 2024-12-13 21:08:49,627 views --------------Functia detalii_inghetata a fost apelata
+INFO 2024-12-13 21:08:49,629 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,634 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,638 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,642 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,646 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,650 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,654 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,658 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,661 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,665 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,669 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,673 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,677 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,680 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,684 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:49,720 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 6165
+INFO 2024-12-13 21:08:55,129 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:08:55,131 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:55,136 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:55,142 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:55,147 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:55,151 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:08:55,195 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 3216
+INFO 2024-12-13 21:09:37,416 views --------------Functia detalii_inghetata a fost apelata
+INFO 2024-12-13 21:09:37,418 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,422 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,426 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,430 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,433 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,437 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,440 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,444 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,448 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,452 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,456 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,460 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,463 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,467 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,470 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:37,504 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 6120
+INFO 2024-12-13 21:09:40,810 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:09:40,812 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:40,816 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:40,820 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:40,824 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:40,828 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:40,831 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:40,834 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:40,838 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:40,857 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4220
+INFO 2024-12-13 21:09:44,776 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:09:44,778 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:44,782 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:44,786 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:44,791 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:44,795 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:44,844 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 3216
+INFO 2024-12-13 21:09:49,366 views --------------Functia detalii_prajitura a fost apelata
+INFO 2024-12-13 21:09:49,368 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:49,380 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:49,384 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:49,388 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:49,391 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:49,395 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:49,399 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:49,403 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:49,475 basehttp "GET /aplicatie/detalii_prajitura HTTP/1.1" 200 4211
+INFO 2024-12-13 21:09:52,869 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:09:52,871 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:52,875 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:52,879 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:52,883 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:52,886 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:09:52,929 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 3216
+INFO 2024-12-13 21:10:40,428 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:10:40,430 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:40,434 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:40,438 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:40,442 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:40,446 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:40,471 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 3132
+INFO 2024-12-13 21:10:53,560 views --------------Functia detalii_inghetata a fost apelata
+INFO 2024-12-13 21:10:53,562 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,573 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,577 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,581 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,584 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,588 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,591 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,595 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,598 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,602 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,606 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,610 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,614 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,618 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,622 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:10:53,657 basehttp "GET /aplicatie/detalii_inghetata HTTP/1.1" 200 6120
+INFO 2024-12-13 21:11:00,827 views --------------Functia detalii_prajitura a fost apelata
+INFO 2024-12-13 21:11:00,828 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:00,833 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:00,836 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:00,840 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:00,844 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:00,848 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:00,851 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:00,854 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:00,922 basehttp "GET /aplicatie/detalii_prajitura HTTP/1.1" 200 4211
+INFO 2024-12-13 21:11:49,565 views --------------Functia detalii_prajitura a fost apelata
+INFO 2024-12-13 21:11:49,568 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:49,575 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:49,582 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:49,590 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:49,597 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:49,604 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:49,611 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:49,618 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:49,718 basehttp "GET /aplicatie/detalii_prajitura HTTP/1.1" 200 4276
+INFO 2024-12-13 21:11:56,503 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:11:56,504 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:56,508 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:56,512 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:56,516 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:56,519 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:11:56,543 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 3132
+INFO 2024-12-13 21:12:15,306 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:12:15,308 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:15,320 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:15,324 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:15,327 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:15,331 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:15,335 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:15,339 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:15,342 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:15,360 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4220
+INFO 2024-12-13 21:12:18,901 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:12:18,903 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:18,916 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:18,920 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:18,923 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:18,927 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:18,939 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 3173
+INFO 2024-12-13 21:12:24,500 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:12:24,501 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:24,506 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:24,509 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:24,513 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:24,517 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:24,530 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 3173
+INFO 2024-12-13 21:12:33,896 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:12:33,899 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:33,908 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:33,914 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:33,921 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:33,928 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:33,951 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 2997
+INFO 2024-12-13 21:12:36,950 views --------------Functia detalii_prajitura a fost apelata
+INFO 2024-12-13 21:12:36,952 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:36,963 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:36,967 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:36,971 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:36,974 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:36,977 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:36,980 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:36,984 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:37,036 basehttp "GET /aplicatie/detalii_prajitura HTTP/1.1" 200 4276
+INFO 2024-12-13 21:12:57,263 views --------------Functia detalii_prajitura a fost apelata
+INFO 2024-12-13 21:12:57,265 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:57,269 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:57,275 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:57,281 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:57,287 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:57,295 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:57,302 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:57,309 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:12:57,344 basehttp "GET /aplicatie/detalii_prajitura HTTP/1.1" 200 3876
+INFO 2024-12-13 21:13:20,348 views --------------Functia detalii_torturi a fost apelata
+INFO 2024-12-13 21:13:20,350 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:13:20,361 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:13:20,365 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:13:20,369 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:13:20,400 basehttp "GET /aplicatie/detalii_tort_inghetata HTTP/1.1" 200 3121
+INFO 2024-12-13 21:14:03,253 views --------------Functia detalii_torturi a fost apelata
+INFO 2024-12-13 21:14:03,255 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:03,264 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:03,271 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:03,278 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:03,299 basehttp "GET /aplicatie/detalii_tort_inghetata HTTP/1.1" 200 2939
+INFO 2024-12-13 21:14:25,868 views --------------Functia detalii_torturi a fost apelata
+INFO 2024-12-13 21:14:25,870 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:25,874 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:25,878 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:25,882 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:25,895 basehttp "GET /aplicatie/detalii_tort_inghetata HTTP/1.1" 200 2936
+INFO 2024-12-13 21:14:40,224 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 21:14:40,247 basehttp "GET /adaugare HTTP/1.1" 200 33455
+INFO 2024-12-13 21:14:43,777 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 21:14:43,804 basehttp "GET /adaugare HTTP/1.1" 200 32220
+INFO 2024-12-13 21:14:45,392 views --------------Functia detalii_prajitura a fost apelata
+INFO 2024-12-13 21:14:45,394 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:45,398 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:45,401 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:45,406 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:45,409 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:45,413 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:45,417 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:45,421 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:45,439 basehttp "GET /aplicatie/detalii_prajitura HTTP/1.1" 200 3876
+INFO 2024-12-13 21:14:59,511 views --------------Functia detalii_prajitura a fost apelata
+INFO 2024-12-13 21:14:59,513 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:59,518 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:59,522 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:59,526 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:59,530 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:59,534 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:59,538 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:59,543 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:14:59,562 basehttp "GET /aplicatie/detalii_prajitura HTTP/1.1" 200 3874
+INFO 2024-12-13 21:15:02,296 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 21:15:02,312 basehttp "GET /adaugare HTTP/1.1" 200 32220
+INFO 2024-12-13 21:15:04,580 views --------------Functia detalii_biscuit a fost apelata
+INFO 2024-12-13 21:15:04,582 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:04,587 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:04,590 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:04,594 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:04,598 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:04,612 basehttp "GET /aplicatie/detalii_biscuit HTTP/1.1" 200 2997
+INFO 2024-12-13 21:15:09,594 views --------------Functia detalii_bautura a fost apelata
+INFO 2024-12-13 21:15:09,596 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:09,607 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:09,610 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:09,614 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:09,618 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:09,621 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:09,624 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:09,628 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2024-12-13 21:15:09,648 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4220
+INFO 2024-12-13 21:15:44,539 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 21:15:46,035 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:15:46,277 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:15:48,301 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:15:48,505 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:15:49,287 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:15:49,575 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:15:50,174 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:15:50,476 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:15:51,100 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:15:51,369 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:15:51,851 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:15:52,175 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:15:53,150 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:15:53,460 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:15:54,277 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:15:54,478 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:15:56,412 basehttp "POST /accepta-oferta HTTP/1.1" 200 17
+INFO 2024-12-13 21:15:56,450 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-13 21:15:56,452 basehttp "GET /oferta HTTP/1.1" 200 3531
+INFO 2024-12-13 21:16:03,886 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:16:04,074 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:16:36,320 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 21:16:36,352 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 21:16:36,364 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-13 21:19:08,306 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 21:19:08,338 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 21:19:08,405 log Internal Server Error: /aplicatie/promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 952, in creeaza_promotie
+    return render(request, 'promotii.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2024-12-13 21:19:08,407 basehttp "GET /aplicatie/promotii HTTP/1.1" 500 182942
+INFO 2024-12-13 21:21:03,594 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 21:21:03,624 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 21:21:03,629 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3110
+INFO 2024-12-13 21:21:10,376 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 21:21:10,414 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 21:21:10,421 basehttp "GET /aplicatie/promotii HTTP/1.1" 200 3481
+INFO 2024-12-13 21:21:26,312 basehttp "GET /admin/ HTTP/1.1" 200 14628
+INFO 2024-12-13 21:21:29,403 basehttp "GET /admin/gelaterie/promotie/ HTTP/1.1" 200 18136
+INFO 2024-12-13 21:21:29,466 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 21:22:03,728 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 21:22:03,758 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 21:22:06,622 basehttp "POST /aplicatie/promotii HTTP/1.1" 302 0
+INFO 2024-12-13 21:22:06,628 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 21:22:06,629 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 537
+INFO 2024-12-13 21:22:10,803 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:22:10,990 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:22:14,564 basehttp "GET /admin/gelaterie/promotie/ HTTP/1.1" 200 18612
+INFO 2024-12-13 21:22:14,632 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 21:22:29,409 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:22:29,604 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:22:45,515 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 21:22:45,577 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 21:22:46,863 views --------------Functia register_view a fost apelata
+INFO 2024-12-13 21:22:46,918 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-13 21:22:46,954 basehttp "GET /static/register.css HTTP/1.1" 304 0
+INFO 2024-12-13 21:22:54,404 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:22:54,413 basehttp "GET /aplicatie/contact HTTP/1.1" 200 2895
+INFO 2024-12-13 21:22:54,464 basehttp "GET /static/stil_contact.css HTTP/1.1" 304 0
+INFO 2024-12-13 21:30:12,124 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:30:12,133 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3206
+INFO 2024-12-13 21:30:46,610 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:30:46,616 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3212
+INFO 2024-12-13 21:30:46,647 basehttp "GET /static/stil_contact.css?v=1.0 HTTP/1.1" 200 888
+INFO 2024-12-13 21:30:47,468 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:30:47,478 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3212
+INFO 2024-12-13 21:31:02,519 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:31:02,528 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3212
+INFO 2024-12-13 21:31:42,189 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:31:42,199 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3212
+INFO 2024-12-13 21:31:43,105 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:31:43,112 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3212
+INFO 2024-12-13 21:34:00,636 views --------------Functia contact_view a fost apelata
+ERROR 2024-12-13 21:34:00,724 log Internal Server Error: /aplicatie/contact
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 419, in contact_view
+    return render(request, 'contact.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'static'. Did you forget to register or load this tag?
+ERROR 2024-12-13 21:34:00,726 basehttp "GET /aplicatie/contact HTTP/1.1" 500 159612
+INFO 2024-12-13 21:34:47,570 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:34:47,576 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3379
+INFO 2024-12-13 21:35:26,608 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:35:26,614 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3576
+INFO 2024-12-13 21:35:27,417 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:35:27,428 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3576
+INFO 2024-12-13 21:38:06,675 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:38:06,681 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3398
+INFO 2024-12-13 21:40:19,466 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:40:19,474 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3530
+INFO 2024-12-13 21:40:20,314 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:40:20,320 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3530
+INFO 2024-12-13 21:42:32,610 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:42:32,617 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3633
+INFO 2024-12-13 21:42:33,482 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:42:33,488 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3633
+INFO 2024-12-13 21:42:47,214 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:42:47,219 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3633
+INFO 2024-12-13 21:42:47,918 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:42:47,923 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3633
+INFO 2024-12-13 21:43:26,754 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:43:26,767 basehttp "POST /aplicatie/contact HTTP/1.1" 200 3996
+INFO 2024-12-13 21:43:45,099 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:43:45,101 basehttp "POST /aplicatie/contact HTTP/1.1" 302 0
+INFO 2024-12-13 21:43:45,112 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 21:43:45,114 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 537
+INFO 2024-12-13 21:43:49,696 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:43:49,881 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:46:24,444 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:46:24,450 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3561
+INFO 2024-12-13 21:47:13,223 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:47:13,229 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3561
+INFO 2024-12-13 21:47:18,978 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:47:19,287 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:47:27,845 views --------------Functia contact_view a fost apelata
+INFO 2024-12-13 21:47:27,855 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3561
+INFO 2024-12-13 21:47:39,598 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:47:39,900 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:47:40,578 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:47:40,770 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:47:41,617 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:47:41,917 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:47:42,592 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:47:42,859 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:47:44,913 basehttp "POST /accepta-oferta HTTP/1.1" 200 17
+INFO 2024-12-13 21:47:44,956 views --------------Functia oferta a fost executata cu succes!
+INFO 2024-12-13 21:47:44,957 basehttp "GET /oferta HTTP/1.1" 200 3531
+INFO 2024-12-13 21:47:47,698 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:47:47,887 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082

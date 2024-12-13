@@ -1,0 +1,11 @@
+{
+    "nume": "Teo",
+    "prenume": "Alex",
+    "varsta": "21 ani",
+    "email": "perlidavide@gmail.com",
+    "confirm_email": "perlidavide@gmail.com",
+    "tip_mesaj": "RECLAMATIE",
+    "subiect": "Timp prea lung de asteptare",
+    "zile_asteptare": 6,
+    "mesaj": "Ridicare comanda pentru o zi de nastere, teo"
+}

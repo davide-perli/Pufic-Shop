@@ -66,11 +66,10 @@
         {% for bautura in bauturi %}
         <div class="product">
             <h3>{{ bautura.bautura }}</h3>
-            <p>Tip: {{ bautura.tip }}</p>
-            <p>Mod de servire: {{ bautura.mod_servire }}</p>
-            <p>{{ bautura.info.descriere }}</p>
+            <p>Temperatura de servire: {{ bautura.temperatura }}</p>
+            <p>Descriere: {{ bautura.info.descriere }}</p>
             <p>Specificații: {{ bautura.info.specificatii }}</p>
-            <p>Preț: {{ bautura.info.pret }} lei</p>
+            <p>Pret: {{ bautura.info.pret }} lei</p>
             <p>Stoc: {{ bautura.info.stoc }}</p>
         </div>
         {% endfor %}

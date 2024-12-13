@@ -65,10 +65,8 @@
     <main>
         {% for biscuit in biscuiti %}
         <div class="product">
-            <h3>{{ biscuit.biscuit }}</h3>
-            <p>Aroma: {{ biscuit.aroma }}</p>
-            <p>Mod de servire: {{ biscuit.mod_servire }}</p>
-            <p>{{ biscuit.info.descriere }}</p>
+            <h3>{{ biscuit.tip_biscuite }}</h3>
+            <p>Descriere: {{ biscuit.info.descriere }}</p>
             <p>Specificatii: {{ biscuit.info.specificatii }}</p>
             <p>Pret: {{ biscuit.info.pret }} lei</p>
             <p>Stoc: {{ biscuit.info.stoc }}</p>
