@@ -5526,3 +5526,7 @@ WARNING 2024-12-13 10:06:11,476 basehttp "POST /aplicatie/login HTTP/1.1" 403 25
 WARNING 2024-12-13 10:08:14,826 views Utilizatorul maria a incercat sa acceseze meniul fara permisiune!
 WARNING 2024-12-13 10:08:14,835 log Forbidden: /creste_preturi
 WARNING 2024-12-13 10:08:14,836 basehttp "GET /creste_preturi HTTP/1.1" 403 622
+WARNING 2024-12-13 11:33:47,132 log Not Found: /favicon.ico
+WARNING 2024-12-13 11:33:47,133 basehttp "GET /favicon.ico HTTP/1.1" 404 8997
+WARNING 2024-12-13 11:36:33,604 log Not Found: /favicon.ico
+WARNING 2024-12-13 11:36:33,604 basehttp "GET /favicon.ico HTTP/1.1" 404 8997

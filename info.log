@@ -11469,3 +11469,47 @@ INFO 2024-12-13 10:18:29,648 basehttp "GET /static/stil_adauga_comanda.css?v=1.0
 INFO 2024-12-13 10:19:11,846 views --------------Functia adauga_comanda a fost apelata
 INFO 2024-12-13 10:19:11,860 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30750
 INFO 2024-12-13 10:19:11,909 basehttp "GET /static/stil_adauga_comanda.css?v=1.0 HTTP/1.1" 304 0
+INFO 2024-12-13 11:33:43,409 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 11:33:46,695 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:33:46,946 basehttp "GET / HTTP/1.1" 200 17044
+WARNING 2024-12-13 11:33:47,132 log Not Found: /favicon.ico
+WARNING 2024-12-13 11:33:47,133 basehttp "GET /favicon.ico HTTP/1.1" 404 8997
+INFO 2024-12-13 11:34:23,088 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:23,375 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:23,412 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 200 2231
+INFO 2024-12-13 11:34:29,747 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:30,017 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:30,054 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 304 0
+INFO 2024-12-13 11:34:30,407 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:30,681 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:31,075 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:31,278 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:31,885 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:32,080 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:32,790 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:33,044 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:33,832 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:34,133 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:34,907 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:35,215 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:35,891 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:36,172 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:36,202 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 304 0
+INFO 2024-12-13 11:34:37,068 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:37,261 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:37,911 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:38,151 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:38,766 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:39,062 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:39,626 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:39,882 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:40,291 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:34:40,486 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:34:52,627 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 11:34:52,669 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 11:36:29,768 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 11:36:32,090 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 11:36:32,346 basehttp "GET / HTTP/1.1" 200 17050
+INFO 2024-12-13 11:36:32,478 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 200 2046
+WARNING 2024-12-13 11:36:33,604 log Not Found: /favicon.ico
+WARNING 2024-12-13 11:36:33,604 basehttp "GET /favicon.ico HTTP/1.1" 404 8997
