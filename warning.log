@@ -7280,3 +7280,10 @@ Traceback (most recent call last):
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'static'. Did you forget to register or load this tag?
 ERROR 2024-12-13 21:34:00,726 basehttp "GET /aplicatie/contact HTTP/1.1" 500 159612
+WARNING 2024-12-13 21:52:46,683 views Utilizatorul maria a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 21:52:46,684 log Forbidden: /aplicatie/creste_preturi
+WARNING 2024-12-13 21:52:46,685 basehttp "GET /aplicatie/creste_preturi HTTP/1.1" 403 622
+WARNING 2024-12-13 21:53:01,609 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-13 21:53:01,610 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-13 21:53:37,185 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-13 21:53:37,185 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518

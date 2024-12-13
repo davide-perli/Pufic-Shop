@@ -625,3 +625,35 @@ INFO 2024-12-13 21:47:44,956 views --------------Functia oferta a fost executata
 INFO 2024-12-13 21:47:44,957 basehttp "GET /oferta HTTP/1.1" 200 3531
 INFO 2024-12-13 21:47:47,698 views --------------Functia display_items a fost apelata
 INFO 2024-12-13 21:47:47,887 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:50:36,056 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 21:50:40,487 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:50:40,803 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-13 21:50:46,099 basehttp "GET /creste_preturi HTTP/1.1" 200 591
+INFO 2024-12-13 21:52:05,360 basehttp "GET /creste_preturi HTTP/1.1" 200 2484
+INFO 2024-12-13 21:52:24,515 basehttp "POST /creste_preturi HTTP/1.1" 302 0
+INFO 2024-12-13 21:52:24,521 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 21:52:24,522 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 537
+INFO 2024-12-13 21:52:25,559 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 21:52:25,745 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-13 21:52:28,537 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 21:52:28,585 basehttp "GET /aplicatie/login HTTP/1.1" 200 1740
+INFO 2024-12-13 21:52:37,045 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 21:52:37,693 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 21:52:37,722 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 21:52:37,724 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1032
+WARNING 2024-12-13 21:52:46,683 views Utilizatorul maria a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 21:52:46,684 log Forbidden: /aplicatie/creste_preturi
+WARNING 2024-12-13 21:52:46,685 basehttp "GET /aplicatie/creste_preturi HTTP/1.1" 403 622
+WARNING 2024-12-13 21:53:01,609 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-13 21:53:01,610 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+INFO 2024-12-13 21:53:31,308 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-13 21:53:31,731 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-13 21:53:37,185 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-13 21:53:37,185 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+INFO 2024-12-13 21:53:38,913 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 21:53:38,971 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 21:53:40,737 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 21:53:41,379 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 21:53:41,410 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 21:53:41,414 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 21:53:54,298 basehttp "GET /aplicatie/creste_preturi HTTP/1.1" 200 2482
