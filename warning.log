@@ -5530,3 +5530,1634 @@ WARNING 2024-12-13 11:33:47,132 log Not Found: /favicon.ico
 WARNING 2024-12-13 11:33:47,133 basehttp "GET /favicon.ico HTTP/1.1" 404 8997
 WARNING 2024-12-13 11:36:33,604 log Not Found: /favicon.ico
 WARNING 2024-12-13 11:36:33,604 basehttp "GET /favicon.ico HTTP/1.1" 404 8997
+WARNING 2024-12-13 16:23:19,234 log Not Found: /favicon.ico
+WARNING 2024-12-13 16:23:19,236 basehttp "GET /favicon.ico HTTP/1.1" 404 8997
+WARNING 2024-12-13 16:34:27,120 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 16:34:35,165 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 16:38:46,906 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 16:39:00,149 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 16:41:05,379 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 16:41:28,214 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+ERROR 2024-12-13 16:44:26,082 log Internal Server Error: /aplicatie/adaugare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sessions/middleware.py", line 59, in process_response
+    request.session.save()
+  File "/usr/lib/python3/dist-packages/django/contrib/sessions/backends/db.py", line 82, in save
+    obj = self.create_model_instance(data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sessions/backends/db.py", line 69, in create_model_instance
+    session_data=self.encode(data),
+                 ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sessions/backends/base.py", line 94, in encode
+    return signing.dumps(
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/signing.py", line 152, in dumps
+    return TimestampSigner(key=key, salt=salt).sign_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/signing.py", line 250, in sign_object
+    data = serializer().dumps(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/signing.py", line 127, in dumps
+    return json.dumps(obj, separators=(",", ":")).encode("latin-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type QuerySet is not JSON serializable
+ERROR 2024-12-13 16:44:26,084 basehttp "POST /aplicatie/adaugare HTTP/1.1" 500 123126
+ERROR 2024-12-13 16:46:04,038 log Internal Server Error: /aplicatie/adaugare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sessions/middleware.py", line 59, in process_response
+    request.session.save()
+  File "/usr/lib/python3/dist-packages/django/contrib/sessions/backends/db.py", line 82, in save
+    obj = self.create_model_instance(data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sessions/backends/db.py", line 69, in create_model_instance
+    session_data=self.encode(data),
+                 ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/sessions/backends/base.py", line 94, in encode
+    return signing.dumps(
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/signing.py", line 152, in dumps
+    return TimestampSigner(key=key, salt=salt).sign_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/signing.py", line 250, in sign_object
+    data = serializer().dumps(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/signing.py", line 127, in dumps
+    return json.dumps(obj, separators=(",", ":")).encode("latin-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type QuerySet is not JSON serializable
+ERROR 2024-12-13 16:46:04,039 basehttp "POST /aplicatie/adaugare HTTP/1.1" 500 123149
+WARNING 2024-12-13 16:48:11,091 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 16:52:56,629 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 16:54:38,901 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 16:58:59,687 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:05:34,388 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:12:01,310 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+ERROR 2024-12-13 17:12:09,244 log Internal Server Error: /aplicatie/comanda_salvare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 481, in comanda_salvare
+    return redirect('some_success_page')  # Redirectează la o pagină de succes
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'some_success_page' not found. 'some_success_page' is not a valid view function or pattern name.
+ERROR 2024-12-13 17:12:09,245 basehttp "POST /aplicatie/comanda_salvare HTTP/1.1" 500 93420
+WARNING 2024-12-13 17:12:57,301 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:13:12,951 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:13:14,101 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:13:15,501 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:13:16,777 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:13:17,981 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:13:19,197 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+WARNING 2024-12-13 17:19:58,146 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-13 17:19:58,147 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-13 17:50:49,617 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:50:49,617 basehttp "GET /accounts/login/?next=/aplicatie/mesaj_trimis HTTP/1.1" 404 9054
+WARNING 2024-12-13 17:50:59,896 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:50:59,897 basehttp "GET /accounts/login/?next=/aplicatie/mesaj_trimis HTTP/1.1" 404 9054
+WARNING 2024-12-13 17:53:46,395 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:46,396 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:53:47,414 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:47,414 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:53:47,969 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:47,969 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:53:48,415 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:48,415 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:53:48,820 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:48,820 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:53:49,059 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:49,059 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:53:49,277 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:49,277 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:53:49,452 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:49,452 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:53:49,628 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:53:49,629 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:54:03,129 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:54:03,130 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:54:03,730 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:54:03,731 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:54:03,890 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:54:03,891 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:54:04,063 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:54:04,063 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:54:04,244 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:54:04,244 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:54:11,350 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:54:11,350 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:54:12,127 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:54:12,127 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:13,848 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:13,849 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:14,522 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:14,522 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:14,691 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:14,692 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:14,876 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:14,876 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:15,069 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:15,070 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:15,240 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:15,240 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:15,427 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:15,428 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:15,673 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:15,674 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:15,823 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:15,823 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:16,028 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:16,028 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:16,312 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:16,313 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:56:16,488 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:56:16,489 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:59:16,980 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:59:16,980 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:59:17,868 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:59:17,868 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:59:18,558 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:59:18,558 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:59:18,912 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:59:18,913 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:59:19,188 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:59:19,189 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:59:19,555 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:59:19,555 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:59:19,787 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:59:19,787 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 17:59:19,974 log Not Found: /accounts/login/
+WARNING 2024-12-13 17:59:19,975 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:03,071 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:03,071 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:03,838 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:03,838 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:04,424 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:04,424 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:04,533 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:04,533 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:04,954 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:04,955 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:05,179 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:05,179 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:33,834 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:33,834 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:34,569 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:34,570 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:34,739 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:34,740 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:02:34,920 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:02:34,920 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:03:05,150 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:03:05,150 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:03:05,786 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:03:05,786 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:03:05,958 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:03:05,959 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:03:06,146 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:03:06,146 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:03:06,615 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:03:06,616 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:03:07,019 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:03:07,020 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:03:07,251 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:03:07,251 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:05:17,075 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:17,077 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:17,077 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:17,929 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:17,930 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:17,931 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:18,424 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:18,425 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:18,425 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:18,831 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:18,832 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:18,832 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:19,209 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:19,210 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:19,211 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:19,421 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:19,422 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:19,422 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:19,603 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:19,604 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:19,604 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:20,165 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:20,166 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:20,166 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:20,301 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:20,302 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:20,302 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:20,465 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:20,466 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:20,466 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+WARNING 2024-12-13 18:05:20,644 views Utilizatorul anonim a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 18:05:20,644 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:05:20,645 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 635
+ERROR 2024-12-13 18:05:51,537 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:51,538 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:52,303 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:52,304 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:52,749 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:52,750 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:52,923 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:52,924 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:53,105 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:53,106 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:53,405 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:53,406 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:53,731 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:53,732 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:54,019 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:54,021 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:54,262 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:54,263 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:56,053 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:56,054 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:56,181 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:56,182 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:56,331 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:56,332 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:56,448 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:56,449 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:05:56,629 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:05:56,631 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:06:02,186 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:06:02,188 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:06:02,330 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:06:02,331 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:06:02,486 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:06:02,487 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:06:02,646 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:06:02,647 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:06:02,847 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:06:02,848 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+ERROR 2024-12-13 18:06:03,026 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:06:03,027 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72861
+WARNING 2024-12-13 18:09:12,549 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:12,551 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:12,551 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:13,383 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:13,384 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:13,384 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:13,837 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:13,838 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:13,838 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:14,041 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:14,041 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:14,042 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:14,243 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:14,244 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:14,245 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:14,424 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:14,425 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:14,425 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:15,247 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:15,248 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:15,248 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:15,484 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:15,486 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:15,486 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:15,729 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:15,729 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:15,730 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:15,979 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:15,980 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:15,980 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:16,334 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:16,334 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:16,335 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:39,796 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:39,798 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:39,798 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:40,664 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:40,665 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:40,666 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:41,151 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:41,152 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:41,152 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:41,345 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:41,346 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:41,346 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:42,203 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:42,204 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:42,205 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:42,588 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:42,589 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:42,589 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:42,752 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:42,753 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:42,753 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:42,936 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:42,937 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:42,937 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:43,112 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:43,113 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:43,113 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:43,290 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:43,292 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:43,292 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:44,700 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:44,701 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:44,702 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:09:44,877 views Utilizatorul anonim a incercat sa acceseze bauturile fara permisiune!
+WARNING 2024-12-13 18:09:44,878 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:09:44,878 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 637
+WARNING 2024-12-13 18:11:50,270 log Not Found: /check-auth/
+WARNING 2024-12-13 18:11:50,270 basehttp "GET /check-auth/ HTTP/1.1" 404 9013
+WARNING 2024-12-13 18:11:50,294 log Not Found: /403.html
+WARNING 2024-12-13 18:11:50,295 basehttp "GET /403.html HTTP/1.1" 404 9004
+WARNING 2024-12-13 18:12:04,062 log Not Found: /403.html
+WARNING 2024-12-13 18:12:04,063 basehttp "GET /403.html HTTP/1.1" 404 9004
+WARNING 2024-12-13 18:12:19,603 log Not Found: /403.html
+WARNING 2024-12-13 18:12:19,603 basehttp "GET /403.html HTTP/1.1" 404 9004
+WARNING 2024-12-13 18:14:20,359 log Not Found: /check-auth/
+WARNING 2024-12-13 18:14:20,359 basehttp "GET /check-auth/ HTTP/1.1" 404 9013
+WARNING 2024-12-13 18:14:20,384 log Not Found: /403.html
+WARNING 2024-12-13 18:14:20,386 basehttp "GET /403.html HTTP/1.1" 404 9004
+WARNING 2024-12-13 18:14:24,595 log Not Found: /check-auth/
+WARNING 2024-12-13 18:14:24,595 basehttp "GET /check-auth/ HTTP/1.1" 404 9013
+WARNING 2024-12-13 18:14:24,622 log Not Found: /403.html
+WARNING 2024-12-13 18:14:24,623 basehttp "GET /403.html HTTP/1.1" 404 9004
+WARNING 2024-12-13 18:16:28,866 log Not Found: /403.html
+WARNING 2024-12-13 18:16:28,867 basehttp "GET /403.html HTTP/1.1" 404 9004
+WARNING 2024-12-13 18:16:31,281 log Not Found: /check-auth/
+WARNING 2024-12-13 18:16:31,281 basehttp "GET /check-auth/ HTTP/1.1" 404 9013
+WARNING 2024-12-13 18:16:31,307 log Not Found: /403.html
+WARNING 2024-12-13 18:16:31,308 basehttp "GET /403.html HTTP/1.1" 404 9004
+WARNING 2024-12-13 18:16:39,404 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:39,405 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:16:40,208 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:40,209 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:16:41,406 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:41,407 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:16:41,569 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:41,569 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:16:41,738 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:41,739 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:16:41,938 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:41,938 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:16:42,064 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:42,064 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:16:42,303 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:42,303 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:16:42,528 log Forbidden: /accepta-oferta/
+WARNING 2024-12-13 18:16:42,529 basehttp "POST /accepta-oferta/ HTTP/1.1" 403 437
+WARNING 2024-12-13 18:18:04,343 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:04,343 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:05,137 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:05,137 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:06,107 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:06,107 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:06,271 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:06,271 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:06,443 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:06,444 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:06,620 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:06,620 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:06,808 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:06,808 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:06,997 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:06,998 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:07,178 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:07,178 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:26,776 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:26,776 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:27,552 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:27,553 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:33,779 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:33,780 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:34,595 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:34,595 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:18:35,056 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:18:35,056 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:20,557 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:20,558 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:21,217 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:21,218 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:21,381 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:21,382 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:21,535 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:21,536 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:21,720 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:21,720 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:21,910 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:21,910 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:22,082 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:22,082 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:22,259 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:22,259 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:22,433 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:22,433 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:22,621 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:22,622 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:22,821 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:22,822 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:23,349 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:23,350 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:23,688 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:23,688 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:23,834 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:23,834 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:19:24,004 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:19:24,005 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+ERROR 2024-12-13 18:19:41,880 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:41,882 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:42,753 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:42,754 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:43,014 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:43,015 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:43,237 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:43,238 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:43,930 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:43,932 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:44,274 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:44,275 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:44,446 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:44,447 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:44,622 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:44,624 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:44,821 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:44,822 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:45,053 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:45,054 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:45,228 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:45,229 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:52,528 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:52,529 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:53,101 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:53,102 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:53,638 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:53,639 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:53,876 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:53,877 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:54,092 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:54,093 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:54,268 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:54,269 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+ERROR 2024-12-13 18:19:54,444 log Internal Server Error: /accepta-oferta/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 1052, in accepta_oferta
+    request.user.user_permissions.add(Permission.objects.get(codename='vizualizeaza_oferta'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+ERROR 2024-12-13 18:19:54,445 basehttp "POST /accepta-oferta/ HTTP/1.1" 500 72857
+WARNING 2024-12-13 18:20:29,533 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:20:29,534 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:20:30,241 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:20:30,241 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:20:30,393 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:20:30,393 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:20:30,563 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:20:30,563 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:20:30,713 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:20:30,713 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:20:30,856 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:20:30,857 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:20:31,039 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:20:31,039 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:20:36,709 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:20:36,709 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:21:19,502 views Utilizatorul anonim a incercat sa acceseze oferta fara permisiune!
+WARNING 2024-12-13 18:21:19,504 log Forbidden: /aplicatie/oferta/
+WARNING 2024-12-13 18:21:19,505 basehttp "GET /aplicatie/oferta/ HTTP/1.1" 403 626
+WARNING 2024-12-13 18:22:33,137 views Utilizatorul anonim a incercat sa acceseze oferta fara permisiune!
+WARNING 2024-12-13 18:22:33,140 log Forbidden: /aplicatie/oferta/
+WARNING 2024-12-13 18:22:33,140 basehttp "GET /aplicatie/oferta/ HTTP/1.1" 403 626
+WARNING 2024-12-13 18:22:59,623 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:22:59,624 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:00,757 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:00,758 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:01,974 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:01,974 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:02,125 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:02,125 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:02,307 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:02,307 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:02,478 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:02,479 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:02,694 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:02,694 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:02,878 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:02,879 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:03,076 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:03,077 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:03,255 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:03,255 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:04,643 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:04,643 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:04,814 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:04,814 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+WARNING 2024-12-13 18:23:04,991 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:23:04,991 basehttp "GET /accounts/login/?next=/accepta-oferta/ HTTP/1.1" 404 9047
+ERROR 2024-12-13 18:24:01,530 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:01,530 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 77960
+ERROR 2024-12-13 18:24:02,169 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:02,170 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 77960
+ERROR 2024-12-13 18:24:02,335 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:02,336 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 77960
+ERROR 2024-12-13 18:24:02,495 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:02,496 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 77960
+ERROR 2024-12-13 18:24:02,666 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:02,667 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 77960
+ERROR 2024-12-13 18:24:13,021 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:13,022 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:13,815 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:13,817 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:14,812 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:14,813 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:14,955 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:14,956 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:15,114 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:15,115 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:15,259 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:15,260 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:15,412 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:15,413 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:15,573 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:15,574 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:15,735 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:15,736 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:15,934 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:15,935 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:16,125 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:16,126 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:16,416 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:16,417 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:16,713 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:16,714 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:16,921 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:16,922 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:17,097 log Internal Server Error: /aplicatie/accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/aplicatie/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:17,098 basehttp "POST /aplicatie/accepta-oferta HTTP/1.1" 500 78102
+ERROR 2024-12-13 18:24:31,002 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:31,003 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:31,720 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:31,721 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:31,886 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:31,887 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:32,051 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:32,052 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:32,245 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:32,246 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:32,446 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:32,447 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:42,351 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:42,351 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:42,597 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:42,598 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:42,832 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:42,833 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:43,043 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:43,044 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:43,283 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:43,284 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:43,532 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:43,533 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:43,671 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:43,672 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:43,852 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:43,853 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:44,039 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:44,039 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:44,215 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:44,216 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:44,405 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:44,406 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:58,636 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:58,637 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:59,179 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:59,180 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:59,318 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:59,319 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:59,529 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:59,530 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+ERROR 2024-12-13 18:24:59,712 log Internal Server Error: /accepta-oferta
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/accepta-oferta/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-13 18:24:59,714 basehttp "POST /accepta-oferta HTTP/1.1" 500 77942
+WARNING 2024-12-13 18:26:05,720 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:05,720 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:06,499 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:06,499 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:06,685 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:06,686 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:06,852 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:06,852 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:07,021 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:07,022 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:07,179 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:07,179 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:07,329 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:07,329 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:07,499 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:07,500 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:08,049 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:08,050 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044
+WARNING 2024-12-13 18:26:08,363 log Not Found: /accounts/login/
+WARNING 2024-12-13 18:26:08,363 basehttp "GET /accounts/login/?next=/accepta-oferta HTTP/1.1" 404 9044

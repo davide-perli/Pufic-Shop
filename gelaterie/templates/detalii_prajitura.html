@@ -1,15 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalii Prajitura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: brown;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #ffffff;
+        }
+        .product h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #007bff;
+        }
+        .product p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #6c757d;
+        }
+        .back-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-button a {
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .back-button a:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <h1>Detalii Prajituri</h1>
-    {% for prajitura in prajituri %}
-    <p>{{ prajitura.prajitura }} - {{ prajitura.tip }} - {{ prajitura.mod_servire }}</p>
-    <p>{{ prajitura.info.descriere }} - {{ prajitura.info.specificatii }} - {{ prajitura.info.pret }} lei - stoc: {{ prajitura.info.stoc }}</p>
-    {% endfor %}
+    <header>
+        <h1>Detalii Prajituri</h1>
+    </header>
+    
+    <main>
+        {% for prajitura in prajituri %}
+        <div class="product">
+            <h3>{{ prajitura.prajitura }}</h3>
+            <p>Tip: {{ prajitura.tip }}</p>
+            <p>Mod de servire: {{ prajitura.mod_servire }}</p>
+            <p>{{ prajitura.info.descriere }}</p>
+            <p>Specificații: {{ prajitura.info.specificatii }}</p>
+            <p>Preț: {{ prajitura.info.pret }} lei</p>
+            <p>Stoc: {{ prajitura.info.stoc }}</p>
+        </div>
+        {% endfor %}
 
-    <a href="/">Inapoi la magazin</a>
+        <div class="back-button">
+            <a href="/adaugare">&laquo; Inapoi la Comanda</a>
+        </div>
+    </main>
 </body>
 </html>

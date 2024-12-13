@@ -147,8 +147,8 @@
 
 
     <div class="banner" id="offer-banner" style="display:none;">
-        Reducere 50%! Profitati acum de aceasta oferta limitata!
-        <button id="accept-offer">Accepta oferta</button>
+        Reducere 50%! Profitati acum de aceasta oferta limitata! Logeaza-te pentru a o vizualiza
+        <button id="accept-offer">Acceseaza oferta</button>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -158,7 +158,7 @@
             }
 
             document.getElementById('accept-offer').addEventListener('click', function() {
-                fetch('/accepta-oferta/', { 
+                fetch('/accepta-oferta', { 
                     method: 'POST', 
                     headers: { 
                         'X-CSRFToken': '{{ csrf_token }}' 
@@ -166,7 +166,7 @@
                 })
                 .then(response => {
                     if (response.ok) {
-                        window.location.href = '/oferta/';
+                        window.location.href = '/oferta';
                     }
                 });
             });

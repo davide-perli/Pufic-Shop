@@ -11,28 +11,37 @@
     <script>
         window.onload = function() {
             let cos = JSON.parse(localStorage.getItem("cos_virtual")) || {}; // iau string json si il convertesc in javascript
-
+            let totalPret = 0; // Variabila pentru pretul total
+    
             function updateCartDisplay() {
                 let cartItems = document.getElementById("cart-items");
                 cartItems.innerHTML = ''; // Resetare lista
+                totalPret = 0; // Resatare pret total la fiecare actualizare
+    
                 for (let id in cos) {
                     let item = cos[id];  // Detaliile fiecarui produs
                     cartItems.innerHTML += `<li>${item.nume} - Cantitate: ${item.cantitate} <button class="btn_sterge" onclick="removeFromCart('${id}')">Sterge</button></li>`;
-
+                    
+            
+                    totalPret += item.cantitate * parseFloat(item.pret);
                 }
+    
+            
+                localStorage.setItem("pret_total", totalPret);
             }
-
+    
             document.querySelectorAll(".btn_cos_virtual").forEach(button => {
                 button.onclick = function(event) {
                     event.preventDefault(); // Previne trimiterea formularului
                     let id = this.dataset.id;
                     let nume = this.dataset.nume;
                     let stoc = parseInt(this.dataset.stoc);
+                    let pret = parseFloat(this.dataset.pret); 
                     let cantitateInput = document.getElementById(`cantitate_${id}`);
                     let cantitate = parseInt(cantitateInput.value) || 1;
-
+    
                     if (!cos[id]) {
-                        cos[id] = { nume: nume, cantitate: 0 }; // Initializez o noua intrare
+                        cos[id] = { nume: nume, cantitate: 0, pret: pret }; // Initializez o noua intrare
                     }
                     if (cos[id].cantitate + cantitate <= stoc) { // Verific stocul
                         cos[id].cantitate += cantitate;
@@ -44,27 +53,50 @@
                 };
             });
 
+            document.querySelector('form').onsubmit = function(event) {
+        
+                event.preventDefault();
+            
+    
+                let cos = JSON.parse(localStorage.getItem("cos_virtual")) || {};
+                
+             
+                document.getElementById("cos_cumparaturi").value = JSON.stringify(cos);
+                
+     
+                this.submit();
+            };
+            
+    
             window.removeFromCart = function(id) {
                 delete cos[id];
                 localStorage.setItem("cos_virtual", JSON.stringify(cos));
                 updateCartDisplay();
             };
-
+    
             // Ajustarea cantitatii
             window.adjustQuantity = function(id, adjustment) {
                 let cantitateInput = document.getElementById(`cantitate_${id}`);
                 let currentQuantity = parseInt(cantitateInput.value) || 1;
                 let newQuantity = currentQuantity + adjustment;
-
+    
                 // Verifica daca noua cantitate este valida
                 if (newQuantity >= 1 && newQuantity <= parseInt(cantitateInput.max)) {
                     cantitateInput.value = newQuantity;
+    
+       
+                    if (cos[id]) {
+                        cos[id].cantitate = newQuantity;
+                        localStorage.setItem("cos_virtual", JSON.stringify(cos));
+                        updateCartDisplay();
+                    }
                 }
             };
-
+    
             updateCartDisplay(); // Incarca cosul la inceput
         };
     </script>
+    
 </head>
 <body>
     <header>
@@ -79,7 +111,7 @@
         <a href="{% url 'logout_view' %}" class="logout-btn">Delogare</a>
     </header>
 
-    <!-- Butoane pentru detalii produse -->
+
     <div class="buttons-container">
         <a href="{% url 'detalii_inghetata'%}" class="btn">Detalii Inghetata</a>
         <a href="{% url 'detalii_bautura'%}" class="btn">Detalii Bauturi</a>
@@ -96,30 +128,30 @@
 
         <form method="post">
             {% csrf_token %}
+            <input type="hidden" name="cos_cumparaturi" id="cos_cumparaturi">
+
             <div class="form-group">
                 <label for="id_cos_cumparaturi">Produse dorite:</label>
                 {{ form.cos_cumparaturi }}
                 <small class="help-text">{{ form.cos_cumparaturi.help_text }}</small>
             </div>
-
+            
             <div class="form-group">
                 <label for="id_note">Notita:</label>
                 {{ form.note }}
                 <small class="help-text">{{ form.note.help_text }}</small>
             </div>
-
-
+        
             <div class="form-group">
                 <label for="id_livrare_curier">Livrare curier:</label>
                 {{ form.livrare_curier }}
             </div>
-
-   
+        
             <h2>Optiuni produse:</h2>
             {% for produs in informatii %}
             <article data-id="{{ produs.id }}" class="produs">
                 <p>{{ produs.specificatii }} - {{ produs.pret }} RON - Stoc disponibil: {{ produs.stoc }}</p>
-
+        
                 <!-- Ajustarea cantitatii -->
                 <button onclick="adjustQuantity({{ produs.id }}, -1)"> - </button>
                 <input type="number" id="cantitate_{{ produs.id }}" value="1" min="1" max="{{ produs.stoc }}">
@@ -127,13 +159,12 @@
                 
                 <!-- Adaugarea in cos -->
                 <button data-id="{{ produs.id }}" data-nume="{{ produs.specificatii }}" data-stoc="{{ produs.stoc }}" data-pret="{{ produs.pret }}" class="btn_cos_virtual">Adauga in cos</button>
-
             </article>
             {% endfor %}
-
-
-            <button type="submit" class="btn">Salveaza Comanda</button>
+        
+            <button type="submit" class="btn">Adauga Comanda</button>
         </form>
+        
     </main>
 
 </body>

@@ -59,10 +59,10 @@ urlpatterns = [
     path('detalii_tort_inghetata', views.detalii_torturi, name = "detalii_tort_inghetata"),
     path('debug', views.afisare_pagina, name = "afisare_pagina"),
     path('adauga_prajitura', views.adauga_prajitura, name = "adauga_prajitura"),
-    path('oferta/', views.oferta, name = "oferta"),
-    path('accepta-oferta/', views.accepta_oferta, name = "accepta_oferta"),
+    path('oferta', views.oferta, name = "oferta"),
+    path('accepta-oferta', views.accepta_oferta, name = "accepta_oferta"),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name = 'sitemap'),
-    path('comanda', views.comanda, name = "comanda"),
+    path('comanda_salvare', views.comanda_salvare, name = "comanda_salvare"),
     path('creste_preturi', views.creste_preturi, name = "creste_preturi")
 
 ]

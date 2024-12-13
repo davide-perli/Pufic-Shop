@@ -3,41 +3,29 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'stil_comanda.css' %}">
+    <link rel="stylesheet" href="{% static 'stil_comanda.css' %}?v=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosul Meu</title>
-
-    <style>
-        .product {
-            border: 1px solid grey;
-            margin: 10px 0;
-            padding: 10px;
-        }
-        .summary {
-            margin-top: 20px;
-        }
-        .order-buttons {
-            margin-top: 10px;
-        }
-    </style>
 
     <script>
         window.onload = function() {
             let cart = JSON.parse(localStorage.getItem("cos_virtual")) || {};
-
-            // Actualizează afișajul coșului
-            function updateCartDisplay() {
+        
+     
+            function updateCartDisplay(sortedArray = null) {
                 const cartContainer = document.getElementById("cart-container");
                 cartContainer.innerHTML = '';
                 let totalItems = 0;
                 let totalPrice = 0;
-
-                for (let id in cart) {
-                    let item = cart[id];
+        
+       
+                const itemsToDisplay = sortedArray || Object.keys(cart).map(id => ({ id, ...cart[id] }));
+        
+                for (let item of itemsToDisplay) {
                     let partialPrice = item.pret * item.cantitate;
                     totalPrice += partialPrice;
                     totalItems += item.cantitate;
-
+        
                     cartContainer.innerHTML += `
                         <div class="product">
                             <h3>${item.nume}</h3>
@@ -45,41 +33,40 @@
                             <p>Cantitate: ${item.cantitate}</p>
                             <p>Pret partial: ${partialPrice.toFixed(2)} RON</p>
                             <div class="order-buttons">
-                                <button onclick="adjustQuantity('${id}', -1)">-</button>
-                                <button onclick="adjustQuantity('${id}', 1)">+</button>
-                                <button onclick="removeFromCart('${id}')">Sterge</button>
+                                <button onclick="removeFromCart('${item.id}')">Sterge</button>
                             </div>
                         </div>
                     `;
                 }
-
+        
                 document.getElementById("total-items").innerText = totalItems;
                 document.getElementById("total-price").innerText = totalPrice.toFixed(2);
             }
-
-            // Ajustează cantitatea unui produs
-            window.adjustQuantity = function(id, adjustment) {
-                if (cart[id]) {
-                    let newQuantity = cart[id].cantitate + adjustment;
-                    if (newQuantity > 0 && newQuantity <= cart[id].stoc) {
-                        cart[id].cantitate = newQuantity;
-                        localStorage.setItem("cos_virtual", JSON.stringify(cart));
-                        updateCartDisplay();
-                    } else {
-                        alert("Cantitatea selectată nu este validă.");
-                    }
-                }
-            };
-
-            // Șterge un produs din coș
+        
             window.removeFromCart = function(id) {
                 delete cart[id];
                 localStorage.setItem("cos_virtual", JSON.stringify(cart));
                 updateCartDisplay();
             };
-
+        
+            window.sortCartBy = function(criteria) {
+                const itemsArray = Object.keys(cart).map(id => ({ id, ...cart[id] }));
+        
+                const sortedArray = itemsArray.sort((a, b) => {
+                    if (criteria === 'nume') {
+                        return a.nume.localeCompare(b.nume);
+                    } else if (criteria === 'pret') {
+                        return parseFloat(a.pret) - parseFloat(b.pret);
+                    }
+                    return 0;
+                });
+        
+                updateCartDisplay(sortedArray);
+            };
+        
             updateCartDisplay();
         };
+        
     </script>
 </head>
 <body>
@@ -90,7 +77,7 @@
 
     <main>
         <div id="cart-container">
-            <!-- Produsele din coș vor fi afișate dinamic aici -->
+
         </div>
 
         <div class="summary">
@@ -103,27 +90,12 @@
             <button onclick="sortCartBy('nume')">Sorteaza dupa nume</button>
             <button onclick="sortCartBy('pret')">Sorteaza dupa pret</button>
         </div>
+
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn">Trimite Comanda</button>
+        </form>        
     </main>
 
-    <script>
-        function sortCartBy(criteria) {
-            let cart = JSON.parse(localStorage.getItem("cos_virtual")) || {};
-            let sortedKeys = Object.keys(cart).sort((a, b) => {
-                if (criteria === 'nume') {
-                    return cart[a].nume.localeCompare(cart[b].nume);
-                } else if (criteria === 'pret') {
-                    return cart[a].pret - cart[b].pret;
-                }
-            });
-
-            let sortedCart = {};
-            sortedKeys.forEach(key => {
-                sortedCart[key] = cart[key];
-            });
-
-            localStorage.setItem("cos_virtual", JSON.stringify(sortedCart));
-            location.reload();
-        }
-    </script>
 </body>
 </html>

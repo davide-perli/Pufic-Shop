@@ -421,12 +421,11 @@ def contact_view(request):
 
 def mesaj_trimis(request):
     logger.info("--------------Functia mesaj_trimis a fost apelata")
-    return render(request, 'mesaj_trimis.html', {'message': 'Mesajul tău a fost trimis cu succes!'})
+    return render(request, 'mesaj_trimis.html', {'message': 'Mesajul tau a fost trimis cu succes!'})
 
 def cod_confirmare(request):
     logger.info("--------------Functia cod_confirmare a fost apelata")
     return render(request, 'cod_confirmare.html')
-
 
 @login_required(login_url='custom_login_view')  # Redirectioneaza la login daca nu e autentificat
 def adauga_comanda(request):
@@ -436,22 +435,19 @@ def adauga_comanda(request):
     biscuiti_items = Biscuite.objects.all()
     prajituri_items = Prajituri.objects.all()
     torturi_items = Torturi_Inghetata.objects.all()
-
     informatii_items = Informatii.objects.all()
 
     if request.method == 'POST':
         form = ComandaForm(request.POST)
         if form.is_valid():
-            comanda = form.save(commit = False)
-            cos_cumparaturi = form.cleaned_data['cos_cumparaturi']
-            note = form.cleaned_data.get('note', '')
-
-            comanda.note = note
-            comanda.cos_cumparaturi = cos_cumparaturi
-            comanda.save()
-
-
-            return redirect('mesaj_trimis')
+            # Extrage doar datele necesare din formular
+            comanda_data = {
+                'note': form.cleaned_data.get('note', ''),
+                'cos_cumparaturi': form.cleaned_data.get('cos_cumparaturi'),
+                # Adaugă alte câmpuri necesare aici, asigurându-te că sunt simple
+            }
+            request.session['comanda_data'] = comanda_data  # Salvează datele simple
+            return redirect('comanda_salvare')
     else:
         form = ComandaForm()
 
@@ -469,10 +465,32 @@ def adauga_comanda(request):
     logger.debug("--------------Functia adauga_comanda executata cu succes!")
     return render(request, 'adauga_comanda.html', context)
 
+def comanda_salvare(request):
+    logger.info("--------------Functia comanda_salvare a fost apelata")
 
-def comanda(request):
-    logger.info("--------------Functia comanda a fost apelata")
+    if request.method == 'POST':  # Verifică dacă cererea este POST
+        comanda_data = request.session.get('comanda_data')  # Obține datele comenzii din sesiune
+
+        if comanda_data:
+            # Creează formularul cu datele din sesiune
+            comanda_form = ComandaForm(comanda_data)
+            if comanda_form.is_valid():
+                comanda_form.save()  # Salvează comanda
+                del request.session['comanda_data']  # Șterge datele din sesiune
+                messages.success(request, "Comanda a fost salvată cu succes!")
+                return redirect('mesaj_trimis')  # Redirectează la o pagină de succes
+            else:
+                messages.error(request, "Datele comenzii nu sunt valide.")
+        else:
+            messages.error(request, "Nu există date pentru comandă.")
+    else:
+        messages.warning(request, "Trimite formularul pentru a salva comanda.")
+
     return render(request, 'comanda.html')
+
+
+
+
 
 
 def get_site_url(request=None):
@@ -1007,6 +1025,7 @@ def adauga_prajitura(request):
 
     logger.info("--------------Functia adauga_prajitura a fost executata cu succes!")
     return render(request, 'adauga_prajitura.html', {'form': form})
+
 
 
 def oferta(request):

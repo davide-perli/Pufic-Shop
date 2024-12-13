@@ -1,15 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalii Bauturi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #17a2b8;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #ffffff;
+        }
+        .product h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #17a2b8;
+        }
+        .product p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #6c757d;
+        }
+        .back-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-button a {
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .back-button a:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <h1>Detalii Bautura</h1>
-    {% for bautura in bauturi %}
-    <p>{{ bautura.bautura }} - {{ bautura.tip }} - {{ bautura.mod_servire }}</p>
-    <p>{{ bautura.info.descriere }} - {{ bautura.info.specificatii }} - {{ bautura.info.pret }} lei - stoc: {{ bautura.info.stoc }}</p>
-    {% endfor %}
+    <header>
+        <h1>Detalii Bautura</h1>
+    </header>
 
-    <a href="/adaugare">Inapoi la Comanda</a>
+    <main>
+        {% for bautura in bauturi %}
+        <div class="product">
+            <h3>{{ bautura.bautura }}</h3>
+            <p>Tip: {{ bautura.tip }}</p>
+            <p>Mod de servire: {{ bautura.mod_servire }}</p>
+            <p>{{ bautura.info.descriere }}</p>
+            <p>Specificații: {{ bautura.info.specificatii }}</p>
+            <p>Preț: {{ bautura.info.pret }} lei</p>
+            <p>Stoc: {{ bautura.info.stoc }}</p>
+        </div>
+        {% endfor %}
+
+        <div class="back-button">
+            <a href="/adaugare">&laquo; Inapoi la Comanda</a>
+        </div>
+    </main>
 </body>
 </html>
