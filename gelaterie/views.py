@@ -8,7 +8,7 @@ import time, os, json
 from datetime import date
 from .forms import ComandaForm
 from .models import Informatii
-import decimal
+from decimal import Decimal
 from django.contrib.auth import login
 from .forms import CustomAuthenticationForm    
 from .forms import CustomUserCreationForm
@@ -437,26 +437,19 @@ def adauga_comanda(request):
     prajituri_items = Prajituri.objects.all()
     torturi_items = Torturi_Inghetata.objects.all()
 
+    informatii_items = Informatii.objects.all()
+
     if request.method == 'POST':
         form = ComandaForm(request.POST)
         if form.is_valid():
-            comanda = form.save(commit=False)
+            comanda = form.save(commit = False)
             cos_cumparaturi = form.cleaned_data['cos_cumparaturi']
             note = form.cleaned_data.get('note', '')
-            discount_procent = form.cleaned_data.get('discount_procent', 0)
-
-            # Aplic discount
-            if discount_procent:
-                discount = decimal.Decimal(discount_procent) / 100
-                for info in form.cleaned_data['informatii']:
-                    pret_reduse = info.pret * (1 - discount)
-                    info.pret = round(pret_reduse, 2)
-                    info.save()
 
             comanda.note = note
             comanda.cos_cumparaturi = cos_cumparaturi
             comanda.save()
-            form.save_m2m()
+
 
             return redirect('mesaj_trimis')
     else:
@@ -469,6 +462,7 @@ def adauga_comanda(request):
         'biscuiti_items': biscuiti_items,
         'prajituri_items': prajituri_items,
         'torturi_items': torturi_items,
+        'informatii': informatii_items,
     }
 
     messages.debug(request, "Acesta este un mesaj de depanare!!!")
@@ -476,6 +470,9 @@ def adauga_comanda(request):
     return render(request, 'adauga_comanda.html', context)
 
 
+def comanda(request):
+    logger.info("--------------Functia comanda a fost apelata")
+    return render(request, 'comanda.html')
 
 
 def get_site_url(request=None):
@@ -896,37 +893,38 @@ def creeaza_promotie(request):
     if request.method == 'POST':
         form = PromotieForm(request.POST)
         if form.is_valid():
-           
             promotie = form.save()
 
-            minim_vizualizari = form.cleaned_data['k']
+            # Apply discount to all products
+            produse = Informatii.objects.all()  # Get all products
+            for produs in produse:
+                # Calculate new price after applying discount
+                produs.pret = round(produs.pret * (1 - (promotie.discount / 100)), 2)
+                produs.save()  # Save updated product price
 
-            # Nr utilizatori cu nr minim de vizualizari
+            minim_vizualizari = form.cleaned_data['k']
             utilizatori_cu_vizualizari = Vizualizare.objects.values('utilizator').annotate(numar_vizualizari=Count('id')).filter(numar_vizualizari__gte=minim_vizualizari)
 
-            # Obtinere utilizatori
             utilizatori = CustomUser.objects.filter(id__in=[v['utilizator'] for v in utilizatori_cu_vizualizari])
-
             subject = f'Promotie Speciala: {promotie.nume}'
-
+            from_email = "artchanell01@gmail.com"
             messages = []
+
             for utilizator in utilizatori:
-        
                 message = f"Salut {utilizator.username},\n\n"
                 message += f"Avem o noua promotie pentru tine! Detaliile promotiei:\n"
                 message += f"Nume: {promotie.nume}\n"
                 message += f"Descriere: {promotie.descriere}\n"
                 message += f"Discount: {promotie.discount}%\n"
-                message += f"Data Expirarii: {promotie.data_expirare.strftime('%d-%m-%Y')}\n"
-                message += f"Categorie: {promotie.categorie}\n\n"
+                message += f"Data Expirarii: {promotie.data_expirare.strftime('%d-%m-%Y')}\n\n"
                 message += "Nu rata aceasta oportunitate! Viziteaza-ne acum pentru mai multe detalii."
  
-                messages.append((subject, message, [utilizator.email]))
+                messages.append((subject, message, from_email, [utilizator.email]))
               
             if messages:
                 send_mass_mail(messages, fail_silently=False)
 
-            logger.debug("--------------Promotie creata!")
+            logger.debug("--------------Promotie creata si preturi actualizate!")
             return redirect('mesaj_trimis') 
 
     else:
@@ -934,6 +932,33 @@ def creeaza_promotie(request):
 
     logger.debug("--------------Functia creaza_promotie executata cu succes!")
     return render(request, 'promotii.html', {'form': form})
+
+
+def creste_preturi(request):
+    if not request.user.is_superuser:
+        mesaj_personalizat = "Accesul la informatiile despre meniu este restrictionat!"
+        logger.warning(f"Utilizatorul {request.user.username if request.user.is_authenticated else 'anonim'} a incercat sa acceseze meniul fara permisiune!")
+        messages.warning(request, "Acesta este un avertisment. :| ")
+        messages.error(request, "A aparut o eroare! >:((  ")
+        return render(request, '403.html', {
+            'title': 'Acces Interzis',
+            'mesaj_personalizat': mesaj_personalizat,
+            'user': request.user,
+        }, status=403)
+    
+    if request.method == 'POST':
+        procent = Decimal(request.POST.get('procent', 0))  
+        if procent > 0:
+            produse = Informatii.objects.all()  
+            for produs in produse:
+               
+                produs.pret = round(produs.pret * (1 + (procent / Decimal(100))), 2)
+                produs.save() 
+            
+            messages.success(request, f"Preturile au fost crescute cu {procent}%!")
+            return redirect('mesaj_trimis')
+
+    return render(request, 'creste_preturi.html')
 
 
 

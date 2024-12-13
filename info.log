@@ -9674,3 +9674,1798 @@ INFO 2024-12-12 08:53:47,631 views --------------Functia adauga_vizualizare a fo
 INFO 2024-12-12 08:53:47,688 basehttp "GET /aplicatie/detalii_tort_inghetata HTTP/1.1" 200 802
 INFO 2024-12-12 08:53:50,704 views --------------Functia adauga_comanda a fost apelata
 INFO 2024-12-12 08:53:50,720 basehttp "GET /adaugare HTTP/1.1" 200 10109
+INFO 2024-12-12 09:31:36,409 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 09:31:41,219 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:31:41,286 basehttp "GET /adaugare HTTP/1.1" 200 11426
+INFO 2024-12-12 09:31:42,493 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:31:42,519 basehttp "GET /adaugare HTTP/1.1" 200 11426
+INFO 2024-12-12 09:31:43,377 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:31:43,401 basehttp "GET /adaugare HTTP/1.1" 200 11426
+INFO 2024-12-12 09:32:29,670 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:32:29,709 basehttp "GET /adaugare HTTP/1.1" 200 3393
+INFO 2024-12-12 09:32:42,305 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:32:42,331 basehttp "GET /adaugare HTTP/1.1" 200 11426
+INFO 2024-12-12 09:33:44,476 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:33:44,499 basehttp "GET /adaugare HTTP/1.1" 200 3393
+INFO 2024-12-12 09:34:14,016 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:34:14,045 basehttp "GET /adaugare HTTP/1.1" 200 11426
+INFO 2024-12-12 09:40:23,409 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 09:40:23,834 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 09:40:39,457 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 09:40:40,044 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 09:41:51,101 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 09:41:51,562 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 09:42:38,315 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 09:42:38,933 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 09:42:58,430 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 09:42:59,169 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 09:42:59,831 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:42:59,878 basehttp "GET /adaugare HTTP/1.1" 200 11426
+INFO 2024-12-12 09:44:39,163 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:44:39,171 basehttp "GET /adaugare HTTP/1.1" 200 3710
+INFO 2024-12-12 09:44:54,464 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:44:54,475 basehttp "GET /adaugare HTTP/1.1" 200 3900
+INFO 2024-12-12 09:44:55,475 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:44:55,482 basehttp "GET /adaugare HTTP/1.1" 200 3900
+INFO 2024-12-12 09:45:00,044 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:45:00,076 basehttp "GET /adaugare HTTP/1.1" 200 11426
+INFO 2024-12-12 09:47:37,082 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:47:37,315 basehttp "GET /adaugare HTTP/1.1" 200 17597
+INFO 2024-12-12 09:48:13,942 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:48:14,117 basehttp "GET /adaugare HTTP/1.1" 200 17077
+INFO 2024-12-12 09:48:26,070 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:48:26,281 basehttp "GET /adaugare HTTP/1.1" 200 17077
+INFO 2024-12-12 09:49:57,963 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:49:58,199 basehttp "GET /adaugare HTTP/1.1" 200 17077
+INFO 2024-12-12 09:49:59,536 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:49:59,732 basehttp "GET /adaugare HTTP/1.1" 200 17077
+INFO 2024-12-12 09:50:00,291 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:50:00,448 basehttp "GET /adaugare HTTP/1.1" 200 17077
+INFO 2024-12-12 09:50:00,642 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:50:00,806 basehttp "GET /adaugare HTTP/1.1" 200 17077
+INFO 2024-12-12 09:51:18,546 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-12 09:51:18,974 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 09:51:22,903 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:51:23,167 basehttp "GET /adaugare HTTP/1.1" 200 17277
+INFO 2024-12-12 09:51:23,678 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:51:23,816 basehttp "GET /adaugare HTTP/1.1" 200 17277
+INFO 2024-12-12 09:51:41,698 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-12 09:51:42,625 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 09:52:05,494 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 09:52:05,541 basehttp "GET /adaugare HTTP/1.1" 200 12346
+INFO 2024-12-12 11:55:11,451 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 11:55:13,069 views --------------Functia display_items a fost apelata
+INFO 2024-12-12 11:55:13,389 basehttp "GET / HTTP/1.1" 200 17041
+WARNING 2024-12-12 11:55:13,548 log Not Found: /favicon.ico
+WARNING 2024-12-12 11:55:13,549 basehttp "GET /favicon.ico HTTP/1.1" 404 8643
+INFO 2024-12-12 11:55:16,913 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 11:55:16,956 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-12 11:55:18,414 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 11:55:19,068 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-12 11:55:19,097 views --------------Functia profile_view a fost apelata
+INFO 2024-12-12 11:55:19,100 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-12 11:55:20,827 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 11:55:20,851 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 3438
+INFO 2024-12-12 11:56:41,667 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 11:56:41,716 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 12346
+INFO 2024-12-12 12:02:43,008 views --------------Functia adauga_comanda a fost apelata
+ERROR 2024-12-12 12:02:43,136 log Internal Server Error: /aplicatie/adaugare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 476, in adauga_comanda
+    return render(request, 'adauga_comanda.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'static'. Did you forget to register or load this tag?
+ERROR 2024-12-12 12:02:43,139 basehttp "GET /aplicatie/adaugare HTTP/1.1" 500 176476
+INFO 2024-12-12 12:03:44,049 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:03:44,068 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 4298
+INFO 2024-12-12 12:08:26,039 views --------------Functia adauga_comanda a fost apelata
+ERROR 2024-12-12 12:08:26,138 log Internal Server Error: /aplicatie/adaugare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 476, in adauga_comanda
+    return render(request, 'adauga_comanda.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'static'. Did you forget to register or load this tag?
+ERROR 2024-12-12 12:08:26,140 basehttp "GET /aplicatie/adaugare HTTP/1.1" 500 172972
+INFO 2024-12-12 12:09:04,901 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:09:04,913 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 2382
+INFO 2024-12-12 12:09:05,864 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:09:05,876 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 2382
+INFO 2024-12-12 12:09:06,484 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:09:06,497 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 2382
+INFO 2024-12-12 12:09:19,573 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:09:19,590 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 11035
+INFO 2024-12-12 12:12:07,600 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:12:07,646 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 13036
+INFO 2024-12-12 12:12:25,767 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:12:25,784 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 11035
+INFO 2024-12-12 12:15:27,128 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 12:15:27,565 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 12:15:44,283 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 12:15:44,935 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 12:15:47,299 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:15:47,346 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 11035
+INFO 2024-12-12 12:16:45,151 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-12 12:16:45,566 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 12:16:50,748 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:16:50,837 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 27652
+INFO 2024-12-12 12:17:28,806 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:17:28,823 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 11035
+INFO 2024-12-12 12:19:00,037 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:19:00,067 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 35652
+INFO 2024-12-12 12:25:59,198 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:25:59,226 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 35706
+INFO 2024-12-12 12:26:00,728 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:26:00,774 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 35706
+INFO 2024-12-12 12:28:00,436 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:28:00,467 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 27010
+INFO 2024-12-12 12:28:01,571 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:28:01,592 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 27010
+INFO 2024-12-12 12:29:31,119 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:29:31,135 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 36490
+INFO 2024-12-12 12:30:06,319 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:30:06,335 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 27010
+INFO 2024-12-12 12:33:34,462 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:33:34,488 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 35690
+INFO 2024-12-12 12:33:53,585 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:33:53,601 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 27010
+INFO 2024-12-12 12:35:56,216 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:35:56,234 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26783
+INFO 2024-12-12 12:35:57,664 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:35:57,678 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26783
+INFO 2024-12-12 12:36:36,895 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:36:36,917 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26782
+INFO 2024-12-12 12:37:54,633 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:37:54,650 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 11028
+INFO 2024-12-12 12:38:02,892 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:38:02,908 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26782
+INFO 2024-12-12 12:39:23,913 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:39:23,930 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26784
+INFO 2024-12-12 12:40:22,570 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 12:40:22,589 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 28236
+INFO 2024-12-12 13:06:06,011 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 13:06:07,707 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:06:07,749 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 28236
+INFO 2024-12-12 13:06:33,006 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:06:33,038 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26316
+INFO 2024-12-12 13:07:44,452 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:07:44,484 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26316
+INFO 2024-12-12 13:15:00,976 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 13:15:03,233 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:15:03,295 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26317
+INFO 2024-12-12 13:15:06,438 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:15:06,461 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26317
+INFO 2024-12-12 13:16:17,088 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:16:17,104 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26317
+INFO 2024-12-12 13:16:59,096 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:16:59,112 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26305
+INFO 2024-12-12 13:23:46,718 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:23:46,734 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26458
+INFO 2024-12-12 13:25:50,769 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:25:50,784 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26473
+INFO 2024-12-12 13:26:07,991 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:26:08,002 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 13:26:08,007 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-12 13:26:08,008 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-12 13:26:21,015 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:26:21,034 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26473
+INFO 2024-12-12 13:29:57,962 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:29:57,984 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26587
+INFO 2024-12-12 13:29:58,825 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:29:58,839 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26587
+INFO 2024-12-12 13:30:22,113 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:30:22,129 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26587
+INFO 2024-12-12 13:30:36,252 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:30:36,277 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26587
+INFO 2024-12-12 13:30:54,223 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:30:54,240 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26587
+INFO 2024-12-12 13:30:58,682 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 13:30:58,699 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26587
+INFO 2024-12-12 14:17:59,049 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:18:00,973 views --------------Functia display_items a fost apelata
+INFO 2024-12-12 14:18:01,266 basehttp "GET / HTTP/1.1" 200 17041
+WARNING 2024-12-12 14:18:01,438 log Not Found: /favicon.ico
+WARNING 2024-12-12 14:18:01,439 basehttp "GET /favicon.ico HTTP/1.1" 404 8643
+INFO 2024-12-12 14:18:03,896 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 14:18:03,939 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-12 14:18:05,596 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 14:18:06,388 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-12 14:18:06,420 views --------------Functia profile_view a fost apelata
+INFO 2024-12-12 14:18:06,424 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-12 14:18:08,003 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:18:08,021 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 27491
+INFO 2024-12-12 14:20:22,774 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:20:32,668 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:20:36,931 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:20:36,974 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:27:47,059 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 14:27:47,548 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:27:50,973 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-12 14:27:51,708 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:27:58,414 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:27:58,463 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:28:33,215 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:28:33,228 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:28:33,233 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-12 14:28:33,235 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-12 14:29:02,935 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 14:29:03,527 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:29:08,566 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:29:08,604 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:29:29,855 views --------------Functia adauga_comanda a fost apelata
+ERROR 2024-12-12 14:29:29,927 log Internal Server Error: /aplicatie/adaugare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 463, in adauga_comanda
+    return redirect('comanda')
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comanda' not found. 'comanda' is not a valid view function or pattern name.
+ERROR 2024-12-12 14:29:29,929 basehttp "POST /aplicatie/adaugare HTTP/1.1" 500 103137
+INFO 2024-12-12 14:29:57,489 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-12 14:29:57,979 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:30:00,453 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:30:00,479 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:30:00,484 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:30:00,534 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4889
+INFO 2024-12-12 14:30:23,308 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:30:23,316 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:30:23,321 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:30:23,364 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4889
+INFO 2024-12-12 14:30:29,677 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:30:29,684 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:30:29,689 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:30:29,731 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4889
+INFO 2024-12-12 14:30:39,046 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:30:39,076 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:30:58,975 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:30:58,981 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:30:58,987 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:30:59,028 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4889
+INFO 2024-12-12 14:31:49,707 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 14:31:50,212 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:31:59,696 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 14:32:00,152 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:32:41,597 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:32:41,669 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:32:42,727 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:32:42,741 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:32:42,909 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:32:42,923 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:32:43,088 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:32:43,103 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:32:43,287 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:32:43,308 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:32:51,877 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:32:51,887 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:32:51,892 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-12 14:32:51,894 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-12 14:33:04,516 basehttp "GET /admin/ HTTP/1.1" 200 14675
+INFO 2024-12-12 14:33:09,869 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 18228
+INFO 2024-12-12 14:33:09,961 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:33:15,296 basehttp "GET /admin/gelaterie/comanda/21/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:33:15,386 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:33:30,276 basehttp "GET /admin/gelaterie/comanda/21/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:33:32,710 basehttp "POST /admin/gelaterie/comanda/21/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:33:32,791 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 18172
+INFO 2024-12-12 14:33:32,915 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:33:34,533 basehttp "GET /admin/gelaterie/comanda/20/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:33:34,613 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:33:36,400 basehttp "GET /admin/gelaterie/comanda/20/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:33:37,811 basehttp "POST /admin/gelaterie/comanda/20/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:33:37,882 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 17947
+INFO 2024-12-12 14:33:38,002 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:34:55,340 basehttp "GET /admin/gelaterie/comanda/19/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:34:55,418 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:34:57,698 basehttp "GET /admin/gelaterie/comanda/19/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:35:00,373 basehttp "POST /admin/gelaterie/comanda/19/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:35:00,457 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 17722
+INFO 2024-12-12 14:35:00,582 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:01,978 basehttp "GET /admin/gelaterie/comanda/18/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:35:02,072 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:04,413 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 17553
+INFO 2024-12-12 14:35:13,844 basehttp "GET /admin/gelaterie/comanda/14/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:35:13,927 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:16,128 basehttp "GET /admin/gelaterie/comanda/14/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:35:18,452 basehttp "POST /admin/gelaterie/comanda/14/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:35:18,528 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 17497
+INFO 2024-12-12 14:35:18,644 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:22,327 basehttp "GET /admin/gelaterie/comanda/15/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:35:22,406 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:24,261 basehttp "GET /admin/gelaterie/comanda/15/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:35:25,658 basehttp "POST /admin/gelaterie/comanda/15/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:35:25,725 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 17272
+INFO 2024-12-12 14:35:25,845 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:27,534 basehttp "GET /admin/gelaterie/comanda/16/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:35:27,618 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:29,095 basehttp "GET /admin/gelaterie/comanda/16/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:35:30,680 basehttp "POST /admin/gelaterie/comanda/16/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:35:30,741 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 17047
+INFO 2024-12-12 14:35:30,861 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:32,744 basehttp "GET /admin/gelaterie/comanda/17/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:35:32,830 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:34,446 basehttp "GET /admin/gelaterie/comanda/17/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:35:36,497 basehttp "POST /admin/gelaterie/comanda/17/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:35:36,565 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 16822
+INFO 2024-12-12 14:35:36,688 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:38,142 basehttp "GET /admin/gelaterie/comanda/18/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:35:38,227 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:40,317 basehttp "GET /admin/gelaterie/comanda/18/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:35:41,928 basehttp "POST /admin/gelaterie/comanda/18/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:35:42,000 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 16597
+INFO 2024-12-12 14:35:42,122 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:43,348 basehttp "GET /admin/gelaterie/comanda/13/change/ HTTP/1.1" 200 18421
+INFO 2024-12-12 14:35:43,401 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:44,963 basehttp "GET /admin/gelaterie/comanda/13/delete/ HTTP/1.1" 200 11795
+INFO 2024-12-12 14:35:46,354 basehttp "POST /admin/gelaterie/comanda/13/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:35:46,416 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 16372
+INFO 2024-12-12 14:35:46,541 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:47,762 basehttp "GET /admin/gelaterie/comanda/12/change/ HTTP/1.1" 200 18421
+INFO 2024-12-12 14:35:47,856 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:49,907 basehttp "GET /admin/gelaterie/comanda/12/delete/ HTTP/1.1" 200 11795
+INFO 2024-12-12 14:35:52,540 basehttp "POST /admin/gelaterie/comanda/12/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:35:52,607 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 16147
+INFO 2024-12-12 14:35:52,729 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:54,580 basehttp "GET /admin/gelaterie/comanda/11/change/ HTTP/1.1" 200 18430
+INFO 2024-12-12 14:35:54,675 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:35:56,651 basehttp "GET /admin/gelaterie/comanda/11/delete/ HTTP/1.1" 200 11870
+INFO 2024-12-12 14:36:04,550 basehttp "POST /admin/gelaterie/comanda/11/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:36:04,627 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15922
+INFO 2024-12-12 14:36:04,724 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:36:06,892 basehttp "GET /admin/gelaterie/comanda/10/change/ HTTP/1.1" 200 18430
+INFO 2024-12-12 14:36:06,980 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:36:08,669 basehttp "GET /admin/gelaterie/comanda/10/delete/ HTTP/1.1" 200 11870
+INFO 2024-12-12 14:36:10,940 basehttp "POST /admin/gelaterie/comanda/10/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:36:11,001 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15694
+INFO 2024-12-12 14:36:11,136 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:36:12,699 basehttp "GET /admin/gelaterie/comanda/9/change/ HTTP/1.1" 200 18443
+INFO 2024-12-12 14:36:12,784 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:36:14,325 basehttp "GET /admin/gelaterie/comanda/9/delete/ HTTP/1.1" 200 12010
+INFO 2024-12-12 14:36:15,675 basehttp "POST /admin/gelaterie/comanda/9/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:36:15,742 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15471
+INFO 2024-12-12 14:36:15,877 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:36:17,223 basehttp "GET /admin/gelaterie/comanda/8/change/ HTTP/1.1" 200 18425
+INFO 2024-12-12 14:36:17,308 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:36:18,999 basehttp "GET /admin/gelaterie/comanda/8/delete/ HTTP/1.1" 200 11861
+INFO 2024-12-12 14:36:20,481 basehttp "POST /admin/gelaterie/comanda/8/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:36:20,551 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15249
+INFO 2024-12-12 14:36:20,679 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:36:30,685 basehttp "GET /admin/ HTTP/1.1" 200 14626
+INFO 2024-12-12 14:36:43,000 views --------------Functia display_items a fost apelata
+INFO 2024-12-12 14:36:43,212 basehttp "GET /aplicatie/ HTTP/1.1" 200 17041
+INFO 2024-12-12 14:36:44,815 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 14:36:44,846 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-12 14:36:46,345 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 14:36:46,976 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-12 14:36:47,007 views --------------Functia profile_view a fost apelata
+INFO 2024-12-12 14:36:47,010 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-12 14:36:48,756 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:36:48,773 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 26666
+INFO 2024-12-12 14:37:36,860 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:37:36,868 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:37:36,873 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-12 14:37:36,874 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-12 14:43:43,207 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:43:43,235 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32246
+INFO 2024-12-12 14:44:03,271 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:44:03,281 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:44:03,286 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-12 14:44:03,287 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-12 14:44:12,289 basehttp "GET /admin/ HTTP/1.1" 200 14626
+INFO 2024-12-12 14:44:19,125 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15531
+INFO 2024-12-12 14:44:19,219 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:44:22,098 basehttp "GET /admin/gelaterie/comanda/23/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:44:22,190 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:44:24,549 basehttp "GET /admin/gelaterie/comanda/23/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:44:26,285 basehttp "POST /admin/gelaterie/comanda/23/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:44:26,348 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15475
+INFO 2024-12-12 14:44:26,465 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:44:28,808 basehttp "GET /admin/gelaterie/comanda/22/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 14:44:28,905 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:44:30,815 basehttp "GET /admin/gelaterie/comanda/22/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 14:44:32,372 basehttp "POST /admin/gelaterie/comanda/22/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:44:32,449 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15250
+INFO 2024-12-12 14:44:32,568 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 14:44:46,531 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 14:44:47,070 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:44:49,306 basehttp "GET /admin/gelaterie/comanda/22/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:44:49,388 basehttp "GET /admin/ HTTP/1.1" 200 14797
+INFO 2024-12-12 14:44:49,497 basehttp "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+INFO 2024-12-12 14:44:50,373 basehttp "GET /admin/gelaterie/comanda/22/change/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:44:50,455 basehttp "GET /admin/ HTTP/1.1" 200 14797
+INFO 2024-12-12 14:44:51,441 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15081
+INFO 2024-12-12 14:44:53,692 basehttp "GET /admin/gelaterie/comanda/23/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:44:53,796 basehttp "GET /admin/ HTTP/1.1" 200 14797
+INFO 2024-12-12 14:44:54,839 basehttp "GET /admin/gelaterie/comanda/23/change/ HTTP/1.1" 302 0
+INFO 2024-12-12 14:44:54,895 basehttp "GET /admin/ HTTP/1.1" 200 14797
+INFO 2024-12-12 14:44:55,853 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15081
+INFO 2024-12-12 14:45:02,773 basehttp "GET /admin/ HTTP/1.1" 200 14626
+INFO 2024-12-12 14:45:03,596 views --------------Functia display_items a fost apelata
+INFO 2024-12-12 14:45:03,762 basehttp "GET / HTTP/1.1" 200 17041
+INFO 2024-12-12 14:45:06,177 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 14:45:06,214 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-12 14:45:07,851 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 14:45:08,479 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-12 14:45:08,506 views --------------Functia profile_view a fost apelata
+INFO 2024-12-12 14:45:08,508 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-12 14:45:10,009 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:45:10,026 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32246
+INFO 2024-12-12 14:45:40,013 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:45:40,022 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:45:40,028 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:45:40,067 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:47:51,323 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:47:51,380 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:47:52,596 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:47:52,637 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:47:53,391 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:47:53,433 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:47:58,717 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:47:58,764 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:47:58,894 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:47:58,942 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:47:59,093 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:47:59,133 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:47:59,272 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:47:59,326 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:49:39,145 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:49:39,196 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:49:40,141 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:49:40,185 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4784
+INFO 2024-12-12 14:49:51,228 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 14:49:51,683 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:50:00,225 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 14:50:00,669 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 14:50:03,413 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:50:03,440 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4761
+INFO 2024-12-12 14:50:25,808 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:50:25,817 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:50:25,821 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:50:25,822 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4761
+INFO 2024-12-12 14:50:45,238 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:50:45,240 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 3736
+INFO 2024-12-12 14:50:46,421 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:50:46,422 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 3736
+INFO 2024-12-12 14:50:52,171 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:50:52,172 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 3737
+INFO 2024-12-12 14:50:53,034 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:50:53,035 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 3737
+INFO 2024-12-12 14:51:08,172 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:51:08,173 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4761
+INFO 2024-12-12 14:52:14,212 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:52:14,214 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4948
+INFO 2024-12-12 14:52:24,613 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:52:24,639 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32246
+INFO 2024-12-12 14:52:34,320 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 14:52:34,328 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 14:52:34,333 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 14:52:34,334 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4948
+INFO 2024-12-12 14:54:05,514 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 14:54:05,998 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 15:12:27,841 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 15:12:28,363 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 15:12:46,131 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 15:12:46,154 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 15:12:46,159 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 15:12:46,167 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4518
+WARNING 2024-12-12 15:12:46,312 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+INFO 2024-12-12 15:13:36,479 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 15:13:37,180 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 15:13:43,181 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 15:13:43,250 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31004
+INFO 2024-12-12 15:16:02,272 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 15:16:02,291 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31024
+INFO 2024-12-12 15:16:29,152 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 15:16:29,615 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 15:16:31,582 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 15:16:31,628 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31024
+INFO 2024-12-12 15:16:41,584 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 15:16:41,593 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 15:16:41,599 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 15:16:41,601 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4518
+WARNING 2024-12-12 15:16:41,806 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+INFO 2024-12-12 15:16:50,405 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-12 15:16:51,201 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 15:17:02,179 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 15:17:02,205 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4518
+WARNING 2024-12-12 15:17:02,259 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+INFO 2024-12-12 15:17:03,032 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 15:17:03,034 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4518
+WARNING 2024-12-12 15:17:03,061 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+INFO 2024-12-12 15:17:03,863 views --------------Functia comanda a fost apelata
+INFO 2024-12-12 15:17:03,865 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4518
+WARNING 2024-12-12 15:17:03,902 basehttp "GET /static/stil_comanda.css HTTP/1.1" 404 1807
+INFO 2024-12-12 15:17:09,899 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 15:17:09,908 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-12 15:17:09,913 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-12 15:17:09,915 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-12 15:17:43,447 autoreload Watching for file changes with StatReloader
+INFO 2024-12-12 15:17:46,288 views --------------Functia display_items a fost apelata
+INFO 2024-12-12 15:17:46,642 basehttp "GET / HTTP/1.1" 200 17041
+INFO 2024-12-12 15:17:48,852 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 15:17:48,897 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-12 15:17:50,497 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 15:17:51,142 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-12 15:17:51,172 views --------------Functia profile_view a fost apelata
+INFO 2024-12-12 15:17:51,174 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-12 15:17:53,091 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 15:17:53,116 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31004
+INFO 2024-12-12 15:18:13,346 basehttp "GET /admin/ HTTP/1.1" 200 14626
+INFO 2024-12-12 15:18:16,754 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 16434
+INFO 2024-12-12 15:18:16,828 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:18,986 basehttp "GET /admin/gelaterie/comanda/29/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 15:18:19,062 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:21,465 basehttp "GET /admin/gelaterie/comanda/29/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 15:18:23,207 basehttp "POST /admin/gelaterie/comanda/29/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 15:18:23,272 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 16378
+INFO 2024-12-12 15:18:23,376 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:24,717 basehttp "GET /admin/gelaterie/comanda/28/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 15:18:24,782 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:26,346 basehttp "GET /admin/gelaterie/comanda/28/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 15:18:27,831 basehttp "POST /admin/gelaterie/comanda/28/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 15:18:27,913 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 16153
+INFO 2024-12-12 15:18:28,011 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:29,195 basehttp "GET /admin/gelaterie/comanda/27/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 15:18:29,259 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:30,816 basehttp "GET /admin/gelaterie/comanda/27/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 15:18:32,321 basehttp "POST /admin/gelaterie/comanda/27/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 15:18:32,395 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15928
+INFO 2024-12-12 15:18:32,508 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:33,841 basehttp "GET /admin/gelaterie/comanda/26/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 15:18:34,022 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:35,456 basehttp "GET /admin/gelaterie/comanda/26/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 15:18:37,185 basehttp "POST /admin/gelaterie/comanda/26/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 15:18:37,250 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15700
+INFO 2024-12-12 15:18:37,362 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:38,719 basehttp "GET /admin/gelaterie/comanda/25/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 15:18:38,789 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:40,354 basehttp "GET /admin/gelaterie/comanda/25/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 15:18:41,719 basehttp "POST /admin/gelaterie/comanda/25/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 15:18:41,791 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15475
+INFO 2024-12-12 15:18:41,896 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:43,191 basehttp "GET /admin/gelaterie/comanda/24/change/ HTTP/1.1" 200 18394
+INFO 2024-12-12 15:18:43,263 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:44,619 basehttp "GET /admin/gelaterie/comanda/24/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-12 15:18:46,122 basehttp "POST /admin/gelaterie/comanda/24/delete/ HTTP/1.1" 302 0
+INFO 2024-12-12 15:18:46,185 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15250
+INFO 2024-12-12 15:18:46,293 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:18:52,113 basehttp "GET /admin/ HTTP/1.1" 200 14626
+INFO 2024-12-12 15:18:52,812 views --------------Functia display_items a fost apelata
+INFO 2024-12-12 15:18:52,986 basehttp "GET / HTTP/1.1" 200 17041
+INFO 2024-12-12 15:44:09,522 basehttp "GET /admin/ HTTP/1.1" 200 14626
+INFO 2024-12-12 15:44:12,504 basehttp "POST /admin/logout/ HTTP/1.1" 200 3575
+INFO 2024-12-12 15:44:14,053 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-12 15:44:14,067 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4180
+INFO 2024-12-12 15:44:22,711 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-12 15:44:22,765 basehttp "GET /admin/ HTTP/1.1" 200 7467
+INFO 2024-12-12 15:44:25,420 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 20398
+INFO 2024-12-12 15:44:27,549 basehttp "GET /admin/gelaterie/customuser/33/change/ HTTP/1.1" 200 23711
+INFO 2024-12-12 15:44:27,612 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-12 15:44:42,161 basehttp "GET /admin/ HTTP/1.1" 200 7467
+INFO 2024-12-12 15:44:43,091 views --------------Functia display_items a fost apelata
+INFO 2024-12-12 15:44:43,255 basehttp "GET / HTTP/1.1" 200 17041
+INFO 2024-12-12 15:46:52,170 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 15:46:52,201 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-12 15:46:53,369 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-12 15:46:54,032 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-12 15:46:54,061 views --------------Functia profile_view a fost apelata
+INFO 2024-12-12 15:46:54,063 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-12 15:46:56,261 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-12 15:46:56,275 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31004
+INFO 2024-12-13 08:40:48,089 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:40:51,869 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 08:40:52,125 basehttp "GET / HTTP/1.1" 200 17041
+INFO 2024-12-13 08:40:52,235 basehttp "GET /static/script.js HTTP/1.1" 304 0
+WARNING 2024-12-13 08:40:53,331 log Not Found: /favicon.ico
+WARNING 2024-12-13 08:40:53,332 basehttp "GET /favicon.ico HTTP/1.1" 404 8813
+INFO 2024-12-13 08:41:01,187 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 08:41:01,232 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 08:41:02,613 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 08:41:03,415 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 08:41:03,446 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 08:41:03,449 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 08:41:08,339 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 08:41:08,340 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 08:41:12,327 basehttp "GET /admin/ HTTP/1.1" 200 14626
+INFO 2024-12-13 08:41:19,154 basehttp "GET /admin/gelaterie/inghetata/ HTTP/1.1" 200 17493
+INFO 2024-12-13 08:41:19,221 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:41:22,793 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:41:22,864 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:41:26,960 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:41:27,030 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:41:28,714 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:41:28,772 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:41:45,505 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:41:45,537 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 08:41:45,545 basehttp "GET /promotii HTTP/1.1" 200 3105
+INFO 2024-12-13 08:43:07,213 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:43:07,245 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 08:43:07,292 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 903, in creeaza_promotie
+    for info in form.cleaned_data['informatii']:
+                ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'informatii'
+ERROR 2024-12-13 08:43:07,294 basehttp "POST /promotii HTTP/1.1" 500 84926
+INFO 2024-12-13 08:44:42,792 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 08:44:43,344 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:46:27,973 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 08:46:28,405 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:46:34,741 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:46:34,772 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 08:46:34,823 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 904, in creeaza_promotie
+    for info in form.cleaned_data['informatii']:
+                ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'informatii'
+ERROR 2024-12-13 08:46:34,825 basehttp "POST /promotii HTTP/1.1" 500 84914
+INFO 2024-12-13 08:46:52,084 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 08:46:52,736 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:47:35,619 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 08:47:36,054 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:47:40,972 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:47:41,003 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 08:47:41,074 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 936, in creeaza_promotie
+    send_mass_mail(messages, fail_silently=False)
+  File "/usr/lib/python3/dist-packages/django/core/mail/__init__.py", line 112, in send_mass_mail
+    for subject, message, sender, recipient in datatuple
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 4, got 3)
+ERROR 2024-12-13 08:47:41,075 basehttp "POST /promotii HTTP/1.1" 500 95652
+INFO 2024-12-13 08:49:42,657 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 08:49:43,107 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:49:48,124 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:49:48,156 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 08:49:48,220 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 928, in creeaza_promotie
+    message += f"Discount: {promotie.discount_procent}%\n"
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Promotie' object has no attribute 'discount_procent'
+ERROR 2024-12-13 08:49:48,226 basehttp "POST /promotii HTTP/1.1" 500 87372
+INFO 2024-12-13 08:49:53,728 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 08:49:54,176 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:50:54,110 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 08:50:54,597 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:51:05,100 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 08:51:05,541 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:51:09,678 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:51:09,711 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 08:51:15,683 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 08:51:15,687 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 08:51:15,692 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 08:51:24,903 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:51:25,007 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:51:25,973 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:51:26,044 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:51:27,190 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:51:27,290 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:51:36,978 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:51:37,084 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:53:22,459 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 08:53:22,994 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:53:42,432 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:53:42,529 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:53:43,147 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:53:43,237 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:53:43,806 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:53:43,877 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:53:44,102 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:53:44,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:53:44,434 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 08:53:44,506 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 08:54:13,142 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:54:13,176 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 08:54:13,235 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 910, in creeaza_promotie
+    form.save_m2m()
+    ^^^^^^^^^^^^^
+AttributeError: 'PromotieForm' object has no attribute 'save_m2m'. Did you mean: '_save_m2m'?
+ERROR 2024-12-13 08:54:13,238 basehttp "POST /promotii HTTP/1.1" 500 85254
+INFO 2024-12-13 08:54:24,268 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:54:24,301 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 08:54:24,311 basehttp "GET /promotii HTTP/1.1" 200 3110
+INFO 2024-12-13 08:54:33,186 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 08:54:33,786 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:57:01,550 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 08:57:02,233 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:57:21,759 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 08:57:22,219 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:58:20,342 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:58:20,374 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 08:58:20,457 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "discount" of relation "gelaterie_promotie" violates not-null constraint
+DETAIL:  Failing row contains (32, DiddyParty, 2024-12-13 08:58:20.380766+00, 2025-01-27 00:00:00+00, Baby Oil, Uleiarea lui diddy va fi magica, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 909, in creeaza_promotie
+    promotie = form.save()
+               ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/lib/python3/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "discount" of relation "gelaterie_promotie" violates not-null constraint
+DETAIL:  Failing row contains (32, DiddyParty, 2024-12-13 08:58:20.380766+00, 2025-01-27 00:00:00+00, Baby Oil, Uleiarea lui diddy va fi magica, null).
+
+ERROR 2024-12-13 08:58:20,460 basehttp "POST /promotii HTTP/1.1" 500 164528
+INFO 2024-12-13 08:58:34,989 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 08:58:35,018 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 08:58:35,074 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "discount" of relation "gelaterie_promotie" violates not-null constraint
+DETAIL:  Failing row contains (33, DiddyParty, 2024-12-13 08:58:35.019642+00, 2025-01-27 00:00:00+00, Baby Oil, Uleiarea lui diddy va fi magica, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 909, in creeaza_promotie
+    promotie = form.save()
+               ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/lib/python3/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "discount" of relation "gelaterie_promotie" violates not-null constraint
+DETAIL:  Failing row contains (33, DiddyParty, 2024-12-13 08:58:35.019642+00, 2025-01-27 00:00:00+00, Baby Oil, Uleiarea lui diddy va fi magica, null).
+
+ERROR 2024-12-13 08:58:35,077 basehttp "POST /promotii HTTP/1.1" 500 164521
+INFO 2024-12-13 08:59:33,905 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-13 08:59:34,632 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 08:59:59,489 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:00:05,493 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:00:05,522 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:00:12,756 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:00:12,761 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:00:12,767 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:00:19,004 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:00:19,109 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:00:20,053 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:00:20,124 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:00:21,093 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:00:21,170 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:00:21,967 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:00:22,040 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:00:22,901 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:00:22,966 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:00:23,832 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:00:23,905 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:00:24,742 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:00:24,813 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:00:25,600 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:00:25,693 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:03:03,588 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:03:03,695 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:03:04,407 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:03:04,495 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:03:04,684 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:03:04,755 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:03:06,811 basehttp "GET /admin/gelaterie/informatii/40/change/ HTTP/1.1" 200 16188
+INFO 2024-12-13 09:03:06,893 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:03:12,074 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:03:15,857 basehttp "GET /admin/gelaterie/informatii/39/change/ HTTP/1.1" 200 16127
+INFO 2024-12-13 09:03:15,941 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:03:18,814 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:03:54,076 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:03:54,514 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:03:58,101 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:03:58,148 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:03:58,182 basehttp "GET /promotii HTTP/1.1" 200 2993
+INFO 2024-12-13 09:04:01,791 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:04:01,826 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:04:07,135 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:04:07,139 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:04:07,142 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:04:11,401 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:04:11,492 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:04:12,998 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:04:13,085 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:04:14,126 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:04:14,212 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:04:14,691 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:04:14,777 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:04:15,024 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:04:15,109 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:04:15,561 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:04:15,671 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:04:15,971 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:04:16,049 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:04:16,381 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:04:16,465 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:04:58,854 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:04:59,446 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:05:16,174 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-13 09:05:16,620 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:05:30,778 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:05:30,823 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:05:30,863 basehttp "GET /promotii HTTP/1.1" 200 2993
+INFO 2024-12-13 09:05:31,683 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:05:31,734 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:05:31,752 basehttp "GET /promotii HTTP/1.1" 200 2993
+INFO 2024-12-13 09:07:05,119 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:07:07,001 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:07:07,040 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 09:07:07,155 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 952, in creeaza_promotie
+    return render(request, 'promotii.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2024-12-13 09:07:07,159 basehttp "GET /promotii HTTP/1.1" 500 180806
+INFO 2024-12-13 09:07:11,282 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:07:11,321 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 09:07:11,414 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 952, in creeaza_promotie
+    return render(request, 'promotii.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2024-12-13 09:07:11,417 basehttp "GET /promotii HTTP/1.1" 500 180806
+INFO 2024-12-13 09:08:30,235 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:08:30,274 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:08:30,293 basehttp "GET /promotii HTTP/1.1" 200 3129
+INFO 2024-12-13 09:08:51,882 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:08:51,914 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 09:08:51,953 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 904, in creeaza_promotie
+    for info in form.cleaned_data['informatii']:
+                ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'informatii'
+ERROR 2024-12-13 09:08:51,954 basehttp "POST /promotii HTTP/1.1" 500 85034
+INFO 2024-12-13 09:11:01,831 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-13 09:11:02,494 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:11:43,308 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 09:11:43,848 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:11:58,343 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 09:11:58,949 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:12:04,201 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:12:04,233 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:12:04,249 basehttp "GET /promotii HTTP/1.1" 200 3129
+INFO 2024-12-13 09:12:05,117 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:12:05,147 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:12:05,151 basehttp "GET /promotii HTTP/1.1" 200 3129
+INFO 2024-12-13 09:12:33,169 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:12:33,201 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:12:35,372 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:12:35,402 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:12:40,794 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:12:40,799 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:12:40,802 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:12:47,864 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:12:47,958 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:12:49,011 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:12:49,089 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:12:50,272 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:12:50,347 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:12:51,305 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:12:51,389 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:21,515 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 09:15:22,091 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:15:39,612 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 09:15:40,126 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:15:42,287 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:15:42,317 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:15:42,333 basehttp "GET /promotii HTTP/1.1" 200 3129
+INFO 2024-12-13 09:15:44,289 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:15:44,318 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:15:48,742 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:15:48,746 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:15:48,748 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:15:54,655 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:54,750 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:55,618 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:55,703 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:56,333 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:56,409 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:56,771 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:56,853 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:57,282 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:57,361 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:57,733 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:57,806 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:58,071 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:58,160 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:58,420 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:58,507 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:58,733 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:58,819 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:59,070 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:59,162 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:59,369 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:59,452 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:15:59,769 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:15:59,860 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:16:00,252 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:16:00,342 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:16:00,589 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:16:00,676 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:16:00,922 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:16:00,993 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:16:01,324 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:16:01,396 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:19:44,041 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-13 09:19:44,663 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:21:06,733 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-13 09:21:07,210 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:24:06,499 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:24:10,011 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:24:10,043 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:24:10,058 basehttp "GET /promotii HTTP/1.1" 200 3139
+INFO 2024-12-13 09:24:12,960 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:24:12,991 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 09:24:13,045 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 905, in creeaza_promotie
+    messages.success(request, 'Promoția a fost creată și prețurile au fost actualizate.')
+    ^^^^^^^^
+UnboundLocalError: cannot access local variable 'messages' where it is not associated with a value
+ERROR 2024-12-13 09:24:13,046 basehttp "POST /promotii HTTP/1.1" 500 85032
+INFO 2024-12-13 09:24:40,255 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:24:40,775 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:24:43,673 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:24:43,705 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:24:50,478 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:24:50,483 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:24:50,488 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:24:55,001 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:24:55,092 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:24:56,047 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:24:56,109 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:24:57,683 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:24:57,762 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:27:37,166 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-13 09:27:37,636 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:27:50,484 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:27:59,890 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:27:59,923 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:28:04,951 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:28:04,956 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:28:04,962 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:28:08,431 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:08,522 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:09,520 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:09,606 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:10,407 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:10,486 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:11,267 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:11,342 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:12,084 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:12,160 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:12,434 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:12,534 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:12,931 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:13,004 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:13,284 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:13,378 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:13,595 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:13,677 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:13,971 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:14,056 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:14,316 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:14,391 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:14,660 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:28:14,733 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:19,924 basehttp "GET /admin/gelaterie/informatii/39/change/ HTTP/1.1" 200 16127
+INFO 2024-12-13 09:28:20,011 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:28:32,381 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:09,640 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:29:10,148 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:29:41,322 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:41,400 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:41,733 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:41,814 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:42,033 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:42,109 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:42,400 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:42,471 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:42,754 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:42,834 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:43,090 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:43,165 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:43,465 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:43,522 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:43,848 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:43,952 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:44,212 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:29:44,302 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:29:49,195 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 09:29:49,379 basehttp "GET /aplicatie/ HTTP/1.1" 200 17041
+INFO 2024-12-13 09:29:50,975 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 09:29:51,012 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 09:29:52,446 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 09:29:53,070 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 09:29:53,102 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 09:29:53,105 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 09:29:54,576 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 09:29:54,593 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30687
+INFO 2024-12-13 09:29:54,644 basehttp "GET /static/stil_adauga_comanda.css HTTP/1.1" 200 1715
+INFO 2024-12-13 09:30:13,144 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:30:13,568 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:30:27,958 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/models.py changed, reloading.
+INFO 2024-12-13 09:30:28,536 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:30:53,040 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/forms.py changed, reloading.
+INFO 2024-12-13 09:30:53,415 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:31:27,994 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:31:28,693 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:34:50,148 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:37:05,847 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:37:08,632 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 09:37:08,918 basehttp "GET / HTTP/1.1" 200 17041
+INFO 2024-12-13 09:37:17,696 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 09:37:17,737 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 09:37:19,583 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 09:37:20,188 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 09:37:20,221 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 09:37:20,224 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 09:37:21,905 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 09:37:21,922 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30687
+INFO 2024-12-13 09:37:29,765 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:37:29,795 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:37:29,801 basehttp "GET /promotii HTTP/1.1" 200 3110
+INFO 2024-12-13 09:39:47,416 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:40:00,601 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 09:40:00,623 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-13 09:40:00,628 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:40:00,634 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:40:09,814 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:40:09,913 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:40:11,133 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:40:11,209 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:40:27,205 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 09:40:27,210 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-13 09:40:27,214 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:40:27,215 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:40:29,108 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 09:40:29,297 basehttp "GET /aplicatie/ HTTP/1.1" 200 17041
+INFO 2024-12-13 09:40:33,084 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15531
+INFO 2024-12-13 09:40:33,173 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:40:35,930 basehttp "GET /admin/gelaterie/comanda/31/change/ HTTP/1.1" 200 18394
+INFO 2024-12-13 09:40:36,021 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:40:38,654 basehttp "GET /admin/gelaterie/comanda/31/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-13 09:40:40,276 basehttp "POST /admin/gelaterie/comanda/31/delete/ HTTP/1.1" 302 0
+INFO 2024-12-13 09:40:40,336 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15475
+INFO 2024-12-13 09:40:40,457 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:40:42,622 basehttp "GET /admin/gelaterie/comanda/30/change/ HTTP/1.1" 200 18394
+INFO 2024-12-13 09:40:42,694 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:40:44,192 basehttp "GET /admin/gelaterie/comanda/30/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-13 09:40:46,393 basehttp "POST /admin/gelaterie/comanda/30/delete/ HTTP/1.1" 302 0
+INFO 2024-12-13 09:40:46,460 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15250
+INFO 2024-12-13 09:40:46,593 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:40:56,509 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 09:40:56,546 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 09:40:59,099 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 09:40:59,736 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 09:40:59,769 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 09:40:59,772 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 09:41:01,070 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 09:41:01,086 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30687
+INFO 2024-12-13 09:41:23,819 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 09:41:23,823 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-13 09:41:23,829 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:41:23,830 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:41:25,636 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 09:41:25,816 basehttp "GET /aplicatie/ HTTP/1.1" 200 17041
+INFO 2024-12-13 09:41:29,045 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15306
+INFO 2024-12-13 09:41:29,120 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:41:30,803 basehttp "GET /admin/gelaterie/comanda/32/change/ HTTP/1.1" 200 18394
+INFO 2024-12-13 09:41:30,885 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:41:33,752 basehttp "GET /admin/gelaterie/comanda/32/delete/ HTTP/1.1" 200 11501
+INFO 2024-12-13 09:41:35,274 basehttp "POST /admin/gelaterie/comanda/32/delete/ HTTP/1.1" 302 0
+INFO 2024-12-13 09:41:35,336 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15250
+INFO 2024-12-13 09:41:35,449 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:45:24,037 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:45:24,722 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:45:46,810 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:45:46,847 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:45:46,863 basehttp "GET /promotii HTTP/1.1" 200 3110
+INFO 2024-12-13 09:46:13,512 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25969
+INFO 2024-12-13 09:46:13,609 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:46:21,501 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:46:21,533 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 09:46:21,604 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 898, in creeaza_promotie
+    produse = Informatii.objects.filter(categorie=promotie.categorie)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'categorie' into field. Choices are: alergeni, bauturi, biscuite, comanda, descriere, id, inghetata, prajituri, pret, specificatii, stoc, torturi_inghetata, vizualizare
+ERROR 2024-12-13 09:46:21,605 basehttp "POST /promotii HTTP/1.1" 500 136210
+INFO 2024-12-13 09:47:27,386 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:47:27,790 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:47:35,204 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:47:35,684 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:48:40,617 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:48:41,069 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:48:47,173 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:48:47,205 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 09:48:47,276 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 899, in creeaza_promotie
+    produse = Informatii.objects.filter(categorie__nume=promotie.categorie)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'categorie' into field. Choices are: alergeni, bauturi, biscuite, comanda, descriere, id, inghetata, prajituri, pret, specificatii, stoc, torturi_inghetata, vizualizare
+ERROR 2024-12-13 09:48:47,278 basehttp "POST /promotii HTTP/1.1" 500 136320
+INFO 2024-12-13 09:50:14,285 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:50:14,689 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:50:22,068 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:50:22,782 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:50:26,461 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:50:26,491 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:50:26,622 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:50:26,626 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:50:26,630 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:50:34,451 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25967
+INFO 2024-12-13 09:50:34,553 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 09:51:22,395 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:51:22,425 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:51:22,536 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:51:22,540 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:51:22,541 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:51:38,704 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 09:51:38,721 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30683
+INFO 2024-12-13 09:51:47,737 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:51:47,771 views --------------Functia creeaza_promotie a fost apelata
+ERROR 2024-12-13 09:51:47,915 log Internal Server Error: /promotii
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 924, in creeaza_promotie
+    send_mass_mail(messages, fail_silently=False)
+  File "/usr/lib/python3/dist-packages/django/core/mail/__init__.py", line 112, in send_mass_mail
+    for subject, message, sender, recipient in datatuple
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 4, got 3)
+ERROR 2024-12-13 09:51:47,916 basehttp "POST /promotii HTTP/1.1" 500 97068
+INFO 2024-12-13 09:54:18,511 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 09:54:18,972 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 09:54:22,811 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:54:22,855 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:54:22,883 basehttp "GET /promotii HTTP/1.1" 200 3110
+INFO 2024-12-13 09:54:24,835 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 09:54:24,869 views --------------Functia creeaza_promotie a fost apelata
+INFO 2024-12-13 09:54:30,373 basehttp "POST /promotii HTTP/1.1" 302 0
+INFO 2024-12-13 09:54:30,377 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 09:54:30,380 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 09:54:57,872 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 25967
+INFO 2024-12-13 09:54:57,963 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 10:00:09,845 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 10:00:10,287 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 10:01:50,458 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-13 10:01:50,937 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 10:01:55,012 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 10:01:55,276 basehttp "GET /aplicatie/ HTTP/1.1" 200 17039
+INFO 2024-12-13 10:02:08,544 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 10:02:09,035 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 10:02:19,833 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 10:02:19,871 basehttp "GET /creste_preturi HTTP/1.1" 200 596
+INFO 2024-12-13 10:02:32,839 views --------------Functia is_admin a fost apelata
+ERROR 2024-12-13 10:02:32,915 log Internal Server Error: /creste_preturi
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 947, in creste_preturi
+    produs.pret = round(produs.pret * (1 + (procent / 100)), 2)
+                        ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+ERROR 2024-12-13 10:02:32,916 basehttp "POST /creste_preturi HTTP/1.1" 500 86346
+INFO 2024-12-13 10:03:28,756 views --------------Functia is_admin a fost apelata
+ERROR 2024-12-13 10:03:28,821 log Internal Server Error: /creste_preturi
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 947, in creste_preturi
+    produs.pret = round(produs.pret * (1 + (procent / 100)), 2)
+                        ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+ERROR 2024-12-13 10:03:28,822 basehttp "POST /creste_preturi HTTP/1.1" 500 86346
+INFO 2024-12-13 10:04:27,702 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 10:04:28,158 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 10:04:58,760 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 10:04:59,296 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 10:05:22,196 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 10:05:22,351 basehttp "POST /creste_preturi HTTP/1.1" 302 0
+INFO 2024-12-13 10:05:22,356 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 10:05:22,363 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 10:05:26,474 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 26108
+INFO 2024-12-13 10:05:26,581 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 10:05:52,297 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 10:05:52,485 basehttp "GET /aplicatie/ HTTP/1.1" 200 17039
+INFO 2024-12-13 10:05:53,770 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 10:05:53,809 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 10:05:55,975 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 10:05:56,616 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 10:05:56,646 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 10:05:56,649 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+WARNING 2024-12-13 10:06:06,233 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-13 10:06:06,234 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-13 10:06:11,475 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-13 10:06:11,476 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+INFO 2024-12-13 10:06:13,447 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 10:06:13,474 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 10:06:19,029 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 10:06:19,682 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 10:06:19,719 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 10:06:19,720 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1032
+INFO 2024-12-13 10:06:26,933 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 10:06:26,965 basehttp "GET /creste_preturi HTTP/1.1" 200 596
+INFO 2024-12-13 10:06:47,593 views --------------Functia is_admin a fost apelata
+INFO 2024-12-13 10:06:47,622 basehttp "GET /creste_preturi HTTP/1.1" 200 596
+INFO 2024-12-13 10:07:47,432 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 10:07:47,919 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-13 10:08:14,826 views Utilizatorul maria a incercat sa acceseze meniul fara permisiune!
+WARNING 2024-12-13 10:08:14,835 log Forbidden: /creste_preturi
+WARNING 2024-12-13 10:08:14,836 basehttp "GET /creste_preturi HTTP/1.1" 403 622
+INFO 2024-12-13 10:08:26,818 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:08:26,857 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30683
+INFO 2024-12-13 10:08:28,215 views --------------Functia logout_view a fost apelata
+INFO 2024-12-13 10:08:28,251 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2024-12-13 10:08:28,256 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 10:08:28,257 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 10:08:29,975 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 10:08:30,162 basehttp "GET /aplicatie/ HTTP/1.1" 200 17039
+INFO 2024-12-13 10:08:33,131 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 10:08:33,137 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 10:08:34,629 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 10:08:35,278 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 10:08:35,312 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 10:08:35,315 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 10:08:45,409 basehttp "GET /creste_preturi HTTP/1.1" 200 596
+INFO 2024-12-13 10:09:22,245 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 10:09:22,675 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 10:10:14,452 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 10:10:14,940 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 10:10:29,389 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-13 10:10:29,913 autoreload Watching for file changes with StatReloader
+INFO 2024-12-13 10:10:38,421 basehttp "POST /creste_preturi HTTP/1.1" 302 0
+INFO 2024-12-13 10:10:38,426 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-13 10:10:38,434 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 538
+INFO 2024-12-13 10:10:41,663 basehttp "GET /admin/gelaterie/informatii/ HTTP/1.1" 200 26106
+INFO 2024-12-13 10:10:41,755 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-13 10:10:45,000 views --------------Functia display_items a fost apelata
+INFO 2024-12-13 10:10:45,190 basehttp "GET /aplicatie/ HTTP/1.1" 200 17039
+INFO 2024-12-13 10:11:03,235 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 10:11:03,269 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-13 10:11:05,141 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-13 10:11:05,772 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-13 10:11:05,800 views --------------Functia profile_view a fost apelata
+INFO 2024-12-13 10:11:05,804 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-13 10:11:07,116 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:11:07,132 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30683
+INFO 2024-12-13 10:14:03,255 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:14:03,278 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31363
+INFO 2024-12-13 10:14:04,931 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:14:04,958 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31363
+INFO 2024-12-13 10:17:16,995 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:17:17,015 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30743
+INFO 2024-12-13 10:17:18,209 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:17:18,233 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30743
+INFO 2024-12-13 10:18:01,255 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:18:01,270 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30744
+INFO 2024-12-13 10:18:02,239 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:18:02,263 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30744
+INFO 2024-12-13 10:18:29,578 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:18:29,598 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30750
+INFO 2024-12-13 10:18:29,648 basehttp "GET /static/stil_adauga_comanda.css?v=1.0 HTTP/1.1" 200 2742
+INFO 2024-12-13 10:19:11,846 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-13 10:19:11,860 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 30750
+INFO 2024-12-13 10:19:11,909 basehttp "GET /static/stil_adauga_comanda.css?v=1.0 HTTP/1.1" 304 0

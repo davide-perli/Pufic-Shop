@@ -117,13 +117,6 @@ class ComandaForm(forms.ModelForm):
         label = "Note",
         help_text = "Adaugati o notita pentru comanda"
     )
-    discount_procent = forms.DecimalField(
-        max_digits = 5,
-        decimal_places = 2,
-        required = False,
-        label = "Discount (%)",
-        help_text = "Introduceti procentul de discount (0-100)"
-    )
 
 
     class Meta:
@@ -149,12 +142,6 @@ class ComandaForm(forms.ModelForm):
             raise forms.ValidationError("Notele trebuie să înceapă cu literă mare.")
         return note
 
-
-    def clean_discount_procent(self):
-        discount = self.cleaned_data.get('discount_procent')
-        if discount is not None and (discount < 0 or discount > 100):
-            raise forms.ValidationError("Discount-ul trebuie sa fie intre 0 și 100%.")
-        return discount
     
     def clean(self):
         cleaned_data = super().clean()

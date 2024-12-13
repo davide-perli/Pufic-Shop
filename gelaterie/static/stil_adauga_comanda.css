@@ -101,3 +101,45 @@ button.btn:hover {
 .buttons-container .btn:hover {
     background-color: #388e3c;
 }
+
+
+.btn_cos_virtual {
+    padding: 10px 15px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn_cos_virtual:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+
+.btn_cos_virtual:active {
+    transform: scale(0.95); 
+}
+
+.btn_sterge {
+    padding: 5px 10px;
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn_sterge:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.btn_sterge:active {
+    transform: scale(0.95); 
+}
+

@@ -52,7 +52,7 @@ class Informatii(models.Model):
     alergeni = models.ManyToManyField(Alergeni)
 
     def __str__(self):
-        return f"{self.specificatii} - {self.pret} RON"
+        return f"{self.specificatii} - {self.pret} RON - Stoc disponibil: {self.stoc} "
 
 
 #6
@@ -257,7 +257,7 @@ class CustomUser(AbstractUser):
 class Vizualizare(models.Model):
     utilizator = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     produs = models.ForeignKey(Informatii, on_delete=models.CASCADE, null=True, blank=True)
-    categorie = models.CharField(max_length=100, null=True, blank=True)  # Nou câmp
+    categorie = models.CharField(max_length=100, null=True, blank=True) 
     data_vizualizare = models.DateTimeField(default=now)
 
     class Meta:
@@ -272,7 +272,7 @@ class Promotie(models.Model):
     data_expirare = models.DateTimeField()
     categorie = models.CharField(max_length = 100)
     descriere = models.TextField()
-    discount = models.DecimalField(max_digits = 5, decimal_places=2)
+    discount = models.DecimalField(max_digits = 5, decimal_places=2, null = True)
 
     def __str__(self):
         return f"{self.nume} - Expira: {self.data_expirare}"

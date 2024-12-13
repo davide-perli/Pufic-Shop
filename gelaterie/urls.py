@@ -62,5 +62,7 @@ urlpatterns = [
     path('oferta/', views.oferta, name = "oferta"),
     path('accepta-oferta/', views.accepta_oferta, name = "accepta_oferta"),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name = 'sitemap'),
+    path('comanda', views.comanda, name = "comanda"),
+    path('creste_preturi', views.creste_preturi, name = "creste_preturi")
 
 ]
