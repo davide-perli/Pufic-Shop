@@ -527,10 +527,10 @@ def get_location(ip_address):
         response = requests.get(f'https://ipinfo.io/{ip_address}/json')
         response.raise_for_status()
         data = response.json()
-        return data.get('city', ''), data.get('region', ''), data.get('country', '')
+        return data.get('street', ''), data.get('city', ''), data.get('region', ''), data.get('country', '')
     except requests.exceptions.RequestException as e:
         logger.error(f"Error fetching location: {e}")
-        return '', '', ''
+        
 
 
 
@@ -626,8 +626,10 @@ def register_view(request):
 
             # Obtinere locatie user
             ip_address = request.META.get('REMOTE_ADDR')
-            city, region, country = get_location(ip_address)
 
+            street, city, region, country = get_location(ip_address)
+
+            user.location_street = street
             user.location_city = city
             user.location_region = region
             user.location_country = country

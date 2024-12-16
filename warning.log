@@ -7332,3 +7332,32 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/davide/Documents/
 ERROR 2024-12-16 21:47:55,404 basehttp "POST /aplicatie/register HTTP/1.1" 500 80176
 WARNING 2024-12-16 21:53:30,971 log Not Found: /favicon.ico
 WARNING 2024-12-16 21:53:30,972 basehttp "GET /favicon.ico HTTP/1.1" 404 9011
+ERROR 2024-12-16 22:17:31,812 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 629, in register_view
+    city, region, country = get_location(ip_address)
+    ^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+ERROR 2024-12-16 22:17:31,813 basehttp "POST /aplicatie/register HTTP/1.1" 500 76200
+ERROR 2024-12-16 22:27:09,858 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 630, in register_view
+    city, region, country, street = get_location(ip_address)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 530, in get_location
+    return data.getdata.get('street', ''),('city', ''), data.get('region', ''), data.get('country', '')
+           ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'getdata'
+ERROR 2024-12-16 22:27:09,860 basehttp "POST /aplicatie/register HTTP/1.1" 500 81296
