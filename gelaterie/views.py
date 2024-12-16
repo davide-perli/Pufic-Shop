@@ -22,6 +22,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
 from .models import CustomUser
+from datetime import datetime
 
 import random
 import string
@@ -533,41 +534,89 @@ def get_location(ip_address):
 
 
 
+BANNED_EMAILS_FILE = os.path.join(os.getcwd(), 'banned_users', 'banned_emails.json')
+
+def load_banned_emails():
+
+    os.makedirs(os.path.dirname(BANNED_EMAILS_FILE), exist_ok=True)
+    
+
+    if os.path.exists(BANNED_EMAILS_FILE):
+        with open(BANNED_EMAILS_FILE, 'r') as json_file:
+            return json.load(json_file)
+    return []  
+
+def save_banned_emails(banned_emails):
+    os.makedirs(os.path.dirname(BANNED_EMAILS_FILE), exist_ok=True)
+    
+    with open(BANNED_EMAILS_FILE, 'w') as json_file:
+        json.dump(banned_emails, json_file)
+
+
+
 def register_view(request):
     logger.info("--------------Functia register_view a fost apelata")
+    banned_emails = load_banned_emails()
+
     if request.method == "POST":
         form = CustomUserCreationForm(request.POST)
 
+
         if form.is_valid():
+            email = form.cleaned_data.get('email')
+                    
+            if email in banned_emails:
+                return render(request, "register.html", {"form": form, "error": f"Email-ul '{email}' este interzis pentru tentativa de hacking!"})
             
             if form.cleaned_data.get('username').lower() == 'admin':
-                subject = 'Cineva incearca sa ne preia site-ul'
-                message_text = f"Un utilizator a incercat sa se inregistreze cu username-ul 'admin'. Email: {form.cleaned_data.get('email')}"
+                if email not in banned_emails:
+                    banned_emails.append(email)
+                    save_banned_emails(banned_emails)
+                    subject = 'Cineva incearca sa ne preia site-ul'
+                    message_text = f"Un utilizator a incercat sa se inregistreze cu username-ul 'admin'. Email: {form.cleaned_data.get('email')}. IP: {request.META.get('REMOTE_ADDR')}"
 
-                message_html = f"""
-                <html>
-                    <head>
-                        <style>
-                            h1 {{
-                                color: red;
-                            }}
-                        </style>
-                    </head>
-                    <body>
-                        <h1>{subject}</h1>
-                        <p>{message_text}</p>
-                    </body>
-                </html>
-                """
+                    data_to_save = {
 
-                # Crearea mesajului multipart
-                email = EmailMultiAlternatives(subject, message_text, settings.DEFAULT_FROM_EMAIL, [admin_email for admin_email in settings.ADMINS])
-                email.attach_alternative(message_html, "text/html")
-                
-                # Trimiterea emailului
-                email.send()
+                    "email": form.cleaned_data.get('email'),
+                    "ip":    request.META.get('REMOTE_ADDR'),
 
-                return render(request, "register.html", {"form": form, "error": f"Username-ul '{form.cleaned_data.get('username')}' nu este disponibil."})
+                    }
+
+                    folder_path = os.path.join(os.getcwd(), 'banned_users') # Path folder
+
+                    os.makedirs(folder_path, exist_ok=True)
+
+                    # Salvare data in json
+                    current_date = datetime.now().strftime("%Y-%m-%d %M")
+                    file_name = f"banned_{current_date}.json"
+                    file_path = os.path.join(folder_path, file_name)
+                    with open(file_path, 'w') as json_file:
+                        json.dump(data_to_save, json_file, indent=4)
+
+                    message_html = f"""
+                    <html>
+                        <head>
+                            <style>
+                                h1 {{
+                                    color: red;
+                                }}
+                            </style>
+                        </head>
+                        <body>
+                            <h1>{subject}</h1>
+                            <p>{message_text}</p>
+                        </body>
+                    </html>
+                    """
+
+                    # Crearea mesajului multipart
+                    email = EmailMultiAlternatives(subject, message_text, settings.DEFAULT_FROM_EMAIL, [admin_email for admin_email in settings.ADMINS])
+                    email.attach_alternative(message_html, "text/html")
+                    
+                    # Trimiterea emailului
+                    email.send()
+
+                    return render(request, "register.html", {"form": form, "error": f"Username-ul '{form.cleaned_data.get('username')}' nu este disponibil."})
 
             user = form.save(commit=False)
             user.cod = ''.join(random.choices(string.ascii_letters + string.digits, k=20))  # Cod random

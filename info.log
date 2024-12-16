@@ -657,3 +657,193 @@ INFO 2024-12-13 21:53:41,379 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
 INFO 2024-12-13 21:53:41,410 views --------------Functia profile_view a fost apelata
 INFO 2024-12-13 21:53:41,414 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
 INFO 2024-12-13 21:53:54,298 basehttp "GET /aplicatie/creste_preturi HTTP/1.1" 200 2482
+INFO 2024-12-16 21:16:16,208 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:16:19,928 views --------------Functia display_items a fost apelata
+INFO 2024-12-16 21:16:20,176 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-16 21:16:20,277 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 304 0
+WARNING 2024-12-16 21:16:21,423 log Not Found: /favicon.ico
+WARNING 2024-12-16 21:16:21,424 basehttp "GET /favicon.ico HTTP/1.1" 404 9011
+INFO 2024-12-16 21:16:34,365 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-16 21:16:34,419 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-16 21:16:34,479 basehttp "GET /static/login.css HTTP/1.1" 304 0
+INFO 2024-12-16 21:16:36,021 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:16:36,082 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-16 21:16:36,105 basehttp "GET /static/register.css HTTP/1.1" 304 0
+INFO 2024-12-16 21:21:35,567 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:21:36,007 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:21:40,287 views --------------Functia register_view a fost apelata
+ERROR 2024-12-16 21:21:40,387 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 549, in register_view
+    banned_emails.append[form.cleaned_data.get('email')]
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'builtin_function_or_method' object is not subscriptable
+ERROR 2024-12-16 21:21:40,389 basehttp "POST /aplicatie/register HTTP/1.1" 500 75854
+INFO 2024-12-16 21:23:02,234 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:23:02,651 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:23:07,046 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:23:09,572 basehttp "POST /aplicatie/register HTTP/1.1" 200 5044
+INFO 2024-12-16 21:23:28,156 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:23:30,558 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-16 21:23:30,563 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-16 21:23:30,564 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-16 21:23:36,699 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:23:36,774 basehttp "GET /aplicatie/register HTTP/1.1" 200 4946
+INFO 2024-12-16 21:23:53,192 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:23:55,035 basehttp "POST /aplicatie/register HTTP/1.1" 200 5246
+INFO 2024-12-16 21:29:19,733 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:29:20,168 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:29:28,191 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:29:28,297 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-16 21:29:31,253 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:29:31,292 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-16 21:30:58,593 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:30:58,980 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:31:03,227 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:31:03,294 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-16 21:31:52,509 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:31:54,182 basehttp "POST /aplicatie/register HTTP/1.1" 200 5057
+INFO 2024-12-16 21:32:41,511 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:32:41,559 basehttp "POST /aplicatie/register HTTP/1.1" 200 4993
+INFO 2024-12-16 21:32:58,606 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:32:58,650 basehttp "POST /aplicatie/register HTTP/1.1" 200 5089
+INFO 2024-12-16 21:33:13,658 basehttp "GET /admin/ HTTP/1.1" 200 14628
+INFO 2024-12-16 21:33:31,872 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 28510
+INFO 2024-12-16 21:33:31,935 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2024-12-16 21:33:31,938 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-16 21:33:31,939 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 289782
+INFO 2024-12-16 21:33:43,289 basehttp "GET /admin/gelaterie/customuser/65/change/ HTTP/1.1" 200 33020
+INFO 2024-12-16 21:33:43,353 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-16 21:33:46,318 basehttp "GET /admin/gelaterie/customuser/65/delete/ HTTP/1.1" 200 11481
+INFO 2024-12-16 21:33:47,926 basehttp "POST /admin/gelaterie/customuser/65/delete/ HTTP/1.1" 302 0
+INFO 2024-12-16 21:33:48,010 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 27814
+INFO 2024-12-16 21:33:48,115 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-16 21:36:16,209 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:36:17,162 views --------------Functia display_items a fost apelata
+INFO 2024-12-16 21:36:17,439 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-16 21:36:19,144 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-16 21:36:19,213 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-16 21:36:20,793 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:36:20,853 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-16 21:37:07,096 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:37:07,143 basehttp "POST /aplicatie/register HTTP/1.1" 200 4972
+INFO 2024-12-16 21:37:24,515 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:37:26,802 basehttp "POST /aplicatie/register HTTP/1.1" 200 5036
+INFO 2024-12-16 21:37:42,769 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:37:42,812 basehttp "POST /aplicatie/register HTTP/1.1" 200 5065
+INFO 2024-12-16 21:37:56,126 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:37:56,168 basehttp "POST /aplicatie/register HTTP/1.1" 200 5065
+INFO 2024-12-16 21:40:12,804 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:40:13,243 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:40:17,842 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:40:21,952 basehttp "POST /aplicatie/register HTTP/1.1" 302 0
+INFO 2024-12-16 21:40:21,957 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-16 21:40:21,960 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-16 21:40:41,686 views --------------Functia cod_confirmare a fost apelata
+INFO 2024-12-16 21:40:41,687 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
+INFO 2024-12-16 21:40:46,382 basehttp "GET /admin/ HTTP/1.1" 200 14616
+INFO 2024-12-16 21:40:50,864 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 28504
+INFO 2024-12-16 21:40:50,929 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-16 21:40:57,326 basehttp "GET /admin/gelaterie/customuser/66/change/ HTTP/1.1" 200 33020
+INFO 2024-12-16 21:40:57,390 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-16 21:41:00,769 basehttp "GET /admin/gelaterie/customuser/66/delete/ HTTP/1.1" 200 11487
+INFO 2024-12-16 21:41:03,392 basehttp "POST /admin/gelaterie/customuser/66/delete/ HTTP/1.1" 302 0
+INFO 2024-12-16 21:41:03,467 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 27816
+INFO 2024-12-16 21:41:03,563 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-16 21:44:44,486 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:44:45,089 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:45:24,988 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:45:25,457 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:46:29,530 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:46:30,079 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:47:05,330 views --------------Functia register_view a fost apelata
+ERROR 2024-12-16 21:47:05,426 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 562, in register_view
+    if email in banned_emails:
+       ^^^^^
+UnboundLocalError: cannot access local variable 'email' where it is not associated with a value
+ERROR 2024-12-16 21:47:05,427 basehttp "POST /aplicatie/register HTTP/1.1" 500 75811
+INFO 2024-12-16 21:47:39,189 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:47:39,815 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:47:55,286 views --------------Functia register_view a fost apelata
+ERROR 2024-12-16 21:47:55,402 log Internal Server Error: /aplicatie/register
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 567, in register_view
+    save_banned_emails(banned_emails)
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 547, in save_banned_emails
+    with open(BANNED_EMAILS_FILE, 'w') as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/davide/Documents/ProiectDjango/Proiect/banned_users/banned_emails.json'
+ERROR 2024-12-16 21:47:55,404 basehttp "POST /aplicatie/register HTTP/1.1" 500 80176
+INFO 2024-12-16 21:50:29,055 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 21:50:29,488 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:50:37,413 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:50:39,095 basehttp "POST /aplicatie/register HTTP/1.1" 200 5036
+INFO 2024-12-16 21:51:37,363 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:51:37,408 basehttp "POST /aplicatie/register HTTP/1.1" 200 5066
+INFO 2024-12-16 21:51:40,942 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:51:40,985 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-16 21:51:41,591 basehttp "GET /admin/gelaterie/customuser/ HTTP/1.1" 200 27657
+INFO 2024-12-16 21:51:41,697 basehttp "GET /admin/gelaterie/customuser/65/delete/ HTTP/1.1" 302 0
+INFO 2024-12-16 21:51:41,810 basehttp "GET /admin/ HTTP/1.1" 200 14781
+INFO 2024-12-16 21:51:45,311 basehttp "GET /admin/ HTTP/1.1" 200 14606
+INFO 2024-12-16 21:51:46,503 views --------------Functia display_items a fost apelata
+INFO 2024-12-16 21:51:46,670 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-16 21:51:48,950 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-16 21:51:48,996 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-16 21:51:50,550 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:51:50,589 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-16 21:52:20,717 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:52:20,759 basehttp "POST /aplicatie/register HTTP/1.1" 200 5044
+INFO 2024-12-16 21:53:27,048 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 21:53:29,465 views --------------Functia display_items a fost apelata
+INFO 2024-12-16 21:53:29,720 basehttp "GET / HTTP/1.1" 200 17082
+WARNING 2024-12-16 21:53:30,971 log Not Found: /favicon.ico
+WARNING 2024-12-16 21:53:30,972 basehttp "GET /favicon.ico HTTP/1.1" 404 9011
+INFO 2024-12-16 21:53:33,233 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-16 21:53:33,279 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-16 21:53:35,289 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:53:35,353 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-16 21:54:11,025 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:54:12,828 basehttp "POST /aplicatie/register HTTP/1.1" 200 5010
+INFO 2024-12-16 21:55:40,680 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 21:55:43,763 basehttp "POST /aplicatie/register HTTP/1.1" 200 5006
+INFO 2024-12-16 22:00:39,602 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 22:00:40,093 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 22:02:22,379 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 22:02:22,931 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 22:03:06,670 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 22:03:08,391 basehttp "POST /aplicatie/register HTTP/1.1" 200 5006
+INFO 2024-12-16 22:03:32,816 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 22:03:34,496 basehttp "POST /aplicatie/register HTTP/1.1" 200 5010
+INFO 2024-12-16 22:05:41,336 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 22:05:41,769 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 22:06:03,104 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 22:06:04,831 basehttp "POST /aplicatie/register HTTP/1.1" 200 5005
+INFO 2024-12-16 22:06:57,963 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 22:06:58,393 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 22:08:26,621 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-16 22:08:27,042 autoreload Watching for file changes with StatReloader
+INFO 2024-12-16 22:08:41,100 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 22:08:42,832 basehttp "POST /aplicatie/register HTTP/1.1" 200 5005
+INFO 2024-12-16 22:09:19,884 views --------------Functia register_view a fost apelata
+INFO 2024-12-16 22:09:21,532 basehttp "POST /aplicatie/register HTTP/1.1" 200 5006
