@@ -72,6 +72,8 @@
 <body>
     <header>
         <h1>Cosul Meu</h1>
+        <br>
+        <br>
         <a href="{% url 'adauga_comanda' %}" class="btn">Adauga Comanda</a>
     </header>
 
@@ -91,10 +93,23 @@
             <button onclick="sortCartBy('pret')">Sorteaza dupa pret</button>
         </div>
 
-        <form method="post">
+        <form method="post" action="{% url 'comanda_salvare' %}">
             {% csrf_token %}
-            <button type="submit" class="btn">Trimite Comanda</button>
-        </form>        
+            <input type="hidden" id="cos_cumparaturi" name="cos_cumparaturi">
+            <button type="submit" class="btn">Cumpara</button>
+        </form>
+        <script>
+            document.querySelector("form").onsubmit = function () {
+                const cart = JSON.parse(localStorage.getItem("cos_virtual")) || {};
+                document.getElementById("cos_cumparaturi").value = JSON.stringify(Object.keys(cart).map(id => ({
+                    id: id,
+                    cantitate: cart[id].cantitate
+                })));
+                localStorage.removeItem("cos_virtual"); // Stergere cos virtual
+            };
+        </script>
+        
+               
     </main>
 
 </body>

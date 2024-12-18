@@ -7,95 +7,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adauga o Comanda</title>
-
-    <script>
-        window.onload = function() {
-            let cos = JSON.parse(localStorage.getItem("cos_virtual")) || {}; // iau string json si il convertesc in javascript
-            let totalPret = 0; // Variabila pentru pretul total
-    
-            function updateCartDisplay() {
-                let cartItems = document.getElementById("cart-items");
-                cartItems.innerHTML = ''; // Resetare lista
-                totalPret = 0; // Resatare pret total la fiecare actualizare
-    
-                for (let id in cos) {
-                    let item = cos[id];  // Detaliile fiecarui produs
-                    cartItems.innerHTML += `<li>${item.nume} - Cantitate: ${item.cantitate} <button class="btn_sterge" onclick="removeFromCart('${id}')">Sterge</button></li>`;
-                    
-            
-                    totalPret += item.cantitate * parseFloat(item.pret);
-                }
-    
-            
-                localStorage.setItem("pret_total", totalPret);
-            }
-    
-            document.querySelectorAll(".btn_cos_virtual").forEach(button => {
-                button.onclick = function(event) {
-                    event.preventDefault(); // Previne trimiterea formularului
-                    let id = this.dataset.id;
-                    let nume = this.dataset.nume;
-                    let stoc = parseInt(this.dataset.stoc);
-                    let pret = parseFloat(this.dataset.pret); 
-                    let cantitateInput = document.getElementById(`cantitate_${id}`);
-                    let cantitate = parseInt(cantitateInput.value) || 1;
-    
-                    if (!cos[id]) {
-                        cos[id] = { nume: nume, cantitate: 0, pret: pret }; // Initializez o noua intrare
-                    }
-                    if (cos[id].cantitate + cantitate <= stoc) { // Verific stocul
-                        cos[id].cantitate += cantitate;
-                        localStorage.setItem("cos_virtual", JSON.stringify(cos));
-                        updateCartDisplay();
-                    } else {
-                        alert("Nu putem adauga mai multe produse decat sunt disponibile in stoc.");
-                    }
-                };
-            });
-
-            document.querySelector('form').onsubmit = function(event) {
-        
-                event.preventDefault();
-            
-    
-                let cos = JSON.parse(localStorage.getItem("cos_virtual")) || {};
-                
-             
-                document.getElementById("cos_cumparaturi").value = JSON.stringify(cos);
-                
-     
-                this.submit();
-            };
-            
-    
-            window.removeFromCart = function(id) {
-                delete cos[id];
-                localStorage.setItem("cos_virtual", JSON.stringify(cos));
-                updateCartDisplay();
-            };
-    
-            // Ajustarea cantitatii
-            window.adjustQuantity = function(id, adjustment) {
-                let cantitateInput = document.getElementById(`cantitate_${id}`);
-                let currentQuantity = parseInt(cantitateInput.value) || 1;
-                let newQuantity = currentQuantity + adjustment;
-    
-                // Verifica daca noua cantitate este valida
-                if (newQuantity >= 1 && newQuantity <= parseInt(cantitateInput.max)) {
-                    cantitateInput.value = newQuantity;
-    
-       
-                    if (cos[id]) {
-                        cos[id].cantitate = newQuantity;
-                        localStorage.setItem("cos_virtual", JSON.stringify(cos));
-                        updateCartDisplay();
-                    }
-                }
-            };
-    
-            updateCartDisplay(); // Incarca cosul la inceput
-        };
-    </script>
     
 </head>
 <body>
@@ -166,6 +77,88 @@
         </form>
         
     </main>
+
+
+    <script>
+        window.onload = function () {
+            let cos = JSON.parse(localStorage.getItem("cos_virtual")) || {}; // Ia datele din localStorage
+    
+            function updateCartDisplay() {
+                const cartItems = document.getElementById("cart-items");
+                cartItems.innerHTML = ''; // Curatare cos
+                let totalPret = 0;
+    
+                for (const id in cos) {
+                    const item = cos[id];
+                    cartItems.innerHTML += `
+                        <li>${item.nume} - Cantitate: ${item.cantitate}
+                            <button class="btn_sterge" onclick="removeFromCart('${id}')">Sterge</button>
+                        </li>`;
+                    totalPret += item.cantitate * parseFloat(item.pret);
+                }
+    
+                localStorage.setItem("pret_total", totalPret); // Actualizeaza totalul în localStorage
+            }
+    
+            document.querySelectorAll(".btn_cos_virtual").forEach(button => {
+                button.onclick = function (event) {
+                    event.preventDefault(); // Previne trimiterea formularului
+    
+                    const id = this.dataset.id;
+                    const nume = this.dataset.nume;
+                    const stoc = parseInt(this.dataset.stoc);
+                    const pret = parseFloat(this.dataset.pret);
+                    const cantitateInput = document.getElementById(`cantitate_${id}`);
+                    const cantitate = parseInt(cantitateInput.value) || 1;
+    
+                    if (!cos[id]) {
+                        cos[id] = { nume, cantitate: 0, pret };
+                    }
+                    if (cos[id].cantitate + cantitate <= stoc) {
+                        cos[id].cantitate += cantitate;
+                        localStorage.setItem("cos_virtual", JSON.stringify(cos));
+                        updateCartDisplay();
+                    } else {
+                        alert("Nu se pot adăuga mai multe produse decât sunt disponibile în stoc.");
+                    }
+                };
+            });
+    
+        
+            document.querySelectorAll('button[onclick^="adjustQuantity"]').forEach(button => {
+                button.onclick = function (event) {
+                    event.preventDefault(); // Previne trimiterea formularului
+                    const productId = this.getAttribute('onclick').match(/(\d+)/)[0]; 
+                    const quantityInput = document.getElementById(`cantitate_${productId}`);
+                    
+                    if (this.textContent.trim() === '+') {
+                        quantityInput.value = Math.min(parseInt(quantityInput.value) + 1, parseInt(quantityInput.max));
+                    } else if (this.textContent.trim() === '-') {
+                        quantityInput.value = Math.max(parseInt(quantityInput.value) - 1, 1);
+                    }
+                };
+            });
+    
+            document.querySelector('form').onsubmit = function (event) {
+                event.preventDefault(); // Previne trimiterea implicita a formularului
+                
+                document.getElementById("cos_cumparaturi").value = JSON.stringify(cos);
+                
+                // Trimite manual formularul
+                this.submit(); 
+            };
+    
+            window.removeFromCart = function (id) {
+                delete cos[id];
+                localStorage.setItem("cos_virtual", JSON.stringify(cos));
+                updateCartDisplay();
+            };
+    
+            updateCartDisplay();
+        };
+    </script>
+    
+       
 
 </body>
 </html>

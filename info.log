@@ -952,3 +952,902 @@ INFO 2024-12-16 22:32:12,971 views --------------Functia cod_confirmare a fost a
 INFO 2024-12-16 22:32:12,972 basehttp "GET /aplicatie/cod_confirmare HTTP/1.1" 200 755
 INFO 2024-12-16 22:32:39,534 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
 INFO 2024-12-16 22:32:40,073 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:28:17,807 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:28:48,648 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-18 08:28:49,121 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:29:00,717 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 08:29:01,035 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-18 08:29:01,108 basehttp "GET /static/script.js HTTP/1.1" 304 0
+INFO 2024-12-18 08:29:01,110 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 304 0
+WARNING 2024-12-18 08:29:01,221 log Not Found: /favicon.ico
+WARNING 2024-12-18 08:29:01,222 basehttp "GET /favicon.ico HTTP/1.1" 404 9011
+INFO 2024-12-18 08:29:18,389 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:29:18,438 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-18 08:29:22,238 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:29:22,940 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:22,972 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 08:29:22,975 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 08:29:23,073 basehttp "GET /static/profile.css HTTP/1.1" 304 0
+INFO 2024-12-18 08:29:24,783 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:29:24,800 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32220
+INFO 2024-12-18 08:29:24,823 basehttp "GET /static/stil_adauga_comanda.css?v=1.0 HTTP/1.1" 304 0
+INFO 2024-12-18 08:29:42,210 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:29:42,216 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:42,255 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:42,260 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:42,366 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:42,371 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:42,495 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:42,500 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:42,595 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:42,602 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:42,708 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:42,713 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:42,816 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:42,821 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:42,917 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:42,922 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:43,030 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:43,035 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:43,130 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:43,135 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:43,229 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:43,234 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:43,325 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:43,330 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:43,439 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:43,444 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:43,590 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:43,600 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:43,781 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:43,789 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:43,962 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:43,970 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:44,126 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:44,131 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:44,229 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:44,234 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:44,346 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:44,351 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:44,435 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:44,440 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:45,566 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:45,571 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:45,609 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:45,614 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:45,727 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:45,732 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:45,872 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:45,877 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:45,965 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:45,970 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,067 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,074 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,194 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,198 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,283 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,289 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,389 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,394 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,488 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,493 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,591 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,596 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,690 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,695 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,792 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,797 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:46,901 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:46,906 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:47,004 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:47,009 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:47,105 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:47,112 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:47,218 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:47,224 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:47,323 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:47,328 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:47,436 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:47,441 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:47,524 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:47,529 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:52,585 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:52,590 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:52,630 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:52,636 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:52,750 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:52,789 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:52,794 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:52,891 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:52,896 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:52,981 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:52,987 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,091 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,097 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,204 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,209 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,311 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,317 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,418 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,423 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,530 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,535 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,645 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,651 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,750 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,755 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,858 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,863 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:53,964 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:53,969 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:54,057 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:54,062 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:54,157 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:54,163 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:54,258 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:54,263 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:54,368 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:54,373 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:54,475 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:54,481 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:54,598 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:54,605 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:54,709 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:54,714 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:29:54,759 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:29:54,765 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:02,135 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:30:06,129 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 08:30:06,438 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-18 08:30:08,055 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:30:08,100 basehttp "GET /aplicatie/login HTTP/1.1" 200 6859
+INFO 2024-12-18 08:30:16,108 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:30:16,162 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-18 08:30:18,127 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:30:18,799 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:18,833 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 08:30:18,836 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 08:30:20,333 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:30:20,349 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32220
+INFO 2024-12-18 08:30:41,495 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:30:41,500 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:41,534 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:41,538 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:41,648 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:41,653 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:41,785 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:41,790 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:41,879 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:41,884 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:41,995 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,001 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,109 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,114 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,208 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,213 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,333 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:30:42,338 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,443 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,449 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,530 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,535 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,577 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,582 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,686 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,690 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,850 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,856 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:42,954 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:42,959 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,059 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,065 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,182 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,186 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,283 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,288 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,397 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,402 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,491 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,497 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,603 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,608 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,689 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,693 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,737 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,742 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:43,848 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:43,853 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:44,023 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:44,028 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:44,120 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:44,126 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:44,239 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:44,244 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:44,339 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:44,343 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:45,482 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:45,487 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:45,527 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:45,532 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:45,643 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:45,648 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:45,690 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:45,695 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:45,801 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:45,806 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:45,976 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:45,982 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,072 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,077 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,187 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,193 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,265 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,270 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,420 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,424 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,523 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,529 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,631 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,636 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,727 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,733 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,770 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,775 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:46,883 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:46,888 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:47,048 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:47,052 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:47,160 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:47,165 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:47,260 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:47,265 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:47,308 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:47,314 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:47,419 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:47,425 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:52,588 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:52,593 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:52,629 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:52,633 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:52,748 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:52,754 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:52,805 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:52,810 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:52,916 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:52,921 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,096 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,101 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,192 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,197 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,309 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,314 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,410 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,415 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,513 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,519 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,624 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,628 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,714 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,720 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,811 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,815 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:53,920 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:53,925 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:54,017 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:54,022 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:54,109 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:54,115 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:54,212 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:54,217 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:54,328 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:54,334 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:54,442 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:54,448 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:30:54,546 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:30:54,551 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:06,338 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:06,343 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:06,377 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:06,383 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:06,515 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:06,520 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:06,563 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:06,568 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:06,672 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:06,677 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:06,838 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:06,843 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:06,936 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:06,943 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,059 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,064 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,163 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,168 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,261 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,266 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,354 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,362 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,465 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,471 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,570 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,575 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,672 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,678 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,718 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,723 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,828 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:07,833 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:07,995 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:08,001 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:08,107 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:08,112 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:08,200 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:08,206 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:31:08,297 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:31:08,302 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:32:30,155 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:32:30,628 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:32:47,607 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 08:32:47,895 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-18 08:32:49,551 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:32:49,626 basehttp "GET /aplicatie/login HTTP/1.1" 200 8875
+INFO 2024-12-18 08:32:52,441 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:32:52,488 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-18 08:32:54,142 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:32:54,821 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 08:32:54,857 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 08:32:54,859 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 08:32:55,981 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:32:55,997 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32220
+INFO 2024-12-18 08:33:06,168 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:33:06,175 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:06,211 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:06,217 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:06,328 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:06,333 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:06,462 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:06,467 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:06,571 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:06,575 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:06,689 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:06,694 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:06,786 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:06,790 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:06,878 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:06,883 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:06,989 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:06,994 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,119 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,125 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,240 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,245 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,344 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,348 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,449 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,454 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,565 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,569 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,663 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,667 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,753 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,758 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,798 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,804 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:07,899 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:07,904 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:08,074 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:08,079 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:08,200 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:08,205 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:09,330 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:09,334 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:09,369 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:09,375 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:09,490 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:09,495 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:09,533 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:09,539 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:09,638 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:09,643 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:09,798 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:09,802 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:09,903 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:09,908 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,013 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,020 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,113 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,118 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,164 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,170 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,275 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,280 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,456 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,461 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,545 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,550 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,589 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,595 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,693 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,698 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,851 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,856 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:10,951 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:10,955 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:11,069 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:11,074 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:11,175 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:11,180 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:11,270 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:11,276 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:16,330 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:16,335 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:16,372 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:16,378 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:16,488 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:16,494 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:16,630 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:16,636 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:16,751 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:16,756 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:16,883 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:16,888 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,000 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:17,007 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,123 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:17,131 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,263 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:17,268 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,377 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:17,381 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,492 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:17,498 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,609 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:17,614 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,730 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:17,740 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,904 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:17,909 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:17,999 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:18,004 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:18,107 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:18,112 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:18,229 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:18,237 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:18,375 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:18,383 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:18,458 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:18,466 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:18,631 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:18,637 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:48,788 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:48,793 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:48,828 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:48,832 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:48,940 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:48,944 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,067 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,072 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,113 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,120 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,314 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,320 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,399 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,404 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,447 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,452 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,554 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,559 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,724 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,729 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,812 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,817 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,859 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,864 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:49,968 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:49,973 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:50,136 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:50,142 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:50,237 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:50,242 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:50,285 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:50,290 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:50,392 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:50,398 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:50,585 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:50,592 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:50,720 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:50,728 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:33:50,867 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:33:50,872 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:34:22,277 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:34:22,885 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:34:29,532 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:34:30,130 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:34:32,410 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 08:34:32,724 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-18 08:34:34,506 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:34:34,551 basehttp "GET /aplicatie/login HTTP/1.1" 200 8287
+INFO 2024-12-18 08:34:37,324 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:34:37,358 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-18 08:34:39,503 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:34:40,201 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 08:34:40,234 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 08:34:40,237 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 08:34:42,709 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:34:42,725 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32220
+INFO 2024-12-18 08:34:59,132 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:34:59,138 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:34:59,173 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:34:59,178 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+WARNING 2024-12-18 08:34:59,272 log Not Found: /aplicatie/comanda.html
+WARNING 2024-12-18 08:34:59,273 basehttp "GET /aplicatie/comanda.html HTTP/1.1" 404 16104
+INFO 2024-12-18 08:36:08,833 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:36:09,424 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:37:54,946 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:37:55,578 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:37:58,356 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 08:37:58,625 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-18 08:38:01,962 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:38:02,033 basehttp "GET /aplicatie/login HTTP/1.1" 200 1735
+INFO 2024-12-18 08:38:04,270 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:38:04,502 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:38:05,233 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 08:38:05,264 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 08:38:05,267 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 08:38:06,619 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:38:06,636 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32220
+INFO 2024-12-18 08:38:28,041 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:38:28,047 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:38:28,053 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:38:28,082 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+WARNING 2024-12-18 08:38:28,183 log Not Found: /aplicatie/comanda.html
+WARNING 2024-12-18 08:38:28,183 basehttp "GET /aplicatie/comanda.html HTTP/1.1" 404 16104
+INFO 2024-12-18 08:38:58,947 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:38:59,501 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:40:14,729 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:40:15,203 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:40:26,191 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:40:26,213 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:40:26,219 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:40:26,256 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+WARNING 2024-12-18 08:40:26,357 log Not Found: /aplicatie/comanda.html
+WARNING 2024-12-18 08:40:26,358 basehttp "GET /aplicatie/comanda.html HTTP/1.1" 404 16104
+INFO 2024-12-18 08:44:43,118 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:44:43,744 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:44:59,417 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:45:00,114 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:45:07,427 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 08:45:07,691 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-18 08:45:12,127 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:45:12,175 basehttp "GET /aplicatie/login HTTP/1.1" 200 1819
+INFO 2024-12-18 08:45:18,206 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:45:18,921 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 08:45:18,959 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 08:45:18,962 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 08:45:20,281 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:45:20,298 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32220
+INFO 2024-12-18 08:45:37,398 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:45:37,405 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:45:37,410 views --------------Functia comanda_salvare a fost apelata
+ERROR 2024-12-18 08:45:37,482 log Internal Server Error: /aplicatie/comanda_salvare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 515, in comanda_salvare
+    return redirect('comanda')
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comanda' not found. 'comanda' is not a valid view function or pattern name.
+ERROR 2024-12-18 08:45:37,484 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 500 91726
+INFO 2024-12-18 08:46:00,311 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-18 08:46:00,961 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:46:04,457 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:46:04,534 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:46:04,542 views --------------Functia comanda a fost apelata
+INFO 2024-12-18 08:46:04,560 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4227
+INFO 2024-12-18 08:46:04,793 basehttp "GET /static/stil_comanda.css?v=1.0 HTTP/1.1" 304 0
+INFO 2024-12-18 08:46:14,382 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:46:17,198 basehttp "POST /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:46:17,203 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-18 08:46:17,205 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 537
+INFO 2024-12-18 08:46:17,338 basehttp "GET /static/stil_mesaj.css HTTP/1.1" 304 0
+INFO 2024-12-18 08:46:23,934 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 08:46:24,133 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-18 08:55:15,172 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:55:15,238 basehttp "GET /aplicatie/login HTTP/1.1" 200 1825
+INFO 2024-12-18 08:55:16,872 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:55:17,615 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 08:55:17,647 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 08:55:17,650 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 08:55:19,242 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:55:19,258 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 28237
+INFO 2024-12-18 08:55:36,891 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:55:36,897 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 08:55:36,902 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 08:55:36,936 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 08:55:37,020 views --------------Functia comanda a fost apelata
+INFO 2024-12-18 08:55:37,022 basehttp "GET /aplicatie/comanda HTTP/1.1" 200 4227
+INFO 2024-12-18 08:57:16,668 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 08:57:17,249 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:59:40,131 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 08:59:41,528 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 08:59:41,796 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-18 08:59:43,689 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:59:43,763 basehttp "GET /aplicatie/login HTTP/1.1" 200 1735
+INFO 2024-12-18 08:59:45,256 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 08:59:45,924 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 08:59:45,959 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 08:59:45,961 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 08:59:47,965 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 08:59:47,982 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32219
+INFO 2024-12-18 09:00:06,467 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:00:06,473 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:00:06,478 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:00:06,511 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4227
+INFO 2024-12-18 09:00:09,880 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:00:09,897 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32369
+INFO 2024-12-18 09:00:48,000 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:00:48,016 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31231
+INFO 2024-12-18 09:01:00,802 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:01:00,808 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:01:00,812 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:01:00,846 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4227
+INFO 2024-12-18 09:01:03,505 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:01:03,527 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31381
+INFO 2024-12-18 09:02:02,397 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:02:02,428 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32220
+INFO 2024-12-18 09:02:08,768 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:02:08,774 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:02:08,780 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:02:08,814 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4227
+INFO 2024-12-18 09:02:10,926 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:02:10,946 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32370
+INFO 2024-12-18 09:02:26,724 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:02:26,740 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32223
+INFO 2024-12-18 09:02:32,033 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:02:32,039 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:02:32,044 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:02:32,078 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4227
+INFO 2024-12-18 09:02:34,051 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:02:34,070 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32373
+INFO 2024-12-18 09:06:20,531 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:06:20,548 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31277
+INFO 2024-12-18 09:06:26,639 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:06:26,645 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:06:26,650 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:06:26,684 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4253
+INFO 2024-12-18 09:06:29,372 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:06:29,393 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31427
+INFO 2024-12-18 09:09:34,470 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:09:34,485 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31307
+INFO 2024-12-18 09:09:42,051 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:09:42,057 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:09:42,064 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:09:42,100 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4253
+INFO 2024-12-18 09:09:43,860 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:09:43,886 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 31457
+INFO 2024-12-18 09:12:02,232 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:12:02,248 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32228
+INFO 2024-12-18 09:12:30,534 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:12:30,540 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:12:30,545 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:12:30,578 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4253
+INFO 2024-12-18 09:12:37,858 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:12:42,543 basehttp "POST /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2024-12-18 09:12:42,548 views --------------Functia mesaj_trimis a fost apelata
+INFO 2024-12-18 09:12:42,550 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 537
+INFO 2024-12-18 09:13:20,607 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 09:13:20,802 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-18 09:15:25,060 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 09:15:25,102 basehttp "GET /aplicatie/login HTTP/1.1" 200 1825
+INFO 2024-12-18 09:15:27,327 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 09:15:28,033 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 09:15:28,068 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 09:15:28,070 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2024-12-18 09:15:40,183 basehttp "GET /admin/ HTTP/1.1" 200 14576
+INFO 2024-12-18 09:15:43,696 basehttp "GET /admin/gelaterie/comanda/ HTTP/1.1" 200 15759
+INFO 2024-12-18 09:15:43,737 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2024-12-18 09:15:43,738 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 289782
+INFO 2024-12-18 09:15:43,768 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-18 09:15:47,051 basehttp "GET /admin/gelaterie/comanda/51/change/ HTTP/1.1" 200 18428
+INFO 2024-12-18 09:15:47,092 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-12-18 09:15:47,122 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-18 09:15:58,929 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:15:58,945 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32063
+INFO 2024-12-18 09:16:17,569 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:16:17,574 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:16:17,580 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:16:17,615 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4253
+INFO 2024-12-18 09:16:33,247 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:16:33,267 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32213
+INFO 2024-12-18 09:18:08,227 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 09:18:08,678 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 09:25:23,110 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:25:23,131 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:25:23,136 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:25:23,178 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4253
+INFO 2024-12-18 09:25:30,729 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:25:30,753 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32213
+INFO 2024-12-18 09:25:43,465 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:25:43,470 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2024-12-18 09:25:43,477 views --------------Functia comanda_salvare a fost apelata
+INFO 2024-12-18 09:25:43,510 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4253
+INFO 2024-12-18 09:27:18,170 views --------------Functia adauga_comanda a fost apelata
+INFO 2024-12-18 09:27:18,204 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32213
+INFO 2024-12-18 09:27:18,404 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 09:27:18,441 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-18 09:27:18,640 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 09:27:18,878 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2024-12-18 09:28:20,496 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 09:28:20,528 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-18 09:28:23,124 views --------------Functia register_view a fost apelata
+INFO 2024-12-18 09:28:23,196 basehttp "GET /aplicatie/register HTTP/1.1" 200 4744
+INFO 2024-12-18 09:28:45,943 views --------------Functia register_view a fost apelata
+INFO 2024-12-18 09:28:45,994 basehttp "POST /aplicatie/register HTTP/1.1" 200 5005
+INFO 2024-12-18 09:29:02,370 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py changed, reloading.
+INFO 2024-12-18 09:29:03,000 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 09:30:07,983 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 09:30:10,191 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 09:30:10,284 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-18 09:30:11,503 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 09:30:12,190 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2024-12-18 09:30:12,225 views --------------Functia profile_view a fost apelata
+INFO 2024-12-18 09:30:12,230 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+WARNING 2024-12-18 09:30:23,947 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-18 09:30:23,948 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-18 09:30:41,446 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-18 09:30:41,447 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-18 09:30:44,918 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-18 09:30:44,919 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+INFO 2024-12-18 09:30:47,283 views --------------Functia custom_login_view a fost apelata
+INFO 2024-12-18 09:30:47,315 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2024-12-18 09:31:28,325 autoreload /home/davide/Documents/ProiectDjango/Proiect/gelaterie/urls.py changed, reloading.
+INFO 2024-12-18 09:31:29,072 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 12:57:13,516 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 12:57:15,416 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 12:57:15,677 basehttp "GET / HTTP/1.1" 200 17082
+WARNING 2024-12-18 12:57:15,836 log Not Found: /favicon.ico
+WARNING 2024-12-18 12:57:15,837 basehttp "GET /favicon.ico HTTP/1.1" 404 2509
+WARNING 2024-12-18 12:57:48,112 log Not Found: /asdas
+WARNING 2024-12-18 12:57:48,112 basehttp "GET /asdas HTTP/1.1" 404 2521
+WARNING 2024-12-18 12:57:52,164 log Not Found: /display_items
+WARNING 2024-12-18 12:57:52,165 basehttp "GET /display_items HTTP/1.1" 404 2521
+WARNING 2024-12-18 12:57:53,419 log Not Found: /display_items
+WARNING 2024-12-18 12:57:53,420 basehttp "GET /display_items HTTP/1.1" 404 2521
+WARNING 2024-12-18 12:58:48,966 log Not Found: /display_items
+WARNING 2024-12-18 12:58:48,967 basehttp "GET /display_items HTTP/1.1" 404 2521
+WARNING 2024-12-18 12:58:49,760 log Not Found: /display_items
+WARNING 2024-12-18 12:58:49,761 basehttp "GET /display_items HTTP/1.1" 404 2521
+WARNING 2024-12-18 13:00:21,495 log Not Found: /display_items
+WARNING 2024-12-18 13:00:21,496 basehttp "GET /display_items HTTP/1.1" 404 2500
+WARNING 2024-12-18 13:00:42,680 log Not Found: /display_items
+WARNING 2024-12-18 13:00:42,680 basehttp "GET /display_items HTTP/1.1" 404 2505
+WARNING 2024-12-18 13:00:59,696 log Not Found: /display_items
+WARNING 2024-12-18 13:00:59,697 basehttp "GET /display_items HTTP/1.1" 404 2501
+WARNING 2024-12-18 13:01:07,837 log Not Found: /asdas
+WARNING 2024-12-18 13:01:07,837 basehttp "GET /asdas HTTP/1.1" 404 2501
+WARNING 2024-12-18 13:03:11,908 log Not Found: /asdas
+WARNING 2024-12-18 13:03:11,908 basehttp "GET /asdas HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:03:11,932 log Not Found: /static/images/rocket.png
+WARNING 2024-12-18 13:03:11,933 basehttp "GET /static/images/rocket.png HTTP/1.1" 404 2899
+INFO 2024-12-18 13:03:17,354 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 13:03:17,572 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2024-12-18 13:03:21,891 basehttp "GET /admin/ HTTP/1.1" 200 14576
+WARNING 2024-12-18 13:03:22,515 log Not Found: /adasda
+WARNING 2024-12-18 13:03:22,516 basehttp "GET /adasda HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:03:22,564 log Not Found: /static/images/rocket.png
+WARNING 2024-12-18 13:03:22,564 basehttp "GET /static/images/rocket.png HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:04:05,175 log Not Found: /adasda
+WARNING 2024-12-18 13:04:05,176 basehttp "GET /adasda HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:05,201 log Not Found: /static/images/logo.jpg
+WARNING 2024-12-18 13:04:05,202 basehttp "GET /static/images/logo.jpg HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:06,106 log Not Found: /adasda
+WARNING 2024-12-18 13:04:06,107 basehttp "GET /adasda HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:06,151 log Not Found: /static/images/logo.jpg
+WARNING 2024-12-18 13:04:06,153 basehttp "GET /static/images/logo.jpg HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:06,844 log Not Found: /adasda
+WARNING 2024-12-18 13:04:06,845 basehttp "GET /adasda HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:06,872 log Not Found: /static/images/logo.jpg
+WARNING 2024-12-18 13:04:06,873 basehttp "GET /static/images/logo.jpg HTTP/1.1" 404 2897
+INFO 2024-12-18 13:04:08,452 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 13:04:08,730 basehttp "GET / HTTP/1.1" 200 17082
+WARNING 2024-12-18 13:04:15,400 log Not Found: /asasa
+WARNING 2024-12-18 13:04:15,401 basehttp "GET /asasa HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:15,429 log Not Found: /static/images/logo.jpg
+WARNING 2024-12-18 13:04:15,430 basehttp "GET /static/images/logo.jpg HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:08:19,363 log Not Found: /asasa
+WARNING 2024-12-18 13:08:19,363 basehttp "GET /asasa HTTP/1.1" 404 1163
+WARNING 2024-12-18 13:08:19,398 log Not Found: /static/404.css
+WARNING 2024-12-18 13:08:19,399 basehttp "GET /static/404.css?v=1.0 HTTP/1.1" 404 1163
+ERROR 2024-12-18 13:09:42,467 log Internal Server Error: /asasa
+ERROR 2024-12-18 13:09:42,468 basehttp "GET /asasa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:09:43,599 log Internal Server Error: /asasa
+ERROR 2024-12-18 13:09:43,600 basehttp "GET /asasa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:09:51,780 log Internal Server Error: /saas
+ERROR 2024-12-18 13:09:51,781 basehttp "GET /saas HTTP/1.1" 500 145
+INFO 2024-12-18 13:10:11,095 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 13:10:12,753 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 13:10:13,042 basehttp "GET / HTTP/1.1" 200 17082
+ERROR 2024-12-18 13:10:17,184 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:10:17,185 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:26,084 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:13:26,085 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:26,867 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:13:26,867 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:32,892 log Internal Server Error: /asasd
+ERROR 2024-12-18 13:13:32,893 basehttp "GET /asasd HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:40,501 log Internal Server Error: /apliicatie
+ERROR 2024-12-18 13:13:40,502 basehttp "GET /apliicatie HTTP/1.1" 500 145
+INFO 2024-12-18 13:14:29,470 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 13:14:29,657 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+ERROR 2024-12-18 13:14:36,179 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:14:36,180 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+WARNING 2024-12-18 13:14:44,184 log Not Found: /aplicatie/as
+WARNING 2024-12-18 13:14:44,185 basehttp "GET /aplicatie/as HTTP/1.1" 404 0
+WARNING 2024-12-18 13:14:49,967 log Not Found: /aplicatie/as
+WARNING 2024-12-18 13:14:49,967 basehttp "GET /aplicatie/as HTTP/1.1" 404 0
+INFO 2024-12-18 13:15:02,892 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-18 13:15:04,989 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:15:04,990 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:29,835 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:16:29,836 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:30,632 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:16:30,633 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:36,661 log Internal Server Error: /aplicatie/aa
+ERROR 2024-12-18 13:16:36,662 basehttp "GET /aplicatie/aa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:59,741 log Internal Server Error: /aplicatie/aa
+ERROR 2024-12-18 13:16:59,742 basehttp "GET /aplicatie/aa HTTP/1.1" 500 145
+INFO 2024-12-18 13:19:04,214 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-18 13:19:04,984 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 13:19:08,705 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 13:19:08,982 basehttp "GET / HTTP/1.1" 200 17082
+ERROR 2024-12-18 13:19:14,537 log Internal Server Error: /as
+ERROR 2024-12-18 13:19:14,537 basehttp "GET /as HTTP/1.1" 500 145
+INFO 2024-12-18 13:19:18,698 autoreload /home/davide/Documents/ProiectDjango/Proiect/Proiect/settings.py changed, reloading.
+INFO 2024-12-18 13:19:19,246 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-18 13:20:16,103 log Not Found: /as
+WARNING 2024-12-18 13:20:16,104 basehttp "GET /as HTTP/1.1" 404 1078
+WARNING 2024-12-18 13:20:16,146 log Not Found: /static/404.css
+WARNING 2024-12-18 13:20:16,147 basehttp "GET /static/404.css HTTP/1.1" 404 1078
+WARNING 2024-12-18 13:20:53,051 log Not Found: /as
+WARNING 2024-12-18 13:20:53,051 basehttp "GET /as HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:20:53,079 log Not Found: /static/images/rocket.png
+WARNING 2024-12-18 13:20:53,080 basehttp "GET /static/images/rocket.png HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:22:33,983 log Not Found: /as
+WARNING 2024-12-18 13:22:33,983 basehttp "GET /as HTTP/1.1" 404 3830
+WARNING 2024-12-18 13:24:57,759 log Not Found: /as
+WARNING 2024-12-18 13:24:57,761 basehttp "GET /as HTTP/1.1" 404 1979
+WARNING 2024-12-18 13:25:02,800 log Not Found: /as
+WARNING 2024-12-18 13:25:02,801 basehttp "GET /as HTTP/1.1" 404 1979
+WARNING 2024-12-18 13:25:03,665 log Not Found: /as
+WARNING 2024-12-18 13:25:03,665 basehttp "GET /as HTTP/1.1" 404 1979
+ERROR 2024-12-18 13:28:20,403 log Internal Server Error: /as
+ERROR 2024-12-18 13:28:20,404 basehttp "GET /as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:28:21,562 log Internal Server Error: /as
+ERROR 2024-12-18 13:28:21,563 basehttp "GET /as HTTP/1.1" 500 145
+WARNING 2024-12-18 13:32:45,185 log Not Found: /as
+WARNING 2024-12-18 13:32:45,186 basehttp "GET /as HTTP/1.1" 404 4781
+WARNING 2024-12-18 13:36:31,186 log Not Found: /as
+WARNING 2024-12-18 13:36:31,187 basehttp "GET /as HTTP/1.1" 404 5574
+WARNING 2024-12-18 13:36:32,304 log Not Found: /as
+WARNING 2024-12-18 13:36:32,305 basehttp "GET /as HTTP/1.1" 404 5574
+WARNING 2024-12-18 13:36:33,063 log Not Found: /as
+WARNING 2024-12-18 13:36:33,063 basehttp "GET /as HTTP/1.1" 404 5574
+INFO 2024-12-18 13:36:38,394 views --------------Functia display_items a fost apelata
+INFO 2024-12-18 13:36:38,614 basehttp "GET / HTTP/1.1" 200 17082
+WARNING 2024-12-18 13:36:44,123 log Not Found: /asas
+WARNING 2024-12-18 13:36:44,124 basehttp "GET /asas HTTP/1.1" 404 5574

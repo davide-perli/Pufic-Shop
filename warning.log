@@ -7361,3 +7361,153 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^
 AttributeError: 'dict' object has no attribute 'getdata'
 ERROR 2024-12-16 22:27:09,860 basehttp "POST /aplicatie/register HTTP/1.1" 500 81296
+WARNING 2024-12-18 08:29:01,221 log Not Found: /favicon.ico
+WARNING 2024-12-18 08:29:01,222 basehttp "GET /favicon.ico HTTP/1.1" 404 9011
+WARNING 2024-12-18 08:34:59,272 log Not Found: /aplicatie/comanda.html
+WARNING 2024-12-18 08:34:59,273 basehttp "GET /aplicatie/comanda.html HTTP/1.1" 404 16104
+WARNING 2024-12-18 08:38:28,183 log Not Found: /aplicatie/comanda.html
+WARNING 2024-12-18 08:38:28,183 basehttp "GET /aplicatie/comanda.html HTTP/1.1" 404 16104
+WARNING 2024-12-18 08:40:26,357 log Not Found: /aplicatie/comanda.html
+WARNING 2024-12-18 08:40:26,358 basehttp "GET /aplicatie/comanda.html HTTP/1.1" 404 16104
+ERROR 2024-12-18 08:45:37,482 log Internal Server Error: /aplicatie/comanda_salvare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 515, in comanda_salvare
+    return redirect('comanda')
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comanda' not found. 'comanda' is not a valid view function or pattern name.
+ERROR 2024-12-18 08:45:37,484 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 500 91726
+WARNING 2024-12-18 09:30:23,947 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-18 09:30:23,948 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-18 09:30:41,446 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-18 09:30:41,447 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-18 09:30:44,918 log Forbidden (CSRF token from POST incorrect.): /aplicatie/login
+WARNING 2024-12-18 09:30:44,919 basehttp "POST /aplicatie/login HTTP/1.1" 403 2518
+WARNING 2024-12-18 12:57:15,836 log Not Found: /favicon.ico
+WARNING 2024-12-18 12:57:15,837 basehttp "GET /favicon.ico HTTP/1.1" 404 2509
+WARNING 2024-12-18 12:57:48,112 log Not Found: /asdas
+WARNING 2024-12-18 12:57:48,112 basehttp "GET /asdas HTTP/1.1" 404 2521
+WARNING 2024-12-18 12:57:52,164 log Not Found: /display_items
+WARNING 2024-12-18 12:57:52,165 basehttp "GET /display_items HTTP/1.1" 404 2521
+WARNING 2024-12-18 12:57:53,419 log Not Found: /display_items
+WARNING 2024-12-18 12:57:53,420 basehttp "GET /display_items HTTP/1.1" 404 2521
+WARNING 2024-12-18 12:58:48,966 log Not Found: /display_items
+WARNING 2024-12-18 12:58:48,967 basehttp "GET /display_items HTTP/1.1" 404 2521
+WARNING 2024-12-18 12:58:49,760 log Not Found: /display_items
+WARNING 2024-12-18 12:58:49,761 basehttp "GET /display_items HTTP/1.1" 404 2521
+WARNING 2024-12-18 13:00:21,495 log Not Found: /display_items
+WARNING 2024-12-18 13:00:21,496 basehttp "GET /display_items HTTP/1.1" 404 2500
+WARNING 2024-12-18 13:00:42,680 log Not Found: /display_items
+WARNING 2024-12-18 13:00:42,680 basehttp "GET /display_items HTTP/1.1" 404 2505
+WARNING 2024-12-18 13:00:59,696 log Not Found: /display_items
+WARNING 2024-12-18 13:00:59,697 basehttp "GET /display_items HTTP/1.1" 404 2501
+WARNING 2024-12-18 13:01:07,837 log Not Found: /asdas
+WARNING 2024-12-18 13:01:07,837 basehttp "GET /asdas HTTP/1.1" 404 2501
+WARNING 2024-12-18 13:03:11,908 log Not Found: /asdas
+WARNING 2024-12-18 13:03:11,908 basehttp "GET /asdas HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:03:11,932 log Not Found: /static/images/rocket.png
+WARNING 2024-12-18 13:03:11,933 basehttp "GET /static/images/rocket.png HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:03:22,515 log Not Found: /adasda
+WARNING 2024-12-18 13:03:22,516 basehttp "GET /adasda HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:03:22,564 log Not Found: /static/images/rocket.png
+WARNING 2024-12-18 13:03:22,564 basehttp "GET /static/images/rocket.png HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:04:05,175 log Not Found: /adasda
+WARNING 2024-12-18 13:04:05,176 basehttp "GET /adasda HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:05,201 log Not Found: /static/images/logo.jpg
+WARNING 2024-12-18 13:04:05,202 basehttp "GET /static/images/logo.jpg HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:06,106 log Not Found: /adasda
+WARNING 2024-12-18 13:04:06,107 basehttp "GET /adasda HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:06,151 log Not Found: /static/images/logo.jpg
+WARNING 2024-12-18 13:04:06,153 basehttp "GET /static/images/logo.jpg HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:06,844 log Not Found: /adasda
+WARNING 2024-12-18 13:04:06,845 basehttp "GET /adasda HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:06,872 log Not Found: /static/images/logo.jpg
+WARNING 2024-12-18 13:04:06,873 basehttp "GET /static/images/logo.jpg HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:15,400 log Not Found: /asasa
+WARNING 2024-12-18 13:04:15,401 basehttp "GET /asasa HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:04:15,429 log Not Found: /static/images/logo.jpg
+WARNING 2024-12-18 13:04:15,430 basehttp "GET /static/images/logo.jpg HTTP/1.1" 404 2897
+WARNING 2024-12-18 13:08:19,363 log Not Found: /asasa
+WARNING 2024-12-18 13:08:19,363 basehttp "GET /asasa HTTP/1.1" 404 1163
+WARNING 2024-12-18 13:08:19,398 log Not Found: /static/404.css
+WARNING 2024-12-18 13:08:19,399 basehttp "GET /static/404.css?v=1.0 HTTP/1.1" 404 1163
+ERROR 2024-12-18 13:09:42,467 log Internal Server Error: /asasa
+ERROR 2024-12-18 13:09:42,468 basehttp "GET /asasa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:09:43,599 log Internal Server Error: /asasa
+ERROR 2024-12-18 13:09:43,600 basehttp "GET /asasa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:09:51,780 log Internal Server Error: /saas
+ERROR 2024-12-18 13:09:51,781 basehttp "GET /saas HTTP/1.1" 500 145
+ERROR 2024-12-18 13:10:17,184 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:10:17,185 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:26,084 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:13:26,085 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:26,867 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:13:26,867 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:32,892 log Internal Server Error: /asasd
+ERROR 2024-12-18 13:13:32,893 basehttp "GET /asasd HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:40,501 log Internal Server Error: /apliicatie
+ERROR 2024-12-18 13:13:40,502 basehttp "GET /apliicatie HTTP/1.1" 500 145
+ERROR 2024-12-18 13:14:36,179 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:14:36,180 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+WARNING 2024-12-18 13:14:44,184 log Not Found: /aplicatie/as
+WARNING 2024-12-18 13:14:44,185 basehttp "GET /aplicatie/as HTTP/1.1" 404 0
+WARNING 2024-12-18 13:14:49,967 log Not Found: /aplicatie/as
+WARNING 2024-12-18 13:14:49,967 basehttp "GET /aplicatie/as HTTP/1.1" 404 0
+ERROR 2024-12-18 13:15:04,989 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:15:04,990 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:29,835 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:16:29,836 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:30,632 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:16:30,633 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:36,661 log Internal Server Error: /aplicatie/aa
+ERROR 2024-12-18 13:16:36,662 basehttp "GET /aplicatie/aa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:59,741 log Internal Server Error: /aplicatie/aa
+ERROR 2024-12-18 13:16:59,742 basehttp "GET /aplicatie/aa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:19:14,537 log Internal Server Error: /as
+ERROR 2024-12-18 13:19:14,537 basehttp "GET /as HTTP/1.1" 500 145
+WARNING 2024-12-18 13:20:16,103 log Not Found: /as
+WARNING 2024-12-18 13:20:16,104 basehttp "GET /as HTTP/1.1" 404 1078
+WARNING 2024-12-18 13:20:16,146 log Not Found: /static/404.css
+WARNING 2024-12-18 13:20:16,147 basehttp "GET /static/404.css HTTP/1.1" 404 1078
+WARNING 2024-12-18 13:20:53,051 log Not Found: /as
+WARNING 2024-12-18 13:20:53,051 basehttp "GET /as HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:20:53,079 log Not Found: /static/images/rocket.png
+WARNING 2024-12-18 13:20:53,080 basehttp "GET /static/images/rocket.png HTTP/1.1" 404 2899
+WARNING 2024-12-18 13:22:33,983 log Not Found: /as
+WARNING 2024-12-18 13:22:33,983 basehttp "GET /as HTTP/1.1" 404 3830
+WARNING 2024-12-18 13:24:57,759 log Not Found: /as
+WARNING 2024-12-18 13:24:57,761 basehttp "GET /as HTTP/1.1" 404 1979
+WARNING 2024-12-18 13:25:02,800 log Not Found: /as
+WARNING 2024-12-18 13:25:02,801 basehttp "GET /as HTTP/1.1" 404 1979
+WARNING 2024-12-18 13:25:03,665 log Not Found: /as
+WARNING 2024-12-18 13:25:03,665 basehttp "GET /as HTTP/1.1" 404 1979
+ERROR 2024-12-18 13:28:20,403 log Internal Server Error: /as
+ERROR 2024-12-18 13:28:20,404 basehttp "GET /as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:28:21,562 log Internal Server Error: /as
+ERROR 2024-12-18 13:28:21,563 basehttp "GET /as HTTP/1.1" 500 145
+WARNING 2024-12-18 13:32:45,185 log Not Found: /as
+WARNING 2024-12-18 13:32:45,186 basehttp "GET /as HTTP/1.1" 404 4781
+WARNING 2024-12-18 13:36:31,186 log Not Found: /as
+WARNING 2024-12-18 13:36:31,187 basehttp "GET /as HTTP/1.1" 404 5574
+WARNING 2024-12-18 13:36:32,304 log Not Found: /as
+WARNING 2024-12-18 13:36:32,305 basehttp "GET /as HTTP/1.1" 404 5574
+WARNING 2024-12-18 13:36:33,063 log Not Found: /as
+WARNING 2024-12-18 13:36:33,063 basehttp "GET /as HTTP/1.1" 404 5574
+WARNING 2024-12-18 13:36:44,123 log Not Found: /asas
+WARNING 2024-12-18 13:36:44,124 basehttp "GET /asas HTTP/1.1" 404 5574

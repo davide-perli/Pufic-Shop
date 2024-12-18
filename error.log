@@ -6467,3 +6467,61 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^
 AttributeError: 'dict' object has no attribute 'getdata'
 ERROR 2024-12-16 22:27:09,860 basehttp "POST /aplicatie/register HTTP/1.1" 500 81296
+ERROR 2024-12-18 08:45:37,482 log Internal Server Error: /aplicatie/comanda_salvare
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davide/Documents/ProiectDjango/Proiect/gelaterie/views.py", line 515, in comanda_salvare
+    return redirect('comanda')
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comanda' not found. 'comanda' is not a valid view function or pattern name.
+ERROR 2024-12-18 08:45:37,484 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 500 91726
+ERROR 2024-12-18 13:09:42,467 log Internal Server Error: /asasa
+ERROR 2024-12-18 13:09:42,468 basehttp "GET /asasa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:09:43,599 log Internal Server Error: /asasa
+ERROR 2024-12-18 13:09:43,600 basehttp "GET /asasa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:09:51,780 log Internal Server Error: /saas
+ERROR 2024-12-18 13:09:51,781 basehttp "GET /saas HTTP/1.1" 500 145
+ERROR 2024-12-18 13:10:17,184 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:10:17,185 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:26,084 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:13:26,085 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:26,867 log Internal Server Error: /asdsad
+ERROR 2024-12-18 13:13:26,867 basehttp "GET /asdsad HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:32,892 log Internal Server Error: /asasd
+ERROR 2024-12-18 13:13:32,893 basehttp "GET /asasd HTTP/1.1" 500 145
+ERROR 2024-12-18 13:13:40,501 log Internal Server Error: /apliicatie
+ERROR 2024-12-18 13:13:40,502 basehttp "GET /apliicatie HTTP/1.1" 500 145
+ERROR 2024-12-18 13:14:36,179 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:14:36,180 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:15:04,989 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:15:04,990 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:29,835 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:16:29,836 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:30,632 log Internal Server Error: /aplicatie/as
+ERROR 2024-12-18 13:16:30,633 basehttp "GET /aplicatie/as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:36,661 log Internal Server Error: /aplicatie/aa
+ERROR 2024-12-18 13:16:36,662 basehttp "GET /aplicatie/aa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:16:59,741 log Internal Server Error: /aplicatie/aa
+ERROR 2024-12-18 13:16:59,742 basehttp "GET /aplicatie/aa HTTP/1.1" 500 145
+ERROR 2024-12-18 13:19:14,537 log Internal Server Error: /as
+ERROR 2024-12-18 13:19:14,537 basehttp "GET /as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:28:20,403 log Internal Server Error: /as
+ERROR 2024-12-18 13:28:20,404 basehttp "GET /as HTTP/1.1" 500 145
+ERROR 2024-12-18 13:28:21,562 log Internal Server Error: /as
+ERROR 2024-12-18 13:28:21,563 basehttp "GET /as HTTP/1.1" 500 145

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        @keyframes wiggle {
+            0%, 100% { transform: translateX(-50%) rotate(0); }
+            25% { transform: translateX(-50%) rotate(-5deg); }
+            75% { transform: translateX(-50%) rotate(5deg); }
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main_wrapper {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .antenna {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: wiggle 2s infinite ease-in-out;
+        }
+
+        .a1, .a2 {
+            width: 2px;
+            height: 30px;
+            background: black;
+            position: absolute;
+        }
+
+        .a1 { transform: rotate(-45deg); left: -10px; }
+        .a2 { transform: rotate(45deg); right: -10px; }
+
+        .tv {
+            background: black;
+            border-radius: 15px;
+            width: 300px;
+            height: 220px;
+            position: relative;
+        }
+
+        .display_div {
+            width: 90%;
+            height: 70%;
+            background: #000;
+            border-radius: 10px;
+            margin: auto;
+            position: absolute;
+            top: 15%;
+            left: 5%;
+        }
+
+        .screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #39ff14;
+            font-size: 1.2rem;
+            font-family: monospace;
+            animation: flicker 0.5s infinite;
+        }
+
+        .lines {
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lines div {
+            height: 2px;
+            width: 30%;
+            background: white;
+        }
+
+        .buttons_div {
+            position: absolute;
+            bottom: 5%;
+            left: 10%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttons_div div {
+            width: 10px;
+            height: 10px;
+            background: gray;
+            border-radius: 50%;
+        }
+
+        .speakers {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-left: 20px;
+        }
+
+        .speakers div {
+            width: 20px;
+            height: 5px;
+            background: black;
+        }
+
+        .text_404 {
+            font-size: 5rem;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            animation: pulse 1.5s infinite;
+        }
+
+        .home-button {
+            margin-top: 20px;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            color: white;
+            background: #e74c3c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            animation: bounce 1s infinite;
+        }
+
+        .home-button:hover {
+            background: #c0392b;
+        }
+
+        .home-button:active {
+            background: #a93226;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="main">
+            <div class="antenna">
+                <div class="a1"></div>
+                <div class="a2"></div>
+            </div>
+            <div class="tv">
+                <div class="display_div">
+                    <div class="screen">
+                        <span class="notfound_text">NOT FOUND</span>
+                    </div>
+                </div>
+                <div class="lines">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="buttons_div">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="speakers">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text_404">
+            <div class="text_4041">4</div>
+            <div class="text_4042">0</div>
+            <div class="text_4043">4</div>
+        </div>
+        <button class="home-button" onclick="window.location.href='/'">Go Home</button>
+    </div>
+</body>
+</html>

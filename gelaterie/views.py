@@ -50,6 +50,13 @@ import requests
 
 import logging
 
+
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+
+from django.core.mail import EmailMessage
+
+
 logger = logging.getLogger('django')
 
 def home(request):
@@ -428,7 +435,7 @@ def cod_confirmare(request):
     logger.info("--------------Functia cod_confirmare a fost apelata")
     return render(request, 'cod_confirmare.html')
 
-@login_required(login_url='custom_login_view')  # Redirectioneaza la login daca nu e autentificat
+@login_required(login_url='custom_login_view')  
 def adauga_comanda(request):
     logger.info("--------------Functia adauga_comanda a fost apelata")
     inghetata_items = Inghetata.objects.all()
@@ -441,13 +448,13 @@ def adauga_comanda(request):
     if request.method == 'POST':
         form = ComandaForm(request.POST)
         if form.is_valid():
-            # Extrage doar datele necesare din formular
+
             comanda_data = {
                 'note': form.cleaned_data.get('note', ''),
                 'cos_cumparaturi': form.cleaned_data.get('cos_cumparaturi'),
-                # Adaugă alte câmpuri necesare aici, asigurându-te că sunt simple
+                
             }
-            request.session['comanda_data'] = comanda_data  # Salvează datele simple
+            request.session['comanda_data'] = comanda_data 
             return redirect('comanda_salvare')
     else:
         form = ComandaForm()
@@ -466,28 +473,54 @@ def adauga_comanda(request):
     logger.debug("--------------Functia adauga_comanda executata cu succes!")
     return render(request, 'adauga_comanda.html', context)
 
+
+
+
 def comanda_salvare(request):
     logger.info("--------------Functia comanda_salvare a fost apelata")
 
-    if request.method == 'POST':  # Verifică dacă cererea este POST
-        comanda_data = request.session.get('comanda_data')  # Obține datele comenzii din sesiune
+    if request.method == 'POST':
+        comanda_data = json.loads(request.POST.get('cos_cumparaturi', '[]'))
 
-        if comanda_data:
-            # Creează formularul cu datele din sesiune
-            comanda_form = ComandaForm(comanda_data)
-            if comanda_form.is_valid():
-                comanda_form.save()  # Salvează comanda
-                del request.session['comanda_data']  # Șterge datele din sesiune
-                messages.success(request, "Comanda a fost salvată cu succes!")
-                return redirect('mesaj_trimis')  # Redirectează la o pagină de succes
-            else:
-                messages.error(request, "Datele comenzii nu sunt valide.")
-        else:
-            messages.error(request, "Nu există date pentru comandă.")
-    else:
-        messages.warning(request, "Trimite formularul pentru a salva comanda.")
+        if not comanda_data:
+            messages.error(request, "Cosul de cumparaturi este gol!")
+            return render(request, 'comanda.html')
 
+    
+        utilizator = request.user
+        comanda = Comanda.objects.create(
+            data_achizitie=timezone.now(),
+            livrare_curier=True,
+        )
+        comanda.save()
+
+        total_price = 0
+        for item in comanda_data:
+            try:
+                informatii = Informatii.objects.get(id=item['id'])
+                quantity = item['cantitate']
+                total_price += informatii.pret * quantity
+                comanda.informatii.add(informatii)
+            except Informatii.DoesNotExist:
+                logger.warning(f"Produsul cu id {item['id']} nu exista.")
+
+        comanda.save()
+
+        # Generare PDF
+        factura_pdf = genereaza_factura_pdf(utilizator, comanda, total_price, comanda_data)
+
+        # Trimite email cu factura
+        send_invoice_email(utilizator, factura_pdf)
+
+        # Golire cos virtual
+        request.session.pop('comanda_data', None)
+        messages.success(request, "Comanda a fost realizata cu succes!")
+
+        return redirect('mesaj_trimis')
+
+    messages.warning(request, "Nu s-a trimis nici o comanda!")
     return render(request, 'comanda.html')
+
 
 
 
@@ -566,7 +599,7 @@ def register_view(request):
             email = form.cleaned_data.get('email')
                     
             if email in banned_emails:
-                return render(request, "register.html", {"form": form, "error": f"Email-ul '{email}' este interzis pentru tentativa de hacking!"})
+                return render(request, "register.html", {"form": form, "error": f"Contul este interzis pentru tentativa de hacking!"})
             
             if form.cleaned_data.get('username').lower() == 'admin':
                 if email not in banned_emails:
@@ -1124,3 +1157,63 @@ permissions = [
 for codename in permissions:
     permission = Permission.objects.get(codename = codename, content_type = content_type) # Cautare in baza de date a permisiunilor 
     moderators_group.permissions.add(permission)
+
+
+
+
+
+def genereaza_factura_pdf(user, comanda, total_price, comanda_data):
+    folder_path = os.path.join('temporar-facturi', user.username)
+    os.makedirs(folder_path, exist_ok=True)
+    timestamp = int(time.time())
+    file_name = f"factura-{timestamp}.pdf"
+    file_path = os.path.join(folder_path, file_name)
+
+    c = canvas.Canvas(file_path, pagesize=letter)
+    width, height = letter
+
+    # Titlu
+    c.setFont("Helvetica-Bold", 16)
+    c.drawString(50, height - 50, "Factură - Gelaterie")
+
+    # Date client
+    c.setFont("Helvetica", 12)
+    y = height - 100
+    c.drawString(50, y, f"Nume: {user.first_name} {user.last_name}")
+    c.drawString(50, y - 20, f"Email: {user.email}")
+    c.drawString(50, y - 40, f"Data comenzii: {comanda.data_achizitie}")
+
+    y -= 80
+    c.drawString(50, y, "Produse comandate:")
+    y -= 20
+
+    # Produse
+    for item in comanda_data:
+        informatii = Informatii.objects.get(id=item['id'])
+        line = f"{informatii.specificatii} - Cantitate: {item['cantitate']} - Pret unitar: {informatii.pret} RON"
+        c.drawString(50, y, line)
+        y -= 20
+
+    # Totaluri
+    y -= 40
+    c.drawString(50, y, f"Total obiecte: {sum(item['cantitate'] for item in comanda_data)}")
+    c.drawString(50, y - 20, f"Pret total: {total_price} RON")
+
+    c.save()
+    return file_path
+
+
+
+def send_invoice_email(user, pdf_path):
+    subject = "Factura ta - Gelaterie"
+    body = (
+        f"Salut {user.first_name},\n\n"
+        "Aici ai factura pentru comanda ta.\n\n"
+        "Multumim că ai ales Gelateria noastra!\n"
+        "Cu drag, echipa Pufic:)"
+    )
+    email = EmailMessage(subject, body, settings.DEFAULT_FROM_EMAIL, [user.email])
+    email.attach_file(pdf_path)
+    email.send()
+
+

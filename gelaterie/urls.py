@@ -63,7 +63,7 @@ urlpatterns = [
     path('accepta-oferta', views.accepta_oferta, name = "accepta_oferta"),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name = 'sitemap'),
     path('comanda_salvare', views.comanda_salvare, name = "comanda_salvare"),
-    path('creste_preturi', views.creste_preturi, name = "creste_preturi")
+    path('creste_preturi', views.creste_preturi, name = "creste_preturi"),
 
 ]
 
@@ -89,3 +89,6 @@ urlpatterns = [
 # You’re seeing the help section of this page because you have DEBUG = True in your Django settings file. Change that to False, and only the initial error message will be displayed.
 
 # You can customize this page using the CSRF_FAILURE_VIEW setting.
+
+
+# un reload de javascript pentru login
