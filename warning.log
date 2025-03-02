@@ -7511,3 +7511,49 @@ WARNING 2024-12-18 13:36:33,063 log Not Found: /as
 WARNING 2024-12-18 13:36:33,063 basehttp "GET /as HTTP/1.1" 404 5574
 WARNING 2024-12-18 13:36:44,123 log Not Found: /asas
 WARNING 2024-12-18 13:36:44,124 basehttp "GET /asas HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:03,589 log Not Found: /static/style.css
+WARNING 2025-03-02 20:58:03,589 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:03,591 log Not Found: /static/script.js
+WARNING 2025-03-02 20:58:03,591 basehttp "GET /static/script.js HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:05,768 log Not Found: /static/style.css
+WARNING 2025-03-02 20:58:05,768 log Not Found: /static/script.js
+WARNING 2025-03-02 20:58:05,768 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:05,769 basehttp "GET /static/script.js HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:06,654 log Not Found: /static/style.css
+WARNING 2025-03-02 20:58:06,654 log Not Found: /static/script.js
+WARNING 2025-03-02 20:58:06,655 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:06,655 basehttp "GET /static/script.js HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:59:46,142 log Not Found: /static/login.css
+WARNING 2025-03-02 20:59:46,142 basehttp "GET /static/login.css HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:59:52,701 log Not Found: /static/login.css
+WARNING 2025-03-02 20:59:52,701 basehttp "GET /static/login.css HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:05:05,206 log Not Found: /aplicatie/dsds
+WARNING 2025-03-02 21:05:05,206 basehttp "GET /aplicatie/dsds HTTP/1.1" 404 16080
+WARNING 2025-03-02 21:05:30,530 log Not Found: /aplicatie/dsds
+WARNING 2025-03-02 21:05:30,530 basehttp "GET /aplicatie/dsds HTTP/1.1" 404 16080
+WARNING 2025-03-02 21:05:31,658 log Not Found: /aplicatie/dsds
+WARNING 2025-03-02 21:05:31,658 basehttp "GET /aplicatie/dsds HTTP/1.1" 404 16080
+WARNING 2025-03-02 21:05:36,263 log Not Found: /aplicatie/ds
+WARNING 2025-03-02 21:05:36,263 basehttp "GET /aplicatie/ds HTTP/1.1" 404 16074
+WARNING 2025-03-02 21:05:50,778 log Not Found: /aplicatie/ds
+WARNING 2025-03-02 21:05:50,779 basehttp "GET /aplicatie/ds HTTP/1.1" 404 16074
+WARNING 2025-03-02 21:06:08,534 log Not Found: /aplicatie/dsdsa
+WARNING 2025-03-02 21:06:08,534 basehttp "GET /aplicatie/dsdsa HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:06:17,350 log Not Found: /static/stil_contact.css
+WARNING 2025-03-02 21:06:17,350 basehttp "GET /static/stil_contact.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:06:39,769 log Not Found: /dss
+WARNING 2025-03-02 21:06:39,769 basehttp "GET /dss HTTP/1.1" 404 8987
+WARNING 2025-03-02 21:08:08,409 log Not Found: /static/stil_contact.css
+WARNING 2025-03-02 21:08:08,409 basehttp "GET /static/stil_contact.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:09:03,103 log Not Found: /dsada
+WARNING 2025-03-02 21:09:03,103 basehttp "GET /dsada HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:09:07,554 log Not Found: /static/stil_contact.css
+WARNING 2025-03-02 21:09:07,555 basehttp "GET /static/stil_contact.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:10:43,394 log Not Found: /ss
+WARNING 2025-03-02 21:10:43,394 basehttp "GET /ss HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:11:09,408 log Not Found: /static/profile.css
+WARNING 2025-03-02 21:11:09,409 basehttp "GET /static/profile.css HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:11:14,647 log Not Found: /static/profile.css
+WARNING 2025-03-02 21:11:14,648 basehttp "GET /static/profile.css HTTP/1.1" 404 5574
+WARNING 2025-03-02 21:11:15,383 log Not Found: /static/profile.css
+WARNING 2025-03-02 21:11:15,383 basehttp "GET /static/profile.css HTTP/1.1" 404 5574

@@ -1851,3 +1851,227 @@ INFO 2024-12-18 13:36:38,394 views --------------Functia display_items a fost ap
 INFO 2024-12-18 13:36:38,614 basehttp "GET / HTTP/1.1" 200 17082
 WARNING 2024-12-18 13:36:44,123 log Not Found: /asas
 WARNING 2024-12-18 13:36:44,124 basehttp "GET /asas HTTP/1.1" 404 5574
+INFO 2025-03-02 20:57:54,662 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 20:58:03,479 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:58:03,567 basehttp "GET / HTTP/1.1" 200 17082
+WARNING 2025-03-02 20:58:03,589 log Not Found: /static/style.css
+WARNING 2025-03-02 20:58:03,589 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:03,591 log Not Found: /static/script.js
+WARNING 2025-03-02 20:58:03,591 basehttp "GET /static/script.js HTTP/1.1" 404 5574
+INFO 2025-03-02 20:58:05,711 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:58:05,760 basehttp "GET / HTTP/1.1" 200 17082
+WARNING 2025-03-02 20:58:05,768 log Not Found: /static/style.css
+WARNING 2025-03-02 20:58:05,768 log Not Found: /static/script.js
+WARNING 2025-03-02 20:58:05,768 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:05,769 basehttp "GET /static/script.js HTTP/1.1" 404 5574
+INFO 2025-03-02 20:58:06,599 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:58:06,641 basehttp "GET / HTTP/1.1" 200 17082
+WARNING 2025-03-02 20:58:06,654 log Not Found: /static/style.css
+WARNING 2025-03-02 20:58:06,654 log Not Found: /static/script.js
+WARNING 2025-03-02 20:58:06,655 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 404 5574
+WARNING 2025-03-02 20:58:06,655 basehttp "GET /static/script.js HTTP/1.1" 404 5574
+INFO 2025-03-02 20:58:41,237 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 20:58:41,451 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 20:58:46,084 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:58:46,150 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:58:46,163 basehttp "GET /static/script.js HTTP/1.1" 200 946
+INFO 2025-03-02 20:58:46,163 basehttp "GET /static/style.css?v=1.0 HTTP/1.1" 200 2046
+INFO 2025-03-02 20:59:00,831 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 20:59:01,049 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 20:59:02,707 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:02,759 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:03,820 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:03,899 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:04,680 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:04,724 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:05,533 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:05,581 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:06,274 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:06,333 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:22,533 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 20:59:25,946 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:26,045 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:27,039 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:27,103 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:31,416 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:31,457 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:41,321 basehttp "GET /admin/ HTTP/1.1" 200 14955
+INFO 2025-03-02 20:59:46,093 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 20:59:46,121 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+WARNING 2025-03-02 20:59:46,142 log Not Found: /static/login.css
+WARNING 2025-03-02 20:59:46,142 basehttp "GET /static/login.css HTTP/1.1" 404 5574
+INFO 2025-03-02 20:59:50,840 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 20:59:50,886 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 20:59:52,655 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 20:59:52,686 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+WARNING 2025-03-02 20:59:52,701 log Not Found: /static/login.css
+WARNING 2025-03-02 20:59:52,701 basehttp "GET /static/login.css HTTP/1.1" 404 5574
+INFO 2025-03-02 21:00:03,067 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 21:00:03,280 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:00:05,840 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:00:05,871 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2025-03-02 21:00:05,890 basehttp "GET /static/login.css HTTP/1.1" 200 1768
+INFO 2025-03-02 21:00:10,047 basehttp "POST /accepta-oferta HTTP/1.1" 200 17
+INFO 2025-03-02 21:00:10,084 views --------------Functia oferta a fost executata cu succes!
+INFO 2025-03-02 21:00:10,086 basehttp "GET /oferta HTTP/1.1" 200 3531
+INFO 2025-03-02 21:00:12,607 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:00:12,686 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+INFO 2025-03-02 21:04:45,870 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:05:01,337 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:05:01,422 basehttp "GET /aplicatie/ HTTP/1.1" 200 17082
+WARNING 2025-03-02 21:05:05,206 log Not Found: /aplicatie/dsds
+WARNING 2025-03-02 21:05:05,206 basehttp "GET /aplicatie/dsds HTTP/1.1" 404 16080
+WARNING 2025-03-02 21:05:30,530 log Not Found: /aplicatie/dsds
+WARNING 2025-03-02 21:05:30,530 basehttp "GET /aplicatie/dsds HTTP/1.1" 404 16080
+WARNING 2025-03-02 21:05:31,658 log Not Found: /aplicatie/dsds
+WARNING 2025-03-02 21:05:31,658 basehttp "GET /aplicatie/dsds HTTP/1.1" 404 16080
+WARNING 2025-03-02 21:05:36,263 log Not Found: /aplicatie/ds
+WARNING 2025-03-02 21:05:36,263 basehttp "GET /aplicatie/ds HTTP/1.1" 404 16074
+INFO 2025-03-02 21:05:48,053 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-02 21:05:50,778 log Not Found: /aplicatie/ds
+WARNING 2025-03-02 21:05:50,779 basehttp "GET /aplicatie/ds HTTP/1.1" 404 16074
+INFO 2025-03-02 21:06:03,333 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 21:06:03,552 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-02 21:06:08,534 log Not Found: /aplicatie/dsdsa
+WARNING 2025-03-02 21:06:08,534 basehttp "GET /aplicatie/dsdsa HTTP/1.1" 404 5574
+INFO 2025-03-02 21:06:10,917 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:06:10,972 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 21:06:17,328 views --------------Functia contact_view a fost apelata
+INFO 2025-03-02 21:06:17,335 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3561
+WARNING 2025-03-02 21:06:17,350 log Not Found: /static/stil_contact.css
+WARNING 2025-03-02 21:06:17,350 basehttp "GET /static/stil_contact.css?v=1.0 HTTP/1.1" 404 5574
+INFO 2025-03-02 21:06:30,982 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 21:06:31,209 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:06:34,156 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:06:34,217 basehttp "GET / HTTP/1.1" 200 17082
+WARNING 2025-03-02 21:06:39,769 log Not Found: /dss
+WARNING 2025-03-02 21:06:39,769 basehttp "GET /dss HTTP/1.1" 404 8987
+INFO 2025-03-02 21:08:01,149 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 21:08:01,367 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:08:06,081 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:08:06,131 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 21:08:08,394 views --------------Functia contact_view a fost apelata
+INFO 2025-03-02 21:08:08,400 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3561
+WARNING 2025-03-02 21:08:08,409 log Not Found: /static/stil_contact.css
+WARNING 2025-03-02 21:08:08,409 basehttp "GET /static/stil_contact.css?v=1.0 HTTP/1.1" 404 5574
+INFO 2025-03-02 21:08:53,085 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:08:53,166 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 21:08:57,091 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:08:57,119 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+WARNING 2025-03-02 21:09:03,103 log Not Found: /dsada
+WARNING 2025-03-02 21:09:03,103 basehttp "GET /dsada HTTP/1.1" 404 5574
+INFO 2025-03-02 21:09:05,777 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:09:05,815 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 21:09:07,540 views --------------Functia contact_view a fost apelata
+INFO 2025-03-02 21:09:07,544 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3561
+WARNING 2025-03-02 21:09:07,554 log Not Found: /static/stil_contact.css
+WARNING 2025-03-02 21:09:07,555 basehttp "GET /static/stil_contact.css?v=1.0 HTTP/1.1" 404 5574
+INFO 2025-03-02 21:09:20,161 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 21:09:20,383 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:09:25,497 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:09:25,555 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 21:09:26,734 views --------------Functia contact_view a fost apelata
+INFO 2025-03-02 21:09:26,738 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3561
+INFO 2025-03-02 21:09:26,752 basehttp "GET /static/stil_contact.css?v=1.0 HTTP/1.1" 200 1165
+INFO 2025-03-02 21:09:33,647 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 21:09:33,860 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:10:16,507 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:10:17,838 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:10:17,916 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 21:10:19,625 views --------------Functia contact_view a fost apelata
+INFO 2025-03-02 21:10:19,630 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3561
+INFO 2025-03-02 21:10:29,878 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:10:29,890 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2025-03-02 21:10:37,174 basehttp "GET /admin/ HTTP/1.1" 200 14576
+WARNING 2025-03-02 21:10:43,394 log Not Found: /ss
+WARNING 2025-03-02 21:10:43,394 basehttp "GET /ss HTTP/1.1" 404 5574
+INFO 2025-03-02 21:10:44,959 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:10:45,018 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 21:10:50,284 basehttp "GET /admin/ HTTP/1.1" 200 14576
+INFO 2025-03-02 21:10:53,347 basehttp "POST /admin/logout/ HTTP/1.1" 200 3575
+INFO 2025-03-02 21:10:54,963 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-02 21:10:54,968 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4180
+INFO 2025-03-02 21:10:56,526 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-02 21:10:56,552 basehttp "GET /admin/ HTTP/1.1" 200 14576
+INFO 2025-03-02 21:11:02,780 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:11:02,832 basehttp "GET / HTTP/1.1" 200 17082
+INFO 2025-03-02 21:11:06,441 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:11:06,461 basehttp "GET /aplicatie/login HTTP/1.1" 200 1585
+INFO 2025-03-02 21:11:09,067 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:11:09,333 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2025-03-02 21:11:09,347 views --------------Functia profile_view a fost apelata
+INFO 2025-03-02 21:11:09,348 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+WARNING 2025-03-02 21:11:09,408 log Not Found: /static/profile.css
+WARNING 2025-03-02 21:11:09,409 basehttp "GET /static/profile.css HTTP/1.1" 404 5574
+INFO 2025-03-02 21:11:14,631 views --------------Functia profile_view a fost apelata
+INFO 2025-03-02 21:11:14,632 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+WARNING 2025-03-02 21:11:14,647 log Not Found: /static/profile.css
+WARNING 2025-03-02 21:11:14,648 basehttp "GET /static/profile.css HTTP/1.1" 404 5574
+INFO 2025-03-02 21:11:15,375 views --------------Functia profile_view a fost apelata
+INFO 2025-03-02 21:11:15,375 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+WARNING 2025-03-02 21:11:15,383 log Not Found: /static/profile.css
+WARNING 2025-03-02 21:11:15,383 basehttp "GET /static/profile.css HTTP/1.1" 404 5574
+INFO 2025-03-02 21:11:25,154 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 21:11:25,398 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:11:27,026 views --------------Functia profile_view a fost apelata
+INFO 2025-03-02 21:11:27,034 basehttp "GET /aplicatie/profile HTTP/1.1" 200 988
+INFO 2025-03-02 21:11:27,049 basehttp "GET /static/profile.css HTTP/1.1" 200 1304
+INFO 2025-03-02 21:11:35,652 autoreload /home/davide/Documents/Django/Proiect/Proiect/settings.py changed, reloading.
+INFO 2025-03-02 21:11:35,874 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:15:00,403 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 21:15:17,340 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:15:17,392 basehttp "GET / HTTP/1.1" 200 17108
+INFO 2025-03-02 21:15:17,406 basehttp "GET /static/script.46618a2d25ba.js HTTP/1.1" 200 401
+INFO 2025-03-02 21:15:17,406 basehttp "GET /static/style.eeee3480d72e.css?v=1.0 HTTP/1.1" 200 673
+INFO 2025-03-02 21:15:18,806 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:15:18,819 basehttp "GET /aplicatie/login HTTP/1.1" 200 1598
+INFO 2025-03-02 21:15:18,829 basehttp "GET /static/login.a8dfcf6ee291.css HTTP/1.1" 200 564
+INFO 2025-03-02 21:15:22,600 views --------------Functia contact_view a fost apelata
+INFO 2025-03-02 21:15:22,603 basehttp "GET /aplicatie/contact HTTP/1.1" 200 3574
+INFO 2025-03-02 21:15:22,613 basehttp "GET /static/stil_contact.8f70f02023b7.css?v=1.0 HTTP/1.1" 200 494
+INFO 2025-03-02 21:15:26,305 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:15:26,316 basehttp "GET /aplicatie/login HTTP/1.1" 200 1598
+INFO 2025-03-02 21:15:27,976 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:15:28,258 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2025-03-02 21:15:28,273 views --------------Functia profile_view a fost apelata
+INFO 2025-03-02 21:15:28,274 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1001
+INFO 2025-03-02 21:15:28,329 basehttp "GET /static/profile.2b65222ea90d.css HTTP/1.1" 200 471
+INFO 2025-03-02 21:15:30,845 views --------------Functia adauga_comanda a fost apelata
+INFO 2025-03-02 21:15:30,850 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32076
+INFO 2025-03-02 21:15:30,859 basehttp "GET /static/stil_adauga_comanda.0566e8f77866.css?v=1.0 HTTP/1.1" 200 629
+INFO 2025-03-02 21:15:36,507 views --------------Functia detalii_bautura a fost apelata
+INFO 2025-03-02 21:15:36,508 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2025-03-02 21:15:36,510 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2025-03-02 21:15:36,512 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2025-03-02 21:15:36,513 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2025-03-02 21:15:36,515 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2025-03-02 21:15:36,516 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2025-03-02 21:15:36,517 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2025-03-02 21:15:36,519 views --------------Functia adauga_vizualizare a fost apelata
+INFO 2025-03-02 21:15:36,526 basehttp "GET /aplicatie/detalii_bautura HTTP/1.1" 200 4220
+INFO 2025-03-02 21:15:41,192 views --------------Functia logout_view a fost apelata
+INFO 2025-03-02 21:15:41,219 basehttp "GET /aplicatie/logout HTTP/1.1" 302 0
+INFO 2025-03-02 21:15:41,225 views --------------Functia mesaj_trimis a fost apelata
+INFO 2025-03-02 21:15:41,226 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 550
+INFO 2025-03-02 21:15:41,289 basehttp "GET /static/stil_mesaj.01fd73051d45.css HTTP/1.1" 200 424
+INFO 2025-03-02 21:15:42,723 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:15:42,772 basehttp "GET /aplicatie/ HTTP/1.1" 200 17108
+INFO 2025-03-02 21:15:43,946 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:15:43,947 basehttp "GET /aplicatie/login HTTP/1.1" 200 1598
+INFO 2025-03-02 21:15:45,540 views --------------Functia custom_login_view a fost apelata
+INFO 2025-03-02 21:15:45,824 basehttp "POST /aplicatie/login HTTP/1.1" 302 0
+INFO 2025-03-02 21:15:45,839 views --------------Functia profile_view a fost apelata
+INFO 2025-03-02 21:15:45,840 basehttp "GET /aplicatie/profile HTTP/1.1" 200 1001
+INFO 2025-03-02 21:15:47,311 views --------------Functia adauga_comanda a fost apelata
+INFO 2025-03-02 21:15:47,320 basehttp "GET /aplicatie/adaugare HTTP/1.1" 200 32076
+INFO 2025-03-02 21:16:12,409 views --------------Functia adauga_comanda a fost apelata
+INFO 2025-03-02 21:16:12,412 basehttp "POST /aplicatie/adaugare HTTP/1.1" 302 0
+INFO 2025-03-02 21:16:12,416 views --------------Functia comanda_salvare a fost apelata
+INFO 2025-03-02 21:16:12,442 basehttp "GET /aplicatie/comanda_salvare HTTP/1.1" 200 4266
+INFO 2025-03-02 21:16:12,502 basehttp "GET /static/stil_comanda.dfd3a9b1d03f.css?v=1.0 HTTP/1.1" 200 507
+INFO 2025-03-02 21:16:26,130 views --------------Functia comanda_salvare a fost apelata
+INFO 2025-03-02 21:16:29,761 basehttp "POST /aplicatie/comanda_salvare HTTP/1.1" 302 0
+INFO 2025-03-02 21:16:29,764 views --------------Functia mesaj_trimis a fost apelata
+INFO 2025-03-02 21:16:29,765 basehttp "GET /aplicatie/mesaj_trimis HTTP/1.1" 200 550
+INFO 2025-03-02 21:16:31,381 views --------------Functia display_items a fost apelata
+INFO 2025-03-02 21:16:31,437 basehttp "GET /aplicatie/ HTTP/1.1" 200 17108
